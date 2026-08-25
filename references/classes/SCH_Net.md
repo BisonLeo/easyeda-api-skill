@@ -5,7 +5,7 @@ Schematic &amp; symbol / net class
 ## Signature
 
 ```typescript
-export class SCH_Net 
+class SCH_Net
 ```
 
 ## Methods
@@ -14,72 +14,57 @@ export class SCH_Net
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getAllNets()](./SCH_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Detailed information of the net
-
 
 </td></tr>
 <tr><td>
 
 [getAllNetsName()](./SCH_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the net names of all nets
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentProjectAllNets()](./SCH_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the detailed information of all nets under the current project
-
 
 </td></tr>
 <tr><td>
 
 [getNet(net)](./SCH_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Specify detailed information of the net
-
 
 </td></tr>
 </tbody></table>
@@ -99,9 +84,8 @@ Get all Detailed information of the net
 ## Signature
 
 ```typescript
-public getAllNets(): Promise<Array<ISCH_NetInfo>>;
+function getAllNets(): Promise<Array<ISCH_NetInfo>>;
 ```
-
 
 ## Returns
 
@@ -124,9 +108,8 @@ Get the net names of all nets
 ## Signature
 
 ```typescript
-public getAllNetsName(): Promise<Array<string>>;
+function getAllNetsName(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -149,9 +132,8 @@ Get the detailed information of all nets under the current project
 ## Signature
 
 ```typescript
-public getCurrentProjectAllNets(): Promise<Array<ISCH_ProjectNetInfo>>;
+function getCurrentProjectAllNets(): Promise<Array<ISCH_ProjectNetInfo>>;
 ```
-
 
 ## Returns
 
@@ -174,7 +156,7 @@ Get Specify detailed information of the net
 ## Signature
 
 ```typescript
-public getNet(net: string): Promise<ISCH_NetInfo | undefined>;
+function getNet(net: string): Promise<ISCH_NetInfo | undefined>;
 ```
 
 ## Parameters
@@ -183,37 +165,29 @@ public getNet(net: string): Promise<ISCH_NetInfo | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 

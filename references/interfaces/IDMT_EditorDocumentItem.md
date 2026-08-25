@@ -5,7 +5,7 @@ Editor document object
 ## Signature
 
 ```typescript
-export interface IDMT_EditorDocumentItem 
+interface IDMT_EditorDocumentItem
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface IDMT_EditorDocumentItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [documentType](./IDMT_EditorDocumentItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [EDMT\_EditorDocumentType](../enums/EDMT_EditorDocumentType.md)
 
-
 </td><td>
 
 Document type
-
 
 </td></tr>
 <tr><td>
 
 [parentLibraryUuid?](./IDMT_EditorDocumentItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Library document UUID of the library it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [parentProjectUuid?](./IDMT_EditorDocumentItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Document UUID of the project it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [tabId](./IDMT_EditorDocumentItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Tab ID of the document
-
 
 </td></tr>
 <tr><td>
 
 [uuid](./IDMT_EditorDocumentItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Document UUID
-
 
 </td></tr>
 </tbody></table>

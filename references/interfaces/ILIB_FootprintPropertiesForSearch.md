@@ -5,7 +5,7 @@ Footprint parameters that can be used for precise search
 ## Signature
 
 ```typescript
-export interface ILIB_FootprintPropertiesForSearch 
+interface ILIB_FootprintPropertiesForSearch
 ```
 
 ## Properties
@@ -14,40 +14,32 @@ export interface ILIB_FootprintPropertiesForSearch
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [name?](./ILIB_FootprintPropertiesForSearch.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Footprint name
-
 
 </td></tr>
 </tbody></table>

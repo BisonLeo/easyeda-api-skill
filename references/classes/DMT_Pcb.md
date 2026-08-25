@@ -5,7 +5,7 @@ Document tree / PCB management class
 ## Signature
 
 ```typescript
-export class DMT_Pcb 
+class DMT_Pcb
 ```
 
 ## Remarks
@@ -18,114 +18,90 @@ Operations related to PCB management in the currently open project
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [copyPcb(pcbUuid, boardName)](./DMT_Pcb.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Copy PCB
-
 
 </td></tr>
 <tr><td>
 
 [createPcb(boardName)](./DMT_Pcb.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Create PCB
-
 
 </td></tr>
 <tr><td>
 
 [deletePcb(pcbUuid)](./DMT_Pcb.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Delete PCB
-
 
 </td></tr>
 <tr><td>
 
 [getAllPcbsInfo()](./DMT_Pcb.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get all in the project PCB detailed properties of
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentPcbInfo()](./DMT_Pcb.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get detailed properties of Current PCB
-
 
 </td></tr>
 <tr><td>
 
 [getPcbInfo(pcbUuid)](./DMT_Pcb.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get detailed properties of PCB
-
 
 </td></tr>
 <tr><td>
 
 [modifyPcbName(pcbUuid, pcbName)](./DMT_Pcb.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Modify PCB name
-
 
 </td></tr>
 </tbody></table>
@@ -143,7 +119,7 @@ Copy PCB
 ## Signature
 
 ```typescript
-public copyPcb(pcbUuid: string, boardName?: string): Promise<string | undefined>;
+function copyPcb(pcbUuid: string, boardName?: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -152,53 +128,42 @@ public copyPcb(pcbUuid: string, boardName?: string): Promise<string | undefined>
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pcbUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Source PCB UUID
-
 
 </td></tr>
 <tr><td>
 
 boardName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Name of the board the new PCB belongs to. If not specified, it is a free PCB
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -211,7 +176,6 @@ New PCB UUID. If it is `undefined`<!-- -->, the copy failed
 Even if the PCB here is already associated with a reuse block (a reuse block symbol with the same name exists in the project library), no new reuse block symbol will be created. This operation logic is consistent with the current editor front end
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个专用源 PCB 并等 1.5s 同步（复制前源 PCB 必须已在工作区落地）
@@ -244,7 +208,7 @@ Create PCB
 ## Signature
 
 ```typescript
-public createPcb(boardName?: string): Promise<string | undefined>;
+function createPcb(boardName?: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -253,37 +217,29 @@ public createPcb(boardName?: string): Promise<string | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 boardName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Name of the board it belongs to. If not specified, it is a free PCB
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -292,7 +248,6 @@ Promise&lt;string \| undefined&gt;
 PCB UUID, if it is `undefined` creation fails
 
 ## Example
-
 
 ```javascript
 // 1. 创建 PCB（不指定 boardName，得到游离 PCB），返回新 PCB UUID
@@ -319,7 +274,7 @@ Delete PCB
 ## Signature
 
 ```typescript
-public deletePcb(pcbUuid: string): Promise<boolean>;
+function deletePcb(pcbUuid: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -328,37 +283,29 @@ public deletePcb(pcbUuid: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pcbUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 PCB UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -371,7 +318,6 @@ Whether the operation is successful
 If the PCB is already associated with a reuse block (a reuse block symbol with the same name exists in the project library), deleting the PCB will also delete the associated schematic and reuse block symbol. If the reuse block symbol cannot be deleted, it will be skipped
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试 PCB（避免误删工程里的现有 PCB），等 1.5s 同步
@@ -396,9 +342,8 @@ Get all in the project PCB detailed properties of
 ## Signature
 
 ```typescript
-public getAllPcbsInfo(): Promise<Array<IDMT_PcbItem>>;
+function getAllPcbsInfo(): Promise<Array<IDMT_PcbItem>>;
 ```
-
 
 ## Returns
 
@@ -407,7 +352,6 @@ Promise&lt;Array&lt;[IDMT\_PcbItem](../interfaces/IDMT_PcbItem.md)<!-- -->&gt;&g
 Array of detailed properties of all PCBs
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试 PCB 并等 1.5s 同步，保证列表里有新近创建的对象
@@ -419,7 +363,7 @@ const pcbs = await eda.dmt_Pcb.getAllPcbsInfo();
 
 // 3. 输出每块 PCB 的名称与 UUID，确认测试 PCB 在列
 pcbs.forEach((p, i) => {
-  console.log(`pcb[${i}]:`, p.name, p.uuid);
+	console.log(`pcb[${i}]:`, p.name, p.uuid);
 });
 console.log('total:', pcbs.length);
 console.log('test pcb included:', pcbs.some(p => p.uuid === pcbUuid));
@@ -437,9 +381,8 @@ Get detailed properties of Current PCB
 ## Signature
 
 ```typescript
-public getCurrentPcbInfo(): Promise<IDMT_PcbItem | undefined>;
+function getCurrentPcbInfo(): Promise<IDMT_PcbItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -452,7 +395,6 @@ PCB detailed properties of; if it is `undefined`<!-- -->, the retrieval failed
 It will get the detailed properties of the currently open PCB that has the last input focus
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开它，让焦点落到 PCB 文档上（原理图焦点下返回 undefined）
@@ -482,7 +424,7 @@ Get detailed properties of PCB
 ## Signature
 
 ```typescript
-public getPcbInfo(pcbUuid: string): Promise<IDMT_PcbItem | undefined>;
+function getPcbInfo(pcbUuid: string): Promise<IDMT_PcbItem | undefined>;
 ```
 
 ## Parameters
@@ -491,37 +433,29 @@ public getPcbInfo(pcbUuid: string): Promise<IDMT_PcbItem | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pcbUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 PCB UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -530,7 +464,6 @@ Promise&lt;[IDMT\_PcbItem](../interfaces/IDMT_PcbItem.md) \| undefined&gt;
 PCB detailed properties of; if it is `undefined`<!-- -->, the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并等 1.5s 同步
@@ -559,7 +492,7 @@ Modify PCB name
 ## Signature
 
 ```typescript
-public modifyPcbName(pcbUuid: string, pcbName: string): Promise<boolean>;
+function modifyPcbName(pcbUuid: string, pcbName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -568,53 +501,42 @@ public modifyPcbName(pcbUuid: string, pcbName: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pcbUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 PCB UUID
-
 
 </td></tr>
 <tr><td>
 
 pcbName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 PCB name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -627,7 +549,6 @@ Whether Modify Successful
 If the PCB is already associated with a reuse block (a reuse block symbol with the same name exists in the project library), modifying the name will also modify the reuse block symbol name and the associated schematic name
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试 PCB 并等 1.5s 同步

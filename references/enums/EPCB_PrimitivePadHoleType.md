@@ -5,7 +5,7 @@ Pad drilling type
 ## Signature
 
 ```typescript
-export enum EPCB_PrimitivePadHoleType 
+enum EPCB_PrimitivePadHoleType
 ```
 
 ## Enumeration Members
@@ -14,58 +14,46 @@ export enum EPCB_PrimitivePadHoleType
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 RECTANGLE
 
-
 </td><td>
 
 `'RECT'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 ROUND
 
-
 </td><td>
 
 `'ROUND'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 SLOT
 
-
 </td><td>
 
 `'SLOT'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

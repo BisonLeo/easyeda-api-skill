@@ -5,11 +5,10 @@ Single polygon
 ## Signature
 
 ```typescript
-export class IPCB_Polygon 
+class IPCB_Polygon
 ```
 
 ## Remarks
-
 
 ## Methods
 
@@ -17,58 +16,46 @@ export class IPCB_Polygon
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [discretize(options)](./IPCB_Polygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Discretize a single polygon into point data
-
 
 </td></tr>
 <tr><td>
 
 [getCenter()](./IPCB_Polygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Single polygon center point
-
 
 </td></tr>
 <tr><td>
 
 [getSource()](./IPCB_Polygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get Single polygon data
-
 
 </td></tr>
 </tbody></table>
@@ -88,7 +75,7 @@ Discretize a single polygon into point data
 ## Signature
 
 ```typescript
-public discretize(options?: IPCB_DiscretizeOptions): Promise<Array<IPCB_DiscretizedPoint>>;
+function discretize(options?: IPCB_DiscretizeOptions): Promise<Array<IPCB_DiscretizedPoint>>;
 ```
 
 ## Parameters
@@ -97,37 +84,29 @@ public discretize(options?: IPCB_DiscretizeOptions): Promise<Array<IPCB_Discreti
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 options
 
-
 </td><td>
 
 [IPCB\_DiscretizeOptions](../interfaces/IPCB_DiscretizeOptions.md)
-
 
 </td><td>
 
 _(Optional)_ Discretization options
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -150,9 +129,8 @@ Get Single polygon center point
 ## Signature
 
 ```typescript
-public getCenter(): Promise<{ x: number; y: number }>;
+function getCenter(): Promise<{ x: number; y: number }>;
 ```
-
 
 ## Returns
 
@@ -169,9 +147,8 @@ Get Single polygon data
 ## Signature
 
 ```typescript
-public getSource(): TPCB_PolygonSourceArray;
+function getSource(): TPCB_PolygonSourceArray;
 ```
-
 
 ## Returns
 
@@ -180,7 +157,6 @@ public getSource(): TPCB_PolygonSourceArray;
 Single polygon data
 
 ## Example
-
 
 ```javascript
 // 1. 用矩形模式（R x y width height rot round）创建一块单多边形

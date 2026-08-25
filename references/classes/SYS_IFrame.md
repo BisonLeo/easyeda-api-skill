@@ -5,11 +5,10 @@ System / iframe window class
 ## Signature
 
 ```typescript
-export class SYS_IFrame 
+class SYS_IFrame
 ```
 
 ## Remarks
-
 
 ## Methods
 
@@ -17,86 +16,68 @@ export class SYS_IFrame
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [closeIFrame(id)](./SYS_IFrame.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Close iframe window
-
 
 </td></tr>
 <tr><td>
 
 [hideIFrame(id)](./SYS_IFrame.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Hide iframe window
-
 
 </td></tr>
 <tr><td>
 
 [isIFrameAlreadyExist(id)](./SYS_IFrame.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Whether the iframe already exists
-
 
 </td></tr>
 <tr><td>
 
 [openIFrame(htmlFileName, width, height, id, props)](./SYS_IFrame.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Open iframe window
-
 
 </td></tr>
 <tr><td>
 
 [showIFrame(id)](./SYS_IFrame.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Show iframe window
-
 
 </td></tr>
 </tbody></table>
@@ -116,7 +97,7 @@ Close iframe window
 ## Signature
 
 ```typescript
-public closeIFrame(id?: string): Promise<boolean>;
+function closeIFrame(id?: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -125,37 +106,29 @@ public closeIFrame(id?: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Iframe window ID. If not passed in, all iframe windows opened by this extension will be closed
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -170,7 +143,6 @@ Close the iframe window with the specified ID
 Note: This API is only valid for extensions. Calling it in a standalone script environment will always `throw Error`
 
 ## Example
-
 
 ```javascript
 // 1. 打开两个内联框架窗口（自建 fixture，演示按 ID 定向关闭）
@@ -202,7 +174,7 @@ Hide iframe window
 ## Signature
 
 ```typescript
-public hideIFrame(id?: string): Promise<boolean>;
+function hideIFrame(id?: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -211,37 +183,29 @@ public hideIFrame(id?: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Iframe window ID. If not passed in, all iframe windows associated with the extension will be hidden
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -257,11 +221,10 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 // 1. 打开一个内联框架窗口（自建 fixture）
 const opened = await eda.sys_IFrame.openIFrame('/extension.json', 320, 200, '嘉立创示例_隐藏演示', {
-  title: '嘉立创示例 隐藏演示窗口',
+	title: '嘉立创示例 隐藏演示窗口',
 });
 console.log('打开结果：', opened);
 
@@ -293,7 +256,7 @@ Whether the iframe already exists
 ## Signature
 
 ```typescript
-public isIFrameAlreadyExist(id: string): Promise<boolean>;
+function isIFrameAlreadyExist(id: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -302,37 +265,29 @@ public isIFrameAlreadyExist(id: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Iframe ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -355,7 +310,25 @@ Open iframe window
 ## Signature
 
 ```typescript
-public openIFrame(htmlFileName: string, width?: number, height?: number, id?: string, props?: { maximizeButton?: undefined | false | true; minimizeButton?: undefined | false | true; minimizeStyle?: undefined | 'collapsed' | 'constricted'; buttonCallbackFn?: undefined | ((button: 'close' | 'minimize' | 'maximize') => void | Promise<void>); onBeforeCloseCallFn?: undefined | (() => boolean | undefined | Promise<boolean | undefined>); grayscaleMask?: undefined | false | true; title?: undefined | string; x?: undefined | number; y?: undefined | number }): Promise<boolean>;
+function openIFrame(
+	htmlFileName: string,
+	width?: number,
+	height?: number,
+	id?: string,
+	props?: {
+		maximizeButton?: undefined | false | true;
+		minimizeButton?: undefined | false | true;
+		minimizeStyle?: undefined | 'collapsed' | 'constricted';
+		buttonCallbackFn?:
+			undefined | ((button: 'close' | 'minimize' | 'maximize') => void | Promise<void>);
+		onBeforeCloseCallFn?:
+			undefined | (() => boolean | undefined | Promise<boolean | undefined>);
+		grayscaleMask?: undefined | false | true;
+		title?: undefined | string;
+		x?: undefined | number;
+		y?: undefined | number;
+	},
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -364,101 +337,81 @@ public openIFrame(htmlFileName: string, width?: number, height?: number, id?: st
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 htmlFileName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 The path of the HTML file to load within the extension package, starting from the extension root directory, e.g. `/iframe/index.html`
-
 
 </td></tr>
 <tr><td>
 
 width
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Width of the iframe window
-
 
 </td></tr>
 <tr><td>
 
 height
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Height of the iframe window
-
 
 </td></tr>
 <tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Iframe window ID, used to close the iframe window
-
 
 </td></tr>
 <tr><td>
 
 props
 
-
 </td><td>
 
 { maximizeButton?: undefined \| false \| true; minimizeButton?: undefined \| false \| true; minimizeStyle?: undefined \| 'collapsed' \| 'constricted'; buttonCallbackFn?: undefined \| ((button: 'close' \| 'minimize' \| 'maximize') =&gt; void \| Promise&lt;void&gt;); onBeforeCloseCallFn?: undefined \| (() =&gt; boolean \| undefined \| Promise&lt;boolean \| undefined&gt;); grayscaleMask?: undefined \| false \| true; title?: undefined \| string; x?: undefined \| number; y?: undefined \| number }
-
 
 </td><td>
 
 _(Optional)_ Other parameters
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -480,14 +433,13 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 // 1. 打开一个带标题和最大化/最小化按钮的内联框架窗口（自建 ID 便于后续定位）
 const opened = await eda.sys_IFrame.openIFrame('/extension.json', 360, 240, '嘉立创示例_窗口', {
-  title: '嘉立创示例 内联框架窗口',
-  minimizeButton: true,
-  maximizeButton: true,
-  grayscaleMask: false,
+	title: '嘉立创示例 内联框架窗口',
+	minimizeButton: true,
+	maximizeButton: true,
+	grayscaleMask: false,
 });
 console.log('打开结果：', opened);
 
@@ -507,7 +459,7 @@ Show iframe window
 ## Signature
 
 ```typescript
-public showIFrame(id?: string): Promise<boolean>;
+function showIFrame(id?: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -516,37 +468,29 @@ public showIFrame(id?: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Iframe window ID. If not passed in, all iframe windows associated with the extension will be shown
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -562,11 +506,10 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 // 1. 打开一个内联框架窗口（自建 fixture）
 const opened = await eda.sys_IFrame.openIFrame('/extension.json', 320, 200, '嘉立创示例_显示演示', {
-  title: '嘉立创示例 显示演示窗口',
+	title: '嘉立创示例 显示演示窗口',
 });
 console.log('打开结果：', opened);
 

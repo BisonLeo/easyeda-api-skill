@@ -5,7 +5,7 @@ Searched simulation model properties
 ## Signature
 
 ```typescript
-export interface ILIB_SimulationModelSearchItem 
+interface ILIB_SimulationModelSearchItem
 ```
 
 ## Properties
@@ -14,211 +14,167 @@ export interface ILIB_SimulationModelSearchItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [ascription](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Ownership
-
 
 </td></tr>
 <tr><td>
 
 [classification?](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ Classification
-
 
 </td></tr>
 <tr><td>
 
 [description?](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Description
-
 
 </td></tr>
 <tr><td>
 
 [lastModifiedBy](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Last modifier
-
 
 </td></tr>
 <tr><td>
 
 [libraryUuid](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 UUID of the library it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [name](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Simulation model name
-
 
 </td></tr>
 <tr><td>
 
 [ordinal](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Sorting
-
 
 </td></tr>
 <tr><td>
 
 [type](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ELIB\_SimulationModelType](../enums/ELIB_SimulationModelType.md)
 
-
 </td><td>
 
 Simulation model type
-
 
 </td></tr>
 <tr><td>
 
 [updateTimestamp](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Update timestamp
-
 
 </td></tr>
 <tr><td>
 
 [uuid](./ILIB_SimulationModelSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Simulation model UUID
-
 
 </td></tr>
 </tbody></table>

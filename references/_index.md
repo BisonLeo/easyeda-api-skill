@@ -328,6 +328,7 @@
 | [IRawWire](interfaces/IRawWire.md) | Raw data - wire |  |
 | [ISCH_DrcError](interfaces/ISCH_DrcError.md) | DRC error item |  |
 | [ISCH_DrcErrorPrimitive](interfaces/ISCH_DrcErrorPrimitive.md) | Primitive involved in a DRC error |  |
+| [ISCH_ExportPngResolution](interfaces/ISCH_ExportPngResolution.md) | 原理图导出图片分辨率 |  |
 | [ISCH_NetInfo](interfaces/ISCH_NetInfo.md) | Net property |  |
 | [ISCH_Primitive](interfaces/ISCH_Primitive.md) | Schematic primitive |  |
 | [ISCH_PrimitiveAPI](interfaces/ISCH_PrimitiveAPI.md) | Schematic primitive API |  |

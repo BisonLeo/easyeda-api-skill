@@ -5,12 +5,11 @@ Copper fill primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitivePoured implements IPCB_Primitive 
+class IPCB_PrimitivePoured implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,128 +17,101 @@ export class IPCB_PrimitivePoured implements IPCB_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [addSolderMaskFill(pourFillId)](./IPCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add: solder mask region
-
 
 </td></tr>
 <tr><td>
 
 [convertToFill(pourFillId)](./IPCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert to: fill primitive
-
 
 </td></tr>
 <tr><td>
 
 [deletePourFills(pourFillIds)](./IPCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Copper fill region
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PourFills()](./IPCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: copper fill region
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PourPrimitiveId()](./IPCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: copper border primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 </tbody></table>
@@ -159,7 +131,9 @@ Add: solder mask region
 ## Signature
 
 ```typescript
-public addSolderMaskFill(pourFillId: IPCB_PrimitivePouredPourFill['id']): Promise<IPCB_PrimitiveFill | undefined>;
+function addSolderMaskFill(
+	pourFillId: IPCB_PrimitivePouredPourFill['id'],
+): Promise<IPCB_PrimitiveFill | undefined>;
 ```
 
 ## Parameters
@@ -168,35 +142,27 @@ public addSolderMaskFill(pourFillId: IPCB_PrimitivePouredPourFill['id']): Promis
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pourFillId
 
-
 </td><td>
 
 [IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->\['id'\]
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -205,7 +171,6 @@ Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md) \| undefined&gt;
 The solder mask region fill primitive object. If conversion fails or the ID is incorrect, `undefined` is returned
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -246,7 +211,9 @@ Convert to: fill primitive
 ## Signature
 
 ```typescript
-public convertToFill(pourFillId: IPCB_PrimitivePouredPourFill['id']): Promise<IPCB_PrimitiveFill | undefined>;
+function convertToFill(
+	pourFillId: IPCB_PrimitivePouredPourFill['id'],
+): Promise<IPCB_PrimitiveFill | undefined>;
 ```
 
 ## Parameters
@@ -255,35 +222,27 @@ public convertToFill(pourFillId: IPCB_PrimitivePouredPourFill['id']): Promise<IP
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pourFillId
 
-
 </td><td>
 
 [IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->\['id'\]
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -292,7 +251,6 @@ Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md) \| undefined&gt;
 The fill primitive object. If conversion fails or the ID is incorrect, `undefined` is returned
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -333,7 +291,9 @@ Delete Copper fill region
 ## Signature
 
 ```typescript
-public deletePourFills(pourFillIds: IPCB_PrimitivePouredPourFill['id'] | Array<IPCB_PrimitivePouredPourFill['id']>): Promise<boolean>;
+function deletePourFills(
+	pourFillIds: IPCB_PrimitivePouredPourFill['id'] | Array<IPCB_PrimitivePouredPourFill['id']>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -342,37 +302,29 @@ public deletePourFills(pourFillIds: IPCB_PrimitivePouredPourFill['id'] | Array<I
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pourFillIds
 
-
 </td><td>
 
 [IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->\['id'\] \| Array&lt;[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourFill.md)<!-- -->\['id'\]&gt;
-
 
 </td><td>
 
 Copper fill region ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -381,7 +333,6 @@ Promise&lt;boolean&gt;
 Delete Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -419,9 +370,8 @@ Get the property state: copper fill region
 ## Signature
 
 ```typescript
-public getState_PourFills(): Array<IPCB_PrimitivePouredPourFill>;
+function getState_PourFills(): Array<IPCB_PrimitivePouredPourFill>;
 ```
-
 
 ## Returns
 
@@ -430,7 +380,6 @@ Array&lt;[IPCB\_PrimitivePouredPourFill](../interfaces/IPCB_PrimitivePouredPourF
 Copper fill region
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -462,9 +411,8 @@ Get the property state: copper border primitive ID
 ## Signature
 
 ```typescript
-public getState_PourPrimitiveId(): string;
+function getState_PourPrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -473,7 +421,6 @@ string
 Copper border primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -502,9 +449,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -513,7 +459,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -542,9 +487,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -553,7 +497,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -580,9 +523,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitivePoured>;
+function reset(): Promise<IPCB_PrimitivePoured>;
 ```
-
 
 ## Returns
 
@@ -591,7 +533,6 @@ Promise&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)<!-- -->&gt;
 Copper fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元

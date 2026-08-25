@@ -5,12 +5,11 @@ Schematic &amp; symbol / device primitive class
 ## Signature
 
 ```typescript
-export class SCH_PrimitiveComponent implements ISCH_PrimitiveAPI 
+class SCH_PrimitiveComponent implements ISCH_PrimitiveAPI
 ```
 **Implements:** [ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,338 +17,266 @@ export class SCH_PrimitiveComponent implements ISCH_PrimitiveAPI
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [create(component, x, y, subPartName, rotation, mirror, addIntoBom, addIntoPcb)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Device
-
 
 </td></tr>
 <tr><td>
 
 [createCbbSymbol(cbbSymbol, x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Reuse block symbol
-
 
 </td></tr>
 <tr><td>
 
 [createNetFlag(identification, net, x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Net flag
-
 
 </td></tr>
 <tr><td>
 
 [createNetPort(direction, net, x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Net port
-
 
 </td></tr>
 <tr><td>
 
 [createShortCircuitFlag(x, y, rotation, mirror)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create a short circuit flag
-
 
 </td></tr>
 <tr><td>
 
 [delete(primitiveIds)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Device
 
+</td></tr>
+<tr><td>
+
+[get(primitiveIds)](./SCH_PrimitiveComponent.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get Device
 
 </td></tr>
 <tr><td>
 
 [get(primitiveIds)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get Device
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveComponent.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Device
-
 
 </td></tr>
 <tr><td>
 
 [getAll(componentType, allSchematicPages)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Device
-
 
 </td></tr>
 <tr><td>
 
 [getAllPinsByPrimitiveId(primitiveId)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all pins associated with the device
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitiveId(componentType, allSchematicPages)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Device primitive IDs
-
 
 </td></tr>
 <tr><td>
 
 [getAllPropertyNames()](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get The set of all property names of all devices
-
 
 </td></tr>
 <tr><td>
 
 [modify(primitiveId, property)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Device
-
 
 </td></tr>
 <tr><td>
 
 [placeCbbSchematicPage(cbbSchematicPage, x, y, props)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Place reuse block schematic sheet
-
 
 </td></tr>
 <tr><td>
 
 [placeComponentWithMouse(component, subPartName)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Place with the mouse device
-
 
 </td></tr>
 <tr><td>
 
 [placeSymbolWithMouse(symbol, subPartName, properties)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Place with the mouse symbol
-
 
 </td></tr>
 <tr><td>
 
 [setNetFlagComponentUuid\_AnalogGround(component)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the device UUID associated with the AnalogGround net flag in the extension API
-
 
 </td></tr>
 <tr><td>
 
 [setNetFlagComponentUuid\_Ground(component)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the device UUID associated with the Ground net flag in the extension API
-
 
 </td></tr>
 <tr><td>
 
 [setNetFlagComponentUuid\_Power(component)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the device UUID associated with the Power net flag in the extension API
-
 
 </td></tr>
 <tr><td>
 
 [setNetFlagComponentUuid\_ProtectGround(component)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the device UUID associated with the ProtectGround net flag in the extension API
-
 
 </td></tr>
 <tr><td>
 
 [setNetPortComponentUuid\_BI(component)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the device UUID associated with the BI net port in the extension API
-
 
 </td></tr>
 <tr><td>
 
 [setNetPortComponentUuid\_IN(component)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the device UUID associated with the IN net port in the extension API
-
 
 </td></tr>
 <tr><td>
 
 [setNetPortComponentUuid\_OUT(component)](./SCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the device UUID associated with the OUT net port in the extension API
-
 
 </td></tr>
 </tbody></table>
@@ -369,7 +296,22 @@ Create Device
 ## Signature
 
 ```typescript
-public create(component: { libraryType?: undefined | ELIB_LibraryType.DEVICE; libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem | { libraryType: ELIB_LibraryType.SYMBOL; libraryUuid: string; uuid: string } | ILIB_SymbolItem | ILIB_SymbolSearchItem, x: number, y: number, subPartName?: string, rotation?: number, mirror?: boolean, addIntoBom?: boolean, addIntoPcb?: boolean): Promise<ISCH_PrimitiveComponent | undefined>;
+function create(
+	component:
+		| { libraryType?: undefined | ELIB_LibraryType.DEVICE; libraryUuid: string; uuid: string }
+		| ILIB_DeviceItem
+		| ILIB_DeviceSearchItem
+		| { libraryType: ELIB_LibraryType.SYMBOL; libraryUuid: string; uuid: string }
+		| ILIB_SymbolItem
+		| ILIB_SymbolSearchItem,
+	x: number,
+	y: number,
+	subPartName?: string,
+	rotation?: number,
+	mirror?: boolean,
+	addIntoBom?: boolean,
+	addIntoPcb?: boolean,
+): Promise<ISCH_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -378,149 +320,120 @@ public create(component: { libraryType?: undefined | ELIB_LibraryType.DEVICE; li
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryType?: undefined \| [ELIB\_LibraryType.DEVICE](../enums/ELIB_LibraryType.md)<!-- -->; libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) \| { libraryType: [ELIB\_LibraryType.SYMBOL](../enums/ELIB_LibraryType.md)<!-- -->; libraryUuid: string; uuid: string } \| [ILIB\_SymbolItem](../interfaces/ILIB_SymbolItem.md) \| [ILIB\_SymbolSearchItem](../interfaces/ILIB_SymbolSearchItem.md)
 
-
 </td><td>
 
 Associate library device
-
 
 </td></tr>
 <tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 subPartName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Sub-part name
-
 
 </td></tr>
 <tr><td>
 
 rotation
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Rotation angle
-
 
 </td></tr>
 <tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether it is mirrored
-
 
 </td></tr>
 <tr><td>
 
 addIntoBom
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether Add to BOM
-
 
 </td></tr>
 <tr><td>
 
 addIntoPcb
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether Transfer to PCB
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -530,7 +443,6 @@ Device primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 从系统库搜索器件，随机坐标避免与画布已有器件重合（SCH 坐标单位 10mil）
 const devices = await eda.lib_Device.search('');
@@ -539,14 +451,14 @@ const y = 2000 + Math.floor(Math.random() * 8000);
 
 // 2. 创建器件：搜索结果直接作为关联库器件传入，加入 BOM 并转到 PCB
 const comp = await eda.sch_PrimitiveComponent.create(
-  devices[0],  // 关联库器件
-  x,           // 坐标 X
-  y,           // 坐标 Y
-  undefined,   // 子部件名称（多子部件器件才需要指定）
-  0,           // 旋转角度
-  false,       // 是否镜像
-  true,        // 是否加入 BOM
-  true         // 是否转到 PCB
+	devices[0], // 关联库器件
+	x, // 坐标 X
+	y, // 坐标 Y
+	undefined, // 子部件名称（多子部件器件才需要指定）
+	0, // 旋转角度
+	false, // 是否镜像
+	true, // 是否加入 BOM
+	true // 是否转到 PCB
 );
 
 // 3. 创建类保留现场，供在画布上观察摆放结果
@@ -567,7 +479,13 @@ Create Reuse block symbol
 ## Signature
 
 ```typescript
-public createCbbSymbol(cbbSymbol: { libraryUuid: string; cbbUuid: string; uuid?: undefined | string }, x: number, y: number, rotation?: number, mirror?: boolean): Promise<ISCH_PrimitiveCbbSymbolComponent | undefined>;
+function createCbbSymbol(
+	cbbSymbol: { libraryUuid: string; cbbUuid: string; uuid?: undefined | string },
+	x: number,
+	y: number,
+	rotation?: number,
+	mirror?: boolean,
+): Promise<ISCH_PrimitiveCbbSymbolComponent | undefined>;
 ```
 
 ## Parameters
@@ -576,101 +494,81 @@ public createCbbSymbol(cbbSymbol: { libraryUuid: string; cbbUuid: string; uuid?:
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 cbbSymbol
 
-
 </td><td>
 
 \{ libraryUuid: string; cbbUuid: string; uuid?: undefined \| string \}
 
-
 </td><td>
 
 Associated library reuse block symbol. `libraryUuid` is the UUID of the library where the CBB project is located, `cbbUuid` is the UUID of the CBB project, and `uuid` is the UUID of the symbol in the CBB project
-
 
 </td></tr>
 <tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 rotation
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Rotation angle
-
 
 </td></tr>
 <tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -679,7 +577,6 @@ Promise&lt;[ISCH\_PrimitiveCbbSymbolComponent](./ISCH_PrimitiveCbbSymbolComponen
 Reuse block symbol primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 从系统库搜索可用的复用模块
@@ -692,14 +589,14 @@ const y = 2000 + Math.floor(Math.random() * 8000);
 
 // 3. 创建复用模块符号（cbbUuid 传模块工程 UUID，符号 uuid 可省略由模块默认提供）
 const symbol = await eda.sch_PrimitiveComponent.createCbbSymbol(
-  {
-    libraryUuid: cbb.libraryUuid,  // CBB 工程所在库的 UUID
-    cbbUuid: cbb.uuid              // CBB 工程的 UUID
-  },
-  x,      // 坐标 X
-  y,      // 坐标 Y
-  0,      // 旋转角度
-  false   // 是否镜像
+	{
+		libraryUuid: cbb.libraryUuid, // CBB 工程所在库的 UUID
+		cbbUuid: cbb.uuid // CBB 工程的 UUID
+	},
+	x, // 坐标 X
+	y, // 坐标 Y
+	0, // 旋转角度
+	false // 是否镜像
 );
 
 // 4. 创建类保留现场，供在画布上观察模块符号
@@ -719,7 +616,14 @@ Create Net flag
 ## Signature
 
 ```typescript
-public createNetFlag(identification: 'Power' | 'Ground' | 'AnalogGround' | 'ProtectGround', net: string, x: number, y: number, rotation?: number, mirror?: boolean): Promise<ISCH_PrimitiveComponent | undefined>;
+function createNetFlag(
+	identification: 'Power' | 'Ground' | 'AnalogGround' | 'ProtectGround',
+	net: string,
+	x: number,
+	y: number,
+	rotation?: number,
+	mirror?: boolean,
+): Promise<ISCH_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -728,117 +632,94 @@ public createNetFlag(identification: 'Power' | 'Ground' | 'AnalogGround' | 'Prot
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 identification
 
-
 </td><td>
 
 'Power' \| 'Ground' \| 'AnalogGround' \| 'ProtectGround'
 
-
 </td><td>
 
 Identification type
-
 
 </td></tr>
 <tr><td>
 
 net
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Net name
-
 
 </td></tr>
 <tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 rotation
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Rotation angle
-
 
 </td></tr>
 <tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -848,7 +729,6 @@ Device primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 随机坐标避免与画布已有图元重合（SCH 坐标单位 10mil）
 const x = 2000 + Math.floor(Math.random() * 8000);
@@ -856,12 +736,12 @@ const y = 2000 + Math.floor(Math.random() * 8000);
 
 // 2. 创建 Power 类型的网络标识，网络名为 VCC
 const flag = await eda.sch_PrimitiveComponent.createNetFlag(
-  'Power',            // 标识类型：'Power' / 'Ground' / 'AnalogGround' / 'ProtectGround'
-  '嘉立创示例_VCC',   // 网络名称
-  x,                  // 坐标 X
-  y,                  // 坐标 Y
-  0,                  // 旋转角度
-  false               // 是否镜像
+	'Power', // 标识类型：'Power' / 'Ground' / 'AnalogGround' / 'ProtectGround'
+	'嘉立创示例_VCC', // 网络名称
+	x, // 坐标 X
+	y, // 坐标 Y
+	0, // 旋转角度
+	false // 是否镜像
 );
 
 // 3. 创建类保留现场，供在画布上观察标识样式
@@ -881,7 +761,14 @@ Create Net port
 ## Signature
 
 ```typescript
-public createNetPort(direction: 'IN' | 'OUT' | 'BI', net: string, x: number, y: number, rotation?: number, mirror?: boolean): Promise<ISCH_PrimitiveComponent | undefined>;
+function createNetPort(
+	direction: 'IN' | 'OUT' | 'BI',
+	net: string,
+	x: number,
+	y: number,
+	rotation?: number,
+	mirror?: boolean,
+): Promise<ISCH_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -890,117 +777,94 @@ public createNetPort(direction: 'IN' | 'OUT' | 'BI', net: string, x: number, y: 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 direction
 
-
 </td><td>
 
 'IN' \| 'OUT' \| 'BI'
 
-
 </td><td>
 
 Port direction
-
 
 </td></tr>
 <tr><td>
 
 net
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Net name
-
 
 </td></tr>
 <tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 rotation
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Rotation angle
-
 
 </td></tr>
 <tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1010,7 +874,6 @@ Device primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 随机坐标避免与画布已有图元重合（SCH 坐标单位 10mil）
 const x = 2000 + Math.floor(Math.random() * 8000);
@@ -1018,12 +881,12 @@ const y = 2000 + Math.floor(Math.random() * 8000);
 
 // 2. 创建输入方向的端口，网络名为 SIG_IN
 const port = await eda.sch_PrimitiveComponent.createNetPort(
-  'IN',               // 端口方向：'IN' / 'OUT' / 'BI'
-  '嘉立创示例_SIG',   // 网络名称
-  x,                  // 坐标 X
-  y,                  // 坐标 Y
-  0,                  // 旋转角度
-  false               // 是否镜像
+	'IN', // 端口方向：'IN' / 'OUT' / 'BI'
+	'嘉立创示例_SIG', // 网络名称
+	x, // 坐标 X
+	y, // 坐标 Y
+	0, // 旋转角度
+	false // 是否镜像
 );
 
 // 3. 创建类保留现场，供在画布上观察端口样式
@@ -1043,7 +906,12 @@ Create a short circuit flag
 ## Signature
 
 ```typescript
-public createShortCircuitFlag(x: number, y: number, rotation?: number, mirror?: boolean): Promise<ISCH_PrimitiveComponent | undefined>;
+function createShortCircuitFlag(
+	x: number,
+	y: number,
+	rotation?: number,
+	mirror?: boolean,
+): Promise<ISCH_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -1052,85 +920,68 @@ public createShortCircuitFlag(x: number, y: number, rotation?: number, mirror?: 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 rotation
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Rotation angle
-
 
 </td></tr>
 <tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1140,7 +991,6 @@ Device primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 随机坐标避免与画布已有图元重合（SCH 坐标单位 10mil）
 const x = 2000 + Math.floor(Math.random() * 8000);
@@ -1148,10 +998,10 @@ const y = 2000 + Math.floor(Math.random() * 8000);
 
 // 2. 创建短接标识（无网络名参数，仅位置与姿态）
 const flag = await eda.sch_PrimitiveComponent.createShortCircuitFlag(
-  x,      // 坐标 X
-  y,      // 坐标 Y
-  0,      // 旋转角度
-  false   // 是否镜像
+	x, // 坐标 X
+	y, // 坐标 Y
+	0, // 旋转角度
+	false // 是否镜像
 );
 
 // 3. 创建类保留现场，供在画布上观察标识样式
@@ -1171,7 +1021,7 @@ Delete Device
 ## Signature
 
 ```typescript
-public delete(primitiveIds: string | ISCH_PrimitiveComponent | Array<string> | Array<ISCH_PrimitiveComponent>): Promise<boolean>;
+function delete(primitiveIds: string | ISCH_PrimitiveComponent | Array<string> | Array<ISCH_PrimitiveComponent>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1180,37 +1030,29 @@ public delete(primitiveIds: string | ISCH_PrimitiveComponent | Array<string> | A
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string \| [ISCH\_PrimitiveComponent](./ISCH_PrimitiveComponent.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveComponent](./ISCH_PrimitiveComponent.md)<!-- -->&gt;
-
 
 </td><td>
 
 Device primitive ID or Device primitive object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1219,7 +1061,6 @@ Promise&lt;boolean&gt;
 Delete Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建两个待删除的测试器件（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -1255,7 +1096,7 @@ Get Device
 ## Signature
 
 ```typescript
-public get(primitiveIds: string): Promise<ISCH_PrimitiveComponent | undefined>;
+function get(primitiveIds: string): Promise<ISCH_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -1264,37 +1105,29 @@ public get(primitiveIds: string): Promise<ISCH_PrimitiveComponent | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Device primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1303,7 +1136,6 @@ Promise&lt;[ISCH\_PrimitiveComponent](./ISCH_PrimitiveComponent.md) \| undefined
 Device primitive object, `undefined` indicates that the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建两个测试器件（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -1318,8 +1150,8 @@ const single = await eda.sch_PrimitiveComponent.get(comp1.getState_PrimitiveId()
 
 // 3. 传 ID 数组，返回器件对象数组（任一 ID 未匹配不影响其它图元的返回）
 const arr = await eda.sch_PrimitiveComponent.get([
-  comp1.getState_PrimitiveId(),
-  comp2.getState_PrimitiveId()
+	comp1.getState_PrimitiveId(),
+	comp2.getState_PrimitiveId()
 ]);
 
 // 4. 清理测试图元（查询类需要清理）
@@ -1341,7 +1173,7 @@ Get Device
 ## Signature
 
 ```typescript
-public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveComponent>>;
+function get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveComponent>>;
 ```
 
 ## Parameters
@@ -1350,37 +1182,29 @@ public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveComponent>>
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Device primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1403,7 +1227,10 @@ Get all Device
 ## Signature
 
 ```typescript
-public getAll(componentType?: ESCH_PrimitiveComponentType, allSchematicPages?: boolean): Promise<Array<ISCH_PrimitiveComponent>>;
+function getAll(
+	componentType?: ESCH_PrimitiveComponentType,
+	allSchematicPages?: boolean,
+): Promise<Array<ISCH_PrimitiveComponent>>;
 ```
 
 ## Parameters
@@ -1412,53 +1239,42 @@ public getAll(componentType?: ESCH_PrimitiveComponentType, allSchematicPages?: b
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 componentType
 
-
 </td><td>
 
 [ESCH\_PrimitiveComponentType](../enums/ESCH_PrimitiveComponentType.md)
 
-
 </td><td>
 
 _(Optional)_ Device type
-
 
 </td></tr>
 <tr><td>
 
 allSchematicPages
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to get the devices of all schematic sheets
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1467,7 +1283,6 @@ Promise&lt;Array&lt;[ISCH\_PrimitiveComponent](./ISCH_PrimitiveComponent.md)<!--
 Array of Device primitive objects
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个普通元件和一个网络标识作为查找目标（随机坐标避免重合）
@@ -1503,7 +1318,9 @@ Get all pins associated with the device
 ## Signature
 
 ```typescript
-public getAllPinsByPrimitiveId(primitiveId: string): Promise<Array<ISCH_PrimitiveComponentPin> | undefined>;
+function getAllPinsByPrimitiveId(
+	primitiveId: string,
+): Promise<Array<ISCH_PrimitiveComponentPin> | undefined>;
 ```
 
 ## Parameters
@@ -1512,37 +1329,29 @@ public getAllPinsByPrimitiveId(primitiveId: string): Promise<Array<ISCH_Primitiv
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Device primitive ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1551,7 +1360,6 @@ Promise&lt;Array&lt;[ISCH\_PrimitiveComponentPin](./ISCH_PrimitiveComponentPin.m
 Device pin primitive array
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个带引脚的测试器件（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -1583,7 +1391,10 @@ Get all Device primitive IDs
 ## Signature
 
 ```typescript
-public getAllPrimitiveId(componentType?: ESCH_PrimitiveComponentType, allSchematicPages?: boolean): Promise<Array<string>>;
+function getAllPrimitiveId(
+	componentType?: ESCH_PrimitiveComponentType,
+	allSchematicPages?: boolean,
+): Promise<Array<string>>;
 ```
 
 ## Parameters
@@ -1592,53 +1403,42 @@ public getAllPrimitiveId(componentType?: ESCH_PrimitiveComponentType, allSchemat
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 componentType
 
-
 </td><td>
 
 [ESCH\_PrimitiveComponentType](../enums/ESCH_PrimitiveComponentType.md)
 
-
 </td><td>
 
 _(Optional)_ Device type
-
 
 </td></tr>
 <tr><td>
 
 allSchematicPages
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to get the devices of all schematic sheets
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1647,7 +1447,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 Array of Device primitive IDs
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个网络标识作为查找目标（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -1681,9 +1480,8 @@ Get The set of all property names of all devices
 ## Signature
 
 ```typescript
-public getAllPropertyNames(): Promise<Array<string>>;
+function getAllPropertyNames(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -1692,7 +1490,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 The set of all property names of all devices
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试器件，保证画布上有带属性的器件（随机坐标避免重合）
@@ -1722,7 +1519,25 @@ Modify Device
 ## Signature
 
 ```typescript
-public modify(primitiveId: string | ISCH_PrimitiveComponent, property: { x?: undefined | number; y?: undefined | number; rotation?: undefined | number; mirror?: undefined | false | true; addIntoBom?: undefined | false | true; addIntoPcb?: undefined | false | true; designator?: undefined | null | string; name?: undefined | null | string; uniqueId?: undefined | null | string; manufacturer?: undefined | null | string; manufacturerId?: undefined | null | string; supplier?: undefined | null | string; supplierId?: undefined | null | string; otherProperty?: undefined | Record<string, string | number | false | true> }): Promise<ISCH_PrimitiveComponent | undefined>;
+function modify(
+	primitiveId: string | ISCH_PrimitiveComponent,
+	property: {
+		x?: undefined | number;
+		y?: undefined | number;
+		rotation?: undefined | number;
+		mirror?: undefined | false | true;
+		addIntoBom?: undefined | false | true;
+		addIntoPcb?: undefined | false | true;
+		designator?: undefined | null | string;
+		name?: undefined | null | string;
+		uniqueId?: undefined | null | string;
+		manufacturer?: undefined | null | string;
+		manufacturerId?: undefined | null | string;
+		supplier?: undefined | null | string;
+		supplierId?: undefined | null | string;
+		otherProperty?: undefined | Record<string, string | number | false | true>;
+	},
+): Promise<ISCH_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -1731,51 +1546,40 @@ public modify(primitiveId: string | ISCH_PrimitiveComponent, property: { x?: und
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string \| [ISCH\_PrimitiveComponent](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 Primitive ID
-
 
 </td></tr>
 <tr><td>
 
 property
 
-
 </td><td>
 
 { x?: undefined \| number; y?: undefined \| number; rotation?: undefined \| number; mirror?: undefined \| false \| true; addIntoBom?: undefined \| false \| true; addIntoPcb?: undefined \| false \| true; designator?: undefined \| null \| string; name?: undefined \| null \| string; uniqueId?: undefined \| null \| string; manufacturer?: undefined \| null \| string; manufacturerId?: undefined \| null \| string; supplier?: undefined \| null \| string; supplierId?: undefined \| null \| string; otherProperty?: undefined \| Record&lt;string, string \| number \| false \| true&gt; }
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1788,7 +1592,6 @@ Device primitive object
 This method can only be used for modification when the device type is [COMPONENT](../enums/ESCH_PrimitiveComponentType.md)
 
 ## Example
-
 
 ```javascript
 // 1. 创建待修改的测试器件（随机坐标避免与画布已有器件重合）
@@ -1805,9 +1608,9 @@ const beforeX = comp.getState_X();
 
 // 3. 批量修改：右移 400（约 101.6mm）、旋转 90 度、位号改为 U100
 await eda.sch_PrimitiveComponent.modify(compId, {
-  x: x + 400,
-  rotation: 90,
-  designator: '嘉立创示例_U100'
+	x: x + 400,
+	rotation: 90,
+	designator: '嘉立创示例_U100'
 });
 
 // 4. modify 返回后需要重新 get() 才能读到画布上的最新值
@@ -1831,7 +1634,12 @@ Place reuse block schematic sheet
 ## Signature
 
 ```typescript
-public placeCbbSchematicPage(cbbSchematicPage: { libraryUuid: string; cbbUuid: string; uuid: string }, x: number, y: number, props?: { reimportWhenNameRepeated?: undefined | false | true }): Promise<boolean>;
+function placeCbbSchematicPage(
+	cbbSchematicPage: { libraryUuid: string; cbbUuid: string; uuid: string },
+	x: number,
+	y: number,
+	props?: { reimportWhenNameRepeated?: undefined | false | true },
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1840,85 +1648,68 @@ public placeCbbSchematicPage(cbbSchematicPage: { libraryUuid: string; cbbUuid: s
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 cbbSchematicPage
 
-
 </td><td>
 
 \{ libraryUuid: string; cbbUuid: string; uuid: string \}
 
-
 </td><td>
 
 Reuse block schematic sheet. `libraryUuid` is the UUID of the library where the CBB project is located, `cbbUuid` is the UUID of the CBB project, and `uuid` is the UUID of the schematic sheet in the CBB project
-
 
 </td></tr>
 <tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 props
 
-
 </td><td>
 
 \{ reimportWhenNameRepeated?: undefined \| false \| true \}
-
 
 </td><td>
 
 _(Optional)_ Placement parameters: `reimportWhenNameRepeated` - whether to re-import when a module with the same name exists, default `true`<!-- -->. ADD since EDA v4.2
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1937,7 +1728,10 @@ Place with the mouse device
 ## Signature
 
 ```typescript
-public placeComponentWithMouse(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem, subPartName?: string): Promise<boolean>;
+function placeComponentWithMouse(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+	subPartName?: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1946,53 +1740,42 @@ public placeComponentWithMouse(component: { libraryUuid: string; uuid: string } 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
 
-
 </td><td>
 
 Associate library device
-
 
 </td></tr>
 <tr><td>
 
 subPartName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Sub-part name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2017,7 +1800,11 @@ Place with the mouse symbol
 ## Signature
 
 ```typescript
-public placeSymbolWithMouse(symbol: { libraryUuid: string; uuid: string } | ILIB_SymbolItem | ILIB_SymbolSearchItem, subPartName?: string, properties?: Record<string, boolean | number | string | undefined>): Promise<boolean>;
+function placeSymbolWithMouse(
+	symbol: { libraryUuid: string; uuid: string } | ILIB_SymbolItem | ILIB_SymbolSearchItem,
+	subPartName?: string,
+	properties?: Record<string, boolean | number | string | undefined>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2026,69 +1813,55 @@ public placeSymbolWithMouse(symbol: { libraryUuid: string; uuid: string } | ILIB
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 symbol
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_SymbolItem](../interfaces/ILIB_SymbolItem.md) \| [ILIB\_SymbolSearchItem](../interfaces/ILIB_SymbolSearchItem.md)
 
-
 </td><td>
 
 Associate library symbol
-
 
 </td></tr>
 <tr><td>
 
 subPartName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Sub-part name
-
 
 </td></tr>
 <tr><td>
 
 properties
 
-
 </td><td>
 
 Record&lt;string, boolean \| number \| string \| undefined&gt;
-
 
 </td><td>
 
 _(Optional)_ Device property
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2113,7 +1886,9 @@ Set the device UUID associated with the AnalogGround net flag in the extension A
 ## Signature
 
 ```typescript
-public setNetFlagComponentUuid_AnalogGround(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem): Promise<boolean>;
+function setNetFlagComponentUuid_AnalogGround(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2122,37 +1897,29 @@ public setNetFlagComponentUuid_AnalogGround(component: { libraryUuid: string; uu
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
 
 </td><td>
 
 Associate library device
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2171,7 +1938,9 @@ Set the device UUID associated with the Ground net flag in the extension API
 ## Signature
 
 ```typescript
-public setNetFlagComponentUuid_Ground(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem): Promise<boolean>;
+function setNetFlagComponentUuid_Ground(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2180,37 +1949,29 @@ public setNetFlagComponentUuid_Ground(component: { libraryUuid: string; uuid: st
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
 
 </td><td>
 
 Associate library device
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2229,7 +1990,9 @@ Set the device UUID associated with the Power net flag in the extension API
 ## Signature
 
 ```typescript
-public setNetFlagComponentUuid_Power(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem): Promise<boolean>;
+function setNetFlagComponentUuid_Power(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2238,37 +2001,29 @@ public setNetFlagComponentUuid_Power(component: { libraryUuid: string; uuid: str
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
 
 </td><td>
 
 Associate library device
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2287,7 +2042,9 @@ Set the device UUID associated with the ProtectGround net flag in the extension 
 ## Signature
 
 ```typescript
-public setNetFlagComponentUuid_ProtectGround(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem): Promise<boolean>;
+function setNetFlagComponentUuid_ProtectGround(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2296,37 +2053,29 @@ public setNetFlagComponentUuid_ProtectGround(component: { libraryUuid: string; u
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
 
 </td><td>
 
 Associate library device
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2345,7 +2094,9 @@ Set the device UUID associated with the BI net port in the extension API
 ## Signature
 
 ```typescript
-public setNetPortComponentUuid_BI(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem): Promise<boolean>;
+function setNetPortComponentUuid_BI(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2354,37 +2105,29 @@ public setNetPortComponentUuid_BI(component: { libraryUuid: string; uuid: string
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
 
 </td><td>
 
 Associate library device
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2403,7 +2146,9 @@ Set the device UUID associated with the IN net port in the extension API
 ## Signature
 
 ```typescript
-public setNetPortComponentUuid_IN(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem): Promise<boolean>;
+function setNetPortComponentUuid_IN(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2412,37 +2157,29 @@ public setNetPortComponentUuid_IN(component: { libraryUuid: string; uuid: string
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
 
 </td><td>
 
 Associate library device
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2461,7 +2198,9 @@ Set the device UUID associated with the OUT net port in the extension API
 ## Signature
 
 ```typescript
-public setNetPortComponentUuid_OUT(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem): Promise<boolean>;
+function setNetPortComponentUuid_OUT(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2470,37 +2209,29 @@ public setNetPortComponentUuid_OUT(component: { libraryUuid: string; uuid: strin
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
 
 </td><td>
 
 Associate library device
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 

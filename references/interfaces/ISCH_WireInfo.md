@@ -5,7 +5,7 @@ Wire property
 ## Signature
 
 ```typescript
-export interface ISCH_WireInfo 
+interface ISCH_WireInfo
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface ISCH_WireInfo
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [globalNetName](./ISCH_WireInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Global net name
-
 
 </td></tr>
 <tr><td>
 
 [id](./ISCH_WireInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 ID
-
 
 </td></tr>
 <tr><td>
 
 [name](./ISCH_WireInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Wire name
-
 
 </td></tr>
 <tr><td>
 
 [pageName](./ISCH_WireInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Schematic sheet name
-
 
 </td></tr>
 <tr><td>
 
 [pageUuid](./ISCH_WireInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Schematic sheet UUID
-
 
 </td></tr>
 </tbody></table>

@@ -5,7 +5,7 @@ Schematic &amp; symbol / design rule check (DRC) class
 ## Signature
 
 ```typescript
-export class SCH_Drc 
+class SCH_Drc
 ```
 
 ## Remarks
@@ -18,44 +18,35 @@ Check and set DRC rules
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [check(strict, userInterface, includeVerboseError)](./SCH_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Check DRC
-
 
 </td></tr>
 <tr><td>
 
 [check(strict, userInterface, includeVerboseError)](./SCH_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Check DRC
-
 
 </td></tr>
 </tbody></table>
@@ -75,7 +66,11 @@ Check DRC
 ## Signature
 
 ```typescript
-public check(strict: boolean, userInterface: boolean, includeVerboseError: false): Promise<boolean>;
+function check(
+	strict: boolean,
+	userInterface: boolean,
+	includeVerboseError: false,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -84,69 +79,55 @@ public check(strict: boolean, userInterface: boolean, includeVerboseError: false
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 strict
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether strict checking is enabled. The current schematic is uniformly in strict checking mode
-
 
 </td></tr>
 <tr><td>
 
 userInterface
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether to show the UI (open the bottom DRC window)
-
 
 </td></tr>
 <tr><td>
 
 includeVerboseError
 
-
 </td><td>
 
 false
-
 
 </td><td>
 
 Whether to include detailed error information in the return value. If it is `true`<!-- -->, the return value will always be an array
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -155,7 +136,6 @@ Promise&lt;boolean&gt;
 Whether the DRC check passed
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图并打开（DRC 作用于当前激活的原理图）
@@ -169,7 +149,7 @@ await new Promise(r => setTimeout(r, 1000));
 const violations = await eda.sch_Drc.check(true, false, true);
 console.log('violationCount:', violations.length);
 violations.forEach((v, i) => {
-  console.log('[' + i + ']', typeof v === 'string' ? v : JSON.stringify(v));
+	console.log(`[${i}]`, typeof v === 'string' ? v : JSON.stringify(v));
 });
 
 // 3. 布尔模式：只返回是否全部通过
@@ -192,7 +172,11 @@ Check DRC
 ## Signature
 
 ```typescript
-public check(strict: boolean, userInterface: boolean, includeVerboseError: true): Promise<Array<ISCH_DrcError>>;
+function check(
+	strict: boolean,
+	userInterface: boolean,
+	includeVerboseError: true,
+): Promise<Array<ISCH_DrcError>>;
 ```
 
 ## Parameters
@@ -201,69 +185,55 @@ public check(strict: boolean, userInterface: boolean, includeVerboseError: true)
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 strict
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether strict checking is enabled. The current schematic is uniformly in strict checking mode
-
 
 </td></tr>
 <tr><td>
 
 userInterface
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether to show the UI (open the bottom DRC window)
-
 
 </td></tr>
 <tr><td>
 
 includeVerboseError
 
-
 </td><td>
 
 true
-
 
 </td><td>
 
 Whether to include detailed error information in the return value. If it is `true`<!-- -->, the return value will always be an array. ADD since EDA v4.2
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 

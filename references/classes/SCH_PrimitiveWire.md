@@ -5,7 +5,7 @@ Schematic &amp; symbol / wire primitive class
 ## Signature
 
 ```typescript
-export class SCH_PrimitiveWire implements ISCH_PrimitiveAPI 
+class SCH_PrimitiveWire implements ISCH_PrimitiveAPI
 ```
 **Implements:** [ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
@@ -15,114 +15,90 @@ export class SCH_PrimitiveWire implements ISCH_PrimitiveAPI
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [create(line, net, color, lineWidth, lineType)](./SCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Wire
-
 
 </td></tr>
 <tr><td>
 
 [delete(primitiveIds)](./SCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Wire
 
+</td></tr>
+<tr><td>
+
+[get(primitiveIds)](./SCH_PrimitiveWire.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get Wire
 
 </td></tr>
 <tr><td>
 
 [get(primitiveIds)](./SCH_PrimitiveWire.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get Wire
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveWire.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Wire
-
 
 </td></tr>
 <tr><td>
 
 [getAll(net)](./SCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Wire
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitiveId(net)](./SCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Wire primitive IDs
-
 
 </td></tr>
 <tr><td>
 
 [modify(primitiveId, property)](./SCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Wire
-
 
 </td></tr>
 </tbody></table>
@@ -142,7 +118,13 @@ Create Wire
 ## Signature
 
 ```typescript
-public create(line: Array<number> | Array<Array<number>>, net?: string, color?: string | null, lineWidth?: number | null, lineType?: ESCH_PrimitiveLineType | null): Promise<ISCH_PrimitiveWire | undefined>;
+function create(
+	line: Array<number> | Array<Array<number>>,
+	net?: string,
+	color?: string | null,
+	lineWidth?: number | null,
+	lineType?: ESCH_PrimitiveLineType | null,
+): Promise<ISCH_PrimitiveWire | undefined>;
 ```
 
 ## Parameters
@@ -151,101 +133,81 @@ public create(line: Array<number> | Array<Array<number>>, net?: string, color?: 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 line
 
-
 </td><td>
 
 Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt;
 
-
 </td><td>
 
 Polyline coordinate group. Each segment is a continuous line described by `[x1, y1, x2, y2, x3, y3]`<!-- -->. If the polylines have no connection to each other, the creation will fail. Examples for the type `Array<Array<number>>`<!-- -->: 1. `[[], [0, 0, 0, 1]]` - segment 1 has no path, invalid; 2. `[[1], [0, 0, 0, 1]]` - segment 1 only has x, missing y, invalid; 3. `[[0, 0, -1, 0], [0, 0, 1, 1]]` - segment 1 is a horizontal line but segment 2 is a diagonal line, invalid; 4. `[[0, 0, -1, 0, -1, 1], [0, 1, 1, 1]]` - the two segments have no connection, invalid; 5. `[[1, 1], [1, 2, 2, 2]]` - segment 1 has only one point, ignored; segment 2 is a horizontal segment, and the final path keeps only segment 2, valid; 6. `[[1, 1], [1, 2]]` - segment 1 has only one point, ignored; segment 2 is also ignored, and the final path is empty, invalid
-
 
 </td></tr>
 <tr><td>
 
 net
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Net name. If not specified, the following rules apply: 1. If no coordinate falls on any primitive, the empty net is used by default; 2. If one coordinate point is on a primitive of a net, the net of that primitive is followed; 3. If multiple coordinate points are on primitives of different nets, the creation fails. If specified, the following rules apply: 1. If one or more coordinate points are on primitives of other nets, and those other primitives do not explicitly (usually via net labels or net ports) specify a net, they follow the specified net; 2. If other primitives have specified a net, the creation fails
-
 
 </td></tr>
 <tr><td>
 
 color
 
-
 </td><td>
 
 string \| null
 
-
 </td><td>
 
 _(Optional)_ Wire color, `null` indicates the default
-
 
 </td></tr>
 <tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number \| null
 
-
 </td><td>
 
 _(Optional)_ Line width, range `1-10`<!-- -->. `null` indicates the default
-
 
 </td></tr>
 <tr><td>
 
 lineType
 
-
 </td><td>
 
 [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
 
 </td><td>
 
 _(Optional)_ Line type. `null` indicates the default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -255,7 +217,6 @@ Wire primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成随机起点坐标，避免与画布上已有的导线重合（SCH 坐标单位 10mil）
 const x = 2000 + Math.floor(Math.random() * 8000);
@@ -263,11 +224,11 @@ const y = 2000 + Math.floor(Math.random() * 8000);
 
 // 2. 创建一条两段相连的 L 形导线：先向右再向上，段与段必须首尾相连且各自水平或垂直
 const wire = await eda.sch_PrimitiveWire.create(
-  [[x, y, x + 400, y], [x + 400, y, x + 400, y + 200]],
-  'SIG_A',    // 网络名称（自由字符串，未指定时按落点自动推断）
-  '#FF0000',  // 导线颜色
-  6,          // 线宽（范围 1-10）
-  1           // 线型：1 = DASHED（虚线）
+	[[x, y, x + 400, y], [x + 400, y, x + 400, y + 200]],
+	'SIG_A', // 网络名称（自由字符串，未指定时按落点自动推断）
+	'#FF0000', // 导线颜色
+	6, // 线宽（范围 1-10）
+	1 // 线型：1 = DASHED（虚线）
 );
 
 // 3. 创建类保留现场，不删除图元；Line 读回是画布规格化坐标（端点顺序可能与传入相反），只打印不做断言
@@ -290,7 +251,7 @@ Delete Wire
 ## Signature
 
 ```typescript
-public delete(primitiveIds: string | ISCH_PrimitiveWire | Array<string> | Array<ISCH_PrimitiveWire>): Promise<boolean>;
+function delete(primitiveIds: string | ISCH_PrimitiveWire | Array<string> | Array<ISCH_PrimitiveWire>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -299,37 +260,29 @@ public delete(primitiveIds: string | ISCH_PrimitiveWire | Array<string> | Array<
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string \| [ISCH\_PrimitiveWire](./ISCH_PrimitiveWire.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveWire](./ISCH_PrimitiveWire.md)<!-- -->&gt;
-
 
 </td><td>
 
 Wire primitive ID or Wire primitive object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -338,7 +291,6 @@ Promise&lt;boolean&gt;
 Delete Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建两条待删除的测试导线（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -373,7 +325,7 @@ Get Wire
 ## Signature
 
 ```typescript
-public get(primitiveIds: string): Promise<ISCH_PrimitiveWire | undefined>;
+function get(primitiveIds: string): Promise<ISCH_PrimitiveWire | undefined>;
 ```
 
 ## Parameters
@@ -382,37 +334,29 @@ public get(primitiveIds: string): Promise<ISCH_PrimitiveWire | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Wire primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -421,7 +365,6 @@ Promise&lt;[ISCH\_PrimitiveWire](./ISCH_PrimitiveWire.md) \| undefined&gt;
 Wire primitive object, `undefined` indicates that the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建两条测试导线，分别属于不同网络（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -455,7 +398,7 @@ Get Wire
 ## Signature
 
 ```typescript
-public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveWire>>;
+function get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveWire>>;
 ```
 
 ## Parameters
@@ -464,37 +407,29 @@ public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveWire>>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Wire primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -517,7 +452,7 @@ Get all Wire
 ## Signature
 
 ```typescript
-public getAll(net?: string | Array<string>): Promise<Array<ISCH_PrimitiveWire>>;
+function getAll(net?: string | Array<string>): Promise<Array<ISCH_PrimitiveWire>>;
 ```
 
 ## Parameters
@@ -526,37 +461,29 @@ public getAll(net?: string | Array<string>): Promise<Array<ISCH_PrimitiveWire>>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
-
 
 </td><td>
 
 _(Optional)_ Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -565,7 +492,6 @@ Promise&lt;Array&lt;[ISCH\_PrimitiveWire](./ISCH_PrimitiveWire.md)<!-- -->&gt;&g
 Array of Wire primitive objects
 
 ## Example
-
 
 ```javascript
 // 1. 创建两条测试导线，分别属于不同网络（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -601,7 +527,7 @@ Get all Wire primitive IDs
 ## Signature
 
 ```typescript
-public getAllPrimitiveId(net?: string | Array<string>): Promise<Array<string>>;
+function getAllPrimitiveId(net?: string | Array<string>): Promise<Array<string>>;
 ```
 
 ## Parameters
@@ -610,37 +536,29 @@ public getAllPrimitiveId(net?: string | Array<string>): Promise<Array<string>>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
-
 
 </td><td>
 
 _(Optional)_ Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -649,7 +567,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 Array of Wire primitive IDs
 
 ## Example
-
 
 ```javascript
 // 1. 创建两条测试导线，分别属于不同网络（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -685,7 +602,22 @@ Modify Wire
 ## Signature
 
 ```typescript
-public modify(primitiveId: string | ISCH_PrimitiveWire, property: { line?: undefined | number[] | number[][]; net?: undefined | string; color?: undefined | null | string; lineWidth?: undefined | null | number; lineType?: undefined | null | ESCH_PrimitiveLineType.SOLID | ESCH_PrimitiveLineType.DASHED | ESCH_PrimitiveLineType.DOTTED | ESCH_PrimitiveLineType.DOT_DASHED }): Promise<ISCH_PrimitiveWire | undefined>;
+function modify(
+	primitiveId: string | ISCH_PrimitiveWire,
+	property: {
+		line?: undefined | number[] | number[][];
+		net?: undefined | string;
+		color?: undefined | null | string;
+		lineWidth?: undefined | null | number;
+		lineType?:
+			| undefined
+			| null
+			| ESCH_PrimitiveLineType.SOLID
+			| ESCH_PrimitiveLineType.DASHED
+			| ESCH_PrimitiveLineType.DOTTED
+			| ESCH_PrimitiveLineType.DOT_DASHED;
+	},
+): Promise<ISCH_PrimitiveWire | undefined>;
 ```
 
 ## Parameters
@@ -694,53 +626,42 @@ public modify(primitiveId: string | ISCH_PrimitiveWire, property: { line?: undef
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string \| [ISCH\_PrimitiveWire](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
 
 Wire primitive ID or Wire primitive object
-
 
 </td></tr>
 <tr><td>
 
 property
 
-
 </td><td>
 
 { line?: undefined \| number\[\] \| number\[\]\[\]; net?: undefined \| string; color?: undefined \| null \| string; lineWidth?: undefined \| null \| number; lineType?: undefined \| null \| [ESCH\_PrimitiveLineType.SOLID](../enums/ESCH_PrimitiveLineType.md) \| [ESCH\_PrimitiveLineType.DASHED](../enums/ESCH_PrimitiveLineType.md) \| [ESCH\_PrimitiveLineType.DOTTED](../enums/ESCH_PrimitiveLineType.md) \| [ESCH\_PrimitiveLineType.DOT\_DASHED](../enums/ESCH_PrimitiveLineType.md) }
-
 
 </td><td>
 
 Modify Parameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -749,7 +670,6 @@ Promise&lt;[ISCH\_PrimitiveWire](./ISCH_PrimitiveWire.md) \| undefined&gt;
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 创建待修改的测试导线（随机坐标避免与画布已有导线重合）
@@ -765,10 +685,10 @@ const beforeColor = wire.getState_Color();
 
 // 3. 批量修改：网络 SIG_A → SIG_B、线宽 6 → 10、颜色改为绿色，路径改为向右再向上的 L 形
 await eda.sch_PrimitiveWire.modify(wireId, {
-  line: [[x, y, x + 400, y], [x + 400, y, x + 400, y + 200]],
-  net: 'SIG_B',
-  lineWidth: 10,
-  color: '#00AA00',
+	line: [[x, y, x + 400, y], [x + 400, y, x + 400, y + 200]],
+	net: 'SIG_B',
+	lineWidth: 10,
+	color: '#00AA00',
 });
 
 // 4. modify 返回后需要重新 get() 才能读到画布上的最新值（Line 是规格化坐标，只打印不断言）

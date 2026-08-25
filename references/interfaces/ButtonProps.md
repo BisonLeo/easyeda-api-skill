@@ -5,7 +5,7 @@
 ## Signature
 
 ```typescript
-export interface ButtonProps 
+interface ButtonProps
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface ButtonProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [disabled?](./ButtonProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether Disable
-
 
 </td></tr>
 <tr><td>
 
 [icon?](./ButtonProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [IconProps](./IconProps.md)
 
-
 </td><td>
 
 _(Optional)_ Button icon configuration
-
 
 </td></tr>
 <tr><td>
 
 [onClick?](./ButtonProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 () =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 点击按钮时触发
-
 
 </td></tr>
 <tr><td>
 
 [text?](./ButtonProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Button show text
-
 
 </td></tr>
 <tr><td>
 
 [type?](./ButtonProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 'default' \| 'primary' \| 'danger' \| 'forbidden' \| 'text'
 
-
 </td><td>
 
 _(Optional)_ Button style type: default / primary / danger / forbidden / text
-
 
 </td></tr>
 </tbody></table>

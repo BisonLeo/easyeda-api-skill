@@ -5,7 +5,7 @@ Import project via solder mask extension
 ## Signature
 
 ```typescript
-export enum ESYS_ImportProjectViaSolderMaskExpansion 
+enum ESYS_ImportProjectViaSolderMaskExpansion
 ```
 
 ## Enumeration Members
@@ -14,44 +14,35 @@ export enum ESYS_ImportProjectViaSolderMaskExpansion
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 ALL\_COVER\_OIL
 
-
 </td><td>
 
 `'cover'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 FOLLOW\_ORIGINAL\_SETTING
 
-
 </td><td>
 
 `'custom'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

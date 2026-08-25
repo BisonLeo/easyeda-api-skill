@@ -5,7 +5,7 @@ Shortcut key data
 ## Signature
 
 ```typescript
-export interface ISYS_ShortcutKeyData 
+interface ISYS_ShortcutKeyData
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface ISYS_ShortcutKeyData
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [range](./ISYS_ShortcutKeyData.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;[ESYS\_ShortcutKeyEffectiveEditorRange](../enums/ESYS_ShortcutKeyEffectiveEditorRange.md)<!-- -->&gt;
 
-
 </td><td>
 
 Effective page range of the shortcut key
-
 
 </td></tr>
 <tr><td>
 
 [remark](./ISYS_ShortcutKeyData.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Remarks
-
 
 </td></tr>
 <tr><td>
 
 [scene](./ISYS_ShortcutKeyData.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;[ESYS\_ShortcutKeyEffectiveEditorScene](../enums/ESYS_ShortcutKeyEffectiveEditorScene.md)<!-- -->&gt;
 
-
 </td><td>
 
 Effective scene range of the shortcut key
-
 
 </td></tr>
 <tr><td>
 
 [shortcutKey](./ISYS_ShortcutKeyData.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md) \| null
 
-
 </td><td>
 
 Shortcut key
-
 
 </td></tr>
 <tr><td>
 
 [title](./ISYS_ShortcutKeyData.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Title
-
 
 </td></tr>
 </tbody></table>

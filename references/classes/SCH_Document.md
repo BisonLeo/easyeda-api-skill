@@ -5,7 +5,7 @@ Schematic &amp; symbol / document operation class
 ## Signature
 
 ```typescript
-export class SCH_Document 
+class SCH_Document
 ```
 
 ## Remarks
@@ -18,142 +18,112 @@ Operations performed on the design document as a whole
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [autoLayout(props)](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Auto layout
-
 
 </td></tr>
 <tr><td>
 
 [autoRouting(props)](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Auto routing
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentFilterConfiguration()](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Current canvas filter configuration
-
 
 </td></tr>
 <tr><td>
 
 [getPrimitiveAtPoint(x, y)](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get The primitive at the coordinate point
-
 
 </td></tr>
 <tr><td>
 
 [getPrimitivesInRegion(left, right, top, bottom)](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get All primitives in the region
-
 
 </td></tr>
 <tr><td>
 
 [importChanges()](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Import changes from the PCB
-
 
 </td></tr>
 <tr><td>
 
 [navigateToCoordinates(x, y)](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Locate to canvas coordinate
-
 
 </td></tr>
 <tr><td>
 
 [navigateToRegion(left, right, top, bottom)](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Locate to canvas region
-
 
 </td></tr>
 <tr><td>
 
 [save()](./SCH_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Save Document
-
 
 </td></tr>
 </tbody></table>
@@ -173,7 +143,40 @@ Auto layout
 ## Signature
 
 ```typescript
-public autoLayout(props?: { uuids?: undefined | string[]; netlist?: undefined | { component: Record<string, { pinInfoMap: Record<string, { name: string; number: string; net: string; props: { 'Pin Number': string } }> }> }; designatorDeviceTypeMap?: undefined | Record<string, 'resistor' | 'capacitor' | 'inductive' | 'diode' | 'triode' | 'oscillator' | 'chip' | 'otherDevice'> }): Promise<any>;
+function autoLayout(props?: {
+	uuids?: undefined | string[];
+	netlist?:
+		| undefined
+		| {
+			component: Record<
+				string,
+				{
+					pinInfoMap: Record<
+						string,
+						{
+							name: string;
+							number: string;
+							net: string;
+							props: { 'Pin Number': string };
+						}
+					>;
+				}
+			>;
+		};
+	designatorDeviceTypeMap?:
+		| undefined
+		| Record<
+			string,
+			| 'resistor'
+			| 'capacitor'
+			| 'inductive'
+			| 'diode'
+			| 'triode'
+			| 'oscillator'
+			| 'chip'
+			| 'otherDevice'
+		>;
+}): Promise<any>;
 ```
 
 ## Parameters
@@ -182,37 +185,29 @@ public autoLayout(props?: { uuids?: undefined | string[]; netlist?: undefined | 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 props
 
-
 </td><td>
 
 { uuids?: undefined \| string\[\]; netlist?: undefined \| { component: Record&lt;string, { pinInfoMap: Record&lt;string, { name: string; number: string; net: string; props: { 'Pin Number': string } }&gt; }&gt; }; designatorDeviceTypeMap?: undefined \| Record&lt;string, 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'&gt; }
-
 
 </td><td>
 
 _(Optional)_ Auto layout parameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -225,7 +220,6 @@ Auto layout result
 If no parameters are passed in, auto layout will be performed for all devices
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图并打开（文档级 API 作用于当前激活的原理图）
@@ -255,7 +249,40 @@ Auto routing
 ## Signature
 
 ```typescript
-public autoRouting(props?: { uuids?: undefined | string[]; netlist?: undefined | { component: Record<string, { pinInfoMap: Record<string, { name: string; number: string; net: string; props: { 'Pin Number': string } }> }> }; designatorDeviceTypeMap?: undefined | Record<string, 'resistor' | 'capacitor' | 'inductive' | 'diode' | 'triode' | 'oscillator' | 'chip' | 'otherDevice'> }): Promise<any>;
+function autoRouting(props?: {
+	uuids?: undefined | string[];
+	netlist?:
+		| undefined
+		| {
+			component: Record<
+				string,
+				{
+					pinInfoMap: Record<
+						string,
+						{
+							name: string;
+							number: string;
+							net: string;
+							props: { 'Pin Number': string };
+						}
+					>;
+				}
+			>;
+		};
+	designatorDeviceTypeMap?:
+		| undefined
+		| Record<
+			string,
+			| 'resistor'
+			| 'capacitor'
+			| 'inductive'
+			| 'diode'
+			| 'triode'
+			| 'oscillator'
+			| 'chip'
+			| 'otherDevice'
+		>;
+}): Promise<any>;
 ```
 
 ## Parameters
@@ -264,37 +291,29 @@ public autoRouting(props?: { uuids?: undefined | string[]; netlist?: undefined |
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 props
 
-
 </td><td>
 
 { uuids?: undefined \| string\[\]; netlist?: undefined \| { component: Record&lt;string, { pinInfoMap: Record&lt;string, { name: string; number: string; net: string; props: { 'Pin Number': string } }&gt; }&gt; }; designatorDeviceTypeMap?: undefined \| Record&lt;string, 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'&gt; }
-
 
 </td><td>
 
 _(Optional)_ Auto routing parameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -307,7 +326,6 @@ Auto routing result
 If no parameters are passed in, auto routing will be performed for all unrouted nets
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图并打开
@@ -354,9 +372,8 @@ Get Current canvas filter configuration
 ## Signature
 
 ```typescript
-public getCurrentFilterConfiguration(): Promise<Record<string, boolean> | undefined>;
+function getCurrentFilterConfiguration(): Promise<Record<string, boolean> | undefined>;
 ```
-
 
 ## Returns
 
@@ -379,7 +396,7 @@ Get The primitive at the coordinate point
 ## Signature
 
 ```typescript
-public getPrimitiveAtPoint(x: number, y: number): Promise<ISCH_Primitive | undefined>;
+function getPrimitiveAtPoint(x: number, y: number): Promise<ISCH_Primitive | undefined>;
 ```
 
 ## Parameters
@@ -388,53 +405,42 @@ public getPrimitiveAtPoint(x: number, y: number): Promise<ISCH_Primitive | undef
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Coordinate point X
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Coordinate point Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -457,7 +463,12 @@ Get All primitives in the region
 ## Signature
 
 ```typescript
-public getPrimitivesInRegion(left: number, right: number, top: number, bottom: number): Promise<Array<ISCH_Primitive>>;
+function getPrimitivesInRegion(
+	left: number,
+	right: number,
+	top: number,
+	bottom: number,
+): Promise<Array<ISCH_Primitive>>;
 ```
 
 ## Parameters
@@ -466,85 +477,68 @@ public getPrimitivesInRegion(left: number, right: number, top: number, bottom: n
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 left
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 right
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Second X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 top
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First Y coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 bottom
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Second Y coordinate of the rectangle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -565,9 +559,8 @@ Import changes from the PCB
 ## Signature
 
 ```typescript
-public importChanges(): Promise<boolean>;
+function importChanges(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -576,7 +569,6 @@ Promise&lt;boolean&gt;
 Whether the import operation is successful, import failed or a free schematic return `false`
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图和测试 PCB
@@ -617,7 +609,7 @@ Locate to canvas coordinate
 ## Signature
 
 ```typescript
-public navigateToCoordinates(x: number, y: number): Promise<boolean>;
+function navigateToCoordinates(x: number, y: number): Promise<boolean>;
 ```
 
 ## Parameters
@@ -626,53 +618,42 @@ public navigateToCoordinates(x: number, y: number): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -697,7 +678,12 @@ Locate to canvas region
 ## Signature
 
 ```typescript
-public navigateToRegion(left: number, right: number, top: number, bottom: number): Promise<boolean>;
+function navigateToRegion(
+	left: number,
+	right: number,
+	top: number,
+	bottom: number,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -706,85 +692,68 @@ public navigateToRegion(left: number, right: number, top: number, bottom: number
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 left
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 right
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Second X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 top
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First Y coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 bottom
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Second Y coordinate of the rectangle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -811,9 +780,8 @@ Save Document
 ## Signature
 
 ```typescript
-public save(): Promise<boolean>;
+function save(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -822,7 +790,6 @@ Promise&lt;boolean&gt;
 Whether the save operation was successful. Errors such as save failure and upload failure all return `false`
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图并打开（保存作用于当前激活的原理图，openDocument 传图页级 UUID）

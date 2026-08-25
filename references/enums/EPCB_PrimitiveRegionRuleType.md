@@ -5,7 +5,7 @@ Region primitive region rule type
 ## Signature
 
 ```typescript
-export enum EPCB_PrimitiveRegionRuleType 
+enum EPCB_PrimitiveRegionRuleType
 ```
 
 ## Enumeration Members
@@ -14,100 +14,79 @@ export enum EPCB_PrimitiveRegionRuleType
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 FOLLOW\_REGION\_RULE
 
-
 </td><td>
 
 `9`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 NO\_COMPONENTS
 
-
 </td><td>
 
 `2`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 NO\_FILLS
 
-
 </td><td>
 
 `6`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 NO\_INNER\_ELECTRICAL\_LAYERS
 
-
 </td><td>
 
 `8`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 NO\_POURS
 
-
 </td><td>
 
 `7`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 NO\_WIRES
 
-
 </td><td>
 
 `5`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

@@ -9,7 +9,7 @@ System / toast message class
 ## Signature
 
 ```typescript
-export class SYS_ToastMessage 
+class SYS_ToastMessage
 ```
 
 ## Remarks
@@ -22,30 +22,24 @@ Pops up a brief message notification at the edge of the screen, which will autom
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [showMessage(message, messageType, timer, bottomPanel, buttonTitle, buttonCallbackFn)](./SYS_ToastMessage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Show a toast message
-
 
 </td></tr>
 </tbody></table>
@@ -67,7 +61,14 @@ Show a toast message
 ## Signature
 
 ```typescript
-public showMessage(message: string, messageType?: ESYS_ToastMessageType, timer?: number, bottomPanel?: ESYS_BottomPanelTab, buttonTitle?: string, buttonCallbackFn?: string): void;
+function showMessage(
+	message: string,
+	messageType?: ESYS_ToastMessageType,
+	timer?: number,
+	bottomPanel?: ESYS_BottomPanelTab,
+	buttonTitle?: string,
+	buttonCallbackFn?: string,
+): void;
 ```
 
 ## Parameters
@@ -76,124 +77,100 @@ public showMessage(message: string, messageType?: ESYS_ToastMessageType, timer?:
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 message
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Message content
-
 
 </td></tr>
 <tr><td>
 
 messageType
 
-
 </td><td>
 
 [ESYS\_ToastMessageType](../enums/ESYS_ToastMessageType.md)
 
-
 </td><td>
 
 _(Optional)_ Message type
-
 
 </td></tr>
 <tr><td>
 
 timer
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Auto-close countdown in seconds. `0` means it will not auto-close
-
 
 </td></tr>
 <tr><td>
 
 bottomPanel
 
-
 </td><td>
 
 [ESYS\_BottomPanelTab](../enums/ESYS_BottomPanelTab.md)
 
-
 </td><td>
 
 _(Optional)_ Expand the bottom information panel
-
 
 </td></tr>
 <tr><td>
 
 buttonTitle
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Callback button title
-
 
 </td></tr>
 <tr><td>
 
 buttonCallbackFn
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Callback function content, in string form. It will be automatically parsed and executed
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 最简调用：默认信息类型，倒计时结束后自动消失
@@ -206,12 +183,12 @@ console.log('成功吐司已显示，2 秒后自动关闭');
 
 // 3. 带回调按钮与底部面板联动：点击按钮执行回调并展开日志面板
 eda.sys_ToastMessage.showMessage(
-  '嘉立创示例 检查完成，详见日志面板',
-  'warn',
-  5,
-  'log',
-  '查看日志',
-  'console.log("嘉立创示例 按钮回调被执行")'
+	'嘉立创示例 检查完成，详见日志面板',
+	'warn',
+	5,
+	'log',
+	'查看日志',
+	'console.log("嘉立创示例 按钮回调被执行")'
 );
 console.log('警告吐司已显示，附带查看日志按钮，5 秒后自动关闭');
 ```

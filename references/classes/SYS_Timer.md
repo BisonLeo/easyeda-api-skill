@@ -5,13 +5,12 @@ System / timer class
 ## Signature
 
 ```typescript
-export class SYS_Timer 
+class SYS_Timer
 ```
 
 ## Remarks
 
 Set Timer
-
 
 ## Methods
 
@@ -19,72 +18,57 @@ Set Timer
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [clearIntervalTimer(id)](./SYS_Timer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Clear the specified interval timer
-
 
 </td></tr>
 <tr><td>
 
 [clearTimeoutTimer(id)](./SYS_Timer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Clear the specified timeout timer
-
 
 </td></tr>
 <tr><td>
 
 [setIntervalTimer(id, timeout, callFn, args)](./SYS_Timer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set an interval timer
-
 
 </td></tr>
 <tr><td>
 
 [setTimeoutTimer(id, timeout, callFn, args)](./SYS_Timer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set a timeout timer
-
 
 </td></tr>
 </tbody></table>
@@ -102,7 +86,7 @@ Clear the specified interval timer
 ## Signature
 
 ```typescript
-public clearIntervalTimer(id: string): boolean;
+function clearIntervalTimer(id: string): boolean;
 ```
 
 ## Parameters
@@ -111,37 +95,29 @@ public clearIntervalTimer(id: string): boolean;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Timer ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -150,7 +126,6 @@ boolean
 Whether the timer was cleared successfully
 
 ## Example
-
 
 ```javascript
 // 1. 挂一个每 200ms 触发的循环定时器
@@ -183,7 +158,7 @@ Clear the specified timeout timer
 ## Signature
 
 ```typescript
-public clearTimeoutTimer(id: string): boolean;
+function clearTimeoutTimer(id: string): boolean;
 ```
 
 ## Parameters
@@ -192,37 +167,29 @@ public clearTimeoutTimer(id: string): boolean;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Timer ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -231,7 +198,6 @@ boolean
 Whether the timer was cleared successfully
 
 ## Example
-
 
 ```javascript
 // 1. 挂一个 2 秒后才触发的定时器
@@ -261,7 +227,12 @@ Set an interval timer
 ## Signature
 
 ```typescript
-public setIntervalTimer(id: string, timeout: number, callFn: (...args: any) => void, ...args: any): boolean;
+function setIntervalTimer(
+	id: string,
+	timeout: number,
+	callFn: (...args: any) => void,
+	...args: any
+): boolean;
 ```
 
 ## Parameters
@@ -270,85 +241,68 @@ public setIntervalTimer(id: string, timeout: number, callFn: (...args: any) => v
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Timer ID, used to locate and delete the timer
-
 
 </td></tr>
 <tr><td>
 
 timeout
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Timer duration, unit ms
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (...args: any) =&gt; void
 
-
 </td><td>
 
 Function called by the timer
-
 
 </td></tr>
 <tr><td>
 
 args
 
-
 </td><td>
 
 any
-
 
 </td><td>
 
 Arguments passed to the timer callback function
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -361,7 +315,6 @@ Whether the timer was set successfully
 If a timer with a duplicate ID is encountered, the previously set timer will be cleared
 
 ## Example
-
 
 ```javascript
 // 1. 设置每 200ms 触发一次的循环定时器，统计触发次数
@@ -392,7 +345,12 @@ Set a timeout timer
 ## Signature
 
 ```typescript
-public setTimeoutTimer(id: string, timeout: number, callFn: (...args: any) => void, ...args: any): boolean;
+function setTimeoutTimer(
+	id: string,
+	timeout: number,
+	callFn: (...args: any) => void,
+	...args: any
+): boolean;
 ```
 
 ## Parameters
@@ -401,85 +359,68 @@ public setTimeoutTimer(id: string, timeout: number, callFn: (...args: any) => vo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Timer ID
-
 
 </td></tr>
 <tr><td>
 
 timeout
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Timer duration, unit ms
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (...args: any) =&gt; void
 
-
 </td><td>
 
 Function called by the timer
-
 
 </td></tr>
 <tr><td>
 
 args
 
-
 </td><td>
 
 any
-
 
 </td><td>
 
 Arguments passed to the timer callback function
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -492,7 +433,6 @@ Whether the timer was set successfully
 If a timer with a duplicate ID is encountered, the previously set timer will be cleared
 
 ## Example
-
 
 ```javascript
 // 1. 设置 200ms 后触发一次的定时器，并给回调传参

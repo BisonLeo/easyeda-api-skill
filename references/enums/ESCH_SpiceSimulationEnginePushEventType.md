@@ -5,7 +5,7 @@ Spice simulation engine push event type
 ## Signature
 
 ```typescript
-export enum ESCH_SpiceSimulationEnginePushEventType 
+enum ESCH_SpiceSimulationEnginePushEventType
 ```
 
 ## Enumeration Members
@@ -14,72 +14,57 @@ export enum ESCH_SpiceSimulationEnginePushEventType
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 ERROR\_RESULT
 
-
 </td><td>
 
 `'ERROR_RESULT'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 LOG\_RESULT
 
-
 </td><td>
 
 `'LOG_RESULT'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 SIMULATION\_RESULT
 
-
 </td><td>
 
 `'SIMULATION_RESULT'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 VALIDATION\_RESULT
 
-
 </td><td>
 
 `'VALIDATION_RESULT'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

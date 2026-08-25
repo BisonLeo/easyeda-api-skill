@@ -5,7 +5,7 @@
 ## Signature
 
 ```typescript
-export interface BoardProps 
+interface BoardProps
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface BoardProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [bgColor?](./BoardProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Background color. Accepts any CSS color value
-
 
 </td></tr>
 <tr><td>
 
 [children?](./BoardProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 any
 
-
 </td><td>
 
 _(Optional)_ Panel content child nodes
-
 
 </td></tr>
 <tr><td>
 
 [onClick?](./BoardProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 () =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 点击面板时触发
-
 
 </td></tr>
 <tr><td>
 
 [padding?](./BoardProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number\[\]
 
-
 </td><td>
 
 _(Optional)_ Padding (CSS shorthand array)
-
 
 </td></tr>
 <tr><td>
 
 [title](./BoardProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Title text ( required)
-
 
 </td></tr>
 </tbody></table>

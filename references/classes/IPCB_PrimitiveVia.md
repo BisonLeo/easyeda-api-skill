@@ -5,12 +5,11 @@ Via primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveVia implements IPCB_Primitive 
+class IPCB_PrimitiveVia implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,380 +17,299 @@ export class IPCB_PrimitiveVia implements IPCB_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getAdjacentPrimitives()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Adjacent primitive objects
-
 
 </td></tr>
 <tr><td>
 
 [getState\_DesignRuleBlindViaName()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: blind/buried via design rule item name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Diameter()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: outer diameter
-
 
 </td></tr>
 <tr><td>
 
 [getState\_HoleDiameter()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: hole diameter
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Net()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_SolderMaskExpansion()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: solder mask / paste mask expansion
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ViaType()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: via type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_X()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Y()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_DesignRuleBlindViaName(designRuleBlindViaName)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: blind/buried via design rule item name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Diameter(diameter)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: outer diameter
-
 
 </td></tr>
 <tr><td>
 
 [setState\_HoleDiameter(holeDiameter)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: hole diameter
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Net(net)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_SolderMaskExpansion(solderMaskExpansion)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: solder mask / paste mask expansion
-
 
 </td></tr>
 <tr><td>
 
 [setState\_ViaType(viaType)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: via type
-
 
 </td></tr>
 <tr><td>
 
 [setState\_X(x)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Y(y)](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -411,9 +329,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveVia>;
+function done(): Promise<IPCB_PrimitiveVia>;
 ```
-
 
 ## Returns
 
@@ -422,7 +339,6 @@ Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个孔径 20mil、外径 40mil 的测试过孔
@@ -455,9 +371,8 @@ Get Adjacent primitive objects
 ## Signature
 
 ```typescript
-public getAdjacentPrimitives(): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc>>;
+function getAdjacentPrimitives(): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc>>;
 ```
-
 
 ## Returns
 
@@ -470,7 +385,6 @@ Adjacent wire and arc-line primitive objects
 It will get the wire and arc-line primitive objects directly connected to the via
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -490,7 +404,7 @@ await eda.pcb_PrimitiveLine.delete([line1.getState_PrimitiveId(), line2.getState
 
 console.log('adjacent count:', adjacent.length);
 adjacent.forEach((p, i) => {
-  console.log(`adjacent[${i}] type:`, p.getState_PrimitiveType());
+	console.log(`adjacent[${i}] type:`, p.getState_PrimitiveType());
 });
 ```
 
@@ -503,9 +417,8 @@ Get the property state: blind/buried via design rule item name
 ## Signature
 
 ```typescript
-public getState_DesignRuleBlindViaName(): string | null;
+function getState_DesignRuleBlindViaName(): string | null;
 ```
-
 
 ## Returns
 
@@ -514,7 +427,6 @@ string \| null
 Blind/buried via design rule item name
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个普通通孔（无设计规则项）
@@ -545,9 +457,8 @@ Get the property state: outer diameter
 ## Signature
 
 ```typescript
-public getState_Diameter(): number;
+function getState_Diameter(): number;
 ```
-
 
 ## Returns
 
@@ -556,7 +467,6 @@ number
 Outer diameter
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个外径 40mil 的测试过孔
@@ -581,9 +491,8 @@ Get the property state: hole diameter
 ## Signature
 
 ```typescript
-public getState_HoleDiameter(): number;
+function getState_HoleDiameter(): number;
 ```
-
 
 ## Returns
 
@@ -592,7 +501,6 @@ number
 Hole diameter
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个孔径 20mil 的测试过孔
@@ -617,9 +525,8 @@ Get the property state: net name
 ## Signature
 
 ```typescript
-public getState_Net(): string;
+function getState_Net(): string;
 ```
-
 
 ## Returns
 
@@ -628,7 +535,6 @@ string
 Net name
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个挂在 GND 网络的测试过孔
@@ -653,9 +559,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -664,7 +569,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -693,9 +597,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -704,7 +607,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，分别放置未锁定和已锁定的两个测试过孔
@@ -732,9 +634,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -743,7 +644,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -768,9 +668,8 @@ Get the property state: solder mask / paste mask expansion
 ## Signature
 
 ```typescript
-public getState_SolderMaskExpansion(): IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null;
+function getState_SolderMaskExpansion(): IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null;
 ```
-
 
 ## Returns
 
@@ -779,7 +678,6 @@ public getState_SolderMaskExpansion(): IPCB_PrimitiveSolderMaskAndPasteMaskExpan
 Solder mask / paste mask expansion
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个默认扩展（遵循规则）的测试过孔
@@ -812,9 +710,8 @@ Get the property state: via type
 ## Signature
 
 ```typescript
-public getState_ViaType(): EPCB_PrimitiveViaType;
+function getState_ViaType(): EPCB_PrimitiveViaType;
 ```
-
 
 ## Returns
 
@@ -823,7 +720,6 @@ public getState_ViaType(): EPCB_PrimitiveViaType;
 Via type
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个通孔类型的测试过孔
@@ -853,9 +749,8 @@ Get the property state: X coordinate
 ## Signature
 
 ```typescript
-public getState_X(): number;
+function getState_X(): number;
 ```
-
 
 ## Returns
 
@@ -864,7 +759,6 @@ number
 X coordinate
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -889,9 +783,8 @@ Get the property state: Y coordinate
 ## Signature
 
 ```typescript
-public getState_Y(): number;
+function getState_Y(): number;
 ```
-
 
 ## Returns
 
@@ -900,7 +793,6 @@ number
 Y coordinate
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -925,9 +817,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -936,7 +827,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -969,9 +859,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveVia>;
+function reset(): Promise<IPCB_PrimitiveVia>;
 ```
-
 
 ## Returns
 
@@ -980,7 +869,6 @@ Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试过孔重合
@@ -1011,7 +899,7 @@ Set the property state: blind/buried via design rule item name
 ## Signature
 
 ```typescript
-public setState_DesignRuleBlindViaName(designRuleBlindViaName: string | null): IPCB_PrimitiveVia;
+function setState_DesignRuleBlindViaName(designRuleBlindViaName: string | null): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1020,37 +908,29 @@ public setState_DesignRuleBlindViaName(designRuleBlindViaName: string | null): I
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 designRuleBlindViaName
 
-
 </td><td>
 
 string \| null
-
 
 </td><td>
 
 Blind/buried via design rule item name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1059,7 +939,6 @@ Blind/buried via design rule item name
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个普通通孔（无规则项名称）
@@ -1090,7 +969,7 @@ Set the property state: outer diameter
 ## Signature
 
 ```typescript
-public setState_Diameter(diameter: number): IPCB_PrimitiveVia;
+function setState_Diameter(diameter: number): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1099,37 +978,29 @@ public setState_Diameter(diameter: number): IPCB_PrimitiveVia;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 diameter
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Outer diameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1138,7 +1009,6 @@ Outer diameter
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个外径 40mil 的测试过孔
@@ -1168,7 +1038,7 @@ Set the property state: hole diameter
 ## Signature
 
 ```typescript
-public setState_HoleDiameter(holeDiameter: number): IPCB_PrimitiveVia;
+function setState_HoleDiameter(holeDiameter: number): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1177,37 +1047,29 @@ public setState_HoleDiameter(holeDiameter: number): IPCB_PrimitiveVia;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 holeDiameter
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Hole diameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1216,7 +1078,6 @@ Hole diameter
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个孔径 20mil 的测试过孔
@@ -1246,7 +1107,7 @@ Set the property state: net name
 ## Signature
 
 ```typescript
-public setState_Net(net: string): IPCB_PrimitiveVia;
+function setState_Net(net: string): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1255,37 +1116,29 @@ public setState_Net(net: string): IPCB_PrimitiveVia;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1294,7 +1147,6 @@ Net name
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个无网络的测试过孔
@@ -1324,7 +1176,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveVia;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1333,37 +1185,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveVia;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1372,7 +1216,6 @@ Whether it is locked
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个未锁定的测试过孔
@@ -1402,7 +1245,9 @@ Set the property state: solder mask / paste mask expansion
 ## Signature
 
 ```typescript
-public setState_SolderMaskExpansion(solderMaskExpansion: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null): IPCB_PrimitiveVia;
+function setState_SolderMaskExpansion(
+	solderMaskExpansion: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null,
+): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1411,37 +1256,29 @@ public setState_SolderMaskExpansion(solderMaskExpansion: IPCB_PrimitiveSolderMas
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 solderMaskExpansion
 
-
 </td><td>
 
 [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null
-
 
 </td><td>
 
 Solder mask / paste mask expansion
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1450,7 +1287,6 @@ Solder mask / paste mask expansion
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个默认扩展（遵循规则）的测试过孔
@@ -1480,7 +1316,7 @@ Set the property state: via type
 ## Signature
 
 ```typescript
-public setState_ViaType(viaType: EPCB_PrimitiveViaType): IPCB_PrimitiveVia;
+function setState_ViaType(viaType: EPCB_PrimitiveViaType): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1489,37 +1325,29 @@ public setState_ViaType(viaType: EPCB_PrimitiveViaType): IPCB_PrimitiveVia;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 viaType
 
-
 </td><td>
 
 [EPCB\_PrimitiveViaType](../enums/EPCB_PrimitiveViaType.md)
-
 
 </td><td>
 
 Via type
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1528,7 +1356,6 @@ Via type
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个通孔类型的测试过孔
@@ -1558,7 +1385,7 @@ Set the property state: X coordinate
 ## Signature
 
 ```typescript
-public setState_X(x: number): IPCB_PrimitiveVia;
+function setState_X(x: number): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1567,37 +1394,29 @@ public setState_X(x: number): IPCB_PrimitiveVia;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 X coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1606,7 +1425,6 @@ X coordinate
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -1635,7 +1453,7 @@ Set the property state: Y coordinate
 ## Signature
 
 ```typescript
-public setState_Y(y: number): IPCB_PrimitiveVia;
+function setState_Y(y: number): IPCB_PrimitiveVia;
 ```
 
 ## Parameters
@@ -1644,37 +1462,29 @@ public setState_Y(y: number): IPCB_PrimitiveVia;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1683,7 +1493,6 @@ Y coordinate
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -1710,9 +1519,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveVia;
+function toAsync(): IPCB_PrimitiveVia;
 ```
-
 
 ## Returns
 
@@ -1721,7 +1529,6 @@ public toAsync(): IPCB_PrimitiveVia;
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个测试过孔
@@ -1751,9 +1558,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveVia;
+function toSync(): IPCB_PrimitiveVia;
 ```
-
 
 ## Returns
 
@@ -1762,7 +1568,6 @@ public toSync(): IPCB_PrimitiveVia;
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试过孔重合

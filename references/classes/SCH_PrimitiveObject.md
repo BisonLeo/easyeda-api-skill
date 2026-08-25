@@ -5,7 +5,7 @@ Schematic &amp; symbol / binary embedded object primitive class
 ## Signature
 
 ```typescript
-export class SCH_PrimitiveObject implements ISCH_PrimitiveAPI 
+class SCH_PrimitiveObject implements ISCH_PrimitiveAPI
 ```
 **Implements:** [ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
@@ -15,114 +15,90 @@ export class SCH_PrimitiveObject implements ISCH_PrimitiveAPI
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [create(content, startX, startY, width, height, rotation, mirror, fileName)](./SCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Binary embedded object
-
 
 </td></tr>
 <tr><td>
 
 [delete(primitiveIds)](./SCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Binary embedded object
 
+</td></tr>
+<tr><td>
+
+[get(primitiveIds)](./SCH_PrimitiveObject.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get Binary embedded object
 
 </td></tr>
 <tr><td>
 
 [get(primitiveIds)](./SCH_PrimitiveObject.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get Binary embedded object
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveObject.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Binary embedded object
-
 
 </td></tr>
 <tr><td>
 
 [getAll()](./SCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Binary embedded object
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitiveId()](./SCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Binary embedded object primitive IDs
-
 
 </td></tr>
 <tr><td>
 
 [modify(primitiveId, property)](./SCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Binary embedded object
-
 
 </td></tr>
 </tbody></table>
@@ -142,7 +118,16 @@ Create Binary embedded object
 ## Signature
 
 ```typescript
-public create(content: File | string, startX: number, startY: number, width?: number, height?: number, rotation?: number, mirror?: boolean, fileName?: string): Promise<ISCH_PrimitiveObject | undefined>;
+function create(
+	content: File | string,
+	startX: number,
+	startY: number,
+	width?: number,
+	height?: number,
+	rotation?: number,
+	mirror?: boolean,
+	fileName?: string,
+): Promise<ISCH_PrimitiveObject | undefined>;
 ```
 
 ## Parameters
@@ -151,149 +136,120 @@ public create(content: File | string, startX: number, startY: number, width?: nu
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 content
 
-
 </td><td>
 
 File \| string
 
-
 </td><td>
 
 Object content
-
 
 </td></tr>
 <tr><td>
 
 startX
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Start point coordinates X
-
 
 </td></tr>
 <tr><td>
 
 startY
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Start point coordinates Y
-
 
 </td></tr>
 <tr><td>
 
 width
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Width
-
 
 </td></tr>
 <tr><td>
 
 height
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Height
-
 
 </td></tr>
 <tr><td>
 
 rotation
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Rotation angle
-
 
 </td></tr>
 <tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether it is mirrored
-
 
 </td></tr>
 <tr><td>
 
 fileName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ File name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -302,7 +258,6 @@ Promise&lt;[ISCH\_PrimitiveObject](./ISCH_PrimitiveObject.md) \| undefined&gt;
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成随机放置坐标，避免与画布上已有的内嵌对象重合（SCH 坐标单位 10mil）
@@ -335,7 +290,7 @@ Delete Binary embedded object
 ## Signature
 
 ```typescript
-public delete(primitiveIds: string | ISCH_PrimitiveObject | Array<string> | Array<ISCH_PrimitiveObject>): Promise<boolean>;
+function delete(primitiveIds: string | ISCH_PrimitiveObject | Array<string> | Array<ISCH_PrimitiveObject>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -344,37 +299,29 @@ public delete(primitiveIds: string | ISCH_PrimitiveObject | Array<string> | Arra
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string \| [ISCH\_PrimitiveObject](./ISCH_PrimitiveObject.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitiveObject](./ISCH_PrimitiveObject.md)<!-- -->&gt;
-
 
 </td><td>
 
 Binary embedded object primitive ID or Binary embedded object primitive object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -383,7 +330,6 @@ Promise&lt;boolean&gt;
 Delete Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建两个待删除的测试对象（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -419,7 +365,7 @@ Get Binary embedded object
 ## Signature
 
 ```typescript
-public get(primitiveIds: string): Promise<ISCH_PrimitiveObject | undefined>;
+function get(primitiveIds: string): Promise<ISCH_PrimitiveObject | undefined>;
 ```
 
 ## Parameters
@@ -428,37 +374,29 @@ public get(primitiveIds: string): Promise<ISCH_PrimitiveObject | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Binary embedded object primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -467,7 +405,6 @@ Promise&lt;[ISCH\_PrimitiveObject](./ISCH_PrimitiveObject.md) \| undefined&gt;
 Binary embedded object primitive object, `undefined` indicates that the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建两个测试对象（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -503,7 +440,7 @@ Get Binary embedded object
 ## Signature
 
 ```typescript
-public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveObject>>;
+function get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveObject>>;
 ```
 
 ## Parameters
@@ -512,37 +449,29 @@ public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveObject>>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Binary embedded object primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -565,9 +494,8 @@ Get all Binary embedded object
 ## Signature
 
 ```typescript
-public getAll(): Promise<Array<ISCH_PrimitiveObject>>;
+function getAll(): Promise<Array<ISCH_PrimitiveObject>>;
 ```
-
 
 ## Returns
 
@@ -576,7 +504,6 @@ Promise&lt;Array&lt;[ISCH\_PrimitiveObject](./ISCH_PrimitiveObject.md)<!-- -->&g
 Array of Binary embedded object primitive objects
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试对象作为查找目标（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -608,9 +535,8 @@ Get all Binary embedded object primitive IDs
 ## Signature
 
 ```typescript
-public getAllPrimitiveId(): Promise<Array<string>>;
+function getAllPrimitiveId(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -619,7 +545,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 Array of Binary embedded object primitive IDs
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试对象作为查找目标（随机坐标避免重合，SCH 坐标单位 10mil）
@@ -650,7 +575,19 @@ Modify Binary embedded object
 ## Signature
 
 ```typescript
-public modify(primitiveId: string | ISCH_PrimitiveObject, property: { content?: undefined | string | File; startX?: undefined | number; startY?: undefined | number; width?: undefined | number; height?: undefined | number; rotation?: undefined | number; mirror?: undefined | false | true; fileName?: undefined | string }): Promise<ISCH_PrimitiveObject | undefined>;
+function modify(
+	primitiveId: string | ISCH_PrimitiveObject,
+	property: {
+		content?: undefined | string | File;
+		startX?: undefined | number;
+		startY?: undefined | number;
+		width?: undefined | number;
+		height?: undefined | number;
+		rotation?: undefined | number;
+		mirror?: undefined | false | true;
+		fileName?: undefined | string;
+	},
+): Promise<ISCH_PrimitiveObject | undefined>;
 ```
 
 ## Parameters
@@ -659,53 +596,42 @@ public modify(primitiveId: string | ISCH_PrimitiveObject, property: { content?: 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string \| [ISCH\_PrimitiveObject](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
 
 Primitive ID
-
 
 </td></tr>
 <tr><td>
 
 property
 
-
 </td><td>
 
 \{ content?: undefined \| string \| File; startX?: undefined \| number; startY?: undefined \| number; width?: undefined \| number; height?: undefined \| number; rotation?: undefined \| number; mirror?: undefined \| false \| true; fileName?: undefined \| string \}
-
 
 </td><td>
 
 Modify Parameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -714,7 +640,6 @@ Promise&lt;[ISCH\_PrimitiveObject](./ISCH_PrimitiveObject.md) \| undefined&gt;
 Binary embedded object primitive object, `undefined` indicates that the modification failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建待修改的测试对象（随机坐标避免重合，SCH 坐标单位 10mil）

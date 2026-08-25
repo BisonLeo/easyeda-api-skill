@@ -5,7 +5,7 @@
 ## Signature
 
 ```typescript
-export interface TextAreaProps 
+interface TextAreaProps
 ```
 
 ## Properties
@@ -14,135 +14,107 @@ export interface TextAreaProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [disabled?](./TextAreaProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether Disable input
-
 
 </td></tr>
 <tr><td>
 
 [name?](./TextAreaProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Input box name (the form `name` attribute)
-
 
 </td></tr>
 <tr><td>
 
 [onChange?](./TextAreaProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 (value: string) =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 文本变化时触发，参数为最新值
-
 
 </td></tr>
 <tr><td>
 
 [placeholder?](./TextAreaProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Placeholder text
-
 
 </td></tr>
 <tr><td>
 
 [resizable?](./TextAreaProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 \{ x?: undefined \| false \| true; y?: undefined \| false \| true \}
 
-
 </td><td>
 
 _(Optional)_ Whether it is resizable (x horizontal / y vertical)
-
 
 </td></tr>
 <tr><td>
 
 [value?](./TextAreaProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Current text value
-
 
 </td></tr>
 </tbody></table>

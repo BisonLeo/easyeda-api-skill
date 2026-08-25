@@ -5,12 +5,11 @@ Circle primitive
 ## Signature
 
 ```typescript
-export class ISCH_PrimitiveCircle implements ISCH_Primitive 
+class ISCH_PrimitiveCircle implements ISCH_Primitive
 ```
 **Implements:** [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,338 +17,266 @@ export class ISCH_PrimitiveCircle implements ISCH_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_CenterX()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: center of the circle X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_CenterY()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: center of the circle Y
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Color()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: color
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FillColor()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: fill color
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FillStyle()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: fill style
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineType()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: line type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Radius()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: radius
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_CenterX(centerX)](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: center of the circle X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_CenterY(centerY)](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: center of the circle Y
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Color(color)](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: color
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FillColor(fillColor)](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: fill color
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FillStyle(fillStyle)](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: fill style
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineType(lineType)](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: line type
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Radius(radius)](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: radius
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./ISCH_PrimitiveCircle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -369,9 +296,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<ISCH_PrimitiveCircle>;
+function done(): Promise<ISCH_PrimitiveCircle>;
 ```
-
 
 ## Returns
 
@@ -380,7 +306,6 @@ Promise&lt;[ISCH\_PrimitiveCircle](./ISCH_PrimitiveCircle.md)<!-- -->&gt;
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -414,9 +339,8 @@ Get the property state: center of the circle X
 ## Signature
 
 ```typescript
-public getState_CenterX(): number;
+function getState_CenterX(): number;
 ```
-
 
 ## Returns
 
@@ -425,7 +349,6 @@ number
 Center of the circle X
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试圆，圆心 (400, 300)、半径 150（SCH 坐标单位 10mil）
@@ -449,9 +372,8 @@ Get the property state: center of the circle Y
 ## Signature
 
 ```typescript
-public getState_CenterY(): number;
+function getState_CenterY(): number;
 ```
-
 
 ## Returns
 
@@ -460,7 +382,6 @@ number
 Center of the circle Y
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试圆，圆心 (400, 300)、半径 150（SCH 坐标单位 10mil）
@@ -484,9 +405,8 @@ Get the property state: color
 ## Signature
 
 ```typescript
-public getState_Color(): string | null;
+function getState_Color(): string | null;
 ```
-
 
 ## Returns
 
@@ -495,7 +415,6 @@ string \| null
 Color
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个红色轮廓的测试圆（SCH 坐标单位 10mil）
@@ -519,9 +438,8 @@ Get the property state: fill color
 ## Signature
 
 ```typescript
-public getState_FillColor(): string | null;
+function getState_FillColor(): string | null;
 ```
-
 
 ## Returns
 
@@ -530,7 +448,6 @@ string \| null
 Fill color
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个带填充色的测试圆：轮廓红、填充黄（SCH 坐标单位 10mil）
@@ -554,9 +471,8 @@ Get the property state: fill style
 ## Signature
 
 ```typescript
-public getState_FillStyle(): ESCH_PrimitiveFillStyle | null;
+function getState_FillStyle(): ESCH_PrimitiveFillStyle | null;
 ```
-
 
 ## Returns
 
@@ -565,7 +481,6 @@ public getState_FillStyle(): ESCH_PrimitiveFillStyle | null;
 Fill style
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个实心填充的测试圆（fillStyle 传字符串枚举，如 'Solid'）
@@ -589,9 +504,8 @@ Get the property state: line type
 ## Signature
 
 ```typescript
-public getState_LineType(): ESCH_PrimitiveLineType | null;
+function getState_LineType(): ESCH_PrimitiveLineType | null;
 ```
-
 
 ## Returns
 
@@ -600,7 +514,6 @@ public getState_LineType(): ESCH_PrimitiveLineType | null;
 Line type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个虚线轮廓的测试圆（lineType 传数字枚举，1 = DASHED）
@@ -624,9 +537,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number | null;
+function getState_LineWidth(): number | null;
 ```
-
 
 ## Returns
 
@@ -635,7 +547,6 @@ number \| null
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个线宽 6 的测试圆（SCH 坐标单位 10mil）
@@ -659,9 +570,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -670,7 +580,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试圆（SCH 坐标单位 10mil）
@@ -694,9 +603,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): ESCH_PrimitiveType;
+function getState_PrimitiveType(): ESCH_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -705,7 +613,6 @@ public getState_PrimitiveType(): ESCH_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试圆（SCH 坐标单位 10mil）
@@ -729,9 +636,8 @@ Get the property state: radius
 ## Signature
 
 ```typescript
-public getState_Radius(): number;
+function getState_Radius(): number;
 ```
-
 
 ## Returns
 
@@ -740,7 +646,6 @@ number
 Radius
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个半径 150 的测试圆（SCH 坐标单位 10mil）
@@ -764,9 +669,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -775,7 +679,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试圆，创建后默认处于异步模式
@@ -804,9 +707,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<ISCH_PrimitiveCircle>;
+function reset(): Promise<ISCH_PrimitiveCircle>;
 ```
-
 
 ## Returns
 
@@ -815,7 +717,6 @@ Promise&lt;[ISCH\_PrimitiveCircle](./ISCH_PrimitiveCircle.md)<!-- -->&gt;
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -849,7 +750,7 @@ Set the property state: center of the circle X
 ## Signature
 
 ```typescript
-public setState_CenterX(centerX: number): ISCH_PrimitiveCircle;
+function setState_CenterX(centerX: number): ISCH_PrimitiveCircle;
 ```
 
 ## Parameters
@@ -858,37 +759,29 @@ public setState_CenterX(centerX: number): ISCH_PrimitiveCircle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 centerX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Center of the circle X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -897,7 +790,6 @@ Center of the circle X
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -929,7 +821,7 @@ Set the property state: center of the circle Y
 ## Signature
 
 ```typescript
-public setState_CenterY(centerY: number): ISCH_PrimitiveCircle;
+function setState_CenterY(centerY: number): ISCH_PrimitiveCircle;
 ```
 
 ## Parameters
@@ -938,37 +830,29 @@ public setState_CenterY(centerY: number): ISCH_PrimitiveCircle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 centerY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Center of the circle Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -977,7 +861,6 @@ Center of the circle Y
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -1009,7 +892,7 @@ Set the property state: color
 ## Signature
 
 ```typescript
-public setState_Color(color: string | null): ISCH_PrimitiveCircle;
+function setState_Color(color: string | null): ISCH_PrimitiveCircle;
 ```
 
 ## Parameters
@@ -1018,37 +901,29 @@ public setState_Color(color: string | null): ISCH_PrimitiveCircle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 color
 
-
 </td><td>
 
 string \| null
-
 
 </td><td>
 
 Color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1057,7 +932,6 @@ Color
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -1089,7 +963,7 @@ Set the property state: fill color
 ## Signature
 
 ```typescript
-public setState_FillColor(fillColor: string | null): ISCH_PrimitiveCircle;
+function setState_FillColor(fillColor: string | null): ISCH_PrimitiveCircle;
 ```
 
 ## Parameters
@@ -1098,37 +972,29 @@ public setState_FillColor(fillColor: string | null): ISCH_PrimitiveCircle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fillColor
 
-
 </td><td>
 
 string \| null
-
 
 </td><td>
 
 Fill color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1137,7 +1003,6 @@ Fill color
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -1169,7 +1034,7 @@ Set the property state: fill style
 ## Signature
 
 ```typescript
-public setState_FillStyle(fillStyle: ESCH_PrimitiveFillStyle | null): ISCH_PrimitiveCircle;
+function setState_FillStyle(fillStyle: ESCH_PrimitiveFillStyle | null): ISCH_PrimitiveCircle;
 ```
 
 ## Parameters
@@ -1178,37 +1043,29 @@ public setState_FillStyle(fillStyle: ESCH_PrimitiveFillStyle | null): ISCH_Primi
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fillStyle
 
-
 </td><td>
 
 [ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null
-
 
 </td><td>
 
 Fill style
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1217,7 +1074,6 @@ Fill style
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -1249,7 +1105,7 @@ Set the property state: line type
 ## Signature
 
 ```typescript
-public setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveCircle;
+function setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveCircle;
 ```
 
 ## Parameters
@@ -1258,37 +1114,29 @@ public setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_Primitiv
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineType
 
-
 </td><td>
 
 [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
 
 </td><td>
 
 Line type
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1297,7 +1145,6 @@ Line type
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -1329,7 +1176,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveCircle;
+function setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveCircle;
 ```
 
 ## Parameters
@@ -1338,37 +1185,29 @@ public setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveCircle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number \| null
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1377,7 +1216,6 @@ Line width
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -1409,7 +1247,7 @@ Set the property state: radius
 ## Signature
 
 ```typescript
-public setState_Radius(radius: number): ISCH_PrimitiveCircle;
+function setState_Radius(radius: number): ISCH_PrimitiveCircle;
 ```
 
 ## Parameters
@@ -1418,37 +1256,29 @@ public setState_Radius(radius: number): ISCH_PrimitiveCircle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 radius
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Radius
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1457,7 +1287,6 @@ Radius
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -1487,9 +1316,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): ISCH_PrimitiveCircle;
+function toAsync(): ISCH_PrimitiveCircle;
 ```
-
 
 ## Returns
 
@@ -1498,7 +1326,6 @@ public toAsync(): ISCH_PrimitiveCircle;
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合
@@ -1532,9 +1359,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): ISCH_PrimitiveCircle;
+function toSync(): ISCH_PrimitiveCircle;
 ```
-
 
 ## Returns
 
@@ -1543,7 +1369,6 @@ public toSync(): ISCH_PrimitiveCircle;
 Circle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆重合

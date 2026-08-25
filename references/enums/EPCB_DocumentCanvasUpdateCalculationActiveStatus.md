@@ -5,7 +5,7 @@ Canvas update calculation function status
 ## Signature
 
 ```typescript
-export enum EPCB_DocumentCanvasUpdateCalculationActiveStatus 
+enum EPCB_DocumentCanvasUpdateCalculationActiveStatus
 ```
 
 ## Enumeration Members
@@ -14,44 +14,35 @@ export enum EPCB_DocumentCanvasUpdateCalculationActiveStatus
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 ACTIVE
 
-
 </td><td>
 
 `'active'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 INACTIVE
 
-
 </td><td>
 
 `'inactive'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

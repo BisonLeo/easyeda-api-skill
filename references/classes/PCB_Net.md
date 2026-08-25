@@ -5,7 +5,7 @@ PCB &amp; footprint / net class
 ## Signature
 
 ```typescript
-export class PCB_Net 
+class PCB_Net
 ```
 
 ## Methods
@@ -14,240 +14,189 @@ export class PCB_Net
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getAllNetName()](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the net names of all nets
-
 
 </td></tr>
 <tr><td>
 
 [getAllNets()](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Detailed information of the net
-
 
 </td></tr>
 <tr><td>
 
 [getAllNetsName()](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the net names of all nets
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitivesByNet(net, primitiveTypes)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all primitives associated with the specified net
-
 
 </td></tr>
 <tr><td>
 
 [getNet(net)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Specify detailed information of the net
-
 
 </td></tr>
 <tr><td>
 
 [getNetColor(net)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the color of the specified net
-
 
 </td></tr>
 <tr><td>
 
 [getNetLength(net)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the length of the specified net
-
 
 </td></tr>
 <tr><td>
 
 [getNetlist(type)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the netlist
-
 
 </td></tr>
 <tr><td>
 
 [highlightNet(net)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Highlight the net
-
 
 </td></tr>
 <tr><td>
 
 [selectNet(net)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Select net
-
 
 </td></tr>
 <tr><td>
 
 [setNetColor(net, color)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the color of the specified net
-
 
 </td></tr>
 <tr><td>
 
 [setNetlist(type, netlist)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Update the netlist
-
 
 </td></tr>
 <tr><td>
 
 [unhighlightAllNets()](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Unhighlight all nets
-
 
 </td></tr>
 <tr><td>
 
 [unhighlightNet(net)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Unhighlight the net
-
 
 </td></tr>
 <tr><td>
 
 [unselectAllNets()](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Unselect all nets
-
 
 </td></tr>
 <tr><td>
 
 [unselectNet(net)](./PCB_Net.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Unselect the net
-
 
 </td></tr>
 </tbody></table>
@@ -269,9 +218,8 @@ Get the net names of all nets
 ## Signature
 
 ```typescript
-public getAllNetName(): Promise<Array<string>>;
+function getAllNetName(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -290,9 +238,8 @@ Get all Detailed information of the net
 ## Signature
 
 ```typescript
-public getAllNets(): Promise<Array<IPCB_NetInfo>>;
+function getAllNets(): Promise<Array<IPCB_NetInfo>>;
 ```
-
 
 ## Returns
 
@@ -301,7 +248,6 @@ Promise&lt;Array&lt;[IPCB\_NetInfo](../interfaces/IPCB_NetInfo.md)<!-- -->&gt;&g
 Detailed information of all nets
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可查询的网络
@@ -331,9 +277,8 @@ Get the net names of all nets
 ## Signature
 
 ```typescript
-public getAllNetsName(): Promise<Array<string>>;
+function getAllNetsName(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -342,7 +287,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 Net name array
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可查询的网络
@@ -370,7 +314,10 @@ Get all primitives associated with the specified net
 ## Signature
 
 ```typescript
-public getAllPrimitivesByNet(net: string, primitiveTypes?: Array<EPCB_PrimitiveType>): Promise<Array<IPCB_Primitive>>;
+function getAllPrimitivesByNet(
+	net: string,
+	primitiveTypes?: Array<EPCB_PrimitiveType>,
+): Promise<Array<IPCB_Primitive>>;
 ```
 
 ## Parameters
@@ -379,53 +326,42 @@ public getAllPrimitivesByNet(net: string, primitiveTypes?: Array<EPCB_PrimitiveT
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Net name
-
 
 </td></tr>
 <tr><td>
 
 primitiveTypes
 
-
 </td><td>
 
 Array&lt;[EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)<!-- -->&gt;
-
 
 </td><td>
 
 _(Optional)_ Array of primitive types. If the specified primitive type has no net property, the returned data will always be empty
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -434,7 +370,6 @@ Promise&lt;Array&lt;[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)<!-- -->&g
 Array of primitive objects
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可查询的网络
@@ -466,7 +401,7 @@ Get Specify detailed information of the net
 ## Signature
 
 ```typescript
-public getNet(net: string): Promise<IPCB_NetInfo | undefined>;
+function getNet(net: string): Promise<IPCB_NetInfo | undefined>;
 ```
 
 ## Parameters
@@ -475,37 +410,29 @@ public getNet(net: string): Promise<IPCB_NetInfo | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -514,7 +441,6 @@ Promise&lt;[IPCB\_NetInfo](../interfaces/IPCB_NetInfo.md) \| undefined&gt;
 Detailed information of the net, `undefined` is does not exist this net
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可查询的网络
@@ -542,7 +468,7 @@ Get the color of the specified net
 ## Signature
 
 ```typescript
-public getNetColor(net: string): Promise<IPCB_NetInfo['color'] | undefined>;
+function getNetColor(net: string): Promise<IPCB_NetInfo['color'] | undefined>;
 ```
 
 ## Parameters
@@ -551,37 +477,29 @@ public getNetColor(net: string): Promise<IPCB_NetInfo['color'] | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -590,7 +508,6 @@ Promise&lt;[IPCB\_NetInfo](../interfaces/IPCB_NetInfo.md)<!-- -->\['color'\] \| 
 Net color, `undefined` is does not exist this net
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可查询的网络
@@ -614,7 +531,7 @@ Get the length of the specified net
 ## Signature
 
 ```typescript
-public getNetLength(net: string): Promise<number | undefined>;
+function getNetLength(net: string): Promise<number | undefined>;
 ```
 
 ## Parameters
@@ -623,37 +540,29 @@ public getNetLength(net: string): Promise<number | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -662,7 +571,6 @@ Promise&lt;number \| undefined&gt;
 Net length. `undefined` means the net does not exist; `0` means the net has no length
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔和导线（导线长 1000mil，让网络有实际长度）
@@ -688,7 +596,7 @@ Get the netlist
 ## Signature
 
 ```typescript
-public getNetlist(type?: ESYS_NetlistType): Promise<string>;
+function getNetlist(type?: ESYS_NetlistType): Promise<string>;
 ```
 
 ## Parameters
@@ -697,37 +605,29 @@ public getNetlist(type?: ESYS_NetlistType): Promise<string>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 type
 
-
 </td><td>
 
 [ESYS\_NetlistType](../enums/ESYS_NetlistType.md)
-
 
 </td><td>
 
 _(Optional)_ Netlist format
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -746,7 +646,7 @@ Highlight the net
 ## Signature
 
 ```typescript
-public highlightNet(net: string): Promise<boolean>;
+function highlightNet(net: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -755,37 +655,29 @@ public highlightNet(net: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -798,7 +690,6 @@ Whether the operation is successful
 The return value of this API is result-oriented. If the net was already highlighted, `true` will also be returned
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可操作的网络
@@ -824,7 +715,7 @@ Select net
 ## Signature
 
 ```typescript
-public selectNet(net: string): Promise<boolean>;
+function selectNet(net: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -833,37 +724,29 @@ public selectNet(net: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -872,7 +755,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可操作的网络
@@ -898,7 +780,7 @@ Set the color of the specified net
 ## Signature
 
 ```typescript
-public setNetColor(net: string, color: IPCB_NetInfo['color']): Promise<boolean>;
+function setNetColor(net: string, color: IPCB_NetInfo['color']): Promise<boolean>;
 ```
 
 ## Parameters
@@ -907,53 +789,42 @@ public setNetColor(net: string, color: IPCB_NetInfo['color']): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Net name
-
 
 </td></tr>
 <tr><td>
 
 color
 
-
 </td><td>
 
 [IPCB\_NetInfo](../interfaces/IPCB_NetInfo.md)<!-- -->\['color'\]
-
 
 </td><td>
 
 Net color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -962,7 +833,6 @@ Promise&lt;boolean&gt;
 Whether Set Successful, `false` is does not exist this net
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可操作的网络
@@ -991,7 +861,7 @@ Update the netlist
 ## Signature
 
 ```typescript
-public setNetlist(type: ESYS_NetlistType | undefined, netlist: string): Promise<boolean>;
+function setNetlist(type: ESYS_NetlistType | undefined, netlist: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1000,53 +870,42 @@ public setNetlist(type: ESYS_NetlistType | undefined, netlist: string): Promise<
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 type
 
-
 </td><td>
 
 [ESYS\_NetlistType](../enums/ESYS_NetlistType.md) \| undefined
 
-
 </td><td>
 
 Netlist format
-
 
 </td></tr>
 <tr><td>
 
 netlist
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Netlist data
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1063,9 +922,8 @@ Unhighlight all nets
 ## Signature
 
 ```typescript
-public unhighlightAllNets(): Promise<boolean>;
+function unhighlightAllNets(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1074,7 +932,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔并高亮，让画布存在高亮网络
@@ -1101,7 +958,7 @@ Unhighlight the net
 ## Signature
 
 ```typescript
-public unhighlightNet(net: string): Promise<boolean>;
+function unhighlightNet(net: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1110,37 +967,29 @@ public unhighlightNet(net: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1153,7 +1002,6 @@ Whether the operation is successful
 The return value of this API is result-oriented. If the net was not highlighted before, `true` will also be returned
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可操作的网络
@@ -1182,9 +1030,8 @@ Unselect all nets
 ## Signature
 
 ```typescript
-public unselectAllNets(): Promise<boolean>;
+function unselectAllNets(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1197,7 +1044,6 @@ Whether the operation is successful
 If you want to unselect all primitives, use the [PCB\_SelectControl.clearSelected()](./PCB_SelectControl.md) API
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔并选中，让画布存在选中的网络
@@ -1224,7 +1070,7 @@ Unselect the net
 ## Signature
 
 ```typescript
-public unselectNet(net: string): Promise<boolean>;
+function unselectNet(net: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1233,37 +1079,29 @@ public unselectNet(net: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1272,7 +1110,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建带网络名的过孔，让 PCB 中出现可操作的网络

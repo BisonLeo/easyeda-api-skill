@@ -5,7 +5,7 @@
 ## Signature
 
 ```typescript
-export interface ImageProps 
+interface ImageProps
 ```
 
 ## Properties
@@ -14,78 +14,62 @@ export interface ImageProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [onClick?](./ImageProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 () =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 点击图片时触发
-
 
 </td></tr>
 <tr><td>
 
 [src](./ImageProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Image URL (required)
-
 
 </td></tr>
 <tr><td>
 
 [title?](./ImageProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Image title (alt/text)
-
 
 </td></tr>
 </tbody></table>

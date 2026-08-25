@@ -5,10 +5,23 @@ Pad shape
 ## Signature
 
 ```typescript
-export type TPCB_PrimitivePadShape = [EPCB_PrimitivePadShapeType.ELLIPSE | EPCB_PrimitivePadShapeType.OBLONG | EPCB_PrimitivePadShapeType.REGULAR_POLYGON, number, number] | [EPCB_PrimitivePadShapeType.RECTANGLE, number, number, number] | [EPCB_PrimitivePadShapeType.POLYLINE_COMPLEX_POLYGON, TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArray>];
+type TPCB_PrimitivePadShape
+	= | [
+		(
+			| EPCB_PrimitivePadShapeType.ELLIPSE
+			| EPCB_PrimitivePadShapeType.OBLONG
+			| EPCB_PrimitivePadShapeType.REGULAR_POLYGON
+		),
+		number,
+		number,
+	]
+	| [EPCB_PrimitivePadShapeType.RECTANGLE, number, number, number]
+	| [
+		EPCB_PrimitivePadShapeType.POLYLINE_COMPLEX_POLYGON,
+			TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArray>,
+	];
 ```
 ## References
-
 
 [EPCB\_PrimitivePadShapeType.ELLIPSE](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [EPCB\_PrimitivePadShapeType.OBLONG](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [EPCB\_PrimitivePadShapeType.REGULAR\_POLYGON](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [EPCB\_PrimitivePadShapeType.RECTANGLE](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [EPCB\_PrimitivePadShapeType.POLYLINE\_COMPLEX\_POLYGON](../enums/EPCB_PrimitivePadShapeType.md)<!-- -->, [TPCB\_PolygonSourceArray](./TPCB_PolygonSourceArray.md)
 

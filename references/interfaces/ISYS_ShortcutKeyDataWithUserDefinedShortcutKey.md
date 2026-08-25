@@ -5,7 +5,7 @@ Shortcut key data with userDefinedShortcutKey
 ## Signature
 
 ```typescript
-export interface ISYS_ShortcutKeyDataWithUserDefinedShortcutKey extends ISYS_ShortcutKeyData 
+interface ISYS_ShortcutKeyDataWithUserDefinedShortcutKey extends ISYS_ShortcutKeyData
 ```
 **Extends:** [ISYS\_ShortcutKeyData](./ISYS_ShortcutKeyData.md)
 
@@ -15,40 +15,32 @@ export interface ISYS_ShortcutKeyDataWithUserDefinedShortcutKey extends ISYS_Sho
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [userDefinedShortcutKey?](./ISYS_ShortcutKeyDataWithUserDefinedShortcutKey.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md) \| null
 
-
 </td><td>
 
 _(Optional)_ User-defined shortcut key
-
 
 </td></tr>
 </tbody></table>

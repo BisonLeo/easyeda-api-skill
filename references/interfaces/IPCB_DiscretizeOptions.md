@@ -5,7 +5,7 @@ Discretization options
 ## Signature
 
 ```typescript
-export interface IPCB_DiscretizeOptions 
+interface IPCB_DiscretizeOptions
 ```
 
 ## Properties
@@ -14,40 +14,32 @@ export interface IPCB_DiscretizeOptions
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [tolerance?](./IPCB_DiscretizeOptions.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ 弦高容差，即弧/曲线被弦（相邻离散点连线）近似时允许的最大偏差
-
 
 </td></tr>
 </tbody></table>

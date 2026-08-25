@@ -5,7 +5,7 @@ Schematic sheet property
 ## Signature
 
 ```typescript
-export interface IDMT_SchematicPageItem 
+interface IDMT_SchematicPageItem
 ```
 
 ## Properties
@@ -14,137 +14,109 @@ export interface IDMT_SchematicPageItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [itemType](./IDMT_SchematicPageItem.md)
 
-
 </td><td>
 
 `readonly`
-
 
 </td><td>
 
 [EDMT\_ItemType.SCHEMATIC\_PAGE](../enums/EDMT_ItemType.md)
 
-
 </td><td>
 
 Project type
-
 
 </td></tr>
 <tr><td>
 
 [name](./IDMT_SchematicPageItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Schematic sheet name
-
 
 </td></tr>
 <tr><td>
 
 [parentSchematicUuid](./IDMT_SchematicPageItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 UUID of the schematic it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [showTitleBlock](./IDMT_SchematicPageItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether to show the title block
-
 
 </td></tr>
 <tr><td>
 
 [titleBlockData](./IDMT_SchematicPageItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Record&lt;string, { showTitle: boolean; showValue: boolean; value: any }&gt;
 
-
 </td><td>
 
 Title block data
-
 
 </td></tr>
 <tr><td>
 
 [uuid](./IDMT_SchematicPageItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Schematic sheet UUID
-
 
 </td></tr>
 </tbody></table>

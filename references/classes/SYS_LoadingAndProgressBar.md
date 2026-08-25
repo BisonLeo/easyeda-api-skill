@@ -5,7 +5,7 @@ System / loading and progress bar class
 ## Signature
 
 ```typescript
-export class SYS_LoadingAndProgressBar 
+class SYS_LoadingAndProgressBar
 ```
 
 ## Methods
@@ -14,72 +14,57 @@ export class SYS_LoadingAndProgressBar
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [destroyLoading()](./SYS_LoadingAndProgressBar.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Destroy the no-progress loading overlay
-
 
 </td></tr>
 <tr><td>
 
 [destroyProgressBar()](./SYS_LoadingAndProgressBar.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Destroy the progress bar
-
 
 </td></tr>
 <tr><td>
 
 [showLoading()](./SYS_LoadingAndProgressBar.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Show the no-progress loading overlay
-
 
 </td></tr>
 <tr><td>
 
 [showProgressBar(progress, title)](./SYS_LoadingAndProgressBar.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Show the progress bar or set its progress
-
 
 </td></tr>
 </tbody></table>
@@ -97,16 +82,14 @@ Destroy the no-progress loading overlay
 ## Signature
 
 ```typescript
-public destroyLoading(): void;
+function destroyLoading(): void;
 ```
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 先显示加载覆盖作为销毁对象（与 showLoading 成对演示）
@@ -128,16 +111,14 @@ Destroy the progress bar
 ## Signature
 
 ```typescript
-public destroyProgressBar(): void;
+function destroyProgressBar(): void;
 ```
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 先显示一个进度未满的进度条作为销毁对象
@@ -159,9 +140,8 @@ Show the no-progress loading overlay
 ## Signature
 
 ```typescript
-public showLoading(): void;
+function showLoading(): void;
 ```
-
 
 ## Returns
 
@@ -172,7 +152,6 @@ void
 There is no progress indicator, but a gray overlay consistent with the progress bar will appear to prevent further user operations
 
 ## Example
-
 
 ```javascript
 // 1. 显示无进度加载覆盖（同步调用，无返回值）
@@ -194,7 +173,7 @@ Show the progress bar or set its progress
 ## Signature
 
 ```typescript
-public showProgressBar(progress?: number, title?: string): void;
+function showProgressBar(progress?: number, title?: string): void;
 ```
 
 ## Parameters
@@ -203,53 +182,42 @@ public showProgressBar(progress?: number, title?: string): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 progress
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Progress value, value range `0-100`
-
 
 </td></tr>
 <tr><td>
 
 title
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Progress bar title
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -260,7 +228,6 @@ void
 When the progress reaches `100`<!-- -->, the progress bar will be automatically destroyed
 
 ## Example
-
 
 ```javascript
 // 1. 显示进度条并指定标题（同步调用，无返回值）

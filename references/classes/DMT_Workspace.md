@@ -5,7 +5,7 @@ Document tree / Workspace class
 ## Signature
 
 ```typescript
-export class DMT_Workspace 
+class DMT_Workspace
 ```
 
 ## Methods
@@ -14,58 +14,46 @@ export class DMT_Workspace
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getAllWorkspacesInfo()](./DMT_Workspace.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the detailed properties of all workspaces
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentWorkspaceInfo()](./DMT_Workspace.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the detailed properties of the current workspace
-
 
 </td></tr>
 <tr><td>
 
 [toggleToWorkspace(workspaceUuid)](./DMT_Workspace.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Switch to workspace
-
 
 </td></tr>
 </tbody></table>
@@ -83,9 +71,8 @@ Get the detailed properties of all workspaces
 ## Signature
 
 ```typescript
-public getAllWorkspacesInfo(): Promise<Array<IDMT_WorkspaceItem>>;
+function getAllWorkspacesInfo(): Promise<Array<IDMT_WorkspaceItem>>;
 ```
-
 
 ## Returns
 
@@ -95,7 +82,6 @@ Detailed properties of all workspaces
 
 ## Example
 
-
 ```javascript
 // 1. 获取所有工作区
 const workspaces = await eda.dmt_Workspace.getAllWorkspacesInfo();
@@ -103,7 +89,7 @@ const workspaces = await eda.dmt_Workspace.getAllWorkspacesInfo();
 // 2. 输出工作区数量与每个工作区的属性（name/uuid/itemType）
 console.log('工作区数量：', workspaces.length);
 workspaces.forEach((ws, i) => {
-  console.log(`工作区${i + 1}：`, ws.name, 'uuid:', ws.uuid);
+	console.log(`工作区${i + 1}：`, ws.name, 'uuid:', ws.uuid);
 });
 ```
 
@@ -116,9 +102,8 @@ Get the detailed properties of the current workspace
 ## Signature
 
 ```typescript
-public getCurrentWorkspaceInfo(): Promise<IDMT_WorkspaceItem | undefined>;
+function getCurrentWorkspaceInfo(): Promise<IDMT_WorkspaceItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -131,7 +116,6 @@ Detailed properties of the workspace. If it is `undefined`<!-- -->, the retrieva
 It will get the detailed properties of the current workspace
 
 ## Example
-
 
 ```javascript
 // 1. 获取当前工作区属性
@@ -151,7 +135,7 @@ Switch to workspace
 ## Signature
 
 ```typescript
-public toggleToWorkspace(workspaceUuid?: string): Promise<boolean>;
+function toggleToWorkspace(workspaceUuid?: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -160,37 +144,29 @@ public toggleToWorkspace(workspaceUuid?: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 workspaceUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Workspace UUID. If not specified, it will switch to the personal workspace
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -200,14 +176,13 @@ Whether the switch operation was successful
 
 ## Example
 
-
 ```javascript
 // 1. 记录切换前的工作区（演示结束后切回，恢复现场）
 const before = await eda.dmt_Workspace.getCurrentWorkspaceInfo();
 
 // 2. 获取所有工作区，选一个非当前的作为切换目标；只有当前一个时切换自身
 const workspaces = await eda.dmt_Workspace.getAllWorkspacesInfo();
-const target = workspaces.find((ws) => ws.uuid !== before.uuid) || before;
+const target = workspaces.find(ws => ws.uuid !== before.uuid) || before;
 
 // 3. 切换到目标工作区
 const toggled = await eda.dmt_Workspace.toggleToWorkspace(target.uuid);

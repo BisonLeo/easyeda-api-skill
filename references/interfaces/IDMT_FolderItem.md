@@ -5,7 +5,7 @@ Folder property
 ## Signature
 
 ```typescript
-export interface IDMT_FolderItem 
+interface IDMT_FolderItem
 ```
 
 ## Properties
@@ -14,156 +14,124 @@ export interface IDMT_FolderItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [childrenFoldersUuid?](./IDMT_FolderItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ List of child folder UUIDs
-
 
 </td></tr>
 <tr><td>
 
 [description?](./IDMT_FolderItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Folder description
-
 
 </td></tr>
 <tr><td>
 
 [itemType](./IDMT_FolderItem.md)
 
-
 </td><td>
 
 `readonly`
-
 
 </td><td>
 
 [EDMT\_ItemType.FOLDER](../enums/EDMT_ItemType.md)
 
-
 </td><td>
 
 Project type
-
 
 </td></tr>
 <tr><td>
 
 [name](./IDMT_FolderItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Folder name
-
 
 </td></tr>
 <tr><td>
 
 [parentFolderUuid](./IDMT_FolderItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Parent folder UUID
-
 
 </td></tr>
 <tr><td>
 
 [teamUuid](./IDMT_FolderItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 UUID of the team it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [uuid](./IDMT_FolderItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Folder UUID
-
 
 </td></tr>
 </tbody></table>

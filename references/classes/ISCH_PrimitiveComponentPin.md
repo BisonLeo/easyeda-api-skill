@@ -5,7 +5,7 @@ Device pin primitive
 ## Signature
 
 ```typescript
-export class ISCH_PrimitiveComponentPin extends ISCH_PrimitivePin 
+class ISCH_PrimitiveComponentPin extends ISCH_PrimitivePin
 ```
 **Extends:** [ISCH\_PrimitivePin](./ISCH_PrimitivePin.md)
 
@@ -15,34 +15,28 @@ A device pin primitive is a special primitive. It refers to the pin associated w
 
 For a device pin primitive, only the `pinNumber` and `noConnected` properties can be changed; all other properties are read-only. And you can only obtain a device pin primitive through [the getAllPinsByPrimitiveId method of the device class](./SCH_PrimitiveComponent.md) or [the getAllPins method of the device primitive](./ISCH_PrimitiveComponent.md)
 
-
 ## Properties
 
 <table><thead><tr><th>
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [primitiveType](./ISCH_PrimitiveComponentPin.md)
-
 
 </td><td>
 
@@ -50,16 +44,13 @@ Description
 
 `readonly`
 
-
 </td><td>
 
 [ESCH\_PrimitiveType.COMPONENT\_PIN](../enums/ESCH_PrimitiveType.md)
 
-
 </td><td>
 
 图元类型
-
 
 </td></tr>
 </tbody></table>
@@ -70,30 +61,24 @@ Description
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./ISCH_PrimitiveComponentPin.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 </tbody></table>
@@ -111,7 +96,7 @@ Description
 ## Signature
 
 ```typescript
-protected readonly primitiveType: ESCH_PrimitiveType.COMPONENT_PIN;
+function readonly primitiveType: ESCH_PrimitiveType.COMPONENT_PIN;
 ```
 
 
@@ -130,9 +115,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<ISCH_PrimitiveComponentPin>;
+function done(): Promise<ISCH_PrimitiveComponentPin>;
 ```
-
 
 ## Returns
 
@@ -141,7 +125,6 @@ Promise&lt;[ISCH\_PrimitiveComponentPin](./ISCH_PrimitiveComponentPin.md)<!-- --
 Device pin primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合

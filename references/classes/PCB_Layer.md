@@ -5,7 +5,7 @@ PCB &amp; footprint / layer operation class
 ## Signature
 
 ```typescript
-export class PCB_Layer 
+class PCB_Layer
 ```
 
 ## Methods
@@ -14,366 +14,288 @@ export class PCB_Layer
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [addCustomLayer()](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a custom layer
-
 
 </td></tr>
 <tr><td>
 
 [deletePhysicalStackingConfiguration(configurationName, physicalProps)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Physical stacking configuration
-
 
 </td></tr>
 <tr><td>
 
 [getAllLayers()](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the detailed properties of all layers
-
 
 </td></tr>
 <tr><td>
 
 [getAllPhysicalStackingConfigurations(physicalProps)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Physical stacking configuration
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentLayer()](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the detailed properties of the current layer
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentPhysicalStackingConfiguration()](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Current physical stacking configuration
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentPhysicalStackingConfigurationName()](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Current physical stacking configuration name
-
 
 </td></tr>
 <tr><td>
 
 [getDefaultPhysicalStackingConfigurationName(physicalProps)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the name of the default physical stacking configuration for new PCBs
-
 
 </td></tr>
 <tr><td>
 
 [getPhysicalStackingConfiguration(configurationName, physicalProps)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Specify physical stacking configuration
-
 
 </td></tr>
 <tr><td>
 
 [lockLayer(layer)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Lock the layer
-
 
 </td></tr>
 <tr><td>
 
 [modifyLayer(layer, property)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Layer properties
-
 
 </td></tr>
 <tr><td>
 
 [overwriteCurrentPhysicalStackingConfiguration(physicalStackingConfiguration)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Overwrite current physical stacking configuration
-
 
 </td></tr>
 <tr><td>
 
 [removeLayer(layer)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Remove Layer
-
 
 </td></tr>
 <tr><td>
 
 [renamePhysicalStackingConfiguration(originalConfigurationName, configurationName, physicalProps)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Rename the physical stacking configuration
-
 
 </td></tr>
 <tr><td>
 
 [savePhysicalStackingConfiguration(physicalStackingConfiguration, configurationName, physicalProps, allowOverwrite)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Save Physical stacking configuration
-
 
 </td></tr>
 <tr><td>
 
 [selectLayer(layer)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Select a layer
-
 
 </td></tr>
 <tr><td>
 
 [setAsDefaultPhysicalStackingConfiguration(configurationName, physicalProps)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set as the default physical stacking configuration for new PCBs
-
 
 </td></tr>
 <tr><td>
 
 [setInactiveLayerDisplayMode(displayMode)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set Inactive layer display mode
-
 
 </td></tr>
 <tr><td>
 
 [setInactiveLayerTransparency(transparency)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the inactive layer transparency
-
 
 </td></tr>
 <tr><td>
 
 [setLayerColorConfiguration(colorConfiguration)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the layer color configuration
-
 
 </td></tr>
 <tr><td>
 
 [setLayerInvisible(layer, setOtherLayerVisible)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the layer to invisible
-
 
 </td></tr>
 <tr><td>
 
 [setLayerVisible(layer, setOtherLayerInvisible)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the layer to visible
-
 
 </td></tr>
 <tr><td>
 
 [setPcbType(pcbType)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set PCB type
-
 
 </td></tr>
 <tr><td>
 
 [setTheNumberOfCopperLayers(numberOfLayers)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set Number of copper layers
-
 
 </td></tr>
 <tr><td>
 
 [unlockLayer(layer)](./PCB_Layer.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Unlock the layer
-
 
 </td></tr>
 </tbody></table>
@@ -393,9 +315,8 @@ Add a custom layer
 ## Signature
 
 ```typescript
-public addCustomLayer(): Promise<TPCB_LayersOfCustom | undefined>;
+function addCustomLayer(): Promise<TPCB_LayersOfCustom | undefined>;
 ```
-
 
 ## Returns
 
@@ -405,12 +326,11 @@ The layer ID of the newly added custom layer. If it is `undefined`<!-- -->, the 
 
 ## Example
 
-
 ```javascript
 // 1. 先移除历史运行遗留的自定义层，保证案例可以反复执行
 const layers = await eda.pcb_Layer.getAllLayers();
 for (const item of layers.filter(l => l.type === 'CUSTOM')) {
-  await eda.pcb_Layer.removeLayer(item.id);
+	await eda.pcb_Layer.removeLayer(item.id);
 }
 
 // 2. 新增自定义层，返回新层的图层 ID（CUSTOM_1=71 起顺延分配）
@@ -436,7 +356,10 @@ Delete Physical stacking configuration
 ## Signature
 
 ```typescript
-public deletePhysicalStackingConfiguration(configurationName: string, physicalProps?: IPCB_SubstratePhysicalProperties): Promise<boolean>;
+function deletePhysicalStackingConfiguration(
+	configurationName: string,
+	physicalProps?: IPCB_SubstratePhysicalProperties,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -445,53 +368,42 @@ public deletePhysicalStackingConfiguration(configurationName: string, physicalPr
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Configuration name
-
 
 </td></tr>
 <tr><td>
 
 physicalProps
 
-
 </td><td>
 
 [IPCB\_SubstratePhysicalProperties](../interfaces/IPCB_SubstratePhysicalProperties.md)
-
 
 </td><td>
 
 _(Optional)_ Physical properties. If not passed in, the current PCB properties are used by default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -514,9 +426,8 @@ Get the detailed properties of all layers
 ## Signature
 
 ```typescript
-public getAllLayers(): Promise<Array<IPCB_LayerItem>>;
+function getAllLayers(): Promise<Array<IPCB_LayerItem>>;
 ```
-
 
 ## Returns
 
@@ -525,7 +436,6 @@ Promise&lt;Array&lt;[IPCB\_LayerItem](../interfaces/IPCB_LayerItem.md)<!-- -->&g
 Detailed properties of all layers
 
 ## Example
-
 
 ```javascript
 // 1. 一次性取回当前 PCB 的全部图层
@@ -555,7 +465,9 @@ Get all Physical stacking configuration
 ## Signature
 
 ```typescript
-public getAllPhysicalStackingConfigurations(physicalProps?: IPCB_SubstratePhysicalProperties): Promise<Array<IPCB_PhysicalStackingConfiguration>>;
+function getAllPhysicalStackingConfigurations(
+	physicalProps?: IPCB_SubstratePhysicalProperties,
+): Promise<Array<IPCB_PhysicalStackingConfiguration>>;
 ```
 
 ## Parameters
@@ -564,37 +476,29 @@ public getAllPhysicalStackingConfigurations(physicalProps?: IPCB_SubstratePhysic
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 physicalProps
 
-
 </td><td>
 
 [IPCB\_SubstratePhysicalProperties](../interfaces/IPCB_SubstratePhysicalProperties.md)
-
 
 </td><td>
 
 _(Optional)_ Physical properties. If not passed in, the current PCB properties are used by default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -617,9 +521,8 @@ Get the detailed properties of the current layer
 ## Signature
 
 ```typescript
-public getCurrentLayer(): Promise<IPCB_LayerItem | undefined>;
+function getCurrentLayer(): Promise<IPCB_LayerItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -642,9 +545,10 @@ Get Current physical stacking configuration
 ## Signature
 
 ```typescript
-public getCurrentPhysicalStackingConfiguration(): Promise<IPCB_PhysicalStackingConfiguration | undefined>;
+function getCurrentPhysicalStackingConfiguration(): Promise<
+	IPCB_PhysicalStackingConfiguration | undefined
+>;
 ```
-
 
 ## Returns
 
@@ -667,9 +571,8 @@ Get Current physical stacking configuration name
 ## Signature
 
 ```typescript
-public getCurrentPhysicalStackingConfigurationName(): Promise<string | undefined>;
+function getCurrentPhysicalStackingConfigurationName(): Promise<string | undefined>;
 ```
-
 
 ## Returns
 
@@ -692,7 +595,9 @@ Get the name of the default physical stacking configuration for new PCBs
 ## Signature
 
 ```typescript
-public getDefaultPhysicalStackingConfigurationName(physicalProps?: IPCB_SubstratePhysicalProperties): Promise<string | undefined>;
+function getDefaultPhysicalStackingConfigurationName(
+	physicalProps?: IPCB_SubstratePhysicalProperties,
+): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -701,37 +606,29 @@ public getDefaultPhysicalStackingConfigurationName(physicalProps?: IPCB_Substrat
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 physicalProps
 
-
 </td><td>
 
 [IPCB\_SubstratePhysicalProperties](../interfaces/IPCB_SubstratePhysicalProperties.md)
-
 
 </td><td>
 
 _(Optional)_ Physical properties. If not passed in, the current PCB properties are used by default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -754,7 +651,10 @@ Get Specify physical stacking configuration
 ## Signature
 
 ```typescript
-public getPhysicalStackingConfiguration(configurationName: string, physicalProps?: IPCB_SubstratePhysicalProperties): Promise<IPCB_PhysicalStackingConfiguration | undefined>;
+function getPhysicalStackingConfiguration(
+	configurationName: string,
+	physicalProps?: IPCB_SubstratePhysicalProperties,
+): Promise<IPCB_PhysicalStackingConfiguration | undefined>;
 ```
 
 ## Parameters
@@ -763,53 +663,42 @@ public getPhysicalStackingConfiguration(configurationName: string, physicalProps
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Configuration name
-
 
 </td></tr>
 <tr><td>
 
 physicalProps
 
-
 </td><td>
 
 [IPCB\_SubstratePhysicalProperties](../interfaces/IPCB_SubstratePhysicalProperties.md)
-
 
 </td><td>
 
 _(Optional)_ Physical properties. If not passed in, the current PCB properties are used by default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -832,7 +721,9 @@ Lock the layer
 ## Signature
 
 ```typescript
-public lockLayer(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>): Promise<boolean>;
+function lockLayer(
+	layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -841,37 +732,29 @@ public lockLayer(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSele
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)<!-- -->&gt;
-
 
 </td><td>
 
 _(Optional)_ Layer. If no layer is specified, all layers are used by default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -880,7 +763,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 锁定顶层（TOP=1）与底层（BOTTOM=2），传入层数组
@@ -909,7 +791,15 @@ Modify Layer properties
 ## Signature
 
 ```typescript
-public modifyLayer(layer: TPCB_LayersInTheSelectable, property: { name?: undefined | string; type?: undefined | EPCB_LayerType.SIGNAL | EPCB_LayerType.INTERNAL_ELECTRICAL; color?: undefined | string; transparency?: undefined | number }): Promise<boolean>;
+function modifyLayer(
+	layer: TPCB_LayersInTheSelectable,
+	property: {
+		name?: undefined | string;
+		type?: undefined | EPCB_LayerType.SIGNAL | EPCB_LayerType.INTERNAL_ELECTRICAL;
+		color?: undefined | string;
+		transparency?: undefined | number;
+	},
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -918,53 +808,42 @@ public modifyLayer(layer: TPCB_LayersInTheSelectable, property: { name?: undefin
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)
 
-
 </td><td>
 
 Layer
-
 
 </td></tr>
 <tr><td>
 
 property
 
-
 </td><td>
 
 { name?: undefined \| string; type?: undefined \| [EPCB\_LayerType.SIGNAL](../enums/EPCB_LayerType.md) \| [EPCB\_LayerType.INTERNAL\_ELECTRICAL](../enums/EPCB_LayerType.md)<!-- -->; color?: undefined \| string; transparency?: undefined \| number }
-
 
 </td><td>
 
 Property
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -978,7 +857,6 @@ Only inner layers and custom layers can have their names modified; only inner la
 
 ## Example
 
-
 ```javascript
 // 1. 新增一个自定义层作为修改对象
 const customLayerId = await eda.pcb_Layer.addCustomLayer();
@@ -988,9 +866,9 @@ const before = (await eda.pcb_Layer.getAllLayers()).find(l => l.id === customLay
 
 // 3. 修改名称、颜色与透明度（保留现场供观察）
 const modifyResult = await eda.pcb_Layer.modifyLayer(customLayerId, {
-  name: '嘉立创示例_工艺说明',
-  color: '#FF6600',
-  transparency: 30,
+	name: '嘉立创示例_工艺说明',
+	color: '#FF6600',
+	transparency: 30,
 });
 
 // 4. 重新读取图层列表确认修改生效
@@ -1012,7 +890,9 @@ Overwrite current physical stacking configuration
 ## Signature
 
 ```typescript
-public overwriteCurrentPhysicalStackingConfiguration(physicalStackingConfiguration: IPCB_PhysicalStackingConfiguration): Promise<boolean>;
+function overwriteCurrentPhysicalStackingConfiguration(
+	physicalStackingConfiguration: IPCB_PhysicalStackingConfiguration,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1021,35 +901,27 @@ public overwriteCurrentPhysicalStackingConfiguration(physicalStackingConfigurati
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 physicalStackingConfiguration
 
-
 </td><td>
 
 [IPCB\_PhysicalStackingConfiguration](../interfaces/IPCB_PhysicalStackingConfiguration.md)
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1074,7 +946,7 @@ Remove Layer
 ## Signature
 
 ```typescript
-public removeLayer(layer: TPCB_LayersOfCustom): Promise<boolean>;
+function removeLayer(layer: TPCB_LayersOfCustom): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1083,37 +955,29 @@ public removeLayer(layer: TPCB_LayersOfCustom): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfCustom](../types/TPCB_LayersOfCustom.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1126,7 +990,6 @@ Whether the operation is successful
 Currently only custom layers can be removed
 
 ## Example
-
 
 ```javascript
 // 1. 新增一个自定义层作为移除对象
@@ -1154,7 +1017,11 @@ Rename the physical stacking configuration
 ## Signature
 
 ```typescript
-public renamePhysicalStackingConfiguration(originalConfigurationName: string, configurationName: string, physicalProps?: IPCB_SubstratePhysicalProperties): Promise<boolean>;
+function renamePhysicalStackingConfiguration(
+	originalConfigurationName: string,
+	configurationName: string,
+	physicalProps?: IPCB_SubstratePhysicalProperties,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1163,69 +1030,55 @@ public renamePhysicalStackingConfiguration(originalConfigurationName: string, co
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 originalConfigurationName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Original physical stacking configuration name
-
 
 </td></tr>
 <tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 New physical stacking configuration name
-
 
 </td></tr>
 <tr><td>
 
 physicalProps
 
-
 </td><td>
 
 [IPCB\_SubstratePhysicalProperties](../interfaces/IPCB_SubstratePhysicalProperties.md)
-
 
 </td><td>
 
 _(Optional)_ Physical properties. If not passed in, the current PCB properties are used by default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1248,7 +1101,12 @@ Save Physical stacking configuration
 ## Signature
 
 ```typescript
-public savePhysicalStackingConfiguration(physicalStackingConfiguration: IPCB_PhysicalStackingConfiguration, configurationName: string, physicalProps?: IPCB_SubstratePhysicalProperties, allowOverwrite?: boolean): Promise<boolean>;
+function savePhysicalStackingConfiguration(
+	physicalStackingConfiguration: IPCB_PhysicalStackingConfiguration,
+	configurationName: string,
+	physicalProps?: IPCB_SubstratePhysicalProperties,
+	allowOverwrite?: boolean,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1257,85 +1115,68 @@ public savePhysicalStackingConfiguration(physicalStackingConfiguration: IPCB_Phy
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 physicalStackingConfiguration
 
-
 </td><td>
 
 [IPCB\_PhysicalStackingConfiguration](../interfaces/IPCB_PhysicalStackingConfiguration.md)
 
-
 </td><td>
 
 Physical stacking configuration
-
 
 </td></tr>
 <tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Configuration name
-
 
 </td></tr>
 <tr><td>
 
 physicalProps
 
-
 </td><td>
 
 [IPCB\_SubstratePhysicalProperties](../interfaces/IPCB_SubstratePhysicalProperties.md)
 
-
 </td><td>
 
 _(Optional)_ Physical properties. If not passed in, the current PCB properties are used by default
-
 
 </td></tr>
 <tr><td>
 
 allowOverwrite
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to allow overwriting a physical stacking configuration with the same name. If `false`<!-- -->, `false` will be returned when a configuration with the same name is encountered. Please note the possible risk of data loss
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1356,7 +1197,7 @@ Select a layer
 ## Signature
 
 ```typescript
-public selectLayer(layer: TPCB_LayersInTheSelectable): Promise<boolean>;
+function selectLayer(layer: TPCB_LayersInTheSelectable): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1365,37 +1206,29 @@ public selectLayer(layer: TPCB_LayersInTheSelectable): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1404,7 +1237,6 @@ Promise&lt;boolean&gt;
 Whether the operation was successful. `false` is returned if the specified layer does not exist
 
 ## Example
-
 
 ```javascript
 // 1. 切换当前工作层到底层（BOTTOM=2）
@@ -1428,7 +1260,10 @@ Set as the default physical stacking configuration for new PCBs
 ## Signature
 
 ```typescript
-public setAsDefaultPhysicalStackingConfiguration(configurationName: string, physicalProps?: IPCB_SubstratePhysicalProperties): Promise<boolean>;
+function setAsDefaultPhysicalStackingConfiguration(
+	configurationName: string,
+	physicalProps?: IPCB_SubstratePhysicalProperties,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1437,53 +1272,42 @@ public setAsDefaultPhysicalStackingConfiguration(configurationName: string, phys
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Configuration name
-
 
 </td></tr>
 <tr><td>
 
 physicalProps
 
-
 </td><td>
 
 [IPCB\_SubstratePhysicalProperties](../interfaces/IPCB_SubstratePhysicalProperties.md)
-
 
 </td><td>
 
 _(Optional)_ Physical properties. If not passed in, the current PCB properties are used by default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1506,7 +1330,7 @@ Set Inactive layer display mode
 ## Signature
 
 ```typescript
-public setInactiveLayerDisplayMode(displayMode?: EPCB_InactiveLayerDisplayMode): Promise<boolean>;
+function setInactiveLayerDisplayMode(displayMode?: EPCB_InactiveLayerDisplayMode): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1515,37 +1339,29 @@ public setInactiveLayerDisplayMode(displayMode?: EPCB_InactiveLayerDisplayMode):
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 displayMode
 
-
 </td><td>
 
 [EPCB\_InactiveLayerDisplayMode](../enums/EPCB_InactiveLayerDisplayMode.md)
-
 
 </td><td>
 
 _(Optional)_ Display mode
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1554,7 +1370,6 @@ Promise&lt;boolean&gt;
 Whether Set Successful
 
 ## Example
-
 
 ```javascript
 // 1. 将非激活层设为置灰模式（TURN_GRAY=1）
@@ -1578,7 +1393,7 @@ Set the inactive layer transparency
 ## Signature
 
 ```typescript
-public setInactiveLayerTransparency(transparency: number): Promise<boolean>;
+function setInactiveLayerTransparency(transparency: number): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1587,37 +1402,29 @@ public setInactiveLayerTransparency(transparency: number): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 transparency
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Transparency, range `0-100`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1626,7 +1433,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 将非激活层透明度设为 60，让当前编辑层更突出
@@ -1650,7 +1456,9 @@ Set the layer color configuration
 ## Signature
 
 ```typescript
-public setLayerColorConfiguration(colorConfiguration: EPCB_LayerColorConfiguration): Promise<boolean>;
+function setLayerColorConfiguration(
+	colorConfiguration: EPCB_LayerColorConfiguration,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1659,37 +1467,29 @@ public setLayerColorConfiguration(colorConfiguration: EPCB_LayerColorConfigurati
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 colorConfiguration
 
-
 </td><td>
 
 [EPCB\_LayerColorConfiguration](../enums/EPCB_LayerColorConfiguration.md)
-
 
 </td><td>
 
 Color configuration
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1698,7 +1498,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 记录切换前顶层的颜色
@@ -1729,7 +1528,10 @@ Set the layer to invisible
 ## Signature
 
 ```typescript
-public setLayerInvisible(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>, setOtherLayerVisible?: boolean): Promise<boolean>;
+function setLayerInvisible(
+	layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>,
+	setOtherLayerVisible?: boolean,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1738,53 +1540,42 @@ public setLayerInvisible(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersI
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)<!-- -->&gt;
 
-
 </td><td>
 
 _(Optional)_ Layer. If no layer is specified, all layers are used by default
-
 
 </td></tr>
 <tr><td>
 
 setOtherLayerVisible
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to set other layers to visible
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1793,7 +1584,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 隐藏底层丝印层（BOTTOM_SILKSCREEN=4）
@@ -1822,7 +1612,10 @@ Set the layer to visible
 ## Signature
 
 ```typescript
-public setLayerVisible(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>, setOtherLayerInvisible?: boolean): Promise<boolean>;
+function setLayerVisible(
+	layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>,
+	setOtherLayerInvisible?: boolean,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1831,53 +1624,42 @@ public setLayerVisible(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInT
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)<!-- -->&gt;
 
-
 </td><td>
 
 _(Optional)_ Layer. If no layer is specified, all layers are used by default
-
 
 </td></tr>
 <tr><td>
 
 setOtherLayerInvisible
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to set other layers to invisible
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1886,7 +1668,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 先隐藏底层丝印层（BOTTOM_SILKSCREEN=4）制造初始状态
@@ -1914,7 +1695,7 @@ Set PCB type
 ## Signature
 
 ```typescript
-public setPcbType(pcbType: EPCB_PcbPlateType): Promise<boolean>;
+function setPcbType(pcbType: EPCB_PcbPlateType): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1923,37 +1704,29 @@ public setPcbType(pcbType: EPCB_PcbPlateType): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pcbType
 
-
 </td><td>
 
 [EPCB\_PcbPlateType](../enums/EPCB_PcbPlateType.md)
-
 
 </td><td>
 
 PCB type
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1972,7 +1745,6 @@ Please note:
 2. When switching the PCB type from FPC flexible board to ordinary board, any primitives on the FPC stiffener layer must be deleted in advance; otherwise, the switch will fail and `false` will be returned.
 
 ## Example
-
 
 ```javascript
 // 1. 记录切换前的图层总数
@@ -2003,7 +1775,7 @@ Set Number of copper layers
 ## Signature
 
 ```typescript
-public setTheNumberOfCopperLayers(numberOfLayers: TPCB_NumberOfCopperLayers): Promise<boolean>;
+function setTheNumberOfCopperLayers(numberOfLayers: TPCB_NumberOfCopperLayers): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2012,37 +1784,29 @@ public setTheNumberOfCopperLayers(numberOfLayers: TPCB_NumberOfCopperLayers): Pr
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 numberOfLayers
 
-
 </td><td>
 
 [TPCB\_NumberOfCopperLayers](../types/TPCB_NumberOfCopperLayers.md)
-
 
 </td><td>
 
 Number of copper layers
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2055,7 +1819,6 @@ Whether the operation is successful
 A newly created PCB document has two copper layers by default
 
 ## Example
-
 
 ```javascript
 // 1. 记录调整前的信号层（铜箔层）数量
@@ -2089,7 +1852,9 @@ Unlock the layer
 ## Signature
 
 ```typescript
-public unlockLayer(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>): Promise<boolean>;
+function unlockLayer(
+	layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSelectable>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2098,37 +1863,29 @@ public unlockLayer(layer?: TPCB_LayersInTheSelectable | Array<TPCB_LayersInTheSe
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md) \| Array&lt;[TPCB\_LayersInTheSelectable](../types/TPCB_LayersInTheSelectable.md)<!-- -->&gt;
-
 
 </td><td>
 
 _(Optional)_ Layer. If no layer is specified, all layers are used by default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2137,7 +1894,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 先锁定顶层（TOP=1）制造初始状态

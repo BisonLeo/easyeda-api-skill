@@ -5,7 +5,7 @@ Net property
 ## Signature
 
 ```typescript
-export interface ISCH_NetInfo 
+interface ISCH_NetInfo
 ```
 
 ## Properties
@@ -14,59 +14,47 @@ export interface ISCH_NetInfo
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [net](./ISCH_NetInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Net name
-
 
 </td></tr>
 <tr><td>
 
 [wires](./ISCH_NetInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;[ISCH\_WireInfo](./ISCH_WireInfo.md)<!-- -->&gt;
 
-
 </td><td>
 
 Wire
-
 
 </td></tr>
 </tbody></table>

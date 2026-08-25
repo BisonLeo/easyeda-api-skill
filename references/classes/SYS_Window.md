@@ -5,13 +5,12 @@ System / window class
 ## Signature
 
 ```typescript
-export class SYS_Window 
+class SYS_Window
 ```
 
 ## Remarks
 
 For security, only limited window navigation and listening support is provided. For more operations, use the iframe window [SYS\_IFrame](./SYS_IFrame.md)
-
 
 ## Methods
 
@@ -19,184 +18,145 @@ For security, only limited window navigation and listening support is provided. 
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [addEventListener(type, listener, options)](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Add an event listener
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentTheme()](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get Current theme
-
 
 </td></tr>
 <tr><td>
 
 [getUrlAnchor()](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the URL anchor
-
 
 </td></tr>
 <tr><td>
 
 [getUrlParam(key)](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get URL parameter
-
 
 </td></tr>
 <tr><td>
 
 [getViewportSize()](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the current viewport size of the page
-
 
 </td></tr>
 <tr><td>
 
 [hideStartPageQuickStartItems(items)](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Hide start page quick start items
-
 
 </td></tr>
 <tr><td>
 
 [hideStartPageSupportFloatBarItems()](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Hide the start page support information floating components
-
 
 </td></tr>
 <tr><td>
 
 [open(url, target)](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Open a resource window
-
 
 </td></tr>
 <tr><td>
 
 [openUI(uiName, args)](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Open UI window
-
 
 </td></tr>
 <tr><td>
 
 [removeEventListener(removableObject)](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Remove Event listener
-
 
 </td></tr>
 <tr><td>
 
 [urlPushState(url)](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Append new URL history stack information
-
 
 </td></tr>
 <tr><td>
 
 [urlReplaceState(url)](./SYS_Window.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Modify the current URL history stack information
-
 
 </td></tr>
 </tbody></table>
@@ -214,7 +174,16 @@ Add an event listener
 ## Signature
 
 ```typescript
-public addEventListener(type: ESYS_WindowEventType, listener: (ev: any) => any, options?: { capture?: undefined | false | true; once?: undefined | false | true; passive?: undefined | false | true; signal?: undefined | AbortSignal }): ISYS_WindowEventListenerRemovableObject | undefined;
+function addEventListener(
+	type: ESYS_WindowEventType,
+	listener: (ev: any) => any,
+	options?: {
+		capture?: undefined | false | true;
+		once?: undefined | false | true;
+		passive?: undefined | false | true;
+		signal?: undefined | AbortSignal;
+	},
+): ISYS_WindowEventListenerRemovableObject | undefined;
 ```
 
 ## Parameters
@@ -223,69 +192,55 @@ public addEventListener(type: ESYS_WindowEventType, listener: (ev: any) => any, 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 type
 
-
 </td><td>
 
 [ESYS\_WindowEventType](../enums/ESYS_WindowEventType.md)
 
-
 </td><td>
 
 Event type, current support `blur` `focus`
-
 
 </td></tr>
 <tr><td>
 
 listener
 
-
 </td><td>
 
 (ev: any) =&gt; any
 
-
 </td><td>
 
 Event listener callback
-
 
 </td></tr>
 <tr><td>
 
 options
 
-
 </td><td>
 
 \{ capture?: undefined \| false \| true; once?: undefined \| false \| true; passive?: undefined \| false \| true; signal?: undefined \| AbortSignal \}
-
 
 </td><td>
 
 _(Optional)_ Optional parameters
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -295,11 +250,10 @@ Event listener method, used to remove the event listener. If it is `undefined`<!
 
 ## Example
 
-
 ```javascript
 // 1. 注册 focus 监听（真实场景由用户切换窗口焦点触发，这里用合成事件模拟）
 const removable = eda.sys_Window.addEventListener('focus', () => {
-  console.log('窗口获得焦点');
+	console.log('窗口获得焦点');
 });
 
 // 2. 检查返回的可移除对象，其中的 type 字段记录了监听的事件类型
@@ -322,9 +276,8 @@ Get Current theme
 ## Signature
 
 ```typescript
-public getCurrentTheme(): Promise<ESYS_Theme>;
+function getCurrentTheme(): Promise<ESYS_Theme>;
 ```
-
 
 ## Returns
 
@@ -337,7 +290,6 @@ Current theme
 Get the current EDA theme, \*\*light\*\* or \*\*dark\*\*
 
 ## Example
-
 
 ```javascript
 // 1. 获取当前主题（异步方法，需要 await）
@@ -356,9 +308,8 @@ Get the URL anchor
 ## Signature
 
 ```typescript
-public getUrlAnchor(): string;
+function getUrlAnchor(): string;
 ```
-
 
 ## Returns
 
@@ -368,13 +319,12 @@ URL anchor value
 
 ## Example
 
-
 ```javascript
 // 1. 备份当前完整地址（用于演示后还原）
 const originalHref = location.href;
 
 // 2. 写入一个示例锚点（地址栏会临时变成示例锚点）
-eda.sys_Window.urlPushState(location.href.split('#')[0] + '#嘉立创示例_锚点');
+eda.sys_Window.urlPushState(`${location.href.split('#')[0]}#嘉立创示例_锚点`);
 
 // 3. 读取锚点（返回的是编码后的字符串，解码后展示）
 const anchor = decodeURIComponent(eda.sys_Window.getUrlAnchor());
@@ -394,7 +344,7 @@ Get URL parameter
 ## Signature
 
 ```typescript
-public getUrlParam(key: string): string | null;
+function getUrlParam(key: string): string | null;
 ```
 
 ## Parameters
@@ -403,37 +353,29 @@ public getUrlParam(key: string): string | null;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 key
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Parameter name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -442,7 +384,6 @@ string \| null
 Parameter value
 
 ## Example
-
 
 ```javascript
 // 1. 备份当前完整地址（用于演示后还原）
@@ -471,9 +412,8 @@ Get the current viewport size of the page
 ## Signature
 
 ```typescript
-public getViewportSize(): { width: number; height: number };
+function getViewportSize(): { width: number; height: number };
 ```
-
 
 ## Returns
 
@@ -486,7 +426,6 @@ Viewport width and height (in pixels)
 ADD since EDA v3.2.162
 
 ## Example
-
 
 ```javascript
 // 1. 获取视口大小（同步方法，直接取值）
@@ -505,7 +444,7 @@ Hide start page quick start items
 ## Signature
 
 ```typescript
-public hideStartPageQuickStartItems(items: Array<ESYS_StartPageQuickStartItem>): Promise<boolean>;
+function hideStartPageQuickStartItems(items: Array<ESYS_StartPageQuickStartItem>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -514,37 +453,29 @@ public hideStartPageQuickStartItems(items: Array<ESYS_StartPageQuickStartItem>):
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 items
 
-
 </td><td>
 
 Array&lt;[ESYS\_StartPageQuickStartItem](../enums/ESYS_StartPageQuickStartItem.md)<!-- -->&gt;
-
 
 </td><td>
 
 Array of quick start items to hide
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -569,9 +500,8 @@ Hide the start page support information floating components
 ## Signature
 
 ```typescript
-public hideStartPageSupportFloatBarItems(): Promise<boolean>;
+function hideStartPageSupportFloatBarItems(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -596,7 +526,7 @@ Open a resource window
 ## Signature
 
 ```typescript
-public open(url: string, target?: ESYS_WindowOpenTarget): void;
+function open(url: string, target?: ESYS_WindowOpenTarget): void;
 ```
 
 ## Parameters
@@ -605,60 +535,48 @@ public open(url: string, target?: ESYS_WindowOpenTarget): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 url
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 URL or path of the resource to load
-
 
 </td></tr>
 <tr><td>
 
 target
 
-
 </td><td>
 
 [ESYS\_WindowOpenTarget](../enums/ESYS_WindowOpenTarget.md)
-
 
 </td><td>
 
 _(Optional)_ Context target
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 在新标签页打开目标地址（同步方法，无返回值）
@@ -677,7 +595,7 @@ Open UI window
 ## Signature
 
 ```typescript
-public openUI(uiName: string, args?: Record<string, any>): Promise<void>;
+function openUI(uiName: string, args?: Record<string, any>): Promise<void>;
 ```
 
 ## Parameters
@@ -686,53 +604,42 @@ public openUI(uiName: string, args?: Record<string, any>): Promise<void>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uiName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 UI name
-
 
 </td></tr>
 <tr><td>
 
 args
 
-
 </td><td>
 
 Record&lt;string, any&gt;
-
 
 </td><td>
 
 _(Optional)_ Optional parameter object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -743,7 +650,6 @@ Promise&lt;void&gt;
 Non-public API usage notice: This API is provided as-is without additional documentation for parameters. Parameters may be changed in a breaking manner in any version without notice.
 
 ## Example
-
 
 ```javascript
 // 1. 打开指定名称的内置 UI 窗口（异步方法，需要 await；这里用占位名称演示调用方式）
@@ -762,7 +668,7 @@ Remove Event listener
 ## Signature
 
 ```typescript
-public removeEventListener(removableObject: ISYS_WindowEventListenerRemovableObject): void;
+function removeEventListener(removableObject: ISYS_WindowEventListenerRemovableObject): void;
 ```
 
 ## Parameters
@@ -771,37 +677,29 @@ public removeEventListener(removableObject: ISYS_WindowEventListenerRemovableObj
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 removableObject
 
-
 </td><td>
 
 [ISYS\_WindowEventListenerRemovableObject](../interfaces/ISYS_WindowEventListenerRemovableObject.md)
-
 
 </td><td>
 
 Window event listener can remove object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -809,12 +707,11 @@ void
 
 ## Example
 
-
 ```javascript
 // 1. 先注册一个 blur 监听，拿到可移除对象（removeEventListener 的入参）
 let fired = 0;
 const removable = eda.sys_Window.addEventListener('blur', () => {
-  fired++;
+	fired++;
 });
 console.log('已注册 blur 监听，事件类型：', removable.type);
 
@@ -835,7 +732,7 @@ Append new URL history stack information
 ## Signature
 
 ```typescript
-public urlPushState(url: string): void;
+function urlPushState(url: string): void;
 ```
 
 ## Parameters
@@ -844,37 +741,29 @@ public urlPushState(url: string): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 url
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 URL
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -882,13 +771,12 @@ void
 
 ## Example
 
-
 ```javascript
 // 1. 备份当前完整地址
 const originalHref = location.href;
 
 // 2. 追加一条带示例锚点的新历史记录
-eda.sys_Window.urlPushState(location.href.split('#')[0] + '#嘉立创示例_新状态');
+eda.sys_Window.urlPushState(`${location.href.split('#')[0]}#嘉立创示例_新状态`);
 
 // 3. 验证地址栏已更新为新的锚点
 console.log('追加后的锚点：', decodeURIComponent(eda.sys_Window.getUrlAnchor()));
@@ -907,7 +795,7 @@ Modify the current URL history stack information
 ## Signature
 
 ```typescript
-public urlReplaceState(url: string): void;
+function urlReplaceState(url: string): void;
 ```
 
 ## Parameters
@@ -916,37 +804,29 @@ public urlReplaceState(url: string): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 url
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 URL
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -954,13 +834,12 @@ void
 
 ## Example
 
-
 ```javascript
 // 1. 备份当前完整地址
 const originalHref = location.href;
 
 // 2. 把当前历史记录的地址改写为带示例锚点的地址
-eda.sys_Window.urlReplaceState(location.href.split('#')[0] + '#嘉立创示例_替换状态');
+eda.sys_Window.urlReplaceState(`${location.href.split('#')[0]}#嘉立创示例_替换状态`);
 
 // 3. 验证改写生效（getUrlAnchor 返回编码后的锚点，解码后展示）
 console.log('改写后的锚点：', decodeURIComponent(eda.sys_Window.getUrlAnchor()));

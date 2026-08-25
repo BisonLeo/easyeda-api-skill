@@ -9,7 +9,7 @@ Document ratline calculation function status
 ## Signature
 
 ```typescript
-export enum EPCB_DocumentRatlineCalculatingActiveStatus 
+enum EPCB_DocumentRatlineCalculatingActiveStatus
 ```
 
 ## Enumeration Members
@@ -18,44 +18,35 @@ export enum EPCB_DocumentRatlineCalculatingActiveStatus
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 ACTIVE
 
-
 </td><td>
 
 `'active'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 INACTIVE
 
-
 </td><td>
 
 `'inactive'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

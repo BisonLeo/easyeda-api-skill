@@ -5,7 +5,7 @@ Document tree / Team class
 ## Signature
 
 ```typescript
-export class DMT_Team 
+class DMT_Team
 ```
 
 ## Methods
@@ -14,58 +14,46 @@ export class DMT_Team
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getAllInvolvedTeamInfo()](./DMT_Team.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the detailed properties of all involved teams
-
 
 </td></tr>
 <tr><td>
 
 [getAllTeamsInfo()](./DMT_Team.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the detailed properties of all direct teams
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentTeamInfo()](./DMT_Team.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the detailed properties of the current team
-
 
 </td></tr>
 </tbody></table>
@@ -83,9 +71,8 @@ Get the detailed properties of all involved teams
 ## Signature
 
 ```typescript
-public getAllInvolvedTeamInfo(): Promise<Array<IDMT_TeamItem>>;
+function getAllInvolvedTeamInfo(): Promise<Array<IDMT_TeamItem>>;
 ```
-
 
 ## Returns
 
@@ -95,23 +82,23 @@ Detailed properties of all involved teams
 
 ## Example
 
-
 ```javascript
 // 1. 尝试获取所有参与的团队（当前版本会触发内部缺陷）
 let teams;
 try {
-  teams = await eda.dmt_Team.getAllInvolvedTeamInfo();
-} catch (e) {
-  console.log('说明：当前版本触发内部缺陷，改用 getAllTeamsInfo 替代：', e.message);
+	teams = await eda.dmt_Team.getAllInvolvedTeamInfo();
+}
+catch (e) {
+	console.log('说明：当前版本触发内部缺陷，改用 getAllTeamsInfo 替代：', e.message);
 
-  // 2. 替代方案：获取所有直接团队
-  teams = await eda.dmt_Team.getAllTeamsInfo();
+	// 2. 替代方案：获取所有直接团队
+	teams = await eda.dmt_Team.getAllTeamsInfo();
 }
 
 // 3. 输出团队数量与每个团队的属性
 console.log('团队数量：', teams.length);
 teams.forEach((team, i) => {
-  console.log(`团队${i + 1}：`, team.name, 'uuid:', team.uuid);
+	console.log(`团队${i + 1}：`, team.name, 'uuid:', team.uuid);
 });
 ```
 
@@ -124,9 +111,8 @@ Get the detailed properties of all direct teams
 ## Signature
 
 ```typescript
-public getAllTeamsInfo(): Promise<Array<IDMT_TeamItem>>;
+function getAllTeamsInfo(): Promise<Array<IDMT_TeamItem>>;
 ```
-
 
 ## Returns
 
@@ -140,7 +126,6 @@ A personal space is essentially a team named \*\*Personal\*\*
 
 ## Example
 
-
 ```javascript
 // 1. 获取所有直接团队
 const teams = await eda.dmt_Team.getAllTeamsInfo();
@@ -148,7 +133,7 @@ const teams = await eda.dmt_Team.getAllTeamsInfo();
 // 2. 输出团队数量与每个团队的属性（name/uuid/identity/itemType）
 console.log('团队数量：', teams.length);
 teams.forEach((team, i) => {
-  console.log(`团队${i + 1}：`, team.name, 'uuid:', team.uuid, '身份 ID：', team.identity);
+	console.log(`团队${i + 1}：`, team.name, 'uuid:', team.uuid, '身份 ID：', team.identity);
 });
 ```
 
@@ -161,9 +146,8 @@ Get the detailed properties of the current team
 ## Signature
 
 ```typescript
-public getCurrentTeamInfo(): Promise<IDMT_TeamItem | undefined>;
+function getCurrentTeamInfo(): Promise<IDMT_TeamItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -176,7 +160,6 @@ Detailed properties of the team. If it is `undefined`<!-- -->, the retrieval fai
 It will get the detailed properties of the team that the project belongs to, associated with the currently open schematic, PCB, or panel that has the last input focus
 
 ## Example
-
 
 ```javascript
 // 1. 获取当前团队属性

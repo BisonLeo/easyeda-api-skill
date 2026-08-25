@@ -5,7 +5,7 @@ Project net property
 ## Signature
 
 ```typescript
-export interface ISCH_ProjectNetInfo 
+interface ISCH_ProjectNetInfo
 ```
 
 ## Properties
@@ -14,97 +14,77 @@ export interface ISCH_ProjectNetInfo
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [boardName](./ISCH_ProjectNetInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Board name
-
 
 </td></tr>
 <tr><td>
 
 [nets](./ISCH_ProjectNetInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;[ISCH\_NetInfo](./ISCH_NetInfo.md)<!-- -->&gt;
 
-
 </td><td>
 
 Net
-
 
 </td></tr>
 <tr><td>
 
 [schematicName](./ISCH_ProjectNetInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Schematic name
-
 
 </td></tr>
 <tr><td>
 
 [schematicUuid](./ISCH_ProjectNetInfo.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Schematic UUID
-
 
 </td></tr>
 </tbody></table>

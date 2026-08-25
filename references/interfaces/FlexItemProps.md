@@ -5,7 +5,7 @@ Flex 子项：Flex 布局中的单个子元素
 ## Signature
 
 ```typescript
-export interface FlexItemProps extends StyleProps 
+interface FlexItemProps extends StyleProps
 ```
 **Extends:** [StyleProps](./StyleProps.md)
 
@@ -15,78 +15,62 @@ export interface FlexItemProps extends StyleProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [children?](./FlexItemProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 any
 
-
 </td><td>
 
 _(Optional)_ Child node
-
 
 </td></tr>
 <tr><td>
 
 [flexRatio?](./FlexItemProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Flex ratio (flex grow factor)
-
 
 </td></tr>
 <tr><td>
 
 [onClick?](./FlexItemProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 () =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 点击子项时触发
-
 
 </td></tr>
 </tbody></table>

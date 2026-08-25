@@ -5,7 +5,7 @@
 ## Signature
 
 ```typescript
-export interface SlotProps 
+interface SlotProps
 ```
 
 ## Properties
@@ -14,59 +14,47 @@ export interface SlotProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [children?](./SlotProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 any
 
-
 </td><td>
 
 _(Optional)_ Slot content child nodes
-
 
 </td></tr>
 <tr><td>
 
 [name](./SlotProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Slot name (required)
-
 
 </td></tr>
 </tbody></table>

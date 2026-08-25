@@ -5,7 +5,7 @@ Schematic &amp; symbol / property primitive class
 ## Signature
 
 ```typescript
-export class SCH_PrimitiveAttribute implements ISCH_PrimitiveAPI 
+class SCH_PrimitiveAttribute implements ISCH_PrimitiveAPI
 ```
 **Implements:** [ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
@@ -15,100 +15,79 @@ export class SCH_PrimitiveAttribute implements ISCH_PrimitiveAPI
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [createNetLabel(x, y, net)](./SCH_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create a net label
 
+</td></tr>
+<tr><td>
+
+[get(primitiveIds)](./SCH_PrimitiveAttribute.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get Property
 
 </td></tr>
 <tr><td>
 
 [get(primitiveIds)](./SCH_PrimitiveAttribute.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get Property
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitiveAttribute.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Property
-
 
 </td></tr>
 <tr><td>
 
 [getAll(parentPrimitiveId)](./SCH_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Property
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitiveId(parentPrimitiveId)](./SCH_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Property primitive IDs
-
 
 </td></tr>
 <tr><td>
 
 [modify(primitiveId, property)](./SCH_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Property
-
 
 </td></tr>
 </tbody></table>
@@ -128,7 +107,11 @@ Create a net label
 ## Signature
 
 ```typescript
-public createNetLabel(x: number, y: number, net: string): Promise<ISCH_PrimitiveAttribute | undefined>;
+function createNetLabel(
+	x: number,
+	y: number,
+	net: string,
+): Promise<ISCH_PrimitiveAttribute | undefined>;
 ```
 
 ## Parameters
@@ -137,69 +120,55 @@ public createNetLabel(x: number, y: number, net: string): Promise<ISCH_Primitive
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -222,7 +191,7 @@ Get Property
 ## Signature
 
 ```typescript
-public get(primitiveIds: string): Promise<ISCH_PrimitiveAttribute | undefined>;
+function get(primitiveIds: string): Promise<ISCH_PrimitiveAttribute | undefined>;
 ```
 
 ## Parameters
@@ -231,37 +200,29 @@ public get(primitiveIds: string): Promise<ISCH_PrimitiveAttribute | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Property primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -270,7 +231,6 @@ Promise&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md) \| undefined
 Attribute primitive object, `undefined` indicates that the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -308,7 +268,7 @@ Get Property
 ## Signature
 
 ```typescript
-public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveAttribute>>;
+function get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveAttribute>>;
 ```
 
 ## Parameters
@@ -317,37 +277,29 @@ public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitiveAttribute>>
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Property primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -370,7 +322,7 @@ Get all Property
 ## Signature
 
 ```typescript
-public getAll(parentPrimitiveId?: string): Promise<Array<ISCH_PrimitiveAttribute>>;
+function getAll(parentPrimitiveId?: string): Promise<Array<ISCH_PrimitiveAttribute>>;
 ```
 
 ## Parameters
@@ -379,37 +331,29 @@ public getAll(parentPrimitiveId?: string): Promise<Array<ISCH_PrimitiveAttribute
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 parentPrimitiveId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Parent primitive ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -422,7 +366,6 @@ Array of Property primitive objects
 If no parent primitive ID is passed, all attribute primitives in the sheet will be obtained
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -458,7 +401,7 @@ Get all Property primitive IDs
 ## Signature
 
 ```typescript
-public getAllPrimitiveId(parentPrimitiveId?: string): Promise<Array<string>>;
+function getAllPrimitiveId(parentPrimitiveId?: string): Promise<Array<string>>;
 ```
 
 ## Parameters
@@ -467,37 +410,29 @@ public getAllPrimitiveId(parentPrimitiveId?: string): Promise<Array<string>>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 parentPrimitiveId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Parent primitive ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -510,7 +445,6 @@ Array of Property primitive IDs
 If no parent primitive ID is passed, all attribute primitives in the sheet will be obtained
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -545,7 +479,37 @@ Modify Property
 ## Signature
 
 ```typescript
-public modify(primitiveId: string | ISCH_PrimitiveAttribute, property: { x?: undefined | null | number; y?: undefined | null | number; rotation?: undefined | null | number; color?: undefined | null | string; fontName?: undefined | null | string; fontSize?: undefined | null | number; bold?: undefined | null | false | true; italic?: undefined | null | false | true; underLine?: undefined | null | false | true; alignMode?: undefined | null | ESCH_PrimitiveTextAlignMode.LEFT_TOP | ESCH_PrimitiveTextAlignMode.LEFT_MIDDLE | ESCH_PrimitiveTextAlignMode.LEFT_BOTTOM | ESCH_PrimitiveTextAlignMode.CENTER_TOP | ESCH_PrimitiveTextAlignMode.CENTER | ESCH_PrimitiveTextAlignMode.CENTER_BOTTOM | ESCH_PrimitiveTextAlignMode.RIGHT_TOP | ESCH_PrimitiveTextAlignMode.RIGHT_MIDDLE | ESCH_PrimitiveTextAlignMode.RIGHT_BOTTOM; fillColor?: undefined | null | string; key?: undefined | string; value?: undefined | string; keyVisible?: undefined | null | false | true; valueVisible?: undefined | null | false | true }): Promise<ISCH_PrimitiveAttribute | undefined>;
+function modify(
+	primitiveId: string | ISCH_PrimitiveAttribute,
+	property: {
+		x?: undefined | null | number;
+		y?: undefined | null | number;
+		rotation?: undefined | null | number;
+		color?: undefined | null | string;
+		fontName?: undefined | null | string;
+		fontSize?: undefined | null | number;
+		bold?: undefined | null | false | true;
+		italic?: undefined | null | false | true;
+		underLine?: undefined | null | false | true;
+		alignMode?:
+			| undefined
+			| null
+			| ESCH_PrimitiveTextAlignMode.LEFT_TOP
+			| ESCH_PrimitiveTextAlignMode.LEFT_MIDDLE
+			| ESCH_PrimitiveTextAlignMode.LEFT_BOTTOM
+			| ESCH_PrimitiveTextAlignMode.CENTER_TOP
+			| ESCH_PrimitiveTextAlignMode.CENTER
+			| ESCH_PrimitiveTextAlignMode.CENTER_BOTTOM
+			| ESCH_PrimitiveTextAlignMode.RIGHT_TOP
+			| ESCH_PrimitiveTextAlignMode.RIGHT_MIDDLE
+			| ESCH_PrimitiveTextAlignMode.RIGHT_BOTTOM;
+		fillColor?: undefined | null | string;
+		key?: undefined | string;
+		value?: undefined | string;
+		keyVisible?: undefined | null | false | true;
+		valueVisible?: undefined | null | false | true;
+	},
+): Promise<ISCH_PrimitiveAttribute | undefined>;
 ```
 
 ## Parameters
@@ -554,53 +518,42 @@ public modify(primitiveId: string | ISCH_PrimitiveAttribute, property: { x?: und
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string \| [ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md)
 
-
 </td><td>
 
 Primitive ID
-
 
 </td></tr>
 <tr><td>
 
 property
 
-
 </td><td>
 
 { x?: undefined \| null \| number; y?: undefined \| null \| number; rotation?: undefined \| null \| number; color?: undefined \| null \| string; fontName?: undefined \| null \| string; fontSize?: undefined \| null \| number; bold?: undefined \| null \| false \| true; italic?: undefined \| null \| false \| true; underLine?: undefined \| null \| false \| true; alignMode?: undefined \| null \| [ESCH\_PrimitiveTextAlignMode.LEFT\_TOP](../enums/ESCH_PrimitiveTextAlignMode.md) \| [ESCH\_PrimitiveTextAlignMode.LEFT\_MIDDLE](../enums/ESCH_PrimitiveTextAlignMode.md) \| [ESCH\_PrimitiveTextAlignMode.LEFT\_BOTTOM](../enums/ESCH_PrimitiveTextAlignMode.md) \| [ESCH\_PrimitiveTextAlignMode.CENTER\_TOP](../enums/ESCH_PrimitiveTextAlignMode.md) \| [ESCH\_PrimitiveTextAlignMode.CENTER](../enums/ESCH_PrimitiveTextAlignMode.md) \| [ESCH\_PrimitiveTextAlignMode.CENTER\_BOTTOM](../enums/ESCH_PrimitiveTextAlignMode.md) \| [ESCH\_PrimitiveTextAlignMode.RIGHT\_TOP](../enums/ESCH_PrimitiveTextAlignMode.md) \| [ESCH\_PrimitiveTextAlignMode.RIGHT\_MIDDLE](../enums/ESCH_PrimitiveTextAlignMode.md) \| [ESCH\_PrimitiveTextAlignMode.RIGHT\_BOTTOM](../enums/ESCH_PrimitiveTextAlignMode.md)<!-- -->; fillColor?: undefined \| null \| string; key?: undefined \| string; value?: undefined \| string; keyVisible?: undefined \| null \| false \| true; valueVisible?: undefined \| null \| false \| true }
-
 
 </td><td>
 
 Modify Parameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -609,7 +562,6 @@ Promise&lt;[ISCH\_PrimitiveAttribute](./ISCH_PrimitiveAttribute.md) \| undefined
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件并定位 Designator（编号）属性

@@ -5,7 +5,7 @@ PCB &amp; footprint / design rule check (DRC) class
 ## Signature
 
 ```typescript
-export class PCB_Drc 
+class PCB_Drc
 ```
 
 ## Remarks
@@ -18,660 +18,519 @@ Check and set DRC rules
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [addNetToEqualLengthNetGroup(equalLengthNetGroupName, net)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a net to an equal-length net group
-
 
 </td></tr>
 <tr><td>
 
 [addNetToNetClass(netClassName, net)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Will net add to net class
-
 
 </td></tr>
 <tr><td>
 
 [addPadPairToPadPairGroup(padPairGroupName, padPair)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a pad pair to a pad pair group
 
+</td></tr>
+<tr><td>
+
+[check(strict, userInterface, includeVerboseError)](./PCB_Drc.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Check DRC
 
 </td></tr>
 <tr><td>
 
 [check(strict, userInterface, includeVerboseError)](./PCB_Drc.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Check DRC
-
-
-</td></tr>
-<tr><td>
-
-[check(strict, userInterface, includeVerboseError)](./PCB_Drc.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Check DRC
-
 
 </td></tr>
 <tr><td>
 
 [createDifferentialPair(differentialPairName, positiveNet, negativeNet)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create a differential pair
-
 
 </td></tr>
 <tr><td>
 
 [createEqualLengthNetGroup(equalLengthNetGroupName, nets, color)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create an equal-length net group
-
 
 </td></tr>
 <tr><td>
 
 [createNetClass(netClassName, nets, color)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Net class
-
 
 </td></tr>
 <tr><td>
 
 [createPadPairGroup(padPairGroupName, padPairs)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create a pad pair group
-
 
 </td></tr>
 <tr><td>
 
 [deleteDifferentialPair(differentialPairName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete the differential pair
-
 
 </td></tr>
 <tr><td>
 
 [deleteEqualLengthNetGroup(equalLengthNetGroupName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete the equal-length net group
-
 
 </td></tr>
 <tr><td>
 
 [deleteNetClass(netClassName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Net class
-
 
 </td></tr>
 <tr><td>
 
 [deletePadPairGroup(padPairGroupName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete the pad pair group
-
 
 </td></tr>
 <tr><td>
 
 [deleteRuleConfiguration(configurationName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Design rule configuration
-
 
 </td></tr>
 <tr><td>
 
 [getAllDifferentialPairs()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the detailed properties of all differential pairs
-
 
 </td></tr>
 <tr><td>
 
 [getAllEqualLengthNetGroups()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the detailed properties of all equal-length net groups
-
 
 </td></tr>
 <tr><td>
 
 [getAllNetClasses()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Net class detailed properties of
-
 
 </td></tr>
 <tr><td>
 
 [getAllPadPairGroups()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the detailed properties of all pad pair groups
-
 
 </td></tr>
 <tr><td>
 
 [getAllRuleConfigurations(includeSystem)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Design rule configuration
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentRuleConfiguration()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Current design rule configuration
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentRuleConfigurationName()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get Current design rule configuration name
-
 
 </td></tr>
 <tr><td>
 
 [getDefaultRuleConfigurationName()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the name of the default design rule configuration for new PCBs
-
 
 </td></tr>
 <tr><td>
 
 [getNetByNetRules()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Net - net rules
-
 
 </td></tr>
 <tr><td>
 
 [getNetRules()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Net rules
-
 
 </td></tr>
 <tr><td>
 
 [getPadPairGroupMinWireLength(padPairGroupName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the minimum wire length of a pad pair group
-
 
 </td></tr>
 <tr><td>
 
 [getRealTimeDrcStatus()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Real-time DRC check state
-
 
 </td></tr>
 <tr><td>
 
 [getRegionRules()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get region rules
-
 
 </td></tr>
 <tr><td>
 
 [getRuleConfiguration(configurationName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get Specify design rule configuration
-
 
 </td></tr>
 <tr><td>
 
 [modifyDifferentialPairName(originalDifferentialPairName, differentialPairName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify the name of the differential pair
-
 
 </td></tr>
 <tr><td>
 
 [modifyDifferentialPairNegativeNet(differentialPairName, negativeNet)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify the negative net of the differential pair
-
 
 </td></tr>
 <tr><td>
 
 [modifyDifferentialPairPositiveNet(differentialPairName, positiveNet)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify the positive net of the differential pair
-
 
 </td></tr>
 <tr><td>
 
 [modifyEqualLengthNetGroupName(originalEqualLengthNetGroupName, equalLengthNetGroupName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify the name of the equal-length net group
-
 
 </td></tr>
 <tr><td>
 
 [modifyNetClassName(originalNetClassName, netClassName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Net class name of
-
 
 </td></tr>
 <tr><td>
 
 [modifyPadPairGroupName(originalPadPairGroupName, padPairGroupName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify the name of the pad pair group
-
 
 </td></tr>
 <tr><td>
 
 [overwriteCurrentRuleConfiguration(ruleConfiguration)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Overwrite current design rule configuration
-
 
 </td></tr>
 <tr><td>
 
 [overwriteNetByNetRules(netByNetRules)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Overwrite net - net rules
-
 
 </td></tr>
 <tr><td>
 
 [overwriteNetRules(netRules)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Overwrite net rules
-
 
 </td></tr>
 <tr><td>
 
 [overwriteRegionRules(regionRules)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Overwrite region rules
-
 
 </td></tr>
 <tr><td>
 
 [removeNetFromEqualLengthNetGroup(equalLengthNetGroupName, net)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Remove a net from an equal-length net group
-
 
 </td></tr>
 <tr><td>
 
 [removeNetFromNetClass(netClassName, net)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** From net class in remove net
-
 
 </td></tr>
 <tr><td>
 
 [removePadPairFromPadPairGroup(padPairGroupName, padPair)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Remove a pad pair from a pad pair group
-
 
 </td></tr>
 <tr><td>
 
 [renameRuleConfiguration(originalConfigurationName, configurationName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Rename the design rule configuration
-
 
 </td></tr>
 <tr><td>
 
 [saveRuleConfiguration(ruleConfiguration, configurationName, allowOverwrite)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Save Design rule configuration
-
 
 </td></tr>
 <tr><td>
 
 [setAsDefaultRuleConfiguration(configurationName)](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set as the default design rule configuration for new PCBs
-
 
 </td></tr>
 <tr><td>
 
 [startRealTimeDrc()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Start real-time DRC check
-
 
 </td></tr>
 <tr><td>
 
 [stopRealTimeDrc()](./PCB_Drc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Stop real-time DRC check
-
 
 </td></tr>
 </tbody></table>
@@ -691,7 +550,10 @@ Add a net to an equal-length net group
 ## Signature
 
 ```typescript
-public addNetToEqualLengthNetGroup(equalLengthNetGroupName: string, net: string | Array<string>): Promise<boolean>;
+function addNetToEqualLengthNetGroup(
+	equalLengthNetGroupName: string,
+	net: string | Array<string>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -700,53 +562,42 @@ public addNetToEqualLengthNetGroup(equalLengthNetGroupName: string, net: string 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 equalLengthNetGroupName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Equal-length net group name
-
 
 </td></tr>
 <tr><td>
 
 net
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -755,7 +606,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 准备三个真实网络（放带网络的测试焊盘，模拟一组数据总线）
@@ -784,7 +634,7 @@ Will net add to net class
 ## Signature
 
 ```typescript
-public addNetToNetClass(netClassName: string, net: string | Array<string>): Promise<boolean>;
+function addNetToNetClass(netClassName: string, net: string | Array<string>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -793,53 +643,42 @@ public addNetToNetClass(netClassName: string, net: string | Array<string>): Prom
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 netClassName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Net class name
-
 
 </td></tr>
 <tr><td>
 
 net
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -848,7 +687,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 准备三个真实网络（放带网络的测试焊盘）
@@ -877,7 +715,10 @@ Add a pad pair to a pad pair group
 ## Signature
 
 ```typescript
-public addPadPairToPadPairGroup(padPairGroupName: string, padPair: [string, string] | Array<[string, string]>): Promise<boolean>;
+function addPadPairToPadPairGroup(
+	padPairGroupName: string,
+	padPair: [string, string] | Array<[string, string]>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -886,53 +727,42 @@ public addPadPairToPadPairGroup(padPairGroupName: string, padPair: [string, stri
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 padPairGroupName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Pad pair group name
-
 
 </td></tr>
 <tr><td>
 
 padPair
 
-
 </td><td>
 
 \[string, string\] \| Array&lt;\[string, string\]&gt;
-
 
 </td><td>
 
 Pad for
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -955,7 +785,11 @@ Check DRC
 ## Signature
 
 ```typescript
-public check(strict: boolean, userInterface: boolean, includeVerboseError: false): Promise<boolean>;
+function check(
+	strict: boolean,
+	userInterface: boolean,
+	includeVerboseError: false,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -964,69 +798,55 @@ public check(strict: boolean, userInterface: boolean, includeVerboseError: false
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 strict
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether strict checking is enabled. The current PCB is uniformly in strict checking mode
-
 
 </td></tr>
 <tr><td>
 
 userInterface
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether to show the UI (open the bottom DRC window)
-
 
 </td></tr>
 <tr><td>
 
 includeVerboseError
 
-
 </td><td>
 
 false
-
 
 </td><td>
 
 Whether to include detailed error information in the return value. If it is `true`<!-- -->, the return value will always be an array
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1036,13 +856,12 @@ Whether the DRC check passed
 
 ## Example
 
-
 ```javascript
 // 1. 详细模式：返回全部违规项（含描述），无违规则为空数组
 const details = await eda.pcb_Drc.check(true, false, true);
 console.log('violationCount:', details.length);
 details.forEach((d, i) => {
-  console.log('[' + i + ']', typeof d === 'string' ? d : JSON.stringify(d));
+	console.log(`[${i}]`, typeof d === 'string' ? d : JSON.stringify(d));
 });
 
 // 2. 布尔模式：只返回是否全部通过
@@ -1061,7 +880,11 @@ Check DRC
 ## Signature
 
 ```typescript
-public check(strict: boolean, userInterface: boolean, includeVerboseError: true): Promise<Array<any>>;
+function check(
+	strict: boolean,
+	userInterface: boolean,
+	includeVerboseError: true,
+): Promise<Array<any>>;
 ```
 
 ## Parameters
@@ -1070,69 +893,55 @@ public check(strict: boolean, userInterface: boolean, includeVerboseError: true)
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 strict
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether strict checking is enabled. The current PCB is uniformly in strict checking mode
-
 
 </td></tr>
 <tr><td>
 
 userInterface
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether to show the UI (open the bottom DRC window)
-
 
 </td></tr>
 <tr><td>
 
 includeVerboseError
 
-
 </td><td>
 
 true
-
 
 </td><td>
 
 Whether to include detailed error information in the return value. If it is `true`<!-- -->, the return value will always be an array
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1151,7 +960,11 @@ Create a differential pair
 ## Signature
 
 ```typescript
-public createDifferentialPair(differentialPairName: string, positiveNet: string, negativeNet: string): Promise<boolean>;
+function createDifferentialPair(
+	differentialPairName: string,
+	positiveNet: string,
+	negativeNet: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1160,69 +973,55 @@ public createDifferentialPair(differentialPairName: string, positiveNet: string,
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 differentialPairName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Differential pair name
-
 
 </td></tr>
 <tr><td>
 
 positiveNet
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Positive net name
-
 
 </td></tr>
 <tr><td>
 
 negativeNet
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Negative net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1232,12 +1031,11 @@ Whether the operation is successful
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的网络名和差分对名（差分对名和网络名不能与其他差分对重复）
 const ts = Date.now();
-const netP = 'JLC_DEMO_DP_P_' + ts;
-const netN = 'JLC_DEMO_DP_N_' + ts;
+const netP = `JLC_DEMO_DP_P_${ts}`;
+const netN = `JLC_DEMO_DP_N_${ts}`;
 
 // 2. 放两个带差分网络的焊盘，让网络进入网表
 const x = 3000 + Math.floor(Math.random() * 20000);
@@ -1245,9 +1043,9 @@ const padP = await eda.pcb_PrimitivePad.create(1, '1', x, 3000, 0, ['ELLIPSE', 6
 const padN = await eda.pcb_PrimitivePad.create(1, '2', x + 500, 3000, 0, ['ELLIPSE', 60, 60], netN, null, 0, 0, 0, false, 0);
 
 // 3. 创建差分对（保留现场供观察）
-const created = await eda.pcb_Drc.createDifferentialPair('嘉立创示例_差分对_' + ts, netP, netN);
+const created = await eda.pcb_Drc.createDifferentialPair(`嘉立创示例_差分对_${ts}`, netP, netN);
 
-console.log('pairName:', '嘉立创示例_差分对_' + ts);
+console.log('pairName:', `嘉立创示例_差分对_${ts}`);
 console.log('created:', created);
 ```
 
@@ -1262,7 +1060,11 @@ Create an equal-length net group
 ## Signature
 
 ```typescript
-public createEqualLengthNetGroup(equalLengthNetGroupName: string, nets: Array<string>, color: IPCB_EqualLengthNetGroupItem['color']): Promise<boolean>;
+function createEqualLengthNetGroup(
+	equalLengthNetGroupName: string,
+	nets: Array<string>,
+	color: IPCB_EqualLengthNetGroupItem['color'],
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1271,69 +1073,55 @@ public createEqualLengthNetGroup(equalLengthNetGroupName: string, nets: Array<st
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 equalLengthNetGroupName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Equal-length net group name
-
 
 </td></tr>
 <tr><td>
 
 nets
 
-
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 Net name array
-
 
 </td></tr>
 <tr><td>
 
 color
 
-
 </td><td>
 
 [IPCB\_EqualLengthNetGroupItem](../interfaces/IPCB_EqualLengthNetGroupItem.md)<!-- -->\['color'\]
-
 
 </td><td>
 
 Equal-length net group color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1342,7 +1130,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个空的等长网络组，指定面板显示颜色（保留现场供观察）
@@ -1362,7 +1149,11 @@ Create Net class
 ## Signature
 
 ```typescript
-public createNetClass(netClassName: string, nets: Array<string>, color: IPCB_EqualLengthNetGroupItem['color']): Promise<boolean>;
+function createNetClass(
+	netClassName: string,
+	nets: Array<string>,
+	color: IPCB_EqualLengthNetGroupItem['color'],
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1371,69 +1162,55 @@ public createNetClass(netClassName: string, nets: Array<string>, color: IPCB_Equ
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 netClassName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Net class name
-
 
 </td></tr>
 <tr><td>
 
 nets
 
-
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 Net name array
-
 
 </td></tr>
 <tr><td>
 
 color
 
-
 </td><td>
 
 [IPCB\_EqualLengthNetGroupItem](../interfaces/IPCB_EqualLengthNetGroupItem.md)<!-- -->\['color'\]
-
 
 </td><td>
 
 Net class color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1442,7 +1219,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 放两个带网络的测试焊盘，让 JLC_DEMO_P / JLC_DEMO_N 进入网表
@@ -1467,7 +1243,10 @@ Create a pad pair group
 ## Signature
 
 ```typescript
-public createPadPairGroup(padPairGroupName: string, padPairs: Array<[string, string]>): Promise<boolean>;
+function createPadPairGroup(
+	padPairGroupName: string,
+	padPairs: Array<[string, string]>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1476,53 +1255,42 @@ public createPadPairGroup(padPairGroupName: string, padPairs: Array<[string, str
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 padPairGroupName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Pad pair group name
-
 
 </td></tr>
 <tr><td>
 
 padPairs
 
-
 </td><td>
 
 Array&lt;\[string, string\]&gt;
-
 
 </td><td>
 
 Pad for array
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1545,7 +1313,7 @@ Delete the differential pair
 ## Signature
 
 ```typescript
-public deleteDifferentialPair(differentialPairName: string): Promise<boolean>;
+function deleteDifferentialPair(differentialPairName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1554,37 +1322,29 @@ public deleteDifferentialPair(differentialPairName: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 differentialPairName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Differential pair name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1594,18 +1354,17 @@ Whether the operation is successful
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的网络名和差分对名（网络不能属于其他差分对）
 const ts = Date.now();
-const netP = 'JLC_DEMO_DP_P_' + ts;
-const netN = 'JLC_DEMO_DP_N_' + ts;
+const netP = `JLC_DEMO_DP_P_${ts}`;
+const netN = `JLC_DEMO_DP_N_${ts}`;
 
 // 2. 放带差分网络的焊盘并创建差分对
 const x = 3000 + Math.floor(Math.random() * 20000);
 await eda.pcb_PrimitivePad.create(1, '1', x, 3000, 0, ['ELLIPSE', 60, 60], netP, null, 0, 0, 0, false, 0);
 await eda.pcb_PrimitivePad.create(1, '2', x + 500, 3000, 0, ['ELLIPSE', 60, 60], netN, null, 0, 0, 0, false, 0);
-const pairName = '嘉立创示例_待删差分对_' + ts;
+const pairName = `嘉立创示例_待删差分对_${ts}`;
 await eda.pcb_Drc.createDifferentialPair(pairName, netP, netN);
 
 // 3. 删除该差分对
@@ -1625,7 +1384,7 @@ Delete the equal-length net group
 ## Signature
 
 ```typescript
-public deleteEqualLengthNetGroup(equalLengthNetGroupName: string): Promise<boolean>;
+function deleteEqualLengthNetGroup(equalLengthNetGroupName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1634,37 +1393,29 @@ public deleteEqualLengthNetGroup(equalLengthNetGroupName: string): Promise<boole
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 equalLengthNetGroupName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Equal-length net group name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1673,7 +1424,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 建一个待删除的等长网络组（重名创建是幂等的，重复运行也安全）
@@ -1696,7 +1446,7 @@ Delete Net class
 ## Signature
 
 ```typescript
-public deleteNetClass(netClassName: string): Promise<boolean>;
+function deleteNetClass(netClassName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1705,37 +1455,29 @@ public deleteNetClass(netClassName: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 netClassName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net class name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1744,7 +1486,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 建一个待删除的网络类（重名创建是幂等的，重复运行也安全）
@@ -1767,7 +1508,7 @@ Delete the pad pair group
 ## Signature
 
 ```typescript
-public deletePadPairGroup(padPairGroupName: string): Promise<boolean>;
+function deletePadPairGroup(padPairGroupName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1776,37 +1517,29 @@ public deletePadPairGroup(padPairGroupName: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 padPairGroupName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Pad pair group name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1825,7 +1558,7 @@ Delete Design rule configuration
 ## Signature
 
 ```typescript
-public deleteRuleConfiguration(configurationName: string): Promise<boolean>;
+function deleteRuleConfiguration(configurationName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1834,37 +1567,29 @@ public deleteRuleConfiguration(configurationName: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Configuration name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1877,7 +1602,6 @@ Delete Whether Successful
 The system configuration does not allow deletion
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前配置并保存为待删除的自定义配置
@@ -1901,9 +1625,8 @@ Get the detailed properties of all differential pairs
 ## Signature
 
 ```typescript
-public getAllDifferentialPairs(): Promise<Array<IPCB_DifferentialPairItem> | Record<string, any>>;
+function getAllDifferentialPairs(): Promise<Array<IPCB_DifferentialPairItem> | Record<string, any>>;
 ```
-
 
 ## Returns
 
@@ -1917,16 +1640,15 @@ Detailed properties of all differential pairs
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的网络名和差分对名，创建测试差分对
 const ts = Date.now();
-const netP = 'JLC_DEMO_DP_P_' + ts;
-const netN = 'JLC_DEMO_DP_N_' + ts;
+const netP = `JLC_DEMO_DP_P_${ts}`;
+const netN = `JLC_DEMO_DP_N_${ts}`;
 const x = 3000 + Math.floor(Math.random() * 20000);
 await eda.pcb_PrimitivePad.create(1, '1', x, 3000, 0, ['ELLIPSE', 60, 60], netP, null, 0, 0, 0, false, 0);
 await eda.pcb_PrimitivePad.create(1, '2', x + 500, 3000, 0, ['ELLIPSE', 60, 60], netN, null, 0, 0, 0, false, 0);
-const pairName = '嘉立创示例_查询差分对_' + ts;
+const pairName = `嘉立创示例_查询差分对_${ts}`;
 await eda.pcb_Drc.createDifferentialPair(pairName, netP, netN);
 
 // 2. 查询所有差分对（v3.4 起返回结构可能为数组或对象，先按数组遍历）
@@ -1934,7 +1656,7 @@ const pairs = await eda.pcb_Drc.getAllDifferentialPairs();
 const list = Array.isArray(pairs) ? pairs : Object.values(pairs);
 console.log('count:', list.length);
 list.forEach((p, i) => {
-  console.log('[' + i + '] name:', p.name, 'positiveNet:', p.positiveNet, 'negativeNet:', p.negativeNet);
+	console.log(`[${i}] name:`, p.name, 'positiveNet:', p.positiveNet, 'negativeNet:', p.negativeNet);
 });
 
 // 3. 清理测试差分对（查询类清理现场）
@@ -1952,9 +1674,8 @@ Get the detailed properties of all equal-length net groups
 ## Signature
 
 ```typescript
-public getAllEqualLengthNetGroups(): Promise<Array<IPCB_EqualLengthNetGroupItem>>;
+function getAllEqualLengthNetGroups(): Promise<Array<IPCB_EqualLengthNetGroupItem>>;
 ```
-
 
 ## Returns
 
@@ -1964,7 +1685,6 @@ Detailed properties of all equal-length net groups
 
 ## Example
 
-
 ```javascript
 // 1. 建一个测试等长组作为查询对象
 await eda.pcb_Drc.createEqualLengthNetGroup('嘉立创示例_查询等长组', [], { r: 0, g: 255, b: 0, alpha: 1 });
@@ -1973,7 +1693,7 @@ await eda.pcb_Drc.createEqualLengthNetGroup('嘉立创示例_查询等长组', [
 const groups = await eda.pcb_Drc.getAllEqualLengthNetGroups();
 console.log('count:', groups.length);
 groups.forEach((g, i) => {
-  console.log('[' + i + '] name:', g.name);
+	console.log(`[${i}] name:`, g.name);
 });
 
 // 3. 清理测试等长组（查询类清理现场）
@@ -1991,9 +1711,8 @@ Get all Net class detailed properties of
 ## Signature
 
 ```typescript
-public getAllNetClasses(): Promise<Array<IPCB_NetClassItem>>;
+function getAllNetClasses(): Promise<Array<IPCB_NetClassItem>>;
 ```
-
 
 ## Returns
 
@@ -2003,7 +1722,6 @@ Detailed properties of all net classes
 
 ## Example
 
-
 ```javascript
 // 1. 建一个测试网络类作为查询对象
 await eda.pcb_Drc.createNetClass('嘉立创示例_查询网络类', [], { r: 255, g: 0, b: 0, alpha: 1 });
@@ -2012,7 +1730,7 @@ await eda.pcb_Drc.createNetClass('嘉立创示例_查询网络类', [], { r: 255
 const classes = await eda.pcb_Drc.getAllNetClasses();
 console.log('count:', classes.length);
 classes.forEach((c, i) => {
-  console.log('[' + i + '] name:', c.name);
+	console.log(`[${i}] name:`, c.name);
 });
 
 // 3. 清理测试网络类（查询类清理现场）
@@ -2030,9 +1748,8 @@ Get the detailed properties of all pad pair groups
 ## Signature
 
 ```typescript
-public getAllPadPairGroups(): Promise<Array<IPCB_PadPairGroupItem>>;
+function getAllPadPairGroups(): Promise<Array<IPCB_PadPairGroupItem>>;
 ```
-
 
 ## Returns
 
@@ -2042,7 +1759,6 @@ Detailed properties of all pad pair groups
 
 ## Example
 
-
 ```javascript
 // 1. 查询所有焊盘对组
 const groups = await eda.pcb_Drc.getAllPadPairGroups();
@@ -2050,10 +1766,10 @@ const groups = await eda.pcb_Drc.getAllPadPairGroups();
 // 2. 输出每个组的名称和焊盘对
 console.log('count:', groups.length);
 groups.forEach((g, i) => {
-  console.log('[' + i + '] name:', g.name);
-  g.padPairs.forEach((pair, j) => {
-    console.log('    pair[' + j + ']:', pair[0], '↔', pair[1]);
-  });
+	console.log(`[${i}] name:`, g.name);
+	g.padPairs.forEach((pair, j) => {
+		console.log(`    pair[${j}]:`, pair[0], '↔', pair[1]);
+	});
 });
 ```
 
@@ -2068,7 +1784,7 @@ Get all Design rule configuration
 ## Signature
 
 ```typescript
-public getAllRuleConfigurations(includeSystem?: boolean): Promise<Array<Record<string, any>>>;
+function getAllRuleConfigurations(includeSystem?: boolean): Promise<Array<Record<string, any>>>;
 ```
 
 ## Parameters
@@ -2077,37 +1793,29 @@ public getAllRuleConfigurations(includeSystem?: boolean): Promise<Array<Record<s
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 includeSystem
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether Get System design rule configuration
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2117,7 +1825,6 @@ All design rule configurations
 
 ## Example
 
-
 ```javascript
 // 1. 查询全部设计规则配置（含系统配置）
 const all = await eda.pcb_Drc.getAllRuleConfigurations(true);
@@ -2125,7 +1832,7 @@ const all = await eda.pcb_Drc.getAllRuleConfigurations(true);
 // 2. 输出配置数量和名称
 console.log('count:', all.length);
 all.forEach((c, i) => {
-  console.log('[' + i + '] name:', c.name);
+	console.log(`[${i}] name:`, c.name);
 });
 ```
 
@@ -2140,9 +1847,8 @@ Get Current design rule configuration
 ## Signature
 
 ```typescript
-public getCurrentRuleConfiguration(): Promise<Record<string, any> | undefined>;
+function getCurrentRuleConfiguration(): Promise<Record<string, any> | undefined>;
 ```
-
 
 ## Returns
 
@@ -2159,9 +1865,8 @@ Get Current design rule configuration name
 ## Signature
 
 ```typescript
-public getCurrentRuleConfigurationName(): Promise<string | undefined>;
+function getCurrentRuleConfigurationName(): Promise<string | undefined>;
 ```
-
 
 ## Returns
 
@@ -2180,9 +1885,8 @@ Get the name of the default design rule configuration for new PCBs
 ## Signature
 
 ```typescript
-public getDefaultRuleConfigurationName(): Promise<string | undefined>;
+function getDefaultRuleConfigurationName(): Promise<string | undefined>;
 ```
-
 
 ## Returns
 
@@ -2201,9 +1905,8 @@ Get Net - net rules
 ## Signature
 
 ```typescript
-public getNetByNetRules(): Promise<Record<string, any>>;
+function getNetByNetRules(): Promise<Record<string, any>>;
 ```
-
 
 ## Returns
 
@@ -2222,9 +1925,8 @@ Get Net rules
 ## Signature
 
 ```typescript
-public getNetRules(): Promise<Array<Record<string, any>>>;
+function getNetRules(): Promise<Array<Record<string, any>>>;
 ```
-
 
 ## Returns
 
@@ -2243,7 +1945,9 @@ Get the minimum wire length of a pad pair group
 ## Signature
 
 ```typescript
-public getPadPairGroupMinWireLength(padPairGroupName: string): Promise<Array<IPCB_PadPairMinWireLengthItem>>;
+function getPadPairGroupMinWireLength(
+	padPairGroupName: string,
+): Promise<Array<IPCB_PadPairMinWireLengthItem>>;
 ```
 
 ## Parameters
@@ -2252,37 +1956,29 @@ public getPadPairGroupMinWireLength(padPairGroupName: string): Promise<Array<IPC
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 padPairGroupName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Pad pair group name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2301,9 +1997,8 @@ Get Real-time DRC check state
 ## Signature
 
 ```typescript
-public getRealTimeDrcStatus(): Promise<boolean>;
+function getRealTimeDrcStatus(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -2326,9 +2021,8 @@ Get region rules
 ## Signature
 
 ```typescript
-public getRegionRules(): Promise<Array<Record<string, any>>>;
+function getRegionRules(): Promise<Array<Record<string, any>>>;
 ```
-
 
 ## Returns
 
@@ -2345,7 +2039,7 @@ Get Specify design rule configuration
 ## Signature
 
 ```typescript
-public getRuleConfiguration(configurationName: string): Promise<Record<string, any> | undefined>;
+function getRuleConfiguration(configurationName: string): Promise<Record<string, any> | undefined>;
 ```
 
 ## Parameters
@@ -2354,37 +2048,29 @@ public getRuleConfiguration(configurationName: string): Promise<Record<string, a
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Configuration name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2403,7 +2089,10 @@ Modify the name of the differential pair
 ## Signature
 
 ```typescript
-public modifyDifferentialPairName(originalDifferentialPairName: string, differentialPairName: string): Promise<boolean>;
+function modifyDifferentialPairName(
+	originalDifferentialPairName: string,
+	differentialPairName: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2412,53 +2101,42 @@ public modifyDifferentialPairName(originalDifferentialPairName: string, differen
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 originalDifferentialPairName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Original differential pair name
-
 
 </td></tr>
 <tr><td>
 
 differentialPairName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 New differential pair name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2468,22 +2146,21 @@ Whether the operation is successful
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的网络名和差分对名（网络不能属于其他差分对）
 const ts = Date.now();
-const netP = 'JLC_DEMO_DP_P_' + ts;
-const netN = 'JLC_DEMO_DP_N_' + ts;
+const netP = `JLC_DEMO_DP_P_${ts}`;
+const netN = `JLC_DEMO_DP_N_${ts}`;
 
 // 2. 放带差分网络的焊盘并创建差分对
 const x = 3000 + Math.floor(Math.random() * 20000);
 await eda.pcb_PrimitivePad.create(1, '1', x, 3000, 0, ['ELLIPSE', 60, 60], netP, null, 0, 0, 0, false, 0);
 await eda.pcb_PrimitivePad.create(1, '2', x + 500, 3000, 0, ['ELLIPSE', 60, 60], netN, null, 0, 0, 0, false, 0);
-const pairName = '嘉立创示例_差分对_' + ts;
+const pairName = `嘉立创示例_差分对_${ts}`;
 await eda.pcb_Drc.createDifferentialPair(pairName, netP, netN);
 
 // 3. 改名（保留现场供观察）
-const newName = '嘉立创示例_差分对_改_' + ts;
+const newName = `嘉立创示例_差分对_改_${ts}`;
 const result = await eda.pcb_Drc.modifyDifferentialPairName(pairName, newName);
 
 console.log('newName:', newName);
@@ -2501,7 +2178,10 @@ Modify the negative net of the differential pair
 ## Signature
 
 ```typescript
-public modifyDifferentialPairNegativeNet(differentialPairName: string, negativeNet: string): Promise<boolean>;
+function modifyDifferentialPairNegativeNet(
+	differentialPairName: string,
+	negativeNet: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2510,53 +2190,42 @@ public modifyDifferentialPairNegativeNet(differentialPairName: string, negativeN
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 differentialPairName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Differential pair name
-
 
 </td></tr>
 <tr><td>
 
 negativeNet
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Negative net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2566,20 +2235,19 @@ Whether the operation is successful
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的网络名（避免与其他差分对冲突）
 const ts = Date.now();
-const netP = 'JLC_DEMO_DP_P_' + ts;
-const netN = 'JLC_DEMO_DP_N_' + ts;
-const newNetN = 'JLC_DEMO_DP_N2_' + ts;
+const netP = `JLC_DEMO_DP_P_${ts}`;
+const netN = `JLC_DEMO_DP_N_${ts}`;
+const newNetN = `JLC_DEMO_DP_N2_${ts}`;
 
 // 2. 放三个带网络的焊盘并创建差分对
 const x = 3000 + Math.floor(Math.random() * 20000);
 await eda.pcb_PrimitivePad.create(1, '1', x, 3000, 0, ['ELLIPSE', 60, 60], netP, null, 0, 0, 0, false, 0);
 await eda.pcb_PrimitivePad.create(1, '2', x + 500, 3000, 0, ['ELLIPSE', 60, 60], netN, null, 0, 0, 0, false, 0);
 await eda.pcb_PrimitivePad.create(1, '3', x + 1000, 3000, 0, ['ELLIPSE', 60, 60], newNetN, null, 0, 0, 0, false, 0);
-const pairName = '嘉立创示例_差分对_' + ts;
+const pairName = `嘉立创示例_差分对_${ts}`;
 await eda.pcb_Drc.createDifferentialPair(pairName, netP, netN);
 
 // 3. 把负网络替换为 newNetN（保留现场供观察）
@@ -2600,7 +2268,10 @@ Modify the positive net of the differential pair
 ## Signature
 
 ```typescript
-public modifyDifferentialPairPositiveNet(differentialPairName: string, positiveNet: string): Promise<boolean>;
+function modifyDifferentialPairPositiveNet(
+	differentialPairName: string,
+	positiveNet: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2609,53 +2280,42 @@ public modifyDifferentialPairPositiveNet(differentialPairName: string, positiveN
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 differentialPairName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Differential pair name
-
 
 </td></tr>
 <tr><td>
 
 positiveNet
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Positive net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2665,20 +2325,19 @@ Whether the operation is successful
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的网络名（避免与其他差分对冲突）
 const ts = Date.now();
-const netP = 'JLC_DEMO_DP_P_' + ts;
-const netN = 'JLC_DEMO_DP_N_' + ts;
-const newNetP = 'JLC_DEMO_DP_P2_' + ts;
+const netP = `JLC_DEMO_DP_P_${ts}`;
+const netN = `JLC_DEMO_DP_N_${ts}`;
+const newNetP = `JLC_DEMO_DP_P2_${ts}`;
 
 // 2. 放三个带网络的焊盘并创建差分对
 const x = 3000 + Math.floor(Math.random() * 20000);
 await eda.pcb_PrimitivePad.create(1, '1', x, 3000, 0, ['ELLIPSE', 60, 60], netP, null, 0, 0, 0, false, 0);
 await eda.pcb_PrimitivePad.create(1, '2', x + 500, 3000, 0, ['ELLIPSE', 60, 60], netN, null, 0, 0, 0, false, 0);
 await eda.pcb_PrimitivePad.create(1, '3', x + 1000, 3000, 0, ['ELLIPSE', 60, 60], newNetP, null, 0, 0, 0, false, 0);
-const pairName = '嘉立创示例_差分对_' + ts;
+const pairName = `嘉立创示例_差分对_${ts}`;
 await eda.pcb_Drc.createDifferentialPair(pairName, netP, netN);
 
 // 3. 把正网络替换为 newNetP（保留现场供观察）
@@ -2699,7 +2358,10 @@ Modify the name of the equal-length net group
 ## Signature
 
 ```typescript
-public modifyEqualLengthNetGroupName(originalEqualLengthNetGroupName: string, equalLengthNetGroupName: string): Promise<boolean>;
+function modifyEqualLengthNetGroupName(
+	originalEqualLengthNetGroupName: string,
+	equalLengthNetGroupName: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2708,53 +2370,42 @@ public modifyEqualLengthNetGroupName(originalEqualLengthNetGroupName: string, eq
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 originalEqualLengthNetGroupName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Original equal-length net group name
-
 
 </td></tr>
 <tr><td>
 
 equalLengthNetGroupName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 New equal-length net group name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2764,13 +2415,12 @@ Whether the operation is successful
 
 ## Example
 
-
 ```javascript
 // 1. 建一个待改名的等长网络组
 await eda.pcb_Drc.createEqualLengthNetGroup('嘉立创示例_等长网络组', [], { r: 0, g: 255, b: 0, alpha: 1 });
 
 // 2. 改名（用时间戳后缀避免与之前保留的现场重名，保留现场供观察）
-const newName = '嘉立创示例_等长网络组_改_' + Date.now();
+const newName = `嘉立创示例_等长网络组_改_${Date.now()}`;
 const result = await eda.pcb_Drc.modifyEqualLengthNetGroupName('嘉立创示例_等长网络组', newName);
 
 console.log('newName:', newName);
@@ -2788,7 +2438,7 @@ Modify Net class name of
 ## Signature
 
 ```typescript
-public modifyNetClassName(originalNetClassName: string, netClassName: string): Promise<boolean>;
+function modifyNetClassName(originalNetClassName: string, netClassName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2797,53 +2447,42 @@ public modifyNetClassName(originalNetClassName: string, netClassName: string): P
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 originalNetClassName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Original net class name
-
 
 </td></tr>
 <tr><td>
 
 netClassName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 New net class name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2853,13 +2492,12 @@ Whether the operation is successful
 
 ## Example
 
-
 ```javascript
 // 1. 建一个待改名的网络类
 await eda.pcb_Drc.createNetClass('嘉立创示例_网络类', [], { r: 255, g: 0, b: 0, alpha: 1 });
 
 // 2. 改名（用时间戳后缀避免与之前保留的现场重名，保留现场供观察）
-const newName = '嘉立创示例_网络类_改_' + Date.now();
+const newName = `嘉立创示例_网络类_改_${Date.now()}`;
 const result = await eda.pcb_Drc.modifyNetClassName('嘉立创示例_网络类', newName);
 
 console.log('newName:', newName);
@@ -2877,7 +2515,10 @@ Modify the name of the pad pair group
 ## Signature
 
 ```typescript
-public modifyPadPairGroupName(originalPadPairGroupName: string, padPairGroupName: string): Promise<boolean>;
+function modifyPadPairGroupName(
+	originalPadPairGroupName: string,
+	padPairGroupName: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2886,53 +2527,42 @@ public modifyPadPairGroupName(originalPadPairGroupName: string, padPairGroupName
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 originalPadPairGroupName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Original pad pair group name
-
 
 </td></tr>
 <tr><td>
 
 padPairGroupName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 New pad pair group name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2951,7 +2581,9 @@ Overwrite current design rule configuration
 ## Signature
 
 ```typescript
-public overwriteCurrentRuleConfiguration(ruleConfiguration: Record<string, any>): Promise<boolean>;
+function overwriteCurrentRuleConfiguration(
+	ruleConfiguration: Record<string, any>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -2960,37 +2592,29 @@ public overwriteCurrentRuleConfiguration(ruleConfiguration: Record<string, any>)
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 ruleConfiguration
 
-
 </td><td>
 
 Record&lt;string, any&gt;
-
 
 </td><td>
 
 Design rule configuration
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3003,7 +2627,6 @@ Overwrite whether it is successful
 It will overwrite the current design rule configuration of the PCB. Please note the risk of data loss
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前设计规则配置（返回 { config, name }，规则数据在 config 里）
@@ -3027,7 +2650,7 @@ Overwrite net - net rules
 ## Signature
 
 ```typescript
-public overwriteNetByNetRules(netByNetRules: Record<string, any>): Promise<boolean>;
+function overwriteNetByNetRules(netByNetRules: Record<string, any>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3036,37 +2659,29 @@ public overwriteNetByNetRules(netByNetRules: Record<string, any>): Promise<boole
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 netByNetRules
 
-
 </td><td>
 
 Record&lt;string, any&gt;
-
 
 </td><td>
 
 Net - net rules
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3079,7 +2694,6 @@ Overwrite whether it is successful
 It will overwrite all net-by-net rules of the current PCB. Please note the risk of data loss
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前所有网络-网络规则（对象，键是规则类别名）
@@ -3103,7 +2717,7 @@ Overwrite net rules
 ## Signature
 
 ```typescript
-public overwriteNetRules(netRules: Array<Record<string, any>>): Promise<boolean>;
+function overwriteNetRules(netRules: Array<Record<string, any>>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3112,37 +2726,29 @@ public overwriteNetRules(netRules: Array<Record<string, any>>): Promise<boolean>
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 netRules
 
-
 </td><td>
 
 Array&lt;Record&lt;string, any&gt;&gt;
-
 
 </td><td>
 
 Net rules
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3155,7 +2761,6 @@ Overwrite whether it is successful
 It will overwrite all net rules of the current PCB. Please note the risk of data loss
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前所有网络规则（数组）
@@ -3179,7 +2784,7 @@ Overwrite region rules
 ## Signature
 
 ```typescript
-public overwriteRegionRules(regionRules: Array<Record<string, any>>): Promise<boolean>;
+function overwriteRegionRules(regionRules: Array<Record<string, any>>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3188,37 +2793,29 @@ public overwriteRegionRules(regionRules: Array<Record<string, any>>): Promise<bo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 regionRules
 
-
 </td><td>
 
 Array&lt;Record&lt;string, any&gt;&gt;
-
 
 </td><td>
 
 Region rules
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3231,7 +2828,6 @@ Overwrite whether it is successful
 It will overwrite all region rules of the current PCB. Please note the risk of data loss
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前所有区域规则（数组）
@@ -3255,7 +2851,10 @@ Remove a net from an equal-length net group
 ## Signature
 
 ```typescript
-public removeNetFromEqualLengthNetGroup(equalLengthNetGroupName: string, net: string | Array<string>): Promise<boolean>;
+function removeNetFromEqualLengthNetGroup(
+	equalLengthNetGroupName: string,
+	net: string | Array<string>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3264,53 +2863,42 @@ public removeNetFromEqualLengthNetGroup(equalLengthNetGroupName: string, net: st
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 equalLengthNetGroupName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Equal-length net group name
-
 
 </td></tr>
 <tr><td>
 
 net
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3319,7 +2907,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 准备两个真实网络（放带网络的测试焊盘）
@@ -3349,7 +2936,7 @@ From net class in remove net
 ## Signature
 
 ```typescript
-public removeNetFromNetClass(netClassName: string, net: string | Array<string>): Promise<boolean>;
+function removeNetFromNetClass(netClassName: string, net: string | Array<string>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3358,53 +2945,42 @@ public removeNetFromNetClass(netClassName: string, net: string | Array<string>):
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 netClassName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Net class name
-
 
 </td></tr>
 <tr><td>
 
 net
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3413,7 +2989,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 准备两个真实网络（放带网络的测试焊盘）
@@ -3443,7 +3018,10 @@ Remove a pad pair from a pad pair group
 ## Signature
 
 ```typescript
-public removePadPairFromPadPairGroup(padPairGroupName: string, padPair: [string, string] | Array<[string, string]>): Promise<boolean>;
+function removePadPairFromPadPairGroup(
+	padPairGroupName: string,
+	padPair: [string, string] | Array<[string, string]>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3452,53 +3030,42 @@ public removePadPairFromPadPairGroup(padPairGroupName: string, padPair: [string,
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 padPairGroupName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Pad pair group name
-
 
 </td></tr>
 <tr><td>
 
 padPair
 
-
 </td><td>
 
 \[string, string\] \| Array&lt;\[string, string\]&gt;
-
 
 </td><td>
 
 Pad for
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3521,7 +3088,10 @@ Rename the design rule configuration
 ## Signature
 
 ```typescript
-public renameRuleConfiguration(originalConfigurationName: string, configurationName: string): Promise<boolean>;
+function renameRuleConfiguration(
+	originalConfigurationName: string,
+	configurationName: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3530,53 +3100,42 @@ public renameRuleConfiguration(originalConfigurationName: string, configurationN
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 originalConfigurationName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Original design rule configuration name
-
 
 </td></tr>
 <tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 New design rule configuration name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3589,7 +3148,6 @@ Whether the rename was successful
 Only custom configurations can be renamed. System configurations cannot be renamed
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前配置并保存为待改名的自定义配置（allowOverwrite=true 重复运行安全）
@@ -3616,7 +3174,11 @@ Save Design rule configuration
 ## Signature
 
 ```typescript
-public saveRuleConfiguration(ruleConfiguration: Record<string, any>, configurationName: string, allowOverwrite?: boolean): Promise<boolean>;
+function saveRuleConfiguration(
+	ruleConfiguration: Record<string, any>,
+	configurationName: string,
+	allowOverwrite?: boolean,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3625,69 +3187,55 @@ public saveRuleConfiguration(ruleConfiguration: Record<string, any>, configurati
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 ruleConfiguration
 
-
 </td><td>
 
 Record&lt;string, any&gt;
 
-
 </td><td>
 
 Design rule configuration
-
 
 </td></tr>
 <tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Configuration name
-
 
 </td></tr>
 <tr><td>
 
 allowOverwrite
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to allow overwriting a design rule configuration with the same name. If `false`<!-- -->, `false` will be returned when a configuration with the same name is encountered. Please note the possible risk of data loss
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3700,7 +3248,6 @@ Save Whether Successful
 Only custom configurations can be overwritten and saved. System configurations cannot be modified or overwritten
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前设计规则配置作为数据源（规则数据在 config 字段里）
@@ -3723,7 +3270,7 @@ Set as the default design rule configuration for new PCBs
 ## Signature
 
 ```typescript
-public setAsDefaultRuleConfiguration(configurationName: string): Promise<boolean>;
+function setAsDefaultRuleConfiguration(configurationName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -3732,37 +3279,29 @@ public setAsDefaultRuleConfiguration(configurationName: string): Promise<boolean
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 configurationName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Configuration name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3775,7 +3314,6 @@ Set Whether Successful
 The return value is result-oriented. Repeatedly setting the same design rule as the default will also return `true`
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前配置并保存为自定义配置（作为待指定的默认配置）
@@ -3799,9 +3337,8 @@ Start real-time DRC check
 ## Signature
 
 ```typescript
-public startRealTimeDrc(): Promise<boolean>;
+function startRealTimeDrc(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -3824,9 +3361,8 @@ Stop real-time DRC check
 ## Signature
 
 ```typescript
-public stopRealTimeDrc(): Promise<boolean>;
+function stopRealTimeDrc(): Promise<boolean>;
 ```
-
 
 ## Returns
 

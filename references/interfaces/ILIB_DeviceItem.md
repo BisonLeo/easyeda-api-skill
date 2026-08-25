@@ -5,7 +5,7 @@ Device property
 ## Signature
 
 ```typescript
-export interface ILIB_DeviceItem 
+interface ILIB_DeviceItem
 ```
 
 ## Properties
@@ -14,194 +14,154 @@ export interface ILIB_DeviceItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [association](./ILIB_DeviceItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ILIB\_DeviceAssociationItem](./ILIB_DeviceAssociationItem.md)
 
-
 </td><td>
 
 Associate
-
 
 </td></tr>
 <tr><td>
 
 [classification?](./ILIB_DeviceItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ Device classification
-
 
 </td></tr>
 <tr><td>
 
 [description?](./ILIB_DeviceItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Description
-
 
 </td></tr>
 <tr><td>
 
 [libraryType](./ILIB_DeviceItem.md)
 
-
 </td><td>
 
 `readonly`
-
 
 </td><td>
 
 [ELIB\_LibraryType.DEVICE](../enums/ELIB_LibraryType.md)
 
-
 </td><td>
 
 Library type
-
 
 </td></tr>
 <tr><td>
 
 [libraryUuid](./ILIB_DeviceItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 UUID of the library it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [name](./ILIB_DeviceItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Device name
-
 
 </td></tr>
 <tr><td>
 
 [property](./ILIB_DeviceItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ILIB\_DeviceExtendPropertyItem](./ILIB_DeviceExtendPropertyItem.md)
 
-
 </td><td>
 
 Extension property
-
 
 </td></tr>
 <tr><td>
 
 [subPartNames](./ILIB_DeviceItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 \[\]
 
-
 </td><td>
 
 Sub-part name array
-
 
 </td></tr>
 <tr><td>
 
 [uuid](./ILIB_DeviceItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Device UUID
-
 
 </td></tr>
 </tbody></table>

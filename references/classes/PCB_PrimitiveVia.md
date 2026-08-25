@@ -5,7 +5,7 @@ PCB &amp; footprint / via primitive class
 ## Signature
 
 ```typescript
-export class PCB_PrimitiveVia implements IPCB_PrimitiveAPI 
+class PCB_PrimitiveVia implements IPCB_PrimitiveAPI
 ```
 **Implements:** [IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
@@ -15,114 +15,90 @@ export class PCB_PrimitiveVia implements IPCB_PrimitiveAPI
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [create(net, x, y, holeDiameter, diameter, viaType, designRuleBlindViaName, solderMaskExpansion, primitiveLock)](./PCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Create Via
-
 
 </td></tr>
 <tr><td>
 
 [delete(primitiveIds)](./PCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Via
 
+</td></tr>
+<tr><td>
+
+[get(primitiveIds)](./PCB_PrimitiveVia.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get Via
 
 </td></tr>
 <tr><td>
 
 [get(primitiveIds)](./PCB_PrimitiveVia.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get Via
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveVia.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Via
-
 
 </td></tr>
 <tr><td>
 
 [getAll(net, primitiveLock)](./PCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Via
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitiveId(net, primitiveLock)](./PCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Via primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [modify(primitiveId, property)](./PCB_PrimitiveVia.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Via
-
 
 </td></tr>
 </tbody></table>
@@ -140,7 +116,17 @@ Create Via
 ## Signature
 
 ```typescript
-public create(net: string, x: number, y: number, holeDiameter: number, diameter: number, viaType?: EPCB_PrimitiveViaType, designRuleBlindViaName?: string | null, solderMaskExpansion?: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null, primitiveLock?: boolean): Promise<IPCB_PrimitiveVia | undefined>;
+function create(
+	net: string,
+	x: number,
+	y: number,
+	holeDiameter: number,
+	diameter: number,
+	viaType?: EPCB_PrimitiveViaType,
+	designRuleBlindViaName?: string | null,
+	solderMaskExpansion?: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null,
+	primitiveLock?: boolean,
+): Promise<IPCB_PrimitiveVia | undefined>;
 ```
 
 ## Parameters
@@ -149,165 +135,133 @@ public create(net: string, x: number, y: number, holeDiameter: number, diameter:
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Net name
-
 
 </td></tr>
 <tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 holeDiameter
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Hole diameter
-
 
 </td></tr>
 <tr><td>
 
 diameter
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Outer diameter
-
 
 </td></tr>
 <tr><td>
 
 viaType
 
-
 </td><td>
 
 [EPCB\_PrimitiveViaType](../enums/EPCB_PrimitiveViaType.md)
 
-
 </td><td>
 
 _(Optional)_ Via type
-
 
 </td></tr>
 <tr><td>
 
 designRuleBlindViaName
 
-
 </td><td>
 
 string \| null
 
-
 </td><td>
 
 _(Optional)_ Blind/buried via design rule item name, which defines the start and end layers of the via. `null` means it is not a blind/buried via
-
 
 </td></tr>
 <tr><td>
 
 solderMaskExpansion
 
-
 </td><td>
 
 [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null
 
-
 </td><td>
 
 _(Optional)_ Solder mask/paste mask expansion. `null` means following the rules
-
 
 </td></tr>
 <tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -316,7 +270,6 @@ Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md) \| undefined&gt;
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成随机放置坐标，避免与画布上已有的过孔重合
@@ -346,7 +299,7 @@ Delete Via
 ## Signature
 
 ```typescript
-public delete(primitiveIds: string | IPCB_PrimitiveVia | Array<string> | Array<IPCB_PrimitiveVia>): Promise<boolean>;
+function delete(primitiveIds: string | IPCB_PrimitiveVia | Array<string> | Array<IPCB_PrimitiveVia>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -355,37 +308,29 @@ public delete(primitiveIds: string | IPCB_PrimitiveVia | Array<string> | Array<I
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;
-
 
 </td><td>
 
 Via primitive ID or Via primitive object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -394,7 +339,6 @@ Promise&lt;boolean&gt;
 Delete Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建两个待删除的测试过孔（随机坐标避免重合）
@@ -427,7 +371,7 @@ Get Via
 ## Signature
 
 ```typescript
-public get(primitiveIds: string): Promise<IPCB_PrimitiveVia | undefined>;
+function get(primitiveIds: string): Promise<IPCB_PrimitiveVia | undefined>;
 ```
 
 ## Parameters
@@ -436,37 +380,29 @@ public get(primitiveIds: string): Promise<IPCB_PrimitiveVia | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Via primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -475,7 +411,6 @@ Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md) \| undefined&gt;
 Via primitive object, `undefined` indicates that the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建两个测试过孔（随机坐标避免重合），尺寸不同便于区分
@@ -509,7 +444,7 @@ Get Via
 ## Signature
 
 ```typescript
-public get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveVia>>;
+function get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveVia>>;
 ```
 
 ## Parameters
@@ -518,37 +453,29 @@ public get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveVia>>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Via primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -571,7 +498,7 @@ Get all Via
 ## Signature
 
 ```typescript
-public getAll(net?: string, primitiveLock?: boolean): Promise<Array<IPCB_PrimitiveVia>>;
+function getAll(net?: string, primitiveLock?: boolean): Promise<Array<IPCB_PrimitiveVia>>;
 ```
 
 ## Parameters
@@ -580,53 +507,42 @@ public getAll(net?: string, primitiveLock?: boolean): Promise<Array<IPCB_Primiti
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Net name
-
 
 </td></tr>
 <tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -635,7 +551,6 @@ Promise&lt;Array&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)<!-- -->&gt;&gt;
 Array of Via primitive objects
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个挂网络的测试过孔作为过滤目标（网络不存在会自动创建，随机坐标避免重合）
@@ -669,7 +584,7 @@ Get all Via primitive ID
 ## Signature
 
 ```typescript
-public getAllPrimitiveId(net?: string, primitiveLock?: boolean): Promise<Array<string>>;
+function getAllPrimitiveId(net?: string, primitiveLock?: boolean): Promise<Array<string>>;
 ```
 
 ## Parameters
@@ -678,53 +593,42 @@ public getAllPrimitiveId(net?: string, primitiveLock?: boolean): Promise<Array<s
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Net name
-
 
 </td></tr>
 <tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -733,7 +637,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 Array of Via primitive IDs
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个挂网络的测试过孔作为查找目标（随机坐标避免重合）
@@ -767,7 +670,24 @@ Modify Via
 ## Signature
 
 ```typescript
-public modify(primitiveId: string | IPCB_PrimitiveVia, property: { net?: undefined | string; x?: undefined | number; y?: undefined | number; holeDiameter?: undefined | number; diameter?: undefined | number; viaType?: undefined | EPCB_PrimitiveViaType.VIA | EPCB_PrimitiveViaType.BLIND | EPCB_PrimitiveViaType.SUTURE; designRuleBlindViaName?: undefined | null | string; solderMaskExpansion?: undefined | null | IPCB_PrimitiveSolderMaskAndPasteMaskExpansion; primitiveLock?: undefined | false | true }): Promise<IPCB_PrimitiveVia | undefined>;
+function modify(
+	primitiveId: string | IPCB_PrimitiveVia,
+	property: {
+		net?: undefined | string;
+		x?: undefined | number;
+		y?: undefined | number;
+		holeDiameter?: undefined | number;
+		diameter?: undefined | number;
+		viaType?:
+			| undefined
+			| EPCB_PrimitiveViaType.VIA
+			| EPCB_PrimitiveViaType.BLIND
+			| EPCB_PrimitiveViaType.SUTURE;
+		designRuleBlindViaName?: undefined | null | string;
+		solderMaskExpansion?: undefined | null | IPCB_PrimitiveSolderMaskAndPasteMaskExpansion;
+		primitiveLock?: undefined | false | true;
+	},
+): Promise<IPCB_PrimitiveVia | undefined>;
 ```
 
 ## Parameters
@@ -776,53 +696,42 @@ public modify(primitiveId: string | IPCB_PrimitiveVia, property: { net?: undefin
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string \| [IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md)
 
-
 </td><td>
 
 Primitive ID
-
 
 </td></tr>
 <tr><td>
 
 property
 
-
 </td><td>
 
 { net?: undefined \| string; x?: undefined \| number; y?: undefined \| number; holeDiameter?: undefined \| number; diameter?: undefined \| number; viaType?: undefined \| [EPCB\_PrimitiveViaType.VIA](../enums/EPCB_PrimitiveViaType.md) \| [EPCB\_PrimitiveViaType.BLIND](../enums/EPCB_PrimitiveViaType.md) \| [EPCB\_PrimitiveViaType.SUTURE](../enums/EPCB_PrimitiveViaType.md)<!-- -->; designRuleBlindViaName?: undefined \| null \| string; solderMaskExpansion?: undefined \| null \| [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)<!-- -->; primitiveLock?: undefined \| false \| true }
-
 
 </td><td>
 
 Modify Parameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -831,7 +740,6 @@ Promise&lt;[IPCB\_PrimitiveVia](./IPCB_PrimitiveVia.md) \| undefined&gt;
 Via primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 创建待修改的测试过孔：孔径 20mil、外径 40mil（随机坐标避免重合）

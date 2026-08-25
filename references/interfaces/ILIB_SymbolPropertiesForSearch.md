@@ -5,7 +5,7 @@ Symbol parameters that can be used for precise search
 ## Signature
 
 ```typescript
-export interface ILIB_SymbolPropertiesForSearch 
+interface ILIB_SymbolPropertiesForSearch
 ```
 
 ## Properties
@@ -14,40 +14,32 @@ export interface ILIB_SymbolPropertiesForSearch
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [name?](./ILIB_SymbolPropertiesForSearch.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Symbol name
-
 
 </td></tr>
 </tbody></table>

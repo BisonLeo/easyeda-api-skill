@@ -5,12 +5,11 @@ Region primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveRegion implements IPCB_Primitive 
+class IPCB_PrimitiveRegion implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,324 +17,255 @@ export class IPCB_PrimitiveRegion implements IPCB_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [convertToFill()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert to: fill primitive
-
 
 </td></tr>
 <tr><td>
 
 [convertToPolyline()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert to: polyline primitive
-
 
 </td></tr>
 <tr><td>
 
 [convertToPour()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert to: Copper border primitive
-
 
 </td></tr>
 <tr><td>
 
 [done()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ComplexPolygon()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: complex polygon
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_RegionName()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: region name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_RuleType()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: region rule type
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_ComplexPolygon(complexPolygon)](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: complex polygon
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_RegionName(regionName)](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: region name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_RuleType(ruleType)](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: region rule type
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveRegion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -355,9 +285,8 @@ Convert to: fill primitive
 ## Signature
 
 ```typescript
-public convertToFill(): Promise<IPCB_PrimitiveFill>;
+function convertToFill(): Promise<IPCB_PrimitiveFill>;
 ```
-
 
 ## Returns
 
@@ -366,7 +295,6 @@ Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -380,7 +308,7 @@ const region = await eda.pcb_PrimitiveRegion.create(1, polygon);
 // 3. 转换为填充图元（区域本身保留，填充为新图元，保留现场供观察）
 const fill = await region.convertToFill();
 
-console.log('primitiveType:', 'Region → ' + fill.getState_PrimitiveType());
+console.log('primitiveType:', `Region → ${fill.getState_PrimitiveType()}`);
 console.log('primitiveId:', fill.getState_PrimitiveId());
 ```
 
@@ -395,9 +323,8 @@ Convert to: polyline primitive
 ## Signature
 
 ```typescript
-public convertToPolyline(): Promise<IPCB_PrimitivePolyline>;
+function convertToPolyline(): Promise<IPCB_PrimitivePolyline>;
 ```
-
 
 ## Returns
 
@@ -406,7 +333,6 @@ Promise&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)<!-- -->&gt;
 Polyline primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -420,7 +346,7 @@ const region = await eda.pcb_PrimitiveRegion.create(1, polygon);
 // 3. 转换为折线图元（区域本身保留，折线为新图元，保留现场供观察）
 const polyline = await region.convertToPolyline();
 
-console.log('primitiveType:', 'Region → ' + polyline.getState_PrimitiveType());
+console.log('primitiveType:', `Region → ${polyline.getState_PrimitiveType()}`);
 console.log('primitiveId:', polyline.getState_PrimitiveId());
 ```
 
@@ -435,9 +361,8 @@ Convert to: Copper border primitive
 ## Signature
 
 ```typescript
-public convertToPour(): Promise<IPCB_PrimitivePour>;
+function convertToPour(): Promise<IPCB_PrimitivePour>;
 ```
-
 
 ## Returns
 
@@ -446,7 +371,6 @@ Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;
 Copper border primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -460,7 +384,7 @@ const region = await eda.pcb_PrimitiveRegion.create(1, polygon);
 // 3. 转换为覆铜边框图元（区域本身保留，覆铜边框为新图元，保留现场供观察）
 const pour = await region.convertToPour();
 
-console.log('primitiveType:', 'Region → ' + pour.getState_PrimitiveType());
+console.log('primitiveType:', `Region → ${pour.getState_PrimitiveType()}`);
 console.log('primitiveId:', pour.getState_PrimitiveId());
 ```
 
@@ -475,9 +399,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveRegion>;
+function done(): Promise<IPCB_PrimitiveRegion>;
 ```
-
 
 ## Returns
 
@@ -486,7 +409,6 @@ Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -518,9 +440,8 @@ Get the property state: complex polygon
 ## Signature
 
 ```typescript
-public getState_ComplexPolygon(): IPCB_Polygon;
+function getState_ComplexPolygon(): IPCB_Polygon;
 ```
-
 
 ## Returns
 
@@ -529,7 +450,6 @@ public getState_ComplexPolygon(): IPCB_Polygon;
 Complex polygon
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个已知轮廓的矩形区域（500 x 300 mil）
@@ -557,9 +477,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfRegion;
+function getState_Layer(): TPCB_LayersOfRegion;
 ```
-
 
 ## Returns
 
@@ -568,7 +487,6 @@ public getState_Layer(): TPCB_LayersOfRegion;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个顶层铜层（1）的矩形区域
@@ -595,9 +513,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number;
+function getState_LineWidth(): number;
 ```
-
 
 ## Returns
 
@@ -606,7 +523,6 @@ number
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个 10mil 线宽的矩形区域
@@ -633,9 +549,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -644,7 +559,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个矩形区域
@@ -671,9 +585,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -682,7 +595,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个未锁定的矩形区域
@@ -709,9 +621,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -720,7 +631,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个矩形区域
@@ -747,9 +657,8 @@ Get the property state: region name
 ## Signature
 
 ```typescript
-public getState_RegionName(): string | undefined;
+function getState_RegionName(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -758,7 +667,6 @@ string \| undefined
 Region name
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个带名称的约束区域（ruleType=9 即 FOLLOW_REGION_RULE）
@@ -785,9 +693,8 @@ Get the property state: region rule type
 ## Signature
 
 ```typescript
-public getState_RuleType(): Array<EPCB_PrimitiveRegionRuleType>;
+function getState_RuleType(): Array<EPCB_PrimitiveRegionRuleType>;
 ```
-
 
 ## Returns
 
@@ -796,7 +703,6 @@ Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.m
 Region rule type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个"禁止元件"（NO_COMPONENTS=2）的规则区域
@@ -823,9 +729,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -834,7 +739,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个矩形区域
@@ -863,9 +767,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveRegion>;
+function reset(): Promise<IPCB_PrimitiveRegion>;
 ```
-
 
 ## Returns
 
@@ -874,7 +777,6 @@ Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -910,7 +812,7 @@ Set the property state: complex polygon
 ## Signature
 
 ```typescript
-public setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitiveRegion;
+function setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitiveRegion;
 ```
 
 ## Parameters
@@ -919,37 +821,29 @@ public setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitiveRegi
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 complexPolygon
 
-
 </td><td>
 
 [IPCB\_Polygon](./IPCB_Polygon.md)
-
 
 </td><td>
 
 Complex polygon
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -958,7 +852,6 @@ Complex polygon
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -994,7 +887,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfRegion): IPCB_PrimitiveRegion;
+function setState_Layer(layer: TPCB_LayersOfRegion): IPCB_PrimitiveRegion;
 ```
 
 ## Parameters
@@ -1003,37 +896,29 @@ public setState_Layer(layer: TPCB_LayersOfRegion): IPCB_PrimitiveRegion;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfRegion](../types/TPCB_LayersOfRegion.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1042,7 +927,6 @@ Layer
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1076,7 +960,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number): IPCB_PrimitiveRegion;
+function setState_LineWidth(lineWidth: number): IPCB_PrimitiveRegion;
 ```
 
 ## Parameters
@@ -1085,37 +969,29 @@ public setState_LineWidth(lineWidth: number): IPCB_PrimitiveRegion;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1124,7 +1000,6 @@ Line width
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1159,7 +1034,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveRegion;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveRegion;
 ```
 
 ## Parameters
@@ -1168,37 +1043,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveRegion;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1207,7 +1074,6 @@ Whether it is locked
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1241,7 +1107,7 @@ Set the property state: region name
 ## Signature
 
 ```typescript
-public setState_RegionName(regionName?: string): IPCB_PrimitiveRegion;
+function setState_RegionName(regionName?: string): IPCB_PrimitiveRegion;
 ```
 
 ## Parameters
@@ -1250,37 +1116,29 @@ public setState_RegionName(regionName?: string): IPCB_PrimitiveRegion;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 regionName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Region name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1295,7 +1153,6 @@ Only valid when `ruleType` is [EPCB\_PrimitiveRegionRuleType.FOLLOW\_REGION\_RUL
 If `ruleType` is [EPCB\_PrimitiveRegionRuleType.FOLLOW\_REGION\_RULE](../enums/EPCB_PrimitiveRegionRuleType.md) but `regionName` is empty, the system will automatically assign a name
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1330,7 +1187,7 @@ Set the property state: region rule type
 ## Signature
 
 ```typescript
-public setState_RuleType(ruleType: Array<EPCB_PrimitiveRegionRuleType>): IPCB_PrimitiveRegion;
+function setState_RuleType(ruleType: Array<EPCB_PrimitiveRegionRuleType>): IPCB_PrimitiveRegion;
 ```
 
 ## Parameters
@@ -1339,37 +1196,29 @@ public setState_RuleType(ruleType: Array<EPCB_PrimitiveRegionRuleType>): IPCB_Pr
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 ruleType
 
-
 </td><td>
 
 Array&lt;[EPCB\_PrimitiveRegionRuleType](../enums/EPCB_PrimitiveRegionRuleType.md)<!-- -->&gt;
-
 
 </td><td>
 
 Region rule type
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1378,7 +1227,6 @@ Region rule type
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1410,9 +1258,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveRegion;
+function toAsync(): IPCB_PrimitiveRegion;
 ```
-
 
 ## Returns
 
@@ -1421,7 +1268,6 @@ public toAsync(): IPCB_PrimitiveRegion;
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1454,9 +1300,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveRegion;
+function toSync(): IPCB_PrimitiveRegion;
 ```
-
 
 ## Returns
 
@@ -1465,7 +1310,6 @@ public toSync(): IPCB_PrimitiveRegion;
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合

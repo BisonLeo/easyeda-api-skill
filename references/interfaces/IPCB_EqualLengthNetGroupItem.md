@@ -5,7 +5,7 @@ Equal-length net group properties
 ## Signature
 
 ```typescript
-export interface IPCB_EqualLengthNetGroupItem 
+interface IPCB_EqualLengthNetGroupItem
 ```
 
 ## Properties
@@ -14,78 +14,62 @@ export interface IPCB_EqualLengthNetGroupItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [color](./IPCB_EqualLengthNetGroupItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 { r: number; g: number; b: number; alpha: number } \| null
 
-
 </td><td>
 
 Equal-length net group color
-
 
 </td></tr>
 <tr><td>
 
 [name](./IPCB_EqualLengthNetGroupItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Equal-length net group name
-
 
 </td></tr>
 <tr><td>
 
 [nets](./IPCB_EqualLengthNetGroupItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 Net name array
-
 
 </td></tr>
 </tbody></table>

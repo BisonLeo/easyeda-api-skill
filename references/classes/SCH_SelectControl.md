@@ -5,7 +5,7 @@ Schematic &amp; symbol / selection control class
 ## Signature
 
 ```typescript
-export class SCH_SelectControl 
+class SCH_SelectControl
 ```
 
 ## Remarks
@@ -18,128 +18,101 @@ Get or operate the selected elements
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [clearSelected()](./SCH_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Clear the selection
-
 
 </td></tr>
 <tr><td>
 
 [doCrossProbeSelect(components, pins, nets, highlight, select)](./SCH_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Perform cross-probe selection
-
 
 </td></tr>
 <tr><td>
 
 [doSelectPrimitives(primitiveIds)](./SCH_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Select primitives using primitive IDs
-
 
 </td></tr>
 <tr><td>
 
 [getAllSelectedPrimitives\_PrimitiveId()](./SCH_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Query the primitive IDs of all selected primitives
-
 
 </td></tr>
 <tr><td>
 
 [getAllSelectedPrimitives()](./SCH_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Query the primitive objects of all selected primitives
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentMousePosition()](./SCH_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Current the mouse position on the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getSelectedPrimitives\_PrimitiveId()](./SCH_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query the primitive IDs of the selected primitives
-
 
 </td></tr>
 <tr><td>
 
 [getSelectedPrimitives()](./SCH_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Query all parameters of the selected primitives
-
 
 </td></tr>
 </tbody></table>
@@ -157,9 +130,8 @@ Clear the selection
 ## Signature
 
 ```typescript
-public clearSelected(): boolean;
+function clearSelected(): boolean;
 ```
-
 
 ## Returns
 
@@ -168,7 +140,6 @@ boolean
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试矩形并选中它
@@ -201,7 +172,13 @@ Perform cross-probe selection
 ## Signature
 
 ```typescript
-public doCrossProbeSelect(components?: Array<string>, pins?: Array<string>, nets?: Array<string>, highlight?: boolean, select?: boolean): boolean;
+function doCrossProbeSelect(
+	components?: Array<string>,
+	pins?: Array<string>,
+	nets?: Array<string>,
+	highlight?: boolean,
+	select?: boolean,
+): boolean;
 ```
 
 ## Parameters
@@ -210,101 +187,81 @@ public doCrossProbeSelect(components?: Array<string>, pins?: Array<string>, nets
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 components
 
-
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ Device designator
-
 
 </td></tr>
 <tr><td>
 
 pins
 
-
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ Device designator \_ pin number, format is \['U1\_1', 'U1\_2'\]
-
 
 </td></tr>
 <tr><td>
 
 nets
 
-
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ Net name
-
 
 </td></tr>
 <tr><td>
 
 highlight
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether to highlight
-
 
 </td></tr>
 <tr><td>
 
 select
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether Select
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -313,7 +270,6 @@ boolean
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建挂测试网络的导线，作为交叉选择的目标
@@ -326,7 +282,7 @@ const crossProbed = eda.sch_SelectControl.doCrossProbeSelect(undefined, undefine
 console.log('crossProbed:', crossProbed);
 
 // 3. 交叉探针作用于原理图与 PCB 的联动定位，返回 true 表示已触发；
-//    需要选中当前文档图元时改用 doSelectPrimitives
+// 需要选中当前文档图元时改用 doSelectPrimitives
 eda.sch_SelectControl.clearSelected();
 await eda.sch_PrimitiveWire.delete([wireId]);
 ```
@@ -340,7 +296,7 @@ Select primitives using primitive IDs
 ## Signature
 
 ```typescript
-public doSelectPrimitives(primitiveIds: string | Array<string>): Promise<boolean>;
+function doSelectPrimitives(primitiveIds: string | Array<string>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -349,37 +305,29 @@ public doSelectPrimitives(primitiveIds: string | Array<string>): Promise<boolean
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
-
 
 </td><td>
 
 Primitive ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -388,7 +336,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试矩形
@@ -420,9 +367,8 @@ Query the primitive objects of all selected primitives
 ## Signature
 
 ```typescript
-public getAllSelectedPrimitives(): Promise<Array<ISCH_Primitive>>;
+function getAllSelectedPrimitives(): Promise<Array<ISCH_Primitive>>;
 ```
-
 
 ## Returns
 
@@ -431,7 +377,6 @@ Promise&lt;Array&lt;[ISCH\_Primitive](../interfaces/ISCH_Primitive.md)<!-- -->&g
 Primitive objects of all selected primitives
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试矩形并选中
@@ -464,9 +409,8 @@ Query the primitive IDs of all selected primitives
 ## Signature
 
 ```typescript
-public getAllSelectedPrimitives_PrimitiveId(): Promise<Array<string>>;
+function getAllSelectedPrimitives_PrimitiveId(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -475,7 +419,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 Primitive IDs of all selected primitives
 
 ## Example
-
 
 ```javascript
 // 1. 创建 2 个测试矩形并选中
@@ -505,9 +448,8 @@ Get Current the mouse position on the canvas
 ## Signature
 
 ```typescript
-public getCurrentMousePosition(): Promise<{ x: number; y: number } | undefined>;
+function getCurrentMousePosition(): Promise<{ x: number; y: number } | undefined>;
 ```
-
 
 ## Returns
 
@@ -517,17 +459,17 @@ The mouse position on the canvas. `undefined` means the current mouse is not on 
 
 ## Example
 
-
 ```javascript
 // 1. 查询鼠标当前位置
 const position = await eda.sch_SelectControl.getCurrentMousePosition();
 
 // 2. 鼠标在画布上时输出坐标，不在画布上时返回 undefined
 if (position) {
-  console.log('x:', position.x);
-  console.log('y:', position.y);
-} else {
-  console.log('鼠标当前不在画布上');
+	console.log('x:', position.x);
+	console.log('y:', position.y);
+}
+else {
+	console.log('鼠标当前不在画布上');
 }
 ```
 
@@ -546,9 +488,8 @@ Query all parameters of the selected primitives
 ## Signature
 
 ```typescript
-public getSelectedPrimitives(): Promise<Array<object>>;
+function getSelectedPrimitives(): Promise<Array<object>>;
 ```
-
 
 ## Returns
 
@@ -569,9 +510,8 @@ Query the primitive IDs of the selected primitives
 ## Signature
 
 ```typescript
-public getSelectedPrimitives_PrimitiveId(): Promise<Array<string>>;
+function getSelectedPrimitives_PrimitiveId(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 

@@ -5,11 +5,10 @@ System / message bus class
 ## Signature
 
 ```typescript
-export class SYS_MessageBus 
+class SYS_MessageBus
 ```
 
 ## Remarks
-
 
 ## Methods
 
@@ -17,268 +16,211 @@ export class SYS_MessageBus
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [createPrivateMessageBus()](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Create Private message bus
-
 
 </td></tr>
 <tr><td>
 
 [publish(topic, message)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Private message bus: publish a message
-
 
 </td></tr>
 <tr><td>
 
 [publishPublic(topic, message)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Public message bus: publish a message
-
 
 </td></tr>
 <tr><td>
 
 [pull(topic, callbackFn)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Private message bus: pull a message
-
 
 </td></tr>
 <tr><td>
 
 [pullAsync(topic)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Private message bus: pull a message (Promise version)
-
 
 </td></tr>
 <tr><td>
 
 [pullAsyncPublic(topic)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Public message bus: pull a message (Promise version)
-
 
 </td></tr>
 <tr><td>
 
 [pullPublic(topic, callbackFn)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Public message bus: pull a message
-
 
 </td></tr>
 <tr><td>
 
 [push(topic, message)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Private message bus: push a message
-
 
 </td></tr>
 <tr><td>
 
 [pushPublic(topic, message)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Public message bus: push a message
-
 
 </td></tr>
 <tr><td>
 
 [removePrivateMessageBus()](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Remove Private message bus
-
 
 </td></tr>
 <tr><td>
 
 [rpcCall(topic, message, timeout)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Private message bus: call RPC service
-
 
 </td></tr>
 <tr><td>
 
 [rpcCallPublic(topic, message, timeout)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Public message bus: call RPC service
-
 
 </td></tr>
 <tr><td>
 
 [rpcService(topic, callbackFn)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Private message bus: register RPC service
-
 
 </td></tr>
 <tr><td>
 
 [rpcServicePublic(topic, callbackFn)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Public message bus: register RPC service
-
 
 </td></tr>
 <tr><td>
 
 [subscribe(topic, callbackFn)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Private message bus: subscribe to a message
-
 
 </td></tr>
 <tr><td>
 
 [subscribeOnce(topic, callbackFn)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Private message bus: subscribe to a message once
-
 
 </td></tr>
 <tr><td>
 
 [subscribeOncePublic(topic, callbackFn)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Public message bus: subscribe to a message once
-
 
 </td></tr>
 <tr><td>
 
 [subscribePublic(topic, callbackFn)](./SYS_MessageBus.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Public message bus: subscribe to a message
-
 
 </td></tr>
 </tbody></table>
@@ -296,9 +238,8 @@ Create Private message bus
 ## Signature
 
 ```typescript
-public createPrivateMessageBus(): void;
+function createPrivateMessageBus(): void;
 ```
-
 
 ## Returns
 
@@ -310,14 +251,13 @@ Generally, there is no need to call this method. The private message bus is auto
 
 ## Example
 
-
 ```javascript
 // 1. 手动创建私有消息总线（重复调用无副作用）
 eda.sys_MessageBus.createPrivateMessageBus();
 
 // 2. 订阅一个主题，验证总线已就绪
 const task = eda.sys_MessageBus.subscribe('嘉立创示例_创建总线', (message) => {
-  console.log('订阅者收到：', message);
+	console.log('订阅者收到：', message);
 });
 
 // 3. 发布消息，回调立即触发
@@ -337,7 +277,7 @@ Private message bus: publish a message
 ## Signature
 
 ```typescript
-public publish(topic: string, message: any): void;
+function publish(topic: string, message: any): void;
 ```
 
 ## Parameters
@@ -346,53 +286,42 @@ public publish(topic: string, message: any): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 message
 
-
 </td><td>
 
 any
-
 
 </td><td>
 
 Message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -404,14 +333,13 @@ Broadcast the message to every Subscriber
 
 ## Example
 
-
 ```javascript
 // 1. 两个不同模块订阅同一主题
 const panelTask = eda.sys_MessageBus.subscribe('嘉立创示例_发布', (message) => {
-  console.log('面板模块收到：', message);
+	console.log('面板模块收到：', message);
 });
 const cacheTask = eda.sys_MessageBus.subscribe('嘉立创示例_发布', (message) => {
-  console.log('缓存模块收到：', message);
+	console.log('缓存模块收到：', message);
 });
 
 // 2. 发布一条广播消息，两个订阅者都会收到
@@ -432,7 +360,7 @@ Public message bus: publish a message
 ## Signature
 
 ```typescript
-public publishPublic(topic: string, message: any): void;
+function publishPublic(topic: string, message: any): void;
 ```
 
 ## Parameters
@@ -441,53 +369,42 @@ public publishPublic(topic: string, message: any): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 message
 
-
 </td><td>
 
 any
-
 
 </td><td>
 
 Message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -499,17 +416,16 @@ Broadcast the message to every Subscriber
 
 ## Example
 
-
 ```javascript
 // 1. 两个公共订阅者 + 一个私有订阅者（用于对照隔离性）
 const publicTaskA = eda.sys_MessageBus.subscribePublic('嘉立创示例_公共发布', (message) => {
-  console.log('公共订阅者 A 收到：', message);
+	console.log('公共订阅者 A 收到：', message);
 });
 const publicTaskB = eda.sys_MessageBus.subscribePublic('嘉立创示例_公共发布', (message) => {
-  console.log('公共订阅者 B 收到：', message);
+	console.log('公共订阅者 B 收到：', message);
 });
 const privateTask = eda.sys_MessageBus.subscribe('嘉立创示例_公共发布', (message) => {
-  console.log('私有订阅者收到：', message);
+	console.log('私有订阅者收到：', message);
 });
 
 // 2. 在公共总线发布广播，只有公共订阅者会收到
@@ -531,7 +447,7 @@ Private message bus: pull a message
 ## Signature
 
 ```typescript
-public pull(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
+function pull(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
 ```
 
 ## Parameters
@@ -540,53 +456,42 @@ public pull(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusT
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (message: any) =&gt; void
-
 
 </td><td>
 
 Callback after a message is pulled
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -600,13 +505,12 @@ Only one message can be pulled at a time
 
 ## Example
 
-
 ```javascript
 // 1. 注册拉取回调（每次只能拉一个消息）
 let count = 0;
 const task = eda.sys_MessageBus.pull('嘉立创示例_拉取', (message) => {
-  count++;
-  console.log('第', count, '次拉到：', message);
+	count++;
+	console.log('第', count, '次拉到：', message);
 });
 
 // 2. 推送两条消息：只有第一条会被这个 Puller 收到
@@ -629,7 +533,7 @@ Private message bus: pull a message (Promise version)
 ## Signature
 
 ```typescript
-public pullAsync(topic: string): Promise<any>;
+function pullAsync(topic: string): Promise<any>;
 ```
 
 ## Parameters
@@ -638,37 +542,29 @@ public pullAsync(topic: string): Promise<any>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Theme
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -681,7 +577,6 @@ The pulled message
 Only one message can be pulled at a time. You can use `await` to wait for the message to be pulled
 
 ## Example
-
 
 ```javascript
 // 1. 先发起拉取（Promise 挂起等待消息）
@@ -704,7 +599,7 @@ Public message bus: pull a message (Promise version)
 ## Signature
 
 ```typescript
-public pullAsyncPublic(topic: string): Promise<any>;
+function pullAsyncPublic(topic: string): Promise<any>;
 ```
 
 ## Parameters
@@ -713,37 +608,29 @@ public pullAsyncPublic(topic: string): Promise<any>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Theme
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -756,7 +643,6 @@ The pulled message
 Only one message can be pulled at a time. You can use `await` to wait for the message to be pulled
 
 ## Example
-
 
 ```javascript
 // 1. 在公共总线发起拉取（Promise 挂起等待消息）
@@ -779,7 +665,7 @@ Public message bus: pull a message
 ## Signature
 
 ```typescript
-public pullPublic(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
+function pullPublic(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
 ```
 
 ## Parameters
@@ -788,53 +674,42 @@ public pullPublic(topic: string, callbackFn: (message: any) => void): ISYS_Messa
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (message: any) =&gt; void
-
 
 </td><td>
 
 Callback after a message is pulled
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -848,11 +723,10 @@ Only one message can be pulled at a time
 
 ## Example
 
-
 ```javascript
 // 1. 在公共总线注册拉取回调（一次性）
 const task = eda.sys_MessageBus.pullPublic('嘉立创示例_公共拉取', (message) => {
-  console.log('公共总线拉到：', message);
+	console.log('公共总线拉到：', message);
 });
 
 // 2. 用 pushPublic 投递消息，回调立即触发
@@ -872,7 +746,7 @@ Private message bus: push a message
 ## Signature
 
 ```typescript
-public push(topic: string, message: any): void;
+function push(topic: string, message: any): void;
 ```
 
 ## Parameters
@@ -881,53 +755,42 @@ public push(topic: string, message: any): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 message
 
-
 </td><td>
 
 any
-
 
 </td><td>
 
 Message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -939,19 +802,18 @@ Each message can only be received by one Puller
 
 ## Example
 
-
 ```javascript
 // 1. 先推送消息（此时还没有 Puller，消息排队保留）
 eda.sys_MessageBus.push('嘉立创示例_推送', '先推后拉的消息');
 
 // 2. 再注册拉取回调，排队的消息立即交付
 const task = eda.sys_MessageBus.pull('嘉立创示例_推送', (message) => {
-  console.log('拉到排队消息：', message);
+	console.log('拉到排队消息：', message);
 });
 
 // 3. 常规顺序演示：先注册再推送
 const task2 = eda.sys_MessageBus.pull('嘉立创示例_推送', (message) => {
-  console.log('拉到实时消息：', message);
+	console.log('拉到实时消息：', message);
 });
 eda.sys_MessageBus.push('嘉立创示例_推送', '先拉后推的消息');
 
@@ -970,7 +832,7 @@ Public message bus: push a message
 ## Signature
 
 ```typescript
-public pushPublic(topic: string, message: any): void;
+function pushPublic(topic: string, message: any): void;
 ```
 
 ## Parameters
@@ -979,53 +841,42 @@ public pushPublic(topic: string, message: any): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 message
 
-
 </td><td>
 
 any
-
 
 </td><td>
 
 Message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1037,15 +888,14 @@ Each message can only be received by one Puller
 
 ## Example
 
-
 ```javascript
 // 1. 在公共总线注册两个取件方（竞争关系）
 let receivedByA = false;
 const taskA = eda.sys_MessageBus.pullPublic('嘉立创示例_公共推送', () => {
-  receivedByA = true;
+	receivedByA = true;
 });
 const taskB = eda.sys_MessageBus.pullPublic('嘉立创示例_公共推送', (message) => {
-  console.log('取件方 B 拉到：', message);
+	console.log('取件方 B 拉到：', message);
 });
 
 // 2. 推送一条消息：先注册的取件方 A 拿走，B 收不到
@@ -1068,9 +918,8 @@ Remove Private message bus
 ## Signature
 
 ```typescript
-public removePrivateMessageBus(): void;
+function removePrivateMessageBus(): void;
 ```
-
 
 ## Returns
 
@@ -1082,12 +931,11 @@ Generally, there is no need to call this method unless you know what you are doi
 
 ## Example
 
-
 ```javascript
 // 1. 订阅一个主题并验证能收到消息
 let received = null;
 eda.sys_MessageBus.subscribe('嘉立创示例_移除总线', (message) => {
-  received = message;
+	received = message;
 });
 eda.sys_MessageBus.publish('嘉立创示例_移除总线', '移除前的消息');
 console.log('移除前收到：', received);
@@ -1099,7 +947,7 @@ console.log('移除后订阅者是否还收到：', received);
 
 // 3. 再次订阅，总线自动重建恢复正常
 eda.sys_MessageBus.subscribe('嘉立创示例_移除总线', (message) => {
-  received = message;
+	received = message;
 });
 eda.sys_MessageBus.publish('嘉立创示例_移除总线', '重建后的消息');
 console.log('重建后收到：', received);
@@ -1114,7 +962,7 @@ Private message bus: call RPC service
 ## Signature
 
 ```typescript
-public rpcCall(topic: string, message?: any, timeout?: number): Promise<any>;
+function rpcCall(topic: string, message?: any, timeout?: number): Promise<any>;
 ```
 
 ## Parameters
@@ -1123,69 +971,55 @@ public rpcCall(topic: string, message?: any, timeout?: number): Promise<any>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 message
 
-
 </td><td>
 
 any
 
-
 </td><td>
 
 _(Optional)_ Message
-
 
 </td></tr>
 <tr><td>
 
 timeout
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Timeout
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1195,17 +1029,16 @@ RPC service return
 
 ## Example
 
-
 ```javascript
 // 1. 注册一个 DRC 检查服务（message 是单个参数，用对象打包请求字段）
 eda.sys_MessageBus.rpcService('嘉立创示例_RPC调用', (message) => {
-  return '检查完成：' + message.rule + '，发现 ' + message.count + ' 处问题';
+	return `检查完成：${message.rule}，发现 ${message.count} 处问题`;
 });
 
 // 2. 发起 RPC 调用，await 直接拿到服务返回值
 const reply = await eda.sys_MessageBus.rpcCall('嘉立创示例_RPC调用', {
-  rule: '间距约束',
-  count: 2,
+	rule: '间距约束',
+	count: 2,
 });
 console.log('服务返回：', reply);
 ```
@@ -1219,7 +1052,7 @@ Public message bus: call RPC service
 ## Signature
 
 ```typescript
-public rpcCallPublic(topic: string, message?: any, timeout?: number): Promise<any>;
+function rpcCallPublic(topic: string, message?: any, timeout?: number): Promise<any>;
 ```
 
 ## Parameters
@@ -1228,69 +1061,55 @@ public rpcCallPublic(topic: string, message?: any, timeout?: number): Promise<an
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 message
 
-
 </td><td>
 
 any
 
-
 </td><td>
 
 _(Optional)_ Message
-
 
 </td></tr>
 <tr><td>
 
 timeout
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Timeout
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1300,11 +1119,10 @@ RPC service return
 
 ## Example
 
-
 ```javascript
 // 1. 在公共总线注册一个库查询服务
 eda.sys_MessageBus.rpcServicePublic('嘉立创示例_公共RPC调用', (message) => {
-  return { name: message, stock: 1200 };
+	return { name: message, stock: 1200 };
 });
 
 // 2. 调用公共 RPC 服务，await 拿到返回值
@@ -1321,7 +1139,7 @@ Private message bus: register RPC service
 ## Signature
 
 ```typescript
-public rpcService(topic: string, callbackFn: (...args: Array<any>) => any | Promise<any>): void;
+function rpcService(topic: string, callbackFn: (...args: Array<any>) => any | Promise<any>): void;
 ```
 
 ## Parameters
@@ -1330,53 +1148,42 @@ public rpcService(topic: string, callbackFn: (...args: Array<any>) => any | Prom
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (...args: Array&lt;any&gt;) =&gt; any \| Promise&lt;any&gt;
-
 
 </td><td>
 
 Callback after receiving the message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1384,17 +1191,16 @@ void
 
 ## Example
 
-
 ```javascript
 // 1. 注册同步服务：直接返回计算结果
 eda.sys_MessageBus.rpcService('嘉立创示例_RPC服务_同步', (message) => {
-  return '同步响应：' + message;
+	return `同步响应：${message}`;
 });
 
 // 2. 注册异步服务：返回 Promise，处理完才响应
 eda.sys_MessageBus.rpcService('嘉立创示例_RPC服务_异步', async (message) => {
-  await new Promise((resolve) => setTimeout(resolve, 200));
-  return '异步响应：' + message;
+	await new Promise(resolve => setTimeout(resolve, 200));
+	return `异步响应：${message}`;
 });
 
 // 3. 分别调用两种服务验证
@@ -1411,7 +1217,10 @@ Public message bus: register RPC service
 ## Signature
 
 ```typescript
-public rpcServicePublic(topic: string, callbackFn: (...args: Array<any>) => any | Promise<any>): void;
+function rpcServicePublic(
+	topic: string,
+	callbackFn: (...args: Array<any>) => any | Promise<any>,
+): void;
 ```
 
 ## Parameters
@@ -1420,53 +1229,42 @@ public rpcServicePublic(topic: string, callbackFn: (...args: Array<any>) => any 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (...args: Array&lt;any&gt;) =&gt; any \| Promise&lt;any&gt;
-
 
 </td><td>
 
 Callback after receiving the message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1474,11 +1272,10 @@ void
 
 ## Example
 
-
 ```javascript
 // 1. 在公共总线注册一个工程信息服务
 eda.sys_MessageBus.rpcServicePublic('嘉立创示例_公共RPC服务', (message) => {
-  return '当前工程《示例工程》的' + message + '已就绪';
+	return `当前工程《示例工程》的${message}已就绪`;
 });
 
 // 2. 用 rpcCallPublic 调用自己注册的公共服务（跨扩展调用同理）
@@ -1495,7 +1292,7 @@ Private message bus: subscribe to a message
 ## Signature
 
 ```typescript
-public subscribe(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
+function subscribe(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
 ```
 
 ## Parameters
@@ -1504,53 +1301,42 @@ public subscribe(topic: string, callbackFn: (message: any) => void): ISYS_Messag
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (message: any) =&gt; void
-
 
 </td><td>
 
 Callback after receiving the message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1564,12 +1350,11 @@ Persistent subscription message
 
 ## Example
 
-
 ```javascript
 // 1. 持久订阅主题
 const received = [];
 const task = eda.sys_MessageBus.subscribe('嘉立创示例_订阅', (message) => {
-  received.push(message);
+	received.push(message);
 });
 
 // 2. 连续发布多条消息，每条都能收到
@@ -1592,7 +1377,7 @@ Private message bus: subscribe to a message once
 ## Signature
 
 ```typescript
-public subscribeOnce(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
+function subscribeOnce(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
 ```
 
 ## Parameters
@@ -1601,53 +1386,42 @@ public subscribeOnce(topic: string, callbackFn: (message: any) => void): ISYS_Me
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (message: any) =&gt; void
-
 
 </td><td>
 
 Callback after receiving the message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1657,12 +1431,11 @@ Message bus task
 
 ## Example
 
-
 ```javascript
 // 1. 注册单次订阅
 let received = null;
 const task = eda.sys_MessageBus.subscribeOnce('嘉立创示例_单次订阅', (message) => {
-  received = message;
+	received = message;
 });
 
 // 2. 发布两条消息：只有第一条触发回调
@@ -1684,7 +1457,10 @@ Public message bus: subscribe to a message once
 ## Signature
 
 ```typescript
-public subscribeOncePublic(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
+function subscribeOncePublic(
+	topic: string,
+	callbackFn: (message: any) => void,
+): ISYS_MessageBusTask;
 ```
 
 ## Parameters
@@ -1693,53 +1469,42 @@ public subscribeOncePublic(topic: string, callbackFn: (message: any) => void): I
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (message: any) =&gt; void
-
 
 </td><td>
 
 Callback after receiving the message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1749,12 +1514,11 @@ Message bus task
 
 ## Example
 
-
 ```javascript
 // 1. 在公共总线注册单次订阅
 let received = null;
 eda.sys_MessageBus.subscribeOncePublic('嘉立创示例_公共单次订阅', (message) => {
-  received = message;
+	received = message;
 });
 
 // 2. 连续两条公共广播：只有第一条触发
@@ -1776,7 +1540,7 @@ Public message bus: subscribe to a message
 ## Signature
 
 ```typescript
-public subscribePublic(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
+function subscribePublic(topic: string, callbackFn: (message: any) => void): ISYS_MessageBusTask;
 ```
 
 ## Parameters
@@ -1785,53 +1549,42 @@ public subscribePublic(topic: string, callbackFn: (message: any) => void): ISYS_
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topic
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Theme
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (message: any) =&gt; void
-
 
 </td><td>
 
 Callback after receiving the message
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1845,12 +1598,11 @@ Persistent subscription message
 
 ## Example
 
-
 ```javascript
 // 1. 在公共总线持久订阅主题
 const received = [];
 const task = eda.sys_MessageBus.subscribePublic('嘉立创示例_公共订阅', (message) => {
-  received.push(message);
+	received.push(message);
 });
 
 // 2. 公共广播两条都能收到；私有 publish 不会到达

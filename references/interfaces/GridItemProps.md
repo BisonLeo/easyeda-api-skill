@@ -5,7 +5,7 @@ Grid 子项：网格中的单个子元素
 ## Signature
 
 ```typescript
-export interface GridItemProps extends StyleProps 
+interface GridItemProps extends StyleProps
 ```
 **Extends:** [StyleProps](./StyleProps.md)
 
@@ -15,97 +15,77 @@ export interface GridItemProps extends StyleProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [align?](./GridItemProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 'start' \| 'center' \| 'end' \| 'stretch'
 
-
 </td><td>
 
 _(Optional)_ Alignment within the cell
-
 
 </td></tr>
 <tr><td>
 
 [children?](./GridItemProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 any
 
-
 </td><td>
 
 _(Optional)_ Child node
-
 
 </td></tr>
 <tr><td>
 
 [colSpan?](./GridItemProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Column span
-
 
 </td></tr>
 <tr><td>
 
 [rowSpan?](./GridItemProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Row span
-
 
 </td></tr>
 </tbody></table>

@@ -5,7 +5,7 @@ Panel / document operation class
 ## Signature
 
 ```typescript
-export class PNL_Document 
+class PNL_Document
 ```
 
 ## Remarks
@@ -18,30 +18,24 @@ Operations performed on the design document as a whole
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [save()](./PNL_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Save Document
-
 
 </td></tr>
 </tbody></table>
@@ -61,9 +55,8 @@ Save Document
 ## Signature
 
 ```typescript
-public save(): Promise<boolean>;
+function save(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -72,7 +65,6 @@ Promise&lt;boolean&gt;
 Whether the save operation was successful. Errors such as save failure and upload failure all return `false`
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试面板并打开（save 只对已打开的面板生效）

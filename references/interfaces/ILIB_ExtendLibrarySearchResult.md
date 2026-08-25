@@ -5,7 +5,7 @@ External library search result
 ## Signature
 
 ```typescript
-export interface ILIB_ExtendLibrarySearchResult<T> 
+interface ILIB_ExtendLibrarySearchResult<T>
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface ILIB_ExtendLibrarySearchResult<T>
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [count](./ILIB_ExtendLibrarySearchResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Total item count
-
 
 </td></tr>
 <tr><td>
 
 [lists](./ILIB_ExtendLibrarySearchResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;T&gt;
 
-
 </td><td>
 
 Result list
-
 
 </td></tr>
 <tr><td>
 
 [page](./ILIB_ExtendLibrarySearchResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Current page count
-
 
 </td></tr>
 <tr><td>
 
 [pageSize](./ILIB_ExtendLibrarySearchResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Number of entries per page
-
 
 </td></tr>
 <tr><td>
 
 [totalPage](./ILIB_ExtendLibrarySearchResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Total page count
-
 
 </td></tr>
 </tbody></table>

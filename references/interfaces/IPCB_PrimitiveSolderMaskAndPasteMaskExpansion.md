@@ -5,7 +5,7 @@ Solder mask / paste mask expansion
 ## Signature
 
 ```typescript
-export interface IPCB_PrimitiveSolderMaskAndPasteMaskExpansion 
+interface IPCB_PrimitiveSolderMaskAndPasteMaskExpansion
 ```
 
 ## Remarks
@@ -26,97 +26,77 @@ The paste mask expansion is generally only used for specific purposes such as st
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [bottomPasteMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Bottom paste mask expansion
-
 
 </td></tr>
 <tr><td>
 
 [bottomSolderMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Bottom solder mask expansion
-
 
 </td></tr>
 <tr><td>
 
 [topPasteMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Top paste mask expansion
-
 
 </td></tr>
 <tr><td>
 
 [topSolderMask?](./IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Top solder mask expansion
-
 
 </td></tr>
 </tbody></table>

@@ -5,13 +5,12 @@ Complex polygon
 ## Signature
 
 ```typescript
-export class IPCB_ComplexPolygon 
+class IPCB_ComplexPolygon
 ```
 
 ## Remarks
 
 developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/fill-rule \| fill-rule<!-- -->} to combine them to achieve Boolean operations on polygons.
-
 
 ## Methods
 
@@ -19,86 +18,68 @@ developer.mozilla.org/zh-CN/docs/Web/SVG/Attribute/fill-rule \| fill-rule<!-- --
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [addSource(complexPolygon)](./IPCB_ComplexPolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Add Polygon data
-
 
 </td></tr>
 <tr><td>
 
 [getCenter()](./IPCB_ComplexPolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Complex polygon center point
-
 
 </td></tr>
 <tr><td>
 
 [getSource()](./IPCB_ComplexPolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get Polygon data
-
 
 </td></tr>
 <tr><td>
 
 [getSourceStrictComplex()](./IPCB_ComplexPolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get Complex polygon data
-
 
 </td></tr>
 <tr><td>
 
 [toPolygon()](./IPCB_ComplexPolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Split is single polygon array
-
 
 </td></tr>
 </tbody></table>
@@ -116,7 +97,13 @@ Add Polygon data
 ## Signature
 
 ```typescript
-public addSource(complexPolygon: TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArray> | IPCB_Polygon | Array<IPCB_Polygon>): IPCB_ComplexPolygon;
+function addSource(
+	complexPolygon:
+		| TPCB_PolygonSourceArray
+		| Array<TPCB_PolygonSourceArray>
+		| IPCB_Polygon
+		| Array<IPCB_Polygon>,
+): IPCB_ComplexPolygon;
 ```
 
 ## Parameters
@@ -125,37 +112,29 @@ public addSource(complexPolygon: TPCB_PolygonSourceArray | Array<TPCB_PolygonSou
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 complexPolygon
 
-
 </td><td>
 
 [TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md) \| Array&lt;[TPCB\_PolygonSourceArray](../types/TPCB_PolygonSourceArray.md)<!-- -->&gt; \| [IPCB\_Polygon](./IPCB_Polygon.md) \| Array&lt;[IPCB\_Polygon](./IPCB_Polygon.md)<!-- -->&gt;
-
 
 </td><td>
 
 Complex polygon data
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -164,7 +143,6 @@ Complex polygon data
 Complex polygon object
 
 ## Example
-
 
 ```javascript
 // 1. 先创建一个矩形外框复杂多边形（纯数据对象，此时画布上还看不到）
@@ -195,9 +173,8 @@ Get Complex polygon center point
 ## Signature
 
 ```typescript
-public getCenter(): Promise<{ x: number; y: number }>;
+function getCenter(): Promise<{ x: number; y: number }>;
 ```
-
 
 ## Returns
 
@@ -214,9 +191,8 @@ Get Polygon data
 ## Signature
 
 ```typescript
-public getSource(): TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArray>;
+function getSource(): TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArray>;
 ```
-
 
 ## Returns
 
@@ -230,15 +206,14 @@ If it only contains a single polygon, the outermost array will be simplified
 
 ## Example
 
-
 ```javascript
 // 1. 用单个单多边形构建：getSource 会化简最外层数组
 const single = eda.pcb_MathPolygon.createComplexPolygon(['R', 1000, 1000, 500, 300, 0, 0]);
 
 // 2. 用多个单多边形构建：getSource 返回二维数组
 const multi = eda.pcb_MathPolygon.createComplexPolygon([
-  ['R', 2000, 1000, 500, 300, 0, 0],
-  ['CIRCLE', 3000, 1150, 100],
+	['R', 2000, 1000, 500, 300, 0, 0],
+	['CIRCLE', 3000, 1150, 100],
 ]);
 
 console.log('singleSource:', JSON.stringify(single.getSource()));
@@ -254,9 +229,8 @@ Get Complex polygon data
 ## Signature
 
 ```typescript
-public getSourceStrictComplex(): Array<TPCB_PolygonSourceArray>;
+function getSourceStrictComplex(): Array<TPCB_PolygonSourceArray>;
 ```
-
 
 ## Returns
 
@@ -270,14 +244,13 @@ Forcibly return data in complex polygon format, even if it only contains a singl
 
 ## Example
 
-
 ```javascript
 // 1. 只放入一个单多边形构建复杂多边形
 const complexPolygon = eda.pcb_MathPolygon.createComplexPolygon(['R', 1000, 1000, 500, 300, 0, 0]);
 
 // 2. 对比两种读取方式：区别在嵌套深度，不在是否为数组
-const simplified = complexPolygon.getSource();              // 一维：首元素是模式标记 "R"
-const strict = complexPolygon.getSourceStrictComplex();     // 二维：首元素是单多边形数组
+const simplified = complexPolygon.getSource(); // 一维：首元素是模式标记 "R"
+const strict = complexPolygon.getSourceStrictComplex(); // 二维：首元素是单多边形数组
 
 console.log('simplifiedFirstItem:', typeof simplified[0]);
 console.log('strictFirstItemIsArray:', Array.isArray(strict[0]));
@@ -293,9 +266,8 @@ Split is single polygon array
 ## Signature
 
 ```typescript
-public toPolygon(): Array<IPCB_Polygon>;
+function toPolygon(): Array<IPCB_Polygon>;
 ```
-
 
 ## Returns
 
@@ -309,12 +281,11 @@ Will complex polygon split is single polygon array of objects
 
 ## Example
 
-
 ```javascript
 // 1. 用两个单多边形（矩形 + 圆形）构建复杂多边形
 const complexPolygon = eda.pcb_MathPolygon.createComplexPolygon([
-  ['R', 1000, 1000, 500, 300, 0, 0],
-  ['CIRCLE', 3000, 1150, 100],
+	['R', 1000, 1000, 500, 300, 0, 0],
+	['CIRCLE', 3000, 1150, 100],
 ]);
 
 // 2. 拆分为单多边形对象数组
@@ -322,7 +293,7 @@ const polygons = complexPolygon.toPolygon();
 
 // 3. 逐个读取单多边形的数据
 polygons.forEach((polygon, index) => {
-  console.log('polygon' + (index + 1) + ':', JSON.stringify(polygon.getSource()));
+	console.log(`polygon${index + 1}:`, JSON.stringify(polygon.getSource()));
 });
 console.log('count:', polygons.length);
 ```

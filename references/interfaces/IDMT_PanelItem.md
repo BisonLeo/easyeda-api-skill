@@ -5,7 +5,7 @@ Panel property
 ## Signature
 
 ```typescript
-export interface IDMT_PanelItem 
+interface IDMT_PanelItem
 ```
 
 ## Properties
@@ -14,99 +14,79 @@ export interface IDMT_PanelItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [itemType](./IDMT_PanelItem.md)
 
-
 </td><td>
 
 `readonly`
-
 
 </td><td>
 
 [EDMT\_ItemType.PANEL](../enums/EDMT_ItemType.md)
 
-
 </td><td>
 
 Project type
-
 
 </td></tr>
 <tr><td>
 
 [name](./IDMT_PanelItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Panel name
-
 
 </td></tr>
 <tr><td>
 
 [parentProjectUuid](./IDMT_PanelItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 UUID of the project it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [uuid](./IDMT_PanelItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Panel UUID
-
 
 </td></tr>
 </tbody></table>

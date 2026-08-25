@@ -5,7 +5,7 @@ Auto routing result
 ## Signature
 
 ```typescript
-export interface IPCB_AutoRoutingResult 
+interface IPCB_AutoRoutingResult
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface IPCB_AutoRoutingResult
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [duration](./IPCB_AutoRoutingResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Auto routing duration (milliseconds)
-
 
 </td></tr>
 <tr><td>
 
 [failedNets](./IPCB_AutoRoutingResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 List of net names that failed to be routed
-
 
 </td></tr>
 <tr><td>
 
 [success](./IPCB_AutoRoutingResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether auto routing started successfully
-
 
 </td></tr>
 <tr><td>
 
 [successNetsCount](./IPCB_AutoRoutingResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Number of nets that were routed successfully
-
 
 </td></tr>
 <tr><td>
 
 [totalNetsCount](./IPCB_AutoRoutingResult.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Total number of nets participating in auto routing
-
 
 </td></tr>
 </tbody></table>

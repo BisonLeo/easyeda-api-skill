@@ -5,7 +5,7 @@
 ## Signature
 
 ```typescript
-export interface InputProps 
+interface InputProps
 ```
 
 ## Properties
@@ -14,363 +14,287 @@ export interface InputProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [clearBtn?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether Show clear button
-
 
 </td></tr>
 <tr><td>
 
 [clickBtn?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether to show the click button
-
 
 </td></tr>
 <tr><td>
 
 [disabled?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether Disable input
-
 
 </td></tr>
 <tr><td>
 
 [dropDownList?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ListChildren](./ListChildren.md)<!-- -->\[\]
 
-
 </td><td>
 
 _(Optional)_ Dropdown list data. When provided, the input box can select from a dropdown
-
 
 </td></tr>
 <tr><td>
 
 [onAddClick?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 (data: string) =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 点击添加按钮时触发，参数为当前输入值
-
 
 </td></tr>
 <tr><td>
 
 [onBlur?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 (data: string) =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 输入框失焦时触发，参数为当前输入值
-
 
 </td></tr>
 <tr><td>
 
 [onChange?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 (data: string) =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 输入内容变化时触发，参数为最新值
-
 
 </td></tr>
 <tr><td>
 
 [onClick?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 () =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 点击输入框时触发
-
 
 </td></tr>
 <tr><td>
 
 [onFilterClick?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 (data: string) =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 点击筛选按钮时触发，参数为当前输入值
-
 
 </td></tr>
 <tr><td>
 
 [onSearchClick?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 (data: string) =&gt; void
 
-
 </td><td>
 
 _(Optional)_ 点击搜索按钮时触发，参数为当前输入值
-
 
 </td></tr>
 <tr><td>
 
 [otherAttr?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 \{ \[key: string\]: string \}
 
-
 </td><td>
 
 _(Optional)_ Other attributes attached to the input element (key-value pair string)
-
 
 </td></tr>
 <tr><td>
 
 [placeholder?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Placeholder text
-
 
 </td></tr>
 <tr><td>
 
 [preText?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Prefix text
-
 
 </td></tr>
 <tr><td>
 
 [readonly?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether it is read-only
-
 
 </td></tr>
 <tr><td>
 
 [searchBtn?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether Show search button
-
 
 </td></tr>
 <tr><td>
 
 [testVal?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Validation value for testing
-
 
 </td></tr>
 <tr><td>
 
 [type](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 'text' \| 'telephone' \| 'number' \| 'password' \| 'color' \| 'email'
 
-
 </td><td>
 
 Input box type (required)
-
 
 </td></tr>
 <tr><td>
 
 [value?](./InputProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Current input value
-
 
 </td></tr>
 </tbody></table>

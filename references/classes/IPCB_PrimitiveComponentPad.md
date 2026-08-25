@@ -5,7 +5,7 @@ Device pad primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveComponentPad extends IPCB_PrimitivePad 
+class IPCB_PrimitiveComponentPad extends IPCB_PrimitivePad
 ```
 **Extends:** [IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)
 
@@ -15,34 +15,28 @@ A device pad primitive is a special primitive. It refers to the pad associated w
 
 You can only obtain a device pad primitive through [the getAllPinsByPrimitiveId method of the device class](./PCB_PrimitiveComponent.md) or [the getAllPads method of the device primitive](./IPCB_PrimitiveComponent.md)
 
-
 ## Properties
 
 <table><thead><tr><th>
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [primitiveType](./IPCB_PrimitiveComponentPad.md)
-
 
 </td><td>
 
@@ -50,16 +44,13 @@ Description
 
 `readonly`
 
-
 </td><td>
 
 [EPCB\_PrimitiveType.COMPONENT\_PAD](../enums/EPCB_PrimitiveType.md)
 
-
 </td><td>
 
 图元类型
-
 
 </td></tr>
 </tbody></table>
@@ -70,84 +61,66 @@ Description
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveComponentPad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
 
-
 </td></tr>
 <tr><td>
 
 [getConnectedPrimitives(onlyCentreConnection)](./IPCB_PrimitiveComponentPad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get connected primitives
 
-
 </td></tr>
 <tr><td>
 
 [getConnectedPrimitives(onlyCentreConnection)](./IPCB_PrimitiveComponentPad.md)
 
-
 </td><td>
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ParentComponentPrimitiveId()](./IPCB_PrimitiveComponentPad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: parent device primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [setState\_ParentComponentPrimitiveId()](./IPCB_PrimitiveComponentPad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: parent device primitive ID
-
 
 </td></tr>
 </tbody></table>
@@ -165,7 +138,7 @@ Set the property state: parent device primitive ID
 ## Signature
 
 ```typescript
-protected readonly primitiveType: EPCB_PrimitiveType.COMPONENT_PAD;
+function readonly primitiveType: EPCB_PrimitiveType.COMPONENT_PAD;
 ```
 
 
@@ -184,9 +157,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveComponentPad>;
+function done(): Promise<IPCB_PrimitiveComponentPad>;
 ```
-
 
 ## Returns
 
@@ -195,7 +167,6 @@ Promise&lt;[IPCB\_PrimitiveComponentPad](./IPCB_PrimitiveComponentPad.md)<!-- --
 Device pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件并取第一个焊盘（随机坐标，避免与历史保留图元重合）
@@ -231,7 +202,9 @@ Get connected primitives
 ## Signature
 
 ```typescript
-public getConnectedPrimitives(onlyCentreConnection: true): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc | IPCB_PrimitiveVia>>;
+function getConnectedPrimitives(
+	onlyCentreConnection: true,
+): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc | IPCB_PrimitiveVia>>;
 ```
 
 ## Parameters
@@ -240,37 +213,29 @@ public getConnectedPrimitives(onlyCentreConnection: true): Promise<Array<IPCB_Pr
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 onlyCentreConnection
 
-
 </td><td>
 
 true
-
 
 </td><td>
 
 Whether to only use center connection. If it is `true`<!-- -->, only center-connected primitives (lines, arc lines, vias) are obtained; if it is `false`<!-- -->, all contacting primitives are obtained
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -281,7 +246,6 @@ Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_Pri
 This API can get the primitives that are in direct contact with the pad
 
 ## Example
-
 
 ```javascript
 // 1. 放置测试器件，取第一个焊盘的中心坐标
@@ -318,7 +282,17 @@ console.log('allConnectedCount:', allConnected.length);
 ## Signature
 
 ```typescript
-public getConnectedPrimitives(onlyCentreConnection: false): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc | IPCB_PrimitiveVia | IPCB_PrimitivePolyline | IPCB_PrimitiveFill>>;
+function getConnectedPrimitives(
+	onlyCentreConnection: false,
+): Promise<
+	Array<
+		| IPCB_PrimitiveLine
+		| IPCB_PrimitiveArc
+		| IPCB_PrimitiveVia
+		| IPCB_PrimitivePolyline
+		| IPCB_PrimitiveFill
+	>
+>;
 ```
 
 ## Parameters
@@ -327,35 +301,27 @@ public getConnectedPrimitives(onlyCentreConnection: false): Promise<Array<IPCB_P
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 onlyCentreConnection
 
-
 </td><td>
 
 false
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -370,9 +336,8 @@ Get the property state: parent device primitive ID
 ## Signature
 
 ```typescript
-public getState_ParentComponentPrimitiveId(): string;
+function getState_ParentComponentPrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -381,7 +346,6 @@ string
 Parent device primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -410,9 +374,8 @@ Set the property state: parent device primitive ID
 ## Signature
 
 ```typescript
-public setState_ParentComponentPrimitiveId(): IPCB_PrimitiveComponentPad;
+function setState_ParentComponentPrimitiveId(): IPCB_PrimitiveComponentPad;
 ```
-
 
 ## Returns
 
@@ -425,7 +388,6 @@ Device pad primitive object
 The properties of this device pad primitive do not support modification. Calling this API will have no effect
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件并获取焊盘图元对象

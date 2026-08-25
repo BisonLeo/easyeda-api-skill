@@ -5,7 +5,7 @@ Fill primitive fill mode
 ## Signature
 
 ```typescript
-export enum EPCB_PrimitiveFillMode 
+enum EPCB_PrimitiveFillMode
 ```
 
 ## Enumeration Members
@@ -14,58 +14,46 @@ export enum EPCB_PrimitiveFillMode
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 INNER\_ELECTRICAL\_LAYER
 
-
 </td><td>
 
 `2`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 MESH
 
-
 </td><td>
 
 `1`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 SOLID
 
-
 </td><td>
 
 `0`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

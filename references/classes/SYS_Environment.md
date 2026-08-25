@@ -5,7 +5,7 @@ System / runtime environment class
 ## Signature
 
 ```typescript
-export class SYS_Environment 
+class SYS_Environment
 ```
 
 ## Remarks
@@ -18,170 +18,134 @@ Get the runtime environment parameters of EasyEDA Pro
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getEditorCompliedDate()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the editor compiled date
-
 
 </td></tr>
 <tr><td>
 
 [getEditorCurrentVersion(onlySemantic)](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the current version of the editor
-
 
 </td></tr>
 <tr><td>
 
 [getUserInfo()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get user information
-
 
 </td></tr>
 <tr><td>
 
 [isClient()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Whether it is in the client environment
-
 
 </td></tr>
 <tr><td>
 
 [isEasyEDAProEdition()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Whether it is the EasyEDA Pro edition
-
 
 </td></tr>
 <tr><td>
 
 [isHalfOfflineMode()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Whether it is half-offline mode
-
 
 </td></tr>
 <tr><td>
 
 [isJLCEDAProEdition()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Whether it is the EasyEDA Pro edition
-
 
 </td></tr>
 <tr><td>
 
 [isOfflineMode()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Whether it is fully-offline mode
-
 
 </td></tr>
 <tr><td>
 
 [isOnlineMode()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Whether it is online mode
-
 
 </td></tr>
 <tr><td>
 
 [isProPrivateEdition()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Whether it is the private deployment edition
-
 
 </td></tr>
 <tr><td>
 
 [isWeb()](./SYS_Environment.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Whether it is in the browser environment
-
 
 </td></tr>
 </tbody></table>
@@ -199,9 +163,8 @@ Get the editor compiled date
 ## Signature
 
 ```typescript
-public getEditorCompliedDate(): string;
+function getEditorCompliedDate(): string;
 ```
-
 
 ## Returns
 
@@ -210,7 +173,6 @@ string
 Editor compiled date
 
 ## Example
-
 
 ```javascript
 // 1. 读取编辑器编译日期（同步返回字符串）
@@ -229,7 +191,7 @@ Get the current version of the editor
 ## Signature
 
 ```typescript
-public getEditorCurrentVersion(onlySemantic?: boolean): string;
+function getEditorCurrentVersion(onlySemantic?: boolean): string;
 ```
 
 ## Parameters
@@ -238,37 +200,29 @@ public getEditorCurrentVersion(onlySemantic?: boolean): string;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 onlySemantic
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to only return the semantic version number. ADD since EDA v3.2.176, ADD since EDA v4.1.13
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -277,7 +231,6 @@ string
 Current version of the editor
 
 ## Example
-
 
 ```javascript
 // 1. 读取编辑器版本号（同步返回字符串）
@@ -296,9 +249,14 @@ Get user information
 ## Signature
 
 ```typescript
-public getUserInfo(): { username?: undefined | string; nickname?: undefined | string; avatar?: undefined | string; uuid?: undefined | string; customerCode?: undefined | string };
+function getUserInfo(): {
+	username?: undefined | string;
+	nickname?: undefined | string;
+	avatar?: undefined | string;
+	uuid?: undefined | string;
+	customerCode?: undefined | string;
+};
 ```
-
 
 ## Returns
 
@@ -307,7 +265,6 @@ public getUserInfo(): { username?: undefined | string; nickname?: undefined | st
 User information
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前用户信息（同步返回对象）
@@ -329,9 +286,8 @@ Whether it is in the client environment
 ## Signature
 
 ```typescript
-public isClient(): boolean;
+function isClient(): boolean;
 ```
-
 
 ## Returns
 
@@ -340,7 +296,6 @@ boolean
 Whether it is in the client environment
 
 ## Example
-
 
 ```javascript
 // 1. 判断当前是否为客户端环境（同步返回布尔值）
@@ -359,9 +314,8 @@ Whether it is the EasyEDA Pro edition
 ## Signature
 
 ```typescript
-public isEasyEDAProEdition(): boolean;
+function isEasyEDAProEdition(): boolean;
 ```
-
 
 ## Returns
 
@@ -370,7 +324,6 @@ boolean
 Whether it is the EasyEDA Pro edition
 
 ## Example
-
 
 ```javascript
 // 1. 判断是否为 EasyEDA Pro 国际版（同步返回布尔值）
@@ -389,9 +342,8 @@ Whether it is half-offline mode
 ## Signature
 
 ```typescript
-public isHalfOfflineMode(): boolean;
+function isHalfOfflineMode(): boolean;
 ```
-
 
 ## Returns
 
@@ -400,7 +352,6 @@ boolean
 Whether it is half-offline mode
 
 ## Example
-
 
 ```javascript
 // 1. 判断是否为半离线模式（同步返回布尔值）
@@ -419,9 +370,8 @@ Whether it is the EasyEDA Pro edition
 ## Signature
 
 ```typescript
-public isJLCEDAProEdition(): boolean;
+function isJLCEDAProEdition(): boolean;
 ```
-
 
 ## Returns
 
@@ -430,7 +380,6 @@ boolean
 Whether it is the EasyEDA Pro edition
 
 ## Example
-
 
 ```javascript
 // 1. 判断是否为嘉立创 EDA 专业版（同步返回布尔值）
@@ -449,9 +398,8 @@ Whether it is fully-offline mode
 ## Signature
 
 ```typescript
-public isOfflineMode(): boolean;
+function isOfflineMode(): boolean;
 ```
-
 
 ## Returns
 
@@ -460,7 +408,6 @@ boolean
 Whether it is fully-offline mode
 
 ## Example
-
 
 ```javascript
 // 1. 判断是否为全离线模式（同步返回布尔值）
@@ -479,9 +426,8 @@ Whether it is online mode
 ## Signature
 
 ```typescript
-public isOnlineMode(): boolean;
+function isOnlineMode(): boolean;
 ```
-
 
 ## Returns
 
@@ -490,7 +436,6 @@ boolean
 Whether it is online mode
 
 ## Example
-
 
 ```javascript
 // 1. 判断是否为在线模式（同步返回布尔值）
@@ -509,9 +454,8 @@ Whether it is the private deployment edition
 ## Signature
 
 ```typescript
-public isProPrivateEdition(): boolean;
+function isProPrivateEdition(): boolean;
 ```
-
 
 ## Returns
 
@@ -520,7 +464,6 @@ boolean
 Whether it is the private deployment edition
 
 ## Example
-
 
 ```javascript
 // 1. 判断是否为私有化部署版本（同步返回布尔值）
@@ -539,9 +482,8 @@ Whether it is in the browser environment
 ## Signature
 
 ```typescript
-public isWeb(): boolean;
+function isWeb(): boolean;
 ```
-
 
 ## Returns
 
@@ -550,7 +492,6 @@ boolean
 Whether it is in the browser environment
 
 ## Example
-
 
 ```javascript
 // 1. 判断当前是否为浏览器环境（同步返回布尔值）

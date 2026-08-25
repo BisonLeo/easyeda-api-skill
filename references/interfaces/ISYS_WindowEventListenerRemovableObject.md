@@ -5,7 +5,7 @@ Window event listener can remove object
 ## Signature
 
 ```typescript
-export interface ISYS_WindowEventListenerRemovableObject 
+interface ISYS_WindowEventListenerRemovableObject
 ```
 
 ## Remarks
@@ -18,74 +18,58 @@ This object is obtained from [addEventListener](../classes/SYS_Window.md) and ca
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [listener](./ISYS_WindowEventListenerRemovableObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 (ev: any) =&gt; any
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [options?](./ISYS_WindowEventListenerRemovableObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 \{ capture?: undefined \| false \| true \}
 
-
 </td><td>
 
 _(Optional)_
-
 
 </td></tr>
 <tr><td>
 
 [type](./ISYS_WindowEventListenerRemovableObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ESYS\_WindowEventType](../enums/ESYS_WindowEventType.md)
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

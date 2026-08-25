@@ -5,7 +5,7 @@ Pad pair group properties
 ## Signature
 
 ```typescript
-export interface IPCB_PadPairGroupItem 
+interface IPCB_PadPairGroupItem
 ```
 
 ## Properties
@@ -14,59 +14,47 @@ export interface IPCB_PadPairGroupItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [name](./IPCB_PadPairGroupItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Pad pair group name
-
 
 </td></tr>
 <tr><td>
 
 [padPairs](./IPCB_PadPairGroupItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;\[string, string\]&gt;
 
-
 </td><td>
 
 Pad for array
-
 
 </td></tr>
 </tbody></table>

@@ -5,7 +5,7 @@ Wire primitive
 ## Signature
 
 ```typescript
-export class ISCH_PrimitiveWire implements ISCH_Primitive 
+class ISCH_PrimitiveWire implements ISCH_Primitive
 ```
 **Implements:** [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
@@ -15,247 +15,195 @@ Unresolved issues:
 
 The `ISCH_PrimitiveWire.net` global net name property involves multi-sheet refresh, so the currently obtained value may be \*\*incorrect\*\*. When you try to set multiple names for a wire or bus (by placing multiple net labels), the obtained `net` property may not be the latest. You need to wait for the canvas event to asynchronously refresh the global nets before reading it again.
 
-
 ## Methods
 
 <table><thead><tr><th>
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Color()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: bus color
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Line()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: polyline coordinate group
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineType()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: line type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Net()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Color(color)](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: wire color
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Line(line)](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: polyline coordinate group
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineType(lineType)](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: line type
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Net(net)](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./ISCH_PrimitiveWire.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -275,9 +223,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<ISCH_PrimitiveWire>;
+function done(): Promise<ISCH_PrimitiveWire>;
 ```
-
 
 ## Returns
 
@@ -286,7 +233,6 @@ Promise&lt;[ISCH\_PrimitiveWire](./ISCH_PrimitiveWire.md)<!-- -->&gt;
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试导线重合
@@ -320,9 +266,8 @@ Get the property state: bus color
 ## Signature
 
 ```typescript
-public getState_Color(): string | null;
+function getState_Color(): string | null;
 ```
-
 
 ## Returns
 
@@ -331,7 +276,6 @@ string \| null
 Bus color
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条红色测试导线（SCH 坐标单位 10mil）
@@ -355,9 +299,8 @@ Get the property state: polyline coordinate group
 ## Signature
 
 ```typescript
-public getState_Line(): Array<number> | Array<Array<number>>;
+function getState_Line(): Array<number> | Array<Array<number>>;
 ```
-
 
 ## Returns
 
@@ -366,7 +309,6 @@ Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt;
 Polyline coordinate group
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条水平测试导线（SCH 坐标单位 10mil）
@@ -390,9 +332,8 @@ Get the property state: line type
 ## Signature
 
 ```typescript
-public getState_LineType(): ESCH_PrimitiveLineType | null;
+function getState_LineType(): ESCH_PrimitiveLineType | null;
 ```
-
 
 ## Returns
 
@@ -401,7 +342,6 @@ public getState_LineType(): ESCH_PrimitiveLineType | null;
 Line type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条虚线（DASHED=1）测试导线（SCH 坐标单位 10mil）
@@ -425,9 +365,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number | null;
+function getState_LineWidth(): number | null;
 ```
-
 
 ## Returns
 
@@ -436,7 +375,6 @@ number \| null
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条线宽 6 的测试导线（SCH 坐标单位 10mil）
@@ -460,9 +398,8 @@ Get the property state: net name
 ## Signature
 
 ```typescript
-public getState_Net(): string;
+function getState_Net(): string;
 ```
-
 
 ## Returns
 
@@ -471,7 +408,6 @@ string
 Net name
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条属于 SIG_A 网络的测试导线（SCH 坐标单位 10mil）
@@ -495,9 +431,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -506,7 +441,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试导线（SCH 坐标单位 10mil）
@@ -532,9 +466,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): ESCH_PrimitiveType;
+function getState_PrimitiveType(): ESCH_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -543,7 +476,6 @@ public getState_PrimitiveType(): ESCH_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试导线（SCH 坐标单位 10mil）
@@ -567,9 +499,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -578,7 +509,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试导线，创建后默认处于异步模式
@@ -607,7 +537,7 @@ Set the property state: wire color
 ## Signature
 
 ```typescript
-public setState_Color(color: string | null): ISCH_PrimitiveWire;
+function setState_Color(color: string | null): ISCH_PrimitiveWire;
 ```
 
 ## Parameters
@@ -616,37 +546,29 @@ public setState_Color(color: string | null): ISCH_PrimitiveWire;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 color
 
-
 </td><td>
 
 string \| null
-
 
 </td><td>
 
 Wire color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -655,7 +577,6 @@ Wire color
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试导线重合
@@ -690,7 +611,7 @@ Set the property state: polyline coordinate group
 ## Signature
 
 ```typescript
-public setState_Line(line: Array<number> | Array<Array<number>>): ISCH_PrimitiveWire;
+function setState_Line(line: Array<number> | Array<Array<number>>): ISCH_PrimitiveWire;
 ```
 
 ## Parameters
@@ -699,37 +620,29 @@ public setState_Line(line: Array<number> | Array<Array<number>>): ISCH_Primitive
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 line
 
-
 </td><td>
 
 Array&lt;number&gt; \| Array&lt;Array&lt;number&gt;&gt;
-
 
 </td><td>
 
 Polyline coordinate group
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -738,7 +651,6 @@ Polyline coordinate group
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试导线重合
@@ -773,7 +685,7 @@ Set the property state: line type
 ## Signature
 
 ```typescript
-public setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveWire;
+function setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveWire;
 ```
 
 ## Parameters
@@ -782,37 +694,29 @@ public setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_Primitiv
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineType
 
-
 </td><td>
 
 [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
 
 </td><td>
 
 Line type
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -821,7 +725,6 @@ Line type
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试导线重合
@@ -856,7 +759,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveWire;
+function setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveWire;
 ```
 
 ## Parameters
@@ -865,37 +768,29 @@ public setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveWire;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number \| null
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -904,7 +799,6 @@ Line width
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试导线重合
@@ -939,7 +833,7 @@ Set the property state: net name
 ## Signature
 
 ```typescript
-public setState_Net(net: string): ISCH_PrimitiveWire;
+function setState_Net(net: string): ISCH_PrimitiveWire;
 ```
 
 ## Parameters
@@ -948,37 +842,29 @@ public setState_Net(net: string): ISCH_PrimitiveWire;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -987,7 +873,6 @@ Net name
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试导线重合
@@ -1020,9 +905,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): ISCH_PrimitiveWire;
+function toAsync(): ISCH_PrimitiveWire;
 ```
-
 
 ## Returns
 
@@ -1031,7 +915,6 @@ public toAsync(): ISCH_PrimitiveWire;
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试导线重合
@@ -1064,9 +947,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): ISCH_PrimitiveWire;
+function toSync(): ISCH_PrimitiveWire;
 ```
-
 
 ## Returns
 
@@ -1075,7 +957,6 @@ public toSync(): ISCH_PrimitiveWire;
 Wire primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试导线（创建后默认处于异步模式）

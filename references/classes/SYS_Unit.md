@@ -5,7 +5,7 @@ System / unit class
 ## Signature
 
 ```typescript
-export class SYS_Unit 
+class SYS_Unit
 ```
 
 ## Remarks
@@ -18,114 +18,90 @@ Controls the system data units and unit conversion basic functions. Currently, t
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getFrontendDataUnit()](./SYS_Unit.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the EDA front-end data unit span
-
 
 </td></tr>
 <tr><td>
 
 [inchToMil(inch, numberOfDecimals)](./SYS_Unit.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Unit conversion: inches to mils
-
 
 </td></tr>
 <tr><td>
 
 [inchToMm(inch, numberOfDecimals)](./SYS_Unit.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Unit conversion: inches to millimeters
-
 
 </td></tr>
 <tr><td>
 
 [milToInch(mil, numberOfDecimals)](./SYS_Unit.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Unit conversion: mils to inches
-
 
 </td></tr>
 <tr><td>
 
 [milToMm(mil, numberOfDecimals)](./SYS_Unit.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Unit conversion: mils to millimeters
-
 
 </td></tr>
 <tr><td>
 
 [mmToInch(mm, numberOfDecimals)](./SYS_Unit.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Unit conversion: millimeters to inches
-
 
 </td></tr>
 <tr><td>
 
 [mmToMil(mm, numberOfDecimals)](./SYS_Unit.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Unit conversion: millimeters to mils
-
 
 </td></tr>
 </tbody></table>
@@ -145,9 +121,8 @@ Get the EDA front-end data unit span
 ## Signature
 
 ```typescript
-public getFrontendDataUnit(): Promise<ESYS_Unit | undefined>;
+function getFrontendDataUnit(): Promise<ESYS_Unit | undefined>;
 ```
-
 
 ## Returns
 
@@ -160,7 +135,6 @@ Unit
 This refers to the units that front-end users can switch, and it needs to be compatible with both the schematic and PCB canvases
 
 ## Example
-
 
 ```javascript
 // 1. 读取当前前端单位（返回 Promise，需要 await；结果为 ESYS_Unit 值，如 'mm'、'mil'、'in'）
@@ -179,7 +153,7 @@ Unit conversion: inches to mils
 ## Signature
 
 ```typescript
-public inchToMil(inch: number, numberOfDecimals?: number): number;
+function inchToMil(inch: number, numberOfDecimals?: number): number;
 ```
 
 ## Parameters
@@ -188,53 +162,42 @@ public inchToMil(inch: number, numberOfDecimals?: number): number;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 inch
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Input value in inches
-
 
 </td></tr>
 <tr><td>
 
 numberOfDecimals
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Number of decimal places to keep, default is `4`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -243,7 +206,6 @@ number
 Output value in mils
 
 ## Example
-
 
 ```javascript
 // 1. 基本换算：1 英寸 = 1000 mil（同步返回数值，无需 await）
@@ -266,7 +228,7 @@ Unit conversion: inches to millimeters
 ## Signature
 
 ```typescript
-public inchToMm(inch: number, numberOfDecimals?: number): number;
+function inchToMm(inch: number, numberOfDecimals?: number): number;
 ```
 
 ## Parameters
@@ -275,53 +237,42 @@ public inchToMm(inch: number, numberOfDecimals?: number): number;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 inch
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Input value in inches
-
 
 </td></tr>
 <tr><td>
 
 numberOfDecimals
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Number of decimal places to keep, default is `4`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -330,7 +281,6 @@ number
 Output value in millimeters
 
 ## Example
-
 
 ```javascript
 // 1. 基本换算：1 英寸 = 25.4 mm（同步返回数值，无需 await）
@@ -352,7 +302,7 @@ Unit conversion: mils to inches
 ## Signature
 
 ```typescript
-public milToInch(mil: number, numberOfDecimals?: number): number;
+function milToInch(mil: number, numberOfDecimals?: number): number;
 ```
 
 ## Parameters
@@ -361,53 +311,42 @@ public milToInch(mil: number, numberOfDecimals?: number): number;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 mil
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Input value in mils
-
 
 </td></tr>
 <tr><td>
 
 numberOfDecimals
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Number of decimal places to keep, default is `4`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -416,7 +355,6 @@ number
 Output value in inches
 
 ## Example
-
 
 ```javascript
 // 1. 基本换算：1000 mil = 1 英寸（同步返回数值，无需 await）
@@ -439,7 +377,7 @@ Unit conversion: mils to millimeters
 ## Signature
 
 ```typescript
-public milToMm(mil: number, numberOfDecimals?: number): number;
+function milToMm(mil: number, numberOfDecimals?: number): number;
 ```
 
 ## Parameters
@@ -448,53 +386,42 @@ public milToMm(mil: number, numberOfDecimals?: number): number;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 mil
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Input value in mils
-
 
 </td></tr>
 <tr><td>
 
 numberOfDecimals
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Number of decimal places to keep, default is `4`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -503,7 +430,6 @@ number
 Output value in millimeters
 
 ## Example
-
 
 ```javascript
 // 1. 基本换算：100 mil = 2.54 mm（同步返回数值，无需 await）
@@ -526,7 +452,7 @@ Unit conversion: millimeters to inches
 ## Signature
 
 ```typescript
-public mmToInch(mm: number, numberOfDecimals?: number): number;
+function mmToInch(mm: number, numberOfDecimals?: number): number;
 ```
 
 ## Parameters
@@ -535,53 +461,42 @@ public mmToInch(mm: number, numberOfDecimals?: number): number;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 mm
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Input value in millimeters
-
 
 </td></tr>
 <tr><td>
 
 numberOfDecimals
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Number of decimal places to keep, default is `4`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -590,7 +505,6 @@ number
 Output value in inches
 
 ## Example
-
 
 ```javascript
 // 1. 基本换算：25.4 mm = 1 英寸（同步返回数值，无需 await）
@@ -613,7 +527,7 @@ Unit conversion: millimeters to mils
 ## Signature
 
 ```typescript
-public mmToMil(mm: number, numberOfDecimals?: number): number;
+function mmToMil(mm: number, numberOfDecimals?: number): number;
 ```
 
 ## Parameters
@@ -622,53 +536,42 @@ public mmToMil(mm: number, numberOfDecimals?: number): number;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 mm
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Input value in millimeters
-
 
 </td></tr>
 <tr><td>
 
 numberOfDecimals
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Number of decimal places to keep, default is `4`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -677,7 +580,6 @@ number
 Output value in mils
 
 ## Example
-
 
 ```javascript
 // 1. 基本换算：1 mm ≈ 39.37 mil（同步返回数值，无需 await）

@@ -5,7 +5,7 @@ Net class property
 ## Signature
 
 ```typescript
-export interface IPCB_NetClassItem 
+interface IPCB_NetClassItem
 ```
 
 ## Properties
@@ -14,78 +14,62 @@ export interface IPCB_NetClassItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [color](./IPCB_NetClassItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 { r: number; g: number; b: number; alpha: number } \| null
 
-
 </td><td>
 
 Net class color
-
 
 </td></tr>
 <tr><td>
 
 [name](./IPCB_NetClassItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Net class name
-
 
 </td></tr>
 <tr><td>
 
 [nets](./IPCB_NetClassItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 Net name array
-
 
 </td></tr>
 </tbody></table>

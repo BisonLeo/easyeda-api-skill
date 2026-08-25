@@ -5,7 +5,7 @@ Log line
 ## Signature
 
 ```typescript
-export interface ISYS_LogLine 
+interface ISYS_LogLine
 ```
 
 ## Properties
@@ -14,78 +14,62 @@ export interface ISYS_LogLine
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [message](./ISYS_LogLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Log content
-
 
 </td></tr>
 <tr><td>
 
 [timestamp](./ISYS_LogLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Timestamp
-
 
 </td></tr>
 <tr><td>
 
 [type](./ISYS_LogLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ESYS\_LogType](../enums/ESYS_LogType.md)
 
-
 </td><td>
 
 Log type
-
 
 </td></tr>
 </tbody></table>

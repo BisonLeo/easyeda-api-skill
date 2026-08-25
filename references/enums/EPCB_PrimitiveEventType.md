@@ -5,7 +5,7 @@ Primitive event type
 ## Signature
 
 ```typescript
-export enum EPCB_PrimitiveEventType 
+enum EPCB_PrimitiveEventType
 ```
 
 ## Enumeration Members
@@ -14,58 +14,46 @@ export enum EPCB_PrimitiveEventType
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 CREATE
 
-
 </td><td>
 
 `'add'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 DELETE
 
-
 </td><td>
 
 `'delete'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 MODIFY
 
-
 </td><td>
 
 `'modify'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

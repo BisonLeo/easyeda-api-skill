@@ -5,7 +5,7 @@ External library footprint functions
 ## Signature
 
 ```typescript
-export interface ILIB_ExtendLibraryFootprintFunctions extends ILIB_ExtendLibraryFunctions 
+interface ILIB_ExtendLibraryFootprintFunctions extends ILIB_ExtendLibraryFunctions
 ```
 **Extends:** [ILIB\_ExtendLibraryFunctions](./ILIB_ExtendLibraryFunctions.md)
 
@@ -15,38 +15,30 @@ export interface ILIB_ExtendLibraryFootprintFunctions extends ILIB_ExtendLibrary
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getList](./ILIB_ExtendLibraryFootprintFunctions.md)
 
-
 </td><td>
-
 
 </td><td>
 
 (props: [ILIB\_ExtendLibrarySearchProperty](./ILIB_ExtendLibrarySearchProperty.md)<!-- -->&lt;{}&gt;) =&gt; Promise&lt;[ILIB\_ExtendLibrarySearchResult](./ILIB_ExtendLibrarySearchResult.md)<!-- -->&lt;[ILIB\_ExtendLibraryItem](./ILIB_ExtendLibraryItem.md) &amp; [ILIB\_ExtendLibrarySearchResultDataLine](./ILIB_ExtendLibrarySearchResultDataLine.md)<!-- -->&gt;&gt;
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
@@ -62,5 +54,10 @@ Description
 ## Signature
 
 ```typescript
-getList: (props: ILIB_ExtendLibrarySearchProperty<{}>) => Promise<ILIB_ExtendLibrarySearchResult<ILIB_ExtendLibraryItem & ILIB_ExtendLibrarySearchResultDataLine>>;
+getList: (props: ILIB_ExtendLibrarySearchProperty<{}>) =>
+	Promise<
+		ILIB_ExtendLibrarySearchResult<
+			ILIB_ExtendLibraryItem & ILIB_ExtendLibrarySearchResultDataLine
+		>
+	>;
 ```

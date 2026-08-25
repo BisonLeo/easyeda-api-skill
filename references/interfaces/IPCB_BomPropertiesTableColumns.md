@@ -5,7 +5,7 @@ BOM column properties and sorting rules
 ## Signature
 
 ```typescript
-export interface IPCB_BomPropertiesTableColumns 
+interface IPCB_BomPropertiesTableColumns
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface IPCB_BomPropertiesTableColumns
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [group?](./IPCB_BomPropertiesTableColumns.md)
 
-
 </td><td>
-
 
 </td><td>
 
 null \| 'Yes' \| 'No'
 
-
 </td><td>
 
 _(Optional)_ Whether to group
-
 
 </td></tr>
 <tr><td>
 
 [orderWeight?](./IPCB_BomPropertiesTableColumns.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Order weight (a larger weight is placed on the left side of the BOM first)
-
 
 </td></tr>
 <tr><td>
 
 [property](./IPCB_BomPropertiesTableColumns.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Property
-
 
 </td></tr>
 <tr><td>
 
 [sort?](./IPCB_BomPropertiesTableColumns.md)
 
-
 </td><td>
-
 
 </td><td>
 
 null \| 'asc' \| 'desc'
 
-
 </td><td>
 
 _(Optional)_ Sorting rule
-
 
 </td></tr>
 <tr><td>
 
 [title?](./IPCB_BomPropertiesTableColumns.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Show name
-
 
 </td></tr>
 </tbody></table>

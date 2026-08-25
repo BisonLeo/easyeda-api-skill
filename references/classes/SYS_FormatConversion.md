@@ -5,7 +5,7 @@ System / format conversion (Chameleon) class
 ## Signature
 
 ```typescript
-export class SYS_FormatConversion 
+class SYS_FormatConversion
 ```
 
 ## Remarks
@@ -18,72 +18,57 @@ Perform cross file format conversion with other board-level EDA software
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [convertAltiumDesignerLibrariesToEasyEDAMultiFiles(file)](./SYS_FormatConversion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert Altium Designer libraries to multiple EasyEDA library files (one file per device)
-
 
 </td></tr>
 <tr><td>
 
 [convertAltiumDesignerLibrariesToEasyEDASingleFile(file)](./SYS_FormatConversion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert Altium Designer libraries to a single EasyEDA library file
-
 
 </td></tr>
 <tr><td>
 
 [convertDisaLibrariesToEasyEDAMultiFiles(file)](./SYS_FormatConversion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert T/DISA 4001 libraries to multiple EasyEDA library files (one file per device)
-
 
 </td></tr>
 <tr><td>
 
 [convertDisaLibrariesToEasyEDASingleFile(file)](./SYS_FormatConversion.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert T/DISA 4001 libraries to a single EasyEDA library file
-
 
 </td></tr>
 </tbody></table>
@@ -103,7 +88,9 @@ Convert Altium Designer libraries to multiple EasyEDA library files (one file pe
 ## Signature
 
 ```typescript
-public convertAltiumDesignerLibrariesToEasyEDAMultiFiles(file: File | Array<File>): Promise<Array<File>>;
+function convertAltiumDesignerLibrariesToEasyEDAMultiFiles(
+	file: File | Array<File>,
+): Promise<Array<File>>;
 ```
 
 ## Parameters
@@ -112,37 +99,29 @@ public convertAltiumDesignerLibrariesToEasyEDAMultiFiles(file: File | Array<File
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 file
 
-
 </td><td>
 
 File \| Array&lt;File&gt;
-
 
 </td><td>
 
 Altium Designer library file
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -152,10 +131,9 @@ Multiple EasyEDA library files
 
 ## Example
 
-
 ```javascript
 // 1. 准备 Altium Designer 库文件（真实场景用 sys_FileSystem.openReadFileDialog
-//    选取用户文件，此处直接构造 File 对象演示调用）
+// 选取用户文件，此处直接构造 File 对象演示调用）
 const schLib = new File(['占位内容，真实场景为 .SchLib 文件内容'], '嘉立创示例_元件库.SchLib');
 const pcbLib = new File(['占位内容，真实场景为 .PcbLib 文件内容'], '嘉立创示例_封装库.PcbLib');
 
@@ -165,7 +143,7 @@ const libFiles = await eda.sys_FormatConversion.convertAltiumDesignerLibrariesTo
 // 3. 输出转换得到的库文件列表
 console.log('转换得到库文件数：', libFiles.length);
 libFiles.forEach((file, index) => {
-  console.log(`第 ${index + 1} 个文件：`, file.name);
+	console.log(`第 ${index + 1} 个文件：`, file.name);
 });
 ```
 
@@ -180,7 +158,9 @@ Convert Altium Designer libraries to a single EasyEDA library file
 ## Signature
 
 ```typescript
-public convertAltiumDesignerLibrariesToEasyEDASingleFile(file: File | Array<File>): Promise<File | undefined>;
+function convertAltiumDesignerLibrariesToEasyEDASingleFile(
+	file: File | Array<File>,
+): Promise<File | undefined>;
 ```
 
 ## Parameters
@@ -189,37 +169,29 @@ public convertAltiumDesignerLibrariesToEasyEDASingleFile(file: File | Array<File
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 file
 
-
 </td><td>
 
 File \| Array&lt;File&gt;
-
 
 </td><td>
 
 Altium Designer library file
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -229,10 +201,9 @@ EasyEDA library file
 
 ## Example
 
-
 ```javascript
 // 1. 准备 Altium Designer 库文件（真实场景用 sys_FileSystem.openReadFileDialog
-//    选取用户文件，此处直接构造 File 对象演示调用）
+// 选取用户文件，此处直接构造 File 对象演示调用）
 const schLib = new File(['占位内容，真实场景为 .SchLib 文件内容'], '嘉立创示例_元件库.SchLib');
 
 // 2. 转换为单个嘉立创库文件
@@ -254,7 +225,7 @@ Convert T/DISA 4001 libraries to multiple EasyEDA library files (one file per de
 ## Signature
 
 ```typescript
-public convertDisaLibrariesToEasyEDAMultiFiles(file: File | Array<File>): Promise<Array<File>>;
+function convertDisaLibrariesToEasyEDAMultiFiles(file: File | Array<File>): Promise<Array<File>>;
 ```
 
 ## Parameters
@@ -263,37 +234,29 @@ public convertDisaLibrariesToEasyEDAMultiFiles(file: File | Array<File>): Promis
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 file
 
-
 </td><td>
 
 File \| Array&lt;File&gt;
-
 
 </td><td>
 
 T/DISA 4001 library file
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -303,10 +266,9 @@ Multiple EasyEDA library files
 
 ## Example
 
-
 ```javascript
 // 1. 准备 T/DISA 4001 库文件（真实场景用 sys_FileSystem.openReadFileDialog
-//    选取用户文件，此处直接构造 File 对象演示调用）
+// 选取用户文件，此处直接构造 File 对象演示调用）
 const disaLib = new File(['占位内容，真实场景为 T/DISA 4001 库文件内容'], '嘉立创示例_旧版器件库.lib');
 
 // 2. 转换为多个嘉立创库文件（每个器件一个文件）
@@ -315,7 +277,7 @@ const libFiles = await eda.sys_FormatConversion.convertDisaLibrariesToEasyEDAMul
 // 3. 输出转换得到的库文件列表（空数组表示没有可转换的器件）
 console.log('转换得到库文件数：', libFiles.length);
 libFiles.forEach((file, index) => {
-  console.log(`第 ${index + 1} 个文件：`, file.name);
+	console.log(`第 ${index + 1} 个文件：`, file.name);
 });
 ```
 
@@ -330,7 +292,9 @@ Convert T/DISA 4001 libraries to a single EasyEDA library file
 ## Signature
 
 ```typescript
-public convertDisaLibrariesToEasyEDASingleFile(file: File | Array<File>): Promise<File | undefined>;
+function convertDisaLibrariesToEasyEDASingleFile(
+	file: File | Array<File>,
+): Promise<File | undefined>;
 ```
 
 ## Parameters
@@ -339,37 +303,29 @@ public convertDisaLibrariesToEasyEDASingleFile(file: File | Array<File>): Promis
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 file
 
-
 </td><td>
 
 File \| Array&lt;File&gt;
-
 
 </td><td>
 
 T/DISA 4001 library file
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -379,10 +335,9 @@ EasyEDA library file
 
 ## Example
 
-
 ```javascript
 // 1. 准备 T/DISA 4001 库文件（真实场景用 sys_FileSystem.openReadFileDialog
-//    选取用户文件，此处直接构造 File 对象演示调用）
+// 选取用户文件，此处直接构造 File 对象演示调用）
 const disaLib = new File(['占位内容，真实场景为 T/DISA 4001 库文件内容'], '嘉立创示例_旧版器件库.lib');
 
 // 2. 转换为单个嘉立创库文件

@@ -5,12 +5,11 @@ Binary embedded object primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveObject implements IPCB_Primitive 
+class IPCB_PrimitiveObject implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,394 +17,310 @@ export class IPCB_PrimitiveObject implements IPCB_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_BinaryData()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: binary data
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FileName()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: file name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Height()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: height
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Mirror()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is horizontally mirrored
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Rotation()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_TopLeftX()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: top-left point X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_TopLeftY()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: top-left point Y
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Width()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: width
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_BinaryData(binaryData)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: binary data
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FileName(fileName)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: file name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Height(height)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: height
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Mirror(mirror)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: whether it is horizontally mirrored
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Rotation(rotation)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_TopLeftX(topLeftX)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: top-left point X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_TopLeftY(topLeftY)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: top-left point Y
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Width(width)](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the property state: width
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -425,9 +340,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveObject>;
+function done(): Promise<IPCB_PrimitiveObject>;
 ```
-
 
 ## Returns
 
@@ -436,7 +350,6 @@ Promise&lt;[IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)<!-- -->&gt;
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -469,9 +382,8 @@ Get the property state: binary data
 ## Signature
 
 ```typescript
-public getState_BinaryData(): string;
+function getState_BinaryData(): string;
 ```
-
 
 ## Returns
 
@@ -486,7 +398,6 @@ The `binaryData` retrieved from the canvas may be a `hashId`<!-- -->, because ou
 The object storage uses `hashId` as the index. Fully retrieving the data will cause additional requests and consume performance
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个 400 x 300 的内嵌图片
@@ -515,9 +426,8 @@ Get the property state: file name
 ## Signature
 
 ```typescript
-public getState_FileName(): string;
+function getState_FileName(): string;
 ```
-
 
 ## Returns
 
@@ -526,7 +436,6 @@ string
 File name
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个内嵌图片
@@ -554,9 +463,8 @@ Get the property state: height
 ## Signature
 
 ```typescript
-public getState_Height(): number;
+function getState_Height(): number;
 ```
-
 
 ## Returns
 
@@ -565,7 +473,6 @@ number
 Height
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个 400 x 300 的内嵌图片
@@ -593,9 +500,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfObject | undefined;
+function getState_Layer(): TPCB_LayersOfObject | undefined;
 ```
-
 
 ## Returns
 
@@ -604,7 +510,6 @@ public getState_Layer(): TPCB_LayersOfObject | undefined;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个内嵌图片
@@ -632,9 +537,8 @@ Get the property state: whether it is horizontally mirrored
 ## Signature
 
 ```typescript
-public getState_Mirror(): boolean;
+function getState_Mirror(): boolean;
 ```
-
 
 ## Returns
 
@@ -643,7 +547,6 @@ boolean
 Whether it is horizontally mirrored
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个未镜像的内嵌图片
@@ -671,9 +574,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -682,7 +584,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个内嵌图片
@@ -710,9 +611,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -721,7 +621,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个未锁定的内嵌图片
@@ -749,9 +648,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -760,7 +658,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个内嵌图片
@@ -788,9 +685,8 @@ Get the property state: rotation angle
 ## Signature
 
 ```typescript
-public getState_Rotation(): number;
+function getState_Rotation(): number;
 ```
-
 
 ## Returns
 
@@ -799,7 +695,6 @@ number
 Rotation angle
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个未旋转的内嵌图片
@@ -827,9 +722,8 @@ Get the property state: top-left point X
 ## Signature
 
 ```typescript
-public getState_TopLeftX(): number | undefined;
+function getState_TopLeftX(): number | undefined;
 ```
-
 
 ## Returns
 
@@ -838,7 +732,6 @@ number \| undefined
 Top-left point X
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个内嵌图片
@@ -866,9 +759,8 @@ Get the property state: top-left point Y
 ## Signature
 
 ```typescript
-public getState_TopLeftY(): number | undefined;
+function getState_TopLeftY(): number | undefined;
 ```
-
 
 ## Returns
 
@@ -877,7 +769,6 @@ number \| undefined
 Top-left point Y
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个内嵌图片
@@ -905,9 +796,8 @@ Get the property state: width
 ## Signature
 
 ```typescript
-public getState_Width(): number;
+function getState_Width(): number;
 ```
-
 
 ## Returns
 
@@ -916,7 +806,6 @@ number
 Width
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个 400 x 300 的内嵌图片
@@ -944,9 +833,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -955,7 +843,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个内嵌图片
@@ -985,9 +872,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveObject>;
+function reset(): Promise<IPCB_PrimitiveObject>;
 ```
-
 
 ## Returns
 
@@ -996,7 +882,6 @@ Promise&lt;[IPCB\_PrimitiveObject](./IPCB_PrimitiveObject.md)<!-- -->&gt;
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个未旋转的内嵌图片
@@ -1029,7 +914,7 @@ Set the property state: binary data
 ## Signature
 
 ```typescript
-public setState_BinaryData(binaryData: string): IPCB_PrimitiveObject;
+function setState_BinaryData(binaryData: string): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1038,37 +923,29 @@ public setState_BinaryData(binaryData: string): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 binaryData
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Binary data
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1083,7 +960,6 @@ The `binaryData` re-retrieved from the canvas may be a `hashId`<!-- -->, because
 The object storage uses `hashId` as the index. Fully retrieving the data will cause additional requests and consume performance
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个 4x4 图片的内嵌对象
@@ -1116,7 +992,7 @@ Set the property state: file name
 ## Signature
 
 ```typescript
-public setState_FileName(fileName: string): IPCB_PrimitiveObject;
+function setState_FileName(fileName: string): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1125,37 +1001,29 @@ public setState_FileName(fileName: string): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fileName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 File name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1164,7 +1032,6 @@ File name
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个内嵌图片
@@ -1195,7 +1062,7 @@ Set the property state: height
 ## Signature
 
 ```typescript
-public setState_Height(height: number): IPCB_PrimitiveObject;
+function setState_Height(height: number): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1204,37 +1071,29 @@ public setState_Height(height: number): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 height
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Height
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1243,7 +1102,6 @@ Height
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个 400 x 300 的内嵌图片
@@ -1276,7 +1134,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfObject): IPCB_PrimitiveObject;
+function setState_Layer(layer: TPCB_LayersOfObject): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1285,37 +1143,29 @@ public setState_Layer(layer: TPCB_LayersOfObject): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfObject](../types/TPCB_LayersOfObject.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1324,7 +1174,6 @@ Layer
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层丝印层放置一个内嵌图片
@@ -1355,7 +1204,7 @@ Set the property state: whether it is horizontally mirrored
 ## Signature
 
 ```typescript
-public setState_Mirror(mirror: boolean): IPCB_PrimitiveObject;
+function setState_Mirror(mirror: boolean): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1364,37 +1213,29 @@ public setState_Mirror(mirror: boolean): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is horizontally mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1403,7 +1244,6 @@ Whether it is horizontally mirrored
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在底层丝印层（4）放置一个未镜像的图片
@@ -1436,7 +1276,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveObject;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1445,37 +1285,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1484,7 +1316,6 @@ Whether it is locked
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个未锁定的内嵌图片
@@ -1515,7 +1346,7 @@ Set the property state: rotation angle
 ## Signature
 
 ```typescript
-public setState_Rotation(rotation: number): IPCB_PrimitiveObject;
+function setState_Rotation(rotation: number): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1524,37 +1355,29 @@ public setState_Rotation(rotation: number): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 rotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1563,7 +1386,6 @@ Rotation angle
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个未旋转的内嵌图片
@@ -1594,7 +1416,7 @@ Set the property state: top-left point X
 ## Signature
 
 ```typescript
-public setState_TopLeftX(topLeftX: number): IPCB_PrimitiveObject;
+function setState_TopLeftX(topLeftX: number): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1603,37 +1425,29 @@ public setState_TopLeftX(topLeftX: number): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topLeftX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Top-left point X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1642,7 +1456,6 @@ Top-left point X
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个内嵌图片
@@ -1673,7 +1486,7 @@ Set the property state: top-left point Y
 ## Signature
 
 ```typescript
-public setState_TopLeftY(topLeftY: number): IPCB_PrimitiveObject;
+function setState_TopLeftY(topLeftY: number): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1682,37 +1495,29 @@ public setState_TopLeftY(topLeftY: number): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topLeftY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Top-left point Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1721,7 +1526,6 @@ Top-left point Y
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个内嵌图片
@@ -1752,7 +1556,7 @@ Set the property state: width
 ## Signature
 
 ```typescript
-public setState_Width(width: number): IPCB_PrimitiveObject;
+function setState_Width(width: number): IPCB_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1761,37 +1565,29 @@ public setState_Width(width: number): IPCB_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 width
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1800,7 +1596,6 @@ Width
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个 400 x 300 的内嵌图片
@@ -1831,9 +1626,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveObject;
+function toAsync(): IPCB_PrimitiveObject;
 ```
-
 
 ## Returns
 
@@ -1842,7 +1636,6 @@ public toAsync(): IPCB_PrimitiveObject;
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个 400 x 300 的内嵌图片
@@ -1876,9 +1669,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveObject;
+function toSync(): IPCB_PrimitiveObject;
 ```
-
 
 ## Returns
 
@@ -1887,7 +1679,6 @@ public toSync(): IPCB_PrimitiveObject;
 Binary embedded object primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，放置一个内嵌图片

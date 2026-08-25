@@ -5,7 +5,7 @@ Document tree / Schematic management class
 ## Signature
 
 ```typescript
-export class DMT_Schematic 
+class DMT_Schematic
 ```
 
 ## Remarks
@@ -18,254 +18,200 @@ Operations related to schematic management in the currently open project
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [copySchematic(schematicUuid, boardName)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Copy Schematic
-
 
 </td></tr>
 <tr><td>
 
 [copySchematicPage(schematicPageUuid, schematicUuid)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Copy Schematic sheet
-
 
 </td></tr>
 <tr><td>
 
 [createSchematic(boardName)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Schematic
-
 
 </td></tr>
 <tr><td>
 
 [createSchematicPage(schematicUuid)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Schematic sheet
-
 
 </td></tr>
 <tr><td>
 
 [deleteSchematic(schematicUuid)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Schematic
-
 
 </td></tr>
 <tr><td>
 
 [deleteSchematicPage(schematicPageUuid)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Schematic sheet
-
 
 </td></tr>
 <tr><td>
 
 [getAllSchematicPagesInfo()](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all in the project schematic sheet detailed properties of
-
 
 </td></tr>
 <tr><td>
 
 [getAllSchematicsInfo()](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all in the project schematic detailed properties of
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentSchematicAllSchematicPagesInfo()](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the detailed properties of all schematic sheets in the current schematic
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentSchematicInfo()](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get detailed properties of Current schematic
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentSchematicPageInfo()](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get detailed properties of Current schematic sheet
-
 
 </td></tr>
 <tr><td>
 
 [getSchematicInfo(schematicUuid)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get detailed properties of Schematic
-
 
 </td></tr>
 <tr><td>
 
 [getSchematicPageInfo(schematicPageUuid)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get detailed properties of Schematic sheet
-
 
 </td></tr>
 <tr><td>
 
 [modifySchematicName(schematicUuid, schematicName)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Schematic name
-
 
 </td></tr>
 <tr><td>
 
 [modifySchematicPageName(schematicPageUuid, schematicPageName)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Schematic sheet name
-
 
 </td></tr>
 <tr><td>
 
 [modifySchematicPageTitleBlock(showTitleBlock, titleBlockData)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify the title block of a schematic sheet
-
 
 </td></tr>
 <tr><td>
 
 [reorderSchematicPages(schematicUuid, schematicPageItemsArray)](./DMT_Schematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reorder schematic sheets
-
 
 </td></tr>
 </tbody></table>
@@ -285,7 +231,7 @@ Copy Schematic
 ## Signature
 
 ```typescript
-public copySchematic(schematicUuid: string, boardName?: string): Promise<string | undefined>;
+function copySchematic(schematicUuid: string, boardName?: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -294,53 +240,42 @@ public copySchematic(schematicUuid: string, boardName?: string): Promise<string 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Source schematic UUID
-
 
 </td></tr>
 <tr><td>
 
 boardName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Name of the board the new schematic belongs to. If not specified, it is a free schematic
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -353,7 +288,6 @@ New schematic UUID. If it is `undefined`<!-- -->, the copy failed
 If the schematic is already associated with a reuse block (a reuse block symbol with the same name exists in the project library), copying the schematic will also create a new reuse block symbol
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用源原理图（自带图页 p1），等 1.5s 同步
@@ -390,7 +324,10 @@ Copy Schematic sheet
 ## Signature
 
 ```typescript
-public copySchematicPage(schematicPageUuid: string, schematicUuid?: string): Promise<string | undefined>;
+function copySchematicPage(
+	schematicPageUuid: string,
+	schematicUuid?: string,
+): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -399,53 +336,42 @@ public copySchematicPage(schematicPageUuid: string, schematicUuid?: string): Pro
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicPageUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Source schematic sheet UUID
-
 
 </td></tr>
 <tr><td>
 
 schematicUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Target schematic UUID. If not specified, it is the current schematic
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -454,7 +380,6 @@ Promise&lt;string \| undefined&gt;
 New schematic sheet UUID. If it is `undefined`<!-- -->, the copy failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1 作为复制源），等 1.5s 同步
@@ -490,7 +415,7 @@ Create Schematic
 ## Signature
 
 ```typescript
-public createSchematic(boardName?: string): Promise<string | undefined>;
+function createSchematic(boardName?: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -499,37 +424,29 @@ public createSchematic(boardName?: string): Promise<string | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 boardName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Name of the board it belongs to. If not specified, it is a free schematic
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -538,7 +455,6 @@ Promise&lt;string \| undefined&gt;
 Schematic UUID, if it is `undefined` creation fails
 
 ## Example
-
 
 ```javascript
 // 1. 创建原理图（不指定 boardName，得到游离原理图），返回新原理图 UUID
@@ -569,7 +485,7 @@ Create Schematic sheet
 ## Signature
 
 ```typescript
-public createSchematicPage(schematicUuid: string): Promise<string | undefined>;
+function createSchematicPage(schematicUuid: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -578,37 +494,29 @@ public createSchematicPage(schematicUuid: string): Promise<string | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 UUID of the schematic it belongs to
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -617,7 +525,6 @@ Promise&lt;string \| undefined&gt;
 Schematic sheet UUID, if it is `undefined` creation fails
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1），等 1.5s 同步
@@ -651,7 +558,7 @@ Delete Schematic
 ## Signature
 
 ```typescript
-public deleteSchematic(schematicUuid: string): Promise<boolean>;
+function deleteSchematic(schematicUuid: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -660,37 +567,29 @@ public deleteSchematic(schematicUuid: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Schematic UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -703,7 +602,6 @@ Whether the operation is successful
 If the schematic is already associated with a reuse block (a reuse block symbol with the same name exists in the project library), deleting the schematic will also delete the associated PCB and reuse block symbol. If the reuse block symbol cannot be deleted, it will be skipped
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（避免误删工程里的现有原理图），等 1.5s 同步
@@ -731,7 +629,7 @@ Delete Schematic sheet
 ## Signature
 
 ```typescript
-public deleteSchematicPage(schematicPageUuid: string): Promise<boolean>;
+function deleteSchematicPage(schematicPageUuid: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -740,37 +638,29 @@ public deleteSchematicPage(schematicPageUuid: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicPageUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Schematic sheet UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -779,7 +669,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1），等 1.5s 同步
@@ -818,9 +707,8 @@ Get all in the project schematic sheet detailed properties of
 ## Signature
 
 ```typescript
-public getAllSchematicPagesInfo(): Promise<Array<IDMT_SchematicPageItem>>;
+function getAllSchematicPagesInfo(): Promise<Array<IDMT_SchematicPageItem>>;
 ```
-
 
 ## Returns
 
@@ -829,7 +717,6 @@ Promise&lt;Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageIt
 Array of detailed properties of all schematic sheets
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图并追加一页（共 2 页），保证列表里有新近创建的页
@@ -843,7 +730,7 @@ const pages = await eda.dmt_Schematic.getAllSchematicPagesInfo();
 
 // 3. 输出每页名称、UUID 与所属原理图，确认测试页在列
 pages.slice(0, 10).forEach((p, i) => {
-  console.log(`page[${i}]:`, p.name, p.uuid, 'parent:', p.parentSchematicUuid);
+	console.log(`page[${i}]:`, p.name, p.uuid, 'parent:', p.parentSchematicUuid);
 });
 console.log('total:', pages.length);
 console.log('testPagesIncluded:', pages.filter(p => p.parentSchematicUuid === schematicUuid).length === 2);
@@ -865,9 +752,8 @@ Get all in the project schematic detailed properties of
 ## Signature
 
 ```typescript
-public getAllSchematicsInfo(): Promise<Array<IDMT_SchematicItem>>;
+function getAllSchematicsInfo(): Promise<Array<IDMT_SchematicItem>>;
 ```
-
 
 ## Returns
 
@@ -876,7 +762,6 @@ Promise&lt;Array&lt;[IDMT\_SchematicItem](../interfaces/IDMT_SchematicItem.md)<!
 Array of detailed properties of all schematics
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试原理图并等 1.5s 同步，保证列表里有新近创建的对象
@@ -888,7 +773,7 @@ const schematics = await eda.dmt_Schematic.getAllSchematicsInfo();
 
 // 3. 输出每个原理图的名称、UUID 与图页数，确认测试原理图在列
 schematics.slice(0, 10).forEach((s, i) => {
-  console.log(`schematic[${i}]:`, s.name, s.uuid, 'pages:', (s.page || []).length, 'board:', s.parentBoardName ?? '游离');
+	console.log(`schematic[${i}]:`, s.name, s.uuid, 'pages:', (s.page || []).length, 'board:', s.parentBoardName ?? '游离');
 });
 console.log('total:', schematics.length);
 console.log('testSchematicIncluded:', schematics.some(s => s.uuid === schematicUuid));
@@ -910,9 +795,8 @@ Get the detailed properties of all schematic sheets in the current schematic
 ## Signature
 
 ```typescript
-public getCurrentSchematicAllSchematicPagesInfo(): Promise<Array<IDMT_SchematicPageItem>>;
+function getCurrentSchematicAllSchematicPagesInfo(): Promise<Array<IDMT_SchematicPageItem>>;
 ```
-
 
 ## Returns
 
@@ -921,7 +805,6 @@ Promise&lt;Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageIt
 Array of detailed properties of all schematic sheets
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1）并追加一页
@@ -940,7 +823,7 @@ const pages = await eda.dmt_Schematic.getCurrentSchematicAllSchematicPagesInfo()
 
 // 4. 输出每页名称与 UUID，确认全部归属当前原理图
 pages.forEach((p, i) => {
-  console.log(`page[${i}]:`, p.name, p.uuid);
+	console.log(`page[${i}]:`, p.name, p.uuid);
 });
 console.log('total:', pages.length);
 console.log('allBelongToCurrent:', pages.every(p => p.parentSchematicUuid === schematicUuid));
@@ -962,9 +845,8 @@ Get detailed properties of Current schematic
 ## Signature
 
 ```typescript
-public getCurrentSchematicInfo(): Promise<IDMT_SchematicItem | undefined>;
+function getCurrentSchematicInfo(): Promise<IDMT_SchematicItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -977,7 +859,6 @@ Schematic detailed properties of; if it is `undefined`<!-- -->, the retrieval fa
 It will get the detailed properties of the schematic associated with the currently open schematic sheet that has the last input focus
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1），打开该页让焦点落到测试原理图上
@@ -1013,9 +894,8 @@ Get detailed properties of Current schematic sheet
 ## Signature
 
 ```typescript
-public getCurrentSchematicPageInfo(): Promise<IDMT_SchematicPageItem | undefined>;
+function getCurrentSchematicPageInfo(): Promise<IDMT_SchematicPageItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -1028,7 +908,6 @@ Schematic sheet detailed properties of; if it is `undefined`<!-- -->, the retrie
 It will get the detailed properties of the currently open schematic sheet that has the last input focus
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1）并打开该页，让焦点落到测试页上
@@ -1066,7 +945,7 @@ Get detailed properties of Schematic
 ## Signature
 
 ```typescript
-public getSchematicInfo(schematicUuid: string): Promise<IDMT_SchematicItem | undefined>;
+function getSchematicInfo(schematicUuid: string): Promise<IDMT_SchematicItem | undefined>;
 ```
 
 ## Parameters
@@ -1075,37 +954,29 @@ public getSchematicInfo(schematicUuid: string): Promise<IDMT_SchematicItem | und
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Schematic UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1114,7 +985,6 @@ Promise&lt;[IDMT\_SchematicItem](../interfaces/IDMT_SchematicItem.md) \| undefin
 Schematic detailed properties of; if it is `undefined`<!-- -->, the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图并等 1.5s 同步
@@ -1147,7 +1017,9 @@ Get detailed properties of Schematic sheet
 ## Signature
 
 ```typescript
-public getSchematicPageInfo(schematicPageUuid: string): Promise<IDMT_SchematicPageItem | undefined>;
+function getSchematicPageInfo(
+	schematicPageUuid: string,
+): Promise<IDMT_SchematicPageItem | undefined>;
 ```
 
 ## Parameters
@@ -1156,37 +1028,29 @@ public getSchematicPageInfo(schematicPageUuid: string): Promise<IDMT_SchematicPa
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicPageUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Schematic sheet UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1195,7 +1059,6 @@ Promise&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageItem.md) \|
 Schematic sheet detailed properties of; if it is `undefined`<!-- -->, the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图（自带图页 p1）并等 1.5s 同步
@@ -1231,7 +1094,7 @@ Modify Schematic name
 ## Signature
 
 ```typescript
-public modifySchematicName(schematicUuid: string, schematicName: string): Promise<boolean>;
+function modifySchematicName(schematicUuid: string, schematicName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1240,53 +1103,42 @@ public modifySchematicName(schematicUuid: string, schematicName: string): Promis
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Schematic UUID
-
 
 </td></tr>
 <tr><td>
 
 schematicName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Schematic name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1299,7 +1151,6 @@ Whether Modify Successful
 If the schematic is already associated with a reuse block (a reuse block symbol with the same name exists in the project library), modifying the name will also modify the reuse block symbol name and the associated PCB name
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1）并等 1.5s 同步
@@ -1339,7 +1190,10 @@ Modify Schematic sheet name
 ## Signature
 
 ```typescript
-public modifySchematicPageName(schematicPageUuid: string, schematicPageName: string): Promise<boolean>;
+function modifySchematicPageName(
+	schematicPageUuid: string,
+	schematicPageName: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1348,53 +1202,42 @@ public modifySchematicPageName(schematicPageUuid: string, schematicPageName: str
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicPageUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Schematic sheet UUID
-
 
 </td></tr>
 <tr><td>
 
 schematicPageName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Schematic sheet name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1403,7 +1246,6 @@ Promise&lt;boolean&gt;
 Whether Modify Successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1 作为改名目标）并等 1.5s 同步
@@ -1440,7 +1282,13 @@ Modify the title block of a schematic sheet
 ## Signature
 
 ```typescript
-public modifySchematicPageTitleBlock(showTitleBlock?: boolean, titleBlockData?: Record<string, { showTitle?: undefined | false | true; showValue?: undefined | false | true; value?: any }>): Promise<boolean>;
+function modifySchematicPageTitleBlock(
+	showTitleBlock?: boolean,
+	titleBlockData?: Record<
+		string,
+		{ showTitle?: undefined | false | true; showValue?: undefined | false | true; value?: any }
+	>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1449,53 +1297,42 @@ public modifySchematicPageTitleBlock(showTitleBlock?: boolean, titleBlockData?: 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 showTitleBlock
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether to show the title block. If undefined, the current state will be kept
-
 
 </td></tr>
 <tr><td>
 
 titleBlockData
 
-
 </td><td>
 
 Record&lt;string, { showTitle?: undefined \| false \| true; showValue?: undefined \| false \| true; value?: any }&gt;
-
 
 </td><td>
 
 _(Optional)_ The title block items to be modified and their modified values
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1509,7 +1346,6 @@ Whether the modification was successful. If `showTitleBlock` and `titleBlockData
 
 ## Example
 
-
 ```javascript
 // 1. 创建专用测试原理图并打开自带图页 p1，让焦点落到目标页上
 const schematicUuid = await eda.dmt_Schematic.createSchematic();
@@ -1521,7 +1357,7 @@ await new Promise(r => setTimeout(r, 1000));
 
 // 2. 修改明细表：显示明细表，并把"公司"改为示例值（三个字段缺一不可）
 const modified = await eda.dmt_Schematic.modifySchematicPageTitleBlock(true, {
-  Company: { showTitle: true, showValue: true, value: '嘉立创示例科技' },
+	Company: { showTitle: true, showValue: true, value: '嘉立创示例科技' },
 });
 console.log('modified:', modified);
 
@@ -1549,7 +1385,10 @@ Reorder schematic sheets
 ## Signature
 
 ```typescript
-public reorderSchematicPages(schematicUuid: string, schematicPageItemsArray: Array<IDMT_SchematicPageItem>): Promise<boolean>;
+function reorderSchematicPages(
+	schematicUuid: string,
+	schematicPageItemsArray: Array<IDMT_SchematicPageItem>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1558,53 +1397,42 @@ public reorderSchematicPages(schematicUuid: string, schematicPageItemsArray: Arr
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 The UUID of the schematic associated with the sheets being sorted
-
 
 </td></tr>
 <tr><td>
 
 schematicPageItemsArray
 
-
 </td><td>
 
 Array&lt;[IDMT\_SchematicPageItem](../interfaces/IDMT_SchematicPageItem.md)<!-- -->&gt;
-
 
 </td><td>
 
 Array of all schematic sheet properties
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1617,7 +1445,6 @@ Sorting whether the operation is successful
 Here, the array of source schematic sheet properties needs to be obtained through [DMT\_Schematic.getAllSchematicPagesInfo()](./DMT_Schematic.md) or other upstream methods. After sorting the array, pass it in
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1）并再追加两页，凑出可排序的页序列

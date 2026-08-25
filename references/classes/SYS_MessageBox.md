@@ -9,7 +9,7 @@ System / message box class
 ## Signature
 
 ```typescript
-export class SYS_MessageBox 
+class SYS_MessageBox
 ```
 
 ## Remarks
@@ -22,44 +22,35 @@ Generate message boxes
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [showConfirmationMessage(content, title, mainButtonTitle, buttonTitle, callbackFn)](./SYS_MessageBox.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Show a confirmation box
-
 
 </td></tr>
 <tr><td>
 
 [showInformationMessage(content, title, buttonTitle)](./SYS_MessageBox.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Show a message box
-
 
 </td></tr>
 </tbody></table>
@@ -81,7 +72,13 @@ Show a confirmation box
 ## Signature
 
 ```typescript
-public showConfirmationMessage(content: string, title?: string, mainButtonTitle?: string, buttonTitle?: string, callbackFn?: (mainButtonClicked: boolean) => void): void;
+function showConfirmationMessage(
+	content: string,
+	title?: string,
+	mainButtonTitle?: string,
+	buttonTitle?: string,
+	callbackFn?: (mainButtonClicked: boolean) => void,
+): void;
 ```
 
 ## Parameters
@@ -90,101 +87,81 @@ public showConfirmationMessage(content: string, title?: string, mainButtonTitle?
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 content
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Message text. Line breaks can be used with `\n`
-
 
 </td></tr>
 <tr><td>
 
 title
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Confirmation box title
-
 
 </td></tr>
 <tr><td>
 
 mainButtonTitle
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Primary button title
-
 
 </td></tr>
 <tr><td>
 
 buttonTitle
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Primary button title
-
 
 </td></tr>
 <tr><td>
 
 callbackFn
 
-
 </td><td>
 
 (mainButtonClicked: boolean) =&gt; void
-
 
 </td><td>
 
 _(Optional)_ Callback function. To call a function inside the extension, prefix the function name with the extension's unique ID, separated by a Western period `.`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -196,21 +173,21 @@ Show a confirmation box with confirm and cancel buttons
 
 ## Example
 
-
 ```javascript
 // 1. 弹出确认窗口，等待用户点击
 eda.sys_MessageBox.showConfirmationMessage(
-  '即将删除选中的 3 个图元，是否继续？',
-  '删除确认',   // 窗口标题
-  '删除',       // 主按钮（确认）
-  '取消',       // 次按钮（取消）
-  (mainButtonClicked) => {
-    if (mainButtonClicked) {
-      console.log('用户点击了主按钮（删除）');
-    } else {
-      console.log('用户点击了次按钮（取消）');
-    }
-  }
+	'即将删除选中的 3 个图元，是否继续？',
+	'删除确认', // 窗口标题
+	'删除', // 主按钮（确认）
+	'取消', // 次按钮（取消）
+	(mainButtonClicked) => {
+		if (mainButtonClicked) {
+			console.log('用户点击了主按钮（删除）');
+		}
+		else {
+			console.log('用户点击了次按钮（取消）');
+		}
+	}
 );
 
 // 2. 窗口已弹出，本方法无返回值；回调需用户点击按钮后才会触发
@@ -230,7 +207,7 @@ Show a message box
 ## Signature
 
 ```typescript
-public showInformationMessage(content: string, title?: string, buttonTitle?: string): void;
+function showInformationMessage(content: string, title?: string, buttonTitle?: string): void;
 ```
 
 ## Parameters
@@ -239,69 +216,55 @@ public showInformationMessage(content: string, title?: string, buttonTitle?: str
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 content
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Message text. Line breaks can be used with `\n`
-
 
 </td></tr>
 <tr><td>
 
 title
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Message box title
-
 
 </td></tr>
 <tr><td>
 
 buttonTitle
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Button title. If empty, the button is not displayed
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -312,7 +275,6 @@ void
 Show a text message box
 
 ## Example
-
 
 ```javascript
 // 1. 弹出消息窗口（content 用 \n 换行展示两行内容）

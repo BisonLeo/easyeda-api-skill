@@ -5,12 +5,11 @@ Image primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveImage implements IPCB_Primitive 
+class IPCB_PrimitiveImage implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,352 +17,277 @@ export class IPCB_PrimitiveImage implements IPCB_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ComplexPolygon()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: image source data ( complex polygon)
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Height()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: height
-
 
 </td></tr>
 <tr><td>
 
 [getState\_HorizonMirror()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is horizontally mirrored
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Rotation()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Width()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_X()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: BBox top-left point coordinates X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Y()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: BBox top-left point coordinates Y
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Height(height)](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: height
-
 
 </td></tr>
 <tr><td>
 
 [setState\_HorizonMirror(horizonMirror)](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is horizontally mirrored
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Rotation(rotation)](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Width(width)](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_X(x)](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: BBox top-left point coordinates X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Y(y)](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: BBox top-left point coordinates Y
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveImage.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -383,9 +307,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveImage>;
+function done(): Promise<IPCB_PrimitiveImage>;
 ```
-
 
 ## Returns
 
@@ -394,7 +317,6 @@ Promise&lt;[IPCB\_PrimitiveImage](./IPCB_PrimitiveImage.md)<!-- -->&gt;
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -426,9 +348,8 @@ Get the property state: image source data ( complex polygon)
 ## Signature
 
 ```typescript
-public getState_ComplexPolygon(): TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArray>;
+function getState_ComplexPolygon(): TPCB_PolygonSourceArray | Array<TPCB_PolygonSourceArray>;
 ```
-
 
 ## Returns
 
@@ -437,7 +358,6 @@ public getState_ComplexPolygon(): TPCB_PolygonSourceArray | Array<TPCB_PolygonSo
 Image source data ( complex polygon)
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个源轮廓为折线多边形的顶层图像
@@ -464,9 +384,8 @@ Get the property state: height
 ## Signature
 
 ```typescript
-public getState_Height(): number;
+function getState_Height(): number;
 ```
-
 
 ## Returns
 
@@ -475,7 +394,6 @@ number
 Height
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个 400 x 300 的顶层图像
@@ -502,9 +420,8 @@ Get the property state: whether it is horizontally mirrored
 ## Signature
 
 ```typescript
-public getState_HorizonMirror(): boolean;
+function getState_HorizonMirror(): boolean;
 ```
-
 
 ## Returns
 
@@ -513,7 +430,6 @@ boolean
 Whether it is horizontally mirrored
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未镜像的顶层图像
@@ -540,9 +456,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfImage;
+function getState_Layer(): TPCB_LayersOfImage;
 ```
-
 
 ## Returns
 
@@ -551,7 +466,6 @@ public getState_Layer(): TPCB_LayersOfImage;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个顶层铜层（1）的图像
@@ -578,9 +492,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -589,7 +502,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个顶层图像
@@ -616,9 +528,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -627,7 +538,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未锁定的顶层图像
@@ -654,9 +564,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -665,7 +574,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个顶层图像
@@ -692,9 +600,8 @@ Get the property state: rotation angle
 ## Signature
 
 ```typescript
-public getState_Rotation(): number;
+function getState_Rotation(): number;
 ```
-
 
 ## Returns
 
@@ -703,7 +610,6 @@ number
 Rotation angle
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未旋转的顶层图像
@@ -730,9 +636,8 @@ Get the property state: width
 ## Signature
 
 ```typescript
-public getState_Width(): number;
+function getState_Width(): number;
 ```
-
 
 ## Returns
 
@@ -741,7 +646,6 @@ number
 Width
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个 400 x 300 的顶层图像
@@ -768,9 +672,8 @@ Get the property state: BBox top-left point coordinates X
 ## Signature
 
 ```typescript
-public getState_X(): number;
+function getState_X(): number;
 ```
-
 
 ## Returns
 
@@ -779,7 +682,6 @@ number
 BBox top-left point coordinates X
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在 (x, y) 处创建一个顶层图像
@@ -806,9 +708,8 @@ Get the property state: BBox top-left point coordinates Y
 ## Signature
 
 ```typescript
-public getState_Y(): number;
+function getState_Y(): number;
 ```
-
 
 ## Returns
 
@@ -817,7 +718,6 @@ number
 BBox top-left point coordinates Y
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在 (x, y) 处创建一个顶层图像
@@ -844,9 +744,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -855,7 +754,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个顶层图像
@@ -884,9 +782,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveImage>;
+function reset(): Promise<IPCB_PrimitiveImage>;
 ```
-
 
 ## Returns
 
@@ -895,7 +792,6 @@ Promise&lt;[IPCB\_PrimitiveImage](./IPCB_PrimitiveImage.md)<!-- -->&gt;
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未旋转的顶层图像
@@ -929,7 +825,7 @@ Set the property state: height
 ## Signature
 
 ```typescript
-public setState_Height(height: number): IPCB_PrimitiveImage;
+function setState_Height(height: number): IPCB_PrimitiveImage;
 ```
 
 ## Parameters
@@ -938,37 +834,29 @@ public setState_Height(height: number): IPCB_PrimitiveImage;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 height
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Height
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -977,7 +865,6 @@ Height
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个 400 x 300 的顶层图像
@@ -1009,7 +896,7 @@ Set the property state: whether it is horizontally mirrored
 ## Signature
 
 ```typescript
-public setState_HorizonMirror(horizonMirror: boolean): IPCB_PrimitiveImage;
+function setState_HorizonMirror(horizonMirror: boolean): IPCB_PrimitiveImage;
 ```
 
 ## Parameters
@@ -1018,37 +905,29 @@ public setState_HorizonMirror(horizonMirror: boolean): IPCB_PrimitiveImage;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 horizonMirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is horizontally mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1057,7 +936,6 @@ Whether it is horizontally mirrored
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未镜像的顶层图像
@@ -1089,7 +967,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfImage): IPCB_PrimitiveImage;
+function setState_Layer(layer: TPCB_LayersOfImage): IPCB_PrimitiveImage;
 ```
 
 ## Parameters
@@ -1098,37 +976,29 @@ public setState_Layer(layer: TPCB_LayersOfImage): IPCB_PrimitiveImage;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1137,7 +1007,6 @@ Layer
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个顶层铜层（1）的图像
@@ -1169,7 +1038,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveImage;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveImage;
 ```
 
 ## Parameters
@@ -1178,37 +1047,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveImage;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1217,7 +1078,6 @@ Whether it is locked
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未锁定的顶层图像
@@ -1249,7 +1109,7 @@ Set the property state: rotation angle
 ## Signature
 
 ```typescript
-public setState_Rotation(rotation: number): IPCB_PrimitiveImage;
+function setState_Rotation(rotation: number): IPCB_PrimitiveImage;
 ```
 
 ## Parameters
@@ -1258,37 +1118,29 @@ public setState_Rotation(rotation: number): IPCB_PrimitiveImage;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 rotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1297,7 +1149,6 @@ Rotation angle
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未旋转的顶层图像
@@ -1329,7 +1180,7 @@ Set the property state: width
 ## Signature
 
 ```typescript
-public setState_Width(width: number): IPCB_PrimitiveImage;
+function setState_Width(width: number): IPCB_PrimitiveImage;
 ```
 
 ## Parameters
@@ -1338,37 +1189,29 @@ public setState_Width(width: number): IPCB_PrimitiveImage;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 width
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1377,7 +1220,6 @@ Width
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个 400 x 300 的顶层图像
@@ -1409,7 +1251,7 @@ Set the property state: BBox top-left point coordinates X
 ## Signature
 
 ```typescript
-public setState_X(x: number): IPCB_PrimitiveImage;
+function setState_X(x: number): IPCB_PrimitiveImage;
 ```
 
 ## Parameters
@@ -1418,37 +1260,29 @@ public setState_X(x: number): IPCB_PrimitiveImage;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 BBox top-left point coordinates X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1457,7 +1291,6 @@ BBox top-left point coordinates X
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个顶层图像
@@ -1489,7 +1322,7 @@ Set the property state: BBox top-left point coordinates Y
 ## Signature
 
 ```typescript
-public setState_Y(y: number): IPCB_PrimitiveImage;
+function setState_Y(y: number): IPCB_PrimitiveImage;
 ```
 
 ## Parameters
@@ -1498,37 +1331,29 @@ public setState_Y(y: number): IPCB_PrimitiveImage;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 BBox top-left point coordinates Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1537,7 +1362,6 @@ BBox top-left point coordinates Y
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个顶层图像
@@ -1567,9 +1391,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveImage;
+function toAsync(): IPCB_PrimitiveImage;
 ```
-
 
 ## Returns
 
@@ -1578,7 +1401,6 @@ public toAsync(): IPCB_PrimitiveImage;
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个 400 x 300 的顶层图像
@@ -1609,9 +1431,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveImage;
+function toSync(): IPCB_PrimitiveImage;
 ```
-
 
 ## Returns
 
@@ -1620,7 +1441,6 @@ public toSync(): IPCB_PrimitiveImage;
 Image primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个 400 x 300 的顶层图像

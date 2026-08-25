@@ -5,7 +5,7 @@ External library item
 ## Signature
 
 ```typescript
-export interface ILIB_ExtendLibraryItem extends ILIB_ExtendLibraryItemIndex 
+interface ILIB_ExtendLibraryItem extends ILIB_ExtendLibraryItemIndex
 ```
 **Extends:** [ILIB\_ExtendLibraryItemIndex](./ILIB_ExtendLibraryItemIndex.md)
 
@@ -23,59 +23,47 @@ The data of `data` can be in Blob or DataURL format
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [data?](./ILIB_ExtendLibraryItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string \| Blob
 
-
 </td><td>
 
 _(Optional)_ Library file data
-
 
 </td></tr>
 <tr><td>
 
 [url?](./ILIB_ExtendLibraryItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Library file URL
-
 
 </td></tr>
 </tbody></table>

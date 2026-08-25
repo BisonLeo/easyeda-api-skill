@@ -5,10 +5,9 @@ Layers of copper
 ## Signature
 
 ```typescript
-export type TPCB_LayersOfCopper = TPCB_LayersOfInner | EPCB_LayerId.TOP | EPCB_LayerId.BOTTOM;
+type TPCB_LayersOfCopper = TPCB_LayersOfInner | EPCB_LayerId.TOP | EPCB_LayerId.BOTTOM;
 ```
 ## References
-
 
 [TPCB\_LayersOfInner](./TPCB_LayersOfInner.md)<!-- -->, [EPCB\_LayerId.TOP](../enums/EPCB_LayerId.md)<!-- -->, [EPCB\_LayerId.BOTTOM](../enums/EPCB_LayerId.md)
 

@@ -5,7 +5,7 @@ Searched reuse block properties
 ## Signature
 
 ```typescript
-export interface ILIB_CbbSearchItem 
+interface ILIB_CbbSearchItem
 ```
 
 ## Properties
@@ -14,192 +14,152 @@ export interface ILIB_CbbSearchItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [ascription](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Ownership
-
 
 </td></tr>
 <tr><td>
 
 [classification?](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ Classification
-
 
 </td></tr>
 <tr><td>
 
 [description?](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Description
-
 
 </td></tr>
 <tr><td>
 
 [lastModifiedBy](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Last modifier
-
 
 </td></tr>
 <tr><td>
 
 [libraryUuid](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 UUID of the library it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [name](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Reuse block name
-
 
 </td></tr>
 <tr><td>
 
 [ordinal](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Sorting
-
 
 </td></tr>
 <tr><td>
 
 [updateTimestamp](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Update timestamp
-
 
 </td></tr>
 <tr><td>
 
 [uuid](./ILIB_CbbSearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Reuse block UUID
-
 
 </td></tr>
 </tbody></table>

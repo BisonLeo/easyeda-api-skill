@@ -5,12 +5,11 @@ Device primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveComponent implements IPCB_Primitive 
+class IPCB_PrimitiveComponent implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,590 +17,464 @@ export class IPCB_PrimitiveComponent implements IPCB_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getAllPins()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all pads associated with the device
-
 
 </td></tr>
 <tr><td>
 
 [getState\_AddIntoBom()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether to add BOM
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Component()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: associate library device
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Designator()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: designator
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Footprint()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: associate library footprint
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Manufacturer()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: manufacturer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ManufacturerId()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: manufacturer ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Model3D()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: associate library 3D model
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Name()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_OtherProperty()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: other parameters
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Pads()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: pad
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Rotation()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Supplier()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: supplier
-
 
 </td></tr>
 <tr><td>
 
 [getState\_SupplierId()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: supplier ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_UniqueId()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: unique ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_X()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Y()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setAttribute(key, value, keyVisible, valueVisible)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set Property
-
 
 </td></tr>
 <tr><td>
 
 [setState\_AddIntoBom(addIntoBom)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether to add BOM
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Designator(designator)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: designator
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Manufacturer(manufacturer)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: manufacturer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_ManufacturerId(manufacturerId)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: manufacturer ID
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Name(name)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_OtherProperty(otherProperty)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: other parameters
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Rotation(rotation)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Supplier(supplier)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: supplier
-
 
 </td></tr>
 <tr><td>
 
 [setState\_SupplierId(supplierId)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: supplier ID
-
 
 </td></tr>
 <tr><td>
 
 [setState\_UniqueId(uniqueId)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: unique ID
-
 
 </td></tr>
 <tr><td>
 
 [setState\_X(x)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Y(y)](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -621,9 +494,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveComponent>;
+function done(): Promise<IPCB_PrimitiveComponent>;
 ```
-
 
 ## Returns
 
@@ -632,7 +504,6 @@ Promise&lt;[IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md)<!-- -->&gt;
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -672,9 +543,8 @@ Get all pads associated with the device
 ## Signature
 
 ```typescript
-public getAllPins(): Promise<Array<IPCB_PrimitiveComponentPad>>;
+function getAllPins(): Promise<Array<IPCB_PrimitiveComponentPad>>;
 ```
-
 
 ## Returns
 
@@ -683,7 +553,6 @@ Promise&lt;Array&lt;[IPCB\_PrimitiveComponentPad](./IPCB_PrimitiveComponentPad.m
 Device pad primitive array
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -696,8 +565,8 @@ const pins = await comp.getAllPins();
 
 // 3. 逐个读取焊盘的归属器件和图元 ID
 const pinInfos = pins.map(pin => ({
-  parentMatch: pin.getState_ParentComponentPrimitiveId() === compId,
-  primitiveId: pin.getState_PrimitiveId(),
+	parentMatch: pin.getState_ParentComponentPrimitiveId() === compId,
+	primitiveId: pin.getState_PrimitiveId(),
 }));
 
 // 4. 清理测试器件
@@ -717,9 +586,8 @@ Get the property state: whether to add BOM
 ## Signature
 
 ```typescript
-public getState_AddIntoBom(): boolean;
+function getState_AddIntoBom(): boolean;
 ```
-
 
 ## Returns
 
@@ -728,7 +596,6 @@ boolean
 Whether Add to BOM
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -753,9 +620,9 @@ Get the property state: associate library device
 ## Signature
 
 ```typescript
-public getState_Component(): { libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
+function getState_Component():
+	{ libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
 ```
-
 
 ## Returns
 
@@ -764,7 +631,6 @@ public getState_Component(): { libraryUuid: string; uuid: string; name?: undefin
 Associate library device
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -791,9 +657,8 @@ Get the property state: designator
 ## Signature
 
 ```typescript
-public getState_Designator(): string | undefined;
+function getState_Designator(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -802,7 +667,6 @@ string \| undefined
 Designator
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（位号由系统自动分配）
@@ -827,9 +691,9 @@ Get the property state: associate library footprint
 ## Signature
 
 ```typescript
-public getState_Footprint(): { libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
+function getState_Footprint():
+	{ libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
 ```
-
 
 ## Returns
 
@@ -838,7 +702,6 @@ public getState_Footprint(): { libraryUuid: string; uuid: string; name?: undefin
 Associate library footprint
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -865,9 +728,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfComponent;
+function getState_Layer(): TPCB_LayersOfComponent;
 ```
-
 
 ## Returns
 
@@ -876,7 +738,6 @@ public getState_Layer(): TPCB_LayersOfComponent;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（默认贴在顶面）
@@ -901,9 +762,8 @@ Get the property state: manufacturer
 ## Signature
 
 ```typescript
-public getState_Manufacturer(): string | undefined;
+function getState_Manufacturer(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -912,7 +772,6 @@ string \| undefined
 Manufacturer
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -937,9 +796,8 @@ Get the property state: manufacturer ID
 ## Signature
 
 ```typescript
-public getState_ManufacturerId(): string | undefined;
+function getState_ManufacturerId(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -948,7 +806,6 @@ string \| undefined
 Manufacturer ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -973,9 +830,9 @@ Get the property state: associate library 3D model
 ## Signature
 
 ```typescript
-public getState_Model3D(): { libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
+function getState_Model3D():
+	{ libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
 ```
-
 
 ## Returns
 
@@ -984,7 +841,6 @@ public getState_Model3D(): { libraryUuid: string; uuid: string; name?: undefined
 Associate library 3D model
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1010,9 +866,8 @@ Get the property state: name
 ## Signature
 
 ```typescript
-public getState_Name(): string | undefined;
+function getState_Name(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1021,7 +876,6 @@ string \| undefined
 Name
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1046,9 +900,8 @@ Get the property state: other parameters
 ## Signature
 
 ```typescript
-public getState_OtherProperty(): Record<string, string | number | boolean> | undefined;
+function getState_OtherProperty(): Record<string, string | number | boolean> | undefined;
 ```
-
 
 ## Returns
 
@@ -1057,7 +910,6 @@ Record&lt;string, string \| number \| boolean&gt; \| undefined
 Other parameters
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1071,8 +923,8 @@ const otherProperty = comp.getState_OtherProperty();
 await eda.pcb_PrimitiveComponent.delete([comp.getState_PrimitiveId()]);
 
 console.log('propertyCount:', Object.keys(otherProperty).length);
-console.log('value:', otherProperty['Value']);
-console.log('description:', otherProperty['Description']);
+console.log('value:', otherProperty.Value);
+console.log('description:', otherProperty.Description);
 ```
 
 ### getstate_pads
@@ -1084,9 +936,9 @@ Get the property state: pad
 ## Signature
 
 ```typescript
-public getState_Pads(): Array<{ primitiveId: string; net: string; padNumber: string }> | undefined;
+function getState_Pads():
+	Array<{ primitiveId: string; net: string; padNumber: string }> | undefined;
 ```
-
 
 ## Returns
 
@@ -1095,7 +947,6 @@ Array&lt;{ primitiveId: string; net: string; padNumber: string }&gt; \| undefine
 Pad
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1124,9 +975,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -1135,7 +985,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1160,9 +1009,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -1171,7 +1019,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1196,9 +1043,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -1207,7 +1053,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1232,9 +1077,8 @@ Get the property state: rotation angle
 ## Signature
 
 ```typescript
-public getState_Rotation(): number;
+function getState_Rotation(): number;
 ```
-
 
 ## Returns
 
@@ -1243,7 +1087,6 @@ number
 Rotation angle
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（默认 0 度）
@@ -1268,9 +1111,8 @@ Get the property state: supplier
 ## Signature
 
 ```typescript
-public getState_Supplier(): string | undefined;
+function getState_Supplier(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1279,7 +1121,6 @@ string \| undefined
 Supplier
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1304,9 +1145,8 @@ Get the property state: supplier ID
 ## Signature
 
 ```typescript
-public getState_SupplierId(): string | undefined;
+function getState_SupplierId(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1315,7 +1155,6 @@ string \| undefined
 Supplier ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1340,9 +1179,8 @@ Get the property state: unique ID
 ## Signature
 
 ```typescript
-public getState_UniqueId(): string | undefined;
+function getState_UniqueId(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1351,7 +1189,6 @@ string \| undefined
 Unique ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1376,9 +1213,8 @@ Get the property state: X coordinate
 ## Signature
 
 ```typescript
-public getState_X(): number;
+function getState_X(): number;
 ```
-
 
 ## Returns
 
@@ -1387,7 +1223,6 @@ number
 X coordinate
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1412,9 +1247,8 @@ Get the property state: Y coordinate
 ## Signature
 
 ```typescript
-public getState_Y(): number;
+function getState_Y(): number;
 ```
-
 
 ## Returns
 
@@ -1423,7 +1257,6 @@ number
 Y coordinate
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1448,9 +1281,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -1459,7 +1291,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件
@@ -1486,9 +1317,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveComponent>;
+function reset(): Promise<IPCB_PrimitiveComponent>;
 ```
-
 
 ## Returns
 
@@ -1497,7 +1327,6 @@ Promise&lt;[IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md)<!-- -->&gt;
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1534,7 +1363,12 @@ Set Property
 ## Signature
 
 ```typescript
-public setAttribute(key: string, value?: string | number | boolean, keyVisible?: boolean, valueVisible?: boolean): Promise<IPCB_PrimitiveAttribute>;
+function setAttribute(
+	key: string,
+	value?: string | number | boolean,
+	keyVisible?: boolean,
+	valueVisible?: boolean,
+): Promise<IPCB_PrimitiveAttribute>;
 ```
 
 ## Parameters
@@ -1543,85 +1377,68 @@ public setAttribute(key: string, value?: string | number | boolean, keyVisible?:
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 key
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Attribute name. If the device does not have an attribute with this name, the attribute will be added
-
 
 </td></tr>
 <tr><td>
 
 value
 
-
 </td><td>
 
 string \| number \| boolean
 
-
 </td><td>
 
 _(Optional)_ Property value
-
 
 </td></tr>
 <tr><td>
 
 keyVisible
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Attribute name visibility
-
 
 </td></tr>
 <tr><td>
 
 valueVisible
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Attribute value visibility
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1630,7 +1447,6 @@ Promise&lt;[IPCB\_PrimitiveAttribute](./IPCB_PrimitiveAttribute.md)<!-- -->&gt;
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1665,7 +1481,7 @@ Set the property state: whether to add BOM
 ## Signature
 
 ```typescript
-public setState_AddIntoBom(addIntoBom: boolean): IPCB_PrimitiveComponent;
+function setState_AddIntoBom(addIntoBom: boolean): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -1674,37 +1490,29 @@ public setState_AddIntoBom(addIntoBom: boolean): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 addIntoBom
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether Add to BOM
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1713,7 +1521,6 @@ Whether Add to BOM
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1750,7 +1557,7 @@ Set the property state: designator
 ## Signature
 
 ```typescript
-public setState_Designator(designator: string | undefined): IPCB_PrimitiveComponent;
+function setState_Designator(designator: string | undefined): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -1759,37 +1566,29 @@ public setState_Designator(designator: string | undefined): IPCB_PrimitiveCompon
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 designator
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Designator
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1798,7 +1597,6 @@ Designator
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1835,7 +1633,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfComponent): IPCB_PrimitiveComponent;
+function setState_Layer(layer: TPCB_LayersOfComponent): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -1844,37 +1642,29 @@ public setState_Layer(layer: TPCB_LayersOfComponent): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfComponent](../types/TPCB_LayersOfComponent.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1883,7 +1673,6 @@ Layer
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1920,7 +1709,7 @@ Set the property state: manufacturer
 ## Signature
 
 ```typescript
-public setState_Manufacturer(manufacturer: string | undefined): IPCB_PrimitiveComponent;
+function setState_Manufacturer(manufacturer: string | undefined): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -1929,37 +1718,29 @@ public setState_Manufacturer(manufacturer: string | undefined): IPCB_PrimitiveCo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 manufacturer
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Manufacturer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1968,7 +1749,6 @@ Manufacturer
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2005,7 +1785,7 @@ Set the property state: manufacturer ID
 ## Signature
 
 ```typescript
-public setState_ManufacturerId(manufacturerId: string | undefined): IPCB_PrimitiveComponent;
+function setState_ManufacturerId(manufacturerId: string | undefined): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2014,37 +1794,29 @@ public setState_ManufacturerId(manufacturerId: string | undefined): IPCB_Primiti
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 manufacturerId
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Manufacturer ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2053,7 +1825,6 @@ Manufacturer ID
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2090,7 +1861,7 @@ Set the property state: name
 ## Signature
 
 ```typescript
-public setState_Name(name: string | undefined): IPCB_PrimitiveComponent;
+function setState_Name(name: string | undefined): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2099,37 +1870,29 @@ public setState_Name(name: string | undefined): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 name
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2138,7 +1901,6 @@ Name
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2175,7 +1937,9 @@ Set the property state: other parameters
 ## Signature
 
 ```typescript
-public setState_OtherProperty(otherProperty: Record<string, string | number | boolean>): IPCB_PrimitiveComponent;
+function setState_OtherProperty(
+	otherProperty: Record<string, string | number | boolean>,
+): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2184,37 +1948,29 @@ public setState_OtherProperty(otherProperty: Record<string, string | number | bo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 otherProperty
 
-
 </td><td>
 
 Record&lt;string, string \| number \| boolean&gt;
-
 
 </td><td>
 
 Other parameters
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2223,7 +1979,6 @@ Other parameters
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2240,7 +1995,7 @@ const beforeCount = Object.keys(comp.getState_OtherProperty() || {}).length;
 
 // 4. 异步模式写入新的参数字典并提交
 const asyncComp = comp.toAsync();
-asyncComp.setState_OtherProperty({ '嘉立创示例_Custom': 'ABC', Count: 3 });
+asyncComp.setState_OtherProperty({ 嘉立创示例_Custom: 'ABC', Count: 3 });
 await asyncComp.done();
 
 // 5. 从画布重新读取，确认参数已写入（保留现场供观察）
@@ -2262,7 +2017,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveComponent;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2271,37 +2026,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2310,7 +2057,6 @@ Whether it is locked
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2347,7 +2093,7 @@ Set the property state: rotation angle
 ## Signature
 
 ```typescript
-public setState_Rotation(rotation: number): IPCB_PrimitiveComponent;
+function setState_Rotation(rotation: number): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2356,37 +2102,29 @@ public setState_Rotation(rotation: number): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 rotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2395,7 +2133,6 @@ Rotation angle
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2432,7 +2169,7 @@ Set the property state: supplier
 ## Signature
 
 ```typescript
-public setState_Supplier(supplier: string | undefined): IPCB_PrimitiveComponent;
+function setState_Supplier(supplier: string | undefined): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2441,37 +2178,29 @@ public setState_Supplier(supplier: string | undefined): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 supplier
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Supplier
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2480,7 +2209,6 @@ Supplier
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2517,7 +2245,7 @@ Set the property state: supplier ID
 ## Signature
 
 ```typescript
-public setState_SupplierId(supplierId: string | undefined): IPCB_PrimitiveComponent;
+function setState_SupplierId(supplierId: string | undefined): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2526,37 +2254,29 @@ public setState_SupplierId(supplierId: string | undefined): IPCB_PrimitiveCompon
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 supplierId
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Supplier ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2565,7 +2285,6 @@ Supplier ID
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2602,7 +2321,7 @@ Set the property state: unique ID
 ## Signature
 
 ```typescript
-public setState_UniqueId(uniqueId: string | undefined): IPCB_PrimitiveComponent;
+function setState_UniqueId(uniqueId: string | undefined): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2611,37 +2330,29 @@ public setState_UniqueId(uniqueId: string | undefined): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uniqueId
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Unique ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2650,7 +2361,6 @@ Unique ID
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2687,7 +2397,7 @@ Set the property state: X coordinate
 ## Signature
 
 ```typescript
-public setState_X(x: number): IPCB_PrimitiveComponent;
+function setState_X(x: number): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2696,37 +2406,29 @@ public setState_X(x: number): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 X coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2735,7 +2437,6 @@ X coordinate
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2772,7 +2473,7 @@ Set the property state: Y coordinate
 ## Signature
 
 ```typescript
-public setState_Y(y: number): IPCB_PrimitiveComponent;
+function setState_Y(y: number): IPCB_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2781,37 +2482,29 @@ public setState_Y(y: number): IPCB_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2820,7 +2513,6 @@ Y coordinate
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2855,9 +2547,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveComponent;
+function toAsync(): IPCB_PrimitiveComponent;
 ```
-
 
 ## Returns
 
@@ -2866,7 +2557,6 @@ public toAsync(): IPCB_PrimitiveComponent;
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2902,9 +2592,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveComponent;
+function toSync(): IPCB_PrimitiveComponent;
 ```
-
 
 ## Returns
 
@@ -2913,7 +2602,6 @@ public toSync(): IPCB_PrimitiveComponent;
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合

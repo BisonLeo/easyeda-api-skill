@@ -5,7 +5,7 @@ Pad pair minimum wire length properties
 ## Signature
 
 ```typescript
-export interface IPCB_PadPairMinWireLengthItem 
+interface IPCB_PadPairMinWireLengthItem
 ```
 
 ## Properties
@@ -14,59 +14,47 @@ export interface IPCB_PadPairMinWireLengthItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [minWireLength](./IPCB_PadPairMinWireLengthItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Minimum wire length
-
 
 </td></tr>
 <tr><td>
 
 [padPair](./IPCB_PadPairMinWireLengthItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 \[string, string\]
 
-
 </td><td>
 
 Pad for array
-
 
 </td></tr>
 </tbody></table>

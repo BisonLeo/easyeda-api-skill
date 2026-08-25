@@ -5,12 +5,11 @@ Binary embedded object primitive
 ## Signature
 
 ```typescript
-export class ISCH_PrimitiveObject implements ISCH_Primitive 
+class ISCH_PrimitiveObject implements ISCH_Primitive
 ```
 **Implements:** [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,338 +17,266 @@ export class ISCH_PrimitiveObject implements ISCH_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Content()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: object content
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FileName()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: file name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Height()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: height
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Mirror()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is mirrored
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Rotation()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_StartX()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [getState\_StartY()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Width()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: width
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Content(content)](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: object content
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FileName(fileName)](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: file name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Height(height)](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: height
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Mirror(mirror)](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is mirrored
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Rotation(rotation)](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_StartX(startX)](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: start point coordinates X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_StartY(startY)](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: start point coordinates Y
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Width(width)](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: width
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./ISCH_PrimitiveObject.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -369,9 +296,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<ISCH_PrimitiveObject>;
+function done(): Promise<ISCH_PrimitiveObject>;
 ```
-
 
 ## Returns
 
@@ -388,9 +314,8 @@ Get the property state: object content
 ## Signature
 
 ```typescript
-public getState_Content(): File | string;
+function getState_Content(): File | string;
 ```
-
 
 ## Returns
 
@@ -407,9 +332,8 @@ Get the property state: file name
 ## Signature
 
 ```typescript
-public getState_FileName(): string;
+function getState_FileName(): string;
 ```
-
 
 ## Returns
 
@@ -426,9 +350,8 @@ Get the property state: height
 ## Signature
 
 ```typescript
-public getState_Height(): number;
+function getState_Height(): number;
 ```
-
 
 ## Returns
 
@@ -445,9 +368,8 @@ Get the property state: whether it is mirrored
 ## Signature
 
 ```typescript
-public getState_Mirror(): boolean;
+function getState_Mirror(): boolean;
 ```
-
 
 ## Returns
 
@@ -464,9 +386,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -483,9 +404,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): ESCH_PrimitiveType;
+function getState_PrimitiveType(): ESCH_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -502,9 +422,8 @@ Get the property state: rotation angle
 ## Signature
 
 ```typescript
-public getState_Rotation(): number;
+function getState_Rotation(): number;
 ```
-
 
 ## Returns
 
@@ -521,9 +440,8 @@ Get the property state: X coordinate
 ## Signature
 
 ```typescript
-public getState_StartX(): number;
+function getState_StartX(): number;
 ```
-
 
 ## Returns
 
@@ -540,9 +458,8 @@ Get the property state: Y coordinate
 ## Signature
 
 ```typescript
-public getState_StartY(): number;
+function getState_StartY(): number;
 ```
-
 
 ## Returns
 
@@ -559,9 +476,8 @@ Get the property state: width
 ## Signature
 
 ```typescript
-public getState_Width(): number;
+function getState_Width(): number;
 ```
-
 
 ## Returns
 
@@ -578,9 +494,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -599,9 +514,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<ISCH_PrimitiveObject>;
+function reset(): Promise<ISCH_PrimitiveObject>;
 ```
-
 
 ## Returns
 
@@ -620,7 +534,7 @@ Set the property state: object content
 ## Signature
 
 ```typescript
-public setState_Content(content: File | string): ISCH_PrimitiveObject;
+function setState_Content(content: File | string): ISCH_PrimitiveObject;
 ```
 
 ## Parameters
@@ -629,37 +543,29 @@ public setState_Content(content: File | string): ISCH_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 content
 
-
 </td><td>
 
 File \| string
-
 
 </td><td>
 
 Object content
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -678,7 +584,7 @@ Set the property state: file name
 ## Signature
 
 ```typescript
-public setState_FileName(fileName: string): ISCH_PrimitiveObject;
+function setState_FileName(fileName: string): ISCH_PrimitiveObject;
 ```
 
 ## Parameters
@@ -687,37 +593,29 @@ public setState_FileName(fileName: string): ISCH_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fileName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 File name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -736,7 +634,7 @@ Set the property state: height
 ## Signature
 
 ```typescript
-public setState_Height(height: number): ISCH_PrimitiveObject;
+function setState_Height(height: number): ISCH_PrimitiveObject;
 ```
 
 ## Parameters
@@ -745,37 +643,29 @@ public setState_Height(height: number): ISCH_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 height
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Height
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -794,7 +684,7 @@ Set the property state: whether it is mirrored
 ## Signature
 
 ```typescript
-public setState_Mirror(mirror: boolean): ISCH_PrimitiveObject;
+function setState_Mirror(mirror: boolean): ISCH_PrimitiveObject;
 ```
 
 ## Parameters
@@ -803,37 +693,29 @@ public setState_Mirror(mirror: boolean): ISCH_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -852,7 +734,7 @@ Set the property state: rotation angle
 ## Signature
 
 ```typescript
-public setState_Rotation(rotation: number): ISCH_PrimitiveObject;
+function setState_Rotation(rotation: number): ISCH_PrimitiveObject;
 ```
 
 ## Parameters
@@ -861,37 +743,29 @@ public setState_Rotation(rotation: number): ISCH_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 rotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -910,7 +784,7 @@ Set the property state: start point coordinates X
 ## Signature
 
 ```typescript
-public setState_StartX(startX: number): ISCH_PrimitiveObject;
+function setState_StartX(startX: number): ISCH_PrimitiveObject;
 ```
 
 ## Parameters
@@ -919,37 +793,29 @@ public setState_StartX(startX: number): ISCH_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 startX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Start point coordinates X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -968,7 +834,7 @@ Set the property state: start point coordinates Y
 ## Signature
 
 ```typescript
-public setState_StartY(startY: number): ISCH_PrimitiveObject;
+function setState_StartY(startY: number): ISCH_PrimitiveObject;
 ```
 
 ## Parameters
@@ -977,37 +843,29 @@ public setState_StartY(startY: number): ISCH_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 startY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Start point coordinates Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1026,7 +884,7 @@ Set the property state: width
 ## Signature
 
 ```typescript
-public setState_Width(width: number): ISCH_PrimitiveObject;
+function setState_Width(width: number): ISCH_PrimitiveObject;
 ```
 
 ## Parameters
@@ -1035,37 +893,29 @@ public setState_Width(width: number): ISCH_PrimitiveObject;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 width
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1082,9 +932,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): ISCH_PrimitiveObject;
+function toAsync(): ISCH_PrimitiveObject;
 ```
-
 
 ## Returns
 
@@ -1101,9 +950,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): ISCH_PrimitiveObject;
+function toSync(): ISCH_PrimitiveObject;
 ```
-
 
 ## Returns
 

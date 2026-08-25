@@ -5,7 +5,7 @@
 ## Signature
 
 ```typescript
-export interface GridProps extends StyleProps 
+interface GridProps extends StyleProps
 ```
 **Extends:** [StyleProps](./StyleProps.md)
 
@@ -15,97 +15,77 @@ export interface GridProps extends StyleProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [children?](./GridProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 any
 
-
 </td><td>
 
 _(Optional)_ Child node
-
 
 </td></tr>
 <tr><td>
 
 [colGap?](./GridProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Column gap (pixels)
-
 
 </td></tr>
 <tr><td>
 
 [columns](./GridProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Number of columns (required)
-
 
 </td></tr>
 <tr><td>
 
 [rowGap?](./GridProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Row gap (pixels)
-
 
 </td></tr>
 </tbody></table>

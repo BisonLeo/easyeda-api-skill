@@ -5,7 +5,7 @@ Searched panel library properties
 ## Signature
 
 ```typescript
-export interface ILIB_PanelLibrarySearchItem 
+interface ILIB_PanelLibrarySearchItem
 ```
 
 ## Properties
@@ -14,192 +14,152 @@ export interface ILIB_PanelLibrarySearchItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [ascription](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Ownership
-
 
 </td></tr>
 <tr><td>
 
 [classification?](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ILIB\_ClassificationIndex](./ILIB_ClassificationIndex.md) \| Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ Classification
-
 
 </td></tr>
 <tr><td>
 
 [description?](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Description
-
 
 </td></tr>
 <tr><td>
 
 [lastModifiedBy](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Last modifier
-
 
 </td></tr>
 <tr><td>
 
 [libraryUuid](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 UUID of the library it belongs to
-
 
 </td></tr>
 <tr><td>
 
 [name](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Panel library name
-
 
 </td></tr>
 <tr><td>
 
 [ordinal](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Sorting
-
 
 </td></tr>
 <tr><td>
 
 [updateTimestamp](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Update timestamp
-
 
 </td></tr>
 <tr><td>
 
 [uuid](./ILIB_PanelLibrarySearchItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Panel library UUID
-
 
 </td></tr>
 </tbody></table>

@@ -5,7 +5,7 @@ Pad thermal relief optimization parameters
 ## Signature
 
 ```typescript
-export interface IPCB_PrimitivePadHeatWelding 
+interface IPCB_PrimitivePadHeatWelding
 ```
 
 ## Remarks
@@ -18,97 +18,77 @@ When the connection method ([connectionMethod](./IPCB_PrimitivePadHeatWelding.md
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [connectionMethod](./IPCB_PrimitivePadHeatWelding.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [EPCB\_PrimitivePadHeatWeldingConnectionMethod](../enums/EPCB_PrimitivePadHeatWeldingConnectionMethod.md)
 
-
 </td><td>
 
 Connection method
-
 
 </td></tr>
 <tr><td>
 
 [divergenceAngle?](./IPCB_PrimitivePadHeatWelding.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Divergence angle
-
 
 </td></tr>
 <tr><td>
 
 [divergenceLineWidth?](./IPCB_PrimitivePadHeatWelding.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Divergence line width
-
 
 </td></tr>
 <tr><td>
 
 [divergenceSpacing?](./IPCB_PrimitivePadHeatWelding.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Divergence spacing
-
 
 </td></tr>
 </tbody></table>

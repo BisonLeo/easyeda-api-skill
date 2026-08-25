@@ -5,7 +5,7 @@ PCB &amp; footprint / device primitive class
 ## Signature
 
 ```typescript
-export class PCB_PrimitiveComponent implements IPCB_PrimitiveAPI 
+class PCB_PrimitiveComponent implements IPCB_PrimitiveAPI
 ```
 **Implements:** [IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
@@ -15,170 +15,134 @@ export class PCB_PrimitiveComponent implements IPCB_PrimitiveAPI
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [create(component, layer, x, y, rotation, primitiveLock)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Device
-
 
 </td></tr>
 <tr><td>
 
 [delete(primitiveIds)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Device
 
+</td></tr>
+<tr><td>
+
+[get(primitiveIds)](./PCB_PrimitiveComponent.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get Device
 
 </td></tr>
 <tr><td>
 
 [get(primitiveIds)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get Device
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitiveComponent.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Device
-
 
 </td></tr>
 <tr><td>
 
 [getAll(layer, primitiveLock)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Device
-
 
 </td></tr>
 <tr><td>
 
 [getAllPinsByPrimitiveId(primitiveId)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all pads associated with the device
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitiveId(layer, primitiveLock)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Device primitive IDs
-
 
 </td></tr>
 <tr><td>
 
 [getAllPropertyNames()](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get The set of all property names of all devices
-
 
 </td></tr>
 <tr><td>
 
 [modify(primitiveId, property)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Device
-
 
 </td></tr>
 <tr><td>
 
 [placeComponentWithMouse(component)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Place with the mouse device
-
 
 </td></tr>
 <tr><td>
 
 [placeFootprintWithMouse(footprint, properties)](./PCB_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Place with the mouse footprint
-
 
 </td></tr>
 </tbody></table>
@@ -198,7 +162,20 @@ Create Device
 ## Signature
 
 ```typescript
-public create(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem | { libraryType: ELIB_LibraryType.FOOTPRINT; libraryUuid: string; uuid: string } | ILIB_FootprintItem | ILIB_FootprintSearchItem, layer: TPCB_LayersOfComponent, x: number, y: number, rotation?: number, primitiveLock?: boolean): Promise<IPCB_PrimitiveComponent | undefined>;
+function create(
+	component:
+		| { libraryUuid: string; uuid: string }
+		| ILIB_DeviceItem
+		| ILIB_DeviceSearchItem
+		| { libraryType: ELIB_LibraryType.FOOTPRINT; libraryUuid: string; uuid: string }
+		| ILIB_FootprintItem
+		| ILIB_FootprintSearchItem,
+	layer: TPCB_LayersOfComponent,
+	x: number,
+	y: number,
+	rotation?: number,
+	primitiveLock?: boolean,
+): Promise<IPCB_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -207,117 +184,94 @@ public create(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md) \| { libraryType: [ELIB\_LibraryType.FOOTPRINT](../enums/ELIB_LibraryType.md)<!-- -->; libraryUuid: string; uuid: string } \| [ILIB\_FootprintItem](../interfaces/ILIB_FootprintItem.md) \| [ILIB\_FootprintSearchItem](../interfaces/ILIB_FootprintSearchItem.md)
 
-
 </td><td>
 
 Associate library device
-
 
 </td></tr>
 <tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfComponent](../types/TPCB_LayersOfComponent.md)
 
-
 </td><td>
 
 Layer
-
 
 </td></tr>
 <tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 rotation
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Rotation angle
-
 
 </td></tr>
 <tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -327,10 +281,9 @@ Device primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
-//    坐标取随机值，避免与画布上已有的器件重合
+// 坐标取随机值，避免与画布上已有的器件重合
 const x = 20000 + Math.floor(Math.random() * 80000);
 const y = 20000 + Math.floor(Math.random() * 80000);
 const devices = await eda.lib_Device.searchByProperties({ supplierId: 'C1523' }, undefined, undefined, undefined, 5, 1);
@@ -360,7 +313,7 @@ Delete Device
 ## Signature
 
 ```typescript
-public delete(primitiveIds: string | IPCB_PrimitiveComponent | Array<string> | Array<IPCB_PrimitiveComponent>): Promise<boolean>;
+function delete(primitiveIds: string | IPCB_PrimitiveComponent | Array<string> | Array<IPCB_PrimitiveComponent>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -369,37 +322,29 @@ public delete(primitiveIds: string | IPCB_PrimitiveComponent | Array<string> | A
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string \| [IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md)<!-- -->&gt;
-
 
 </td><td>
 
 Device primitive ID or Device primitive object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -409,10 +354,9 @@ Delete Whether the operation is successful
 
 ## Example
 
-
 ```javascript
 // 1. 放置一个待删除的测试器件（随机坐标避免与画布已有器件重合）：
-//    按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
+// 按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
 const x = 20000 + Math.floor(Math.random() * 80000);
 const y = 20000 + Math.floor(Math.random() * 80000);
 const devices = await eda.lib_Device.searchByProperties({ supplierId: 'C1523' }, undefined, undefined, undefined, 5, 1);
@@ -447,7 +391,7 @@ Get Device
 ## Signature
 
 ```typescript
-public get(primitiveIds: string): Promise<IPCB_PrimitiveComponent | undefined>;
+function get(primitiveIds: string): Promise<IPCB_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -456,37 +400,29 @@ public get(primitiveIds: string): Promise<IPCB_PrimitiveComponent | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Device primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -496,10 +432,9 @@ Device primitive object, `undefined` indicates that the retrieval failed
 
 ## Example
 
-
 ```javascript
 // 1. 放置一个测试器件：
-//    按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
+// 按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
 const devices = await eda.lib_Device.searchByProperties({ supplierId: 'C1523' }, undefined, undefined, undefined, 5, 1);
 const sysLibUuid = await eda.lib_LibrariesList.getSystemLibraryUuid();
 const comp = await eda.pcb_PrimitiveComponent.create({ libraryUuid: sysLibUuid, uuid: devices[0].uuid }, 1, 5000, 5000);
@@ -532,7 +467,7 @@ Get Device
 ## Signature
 
 ```typescript
-public get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveComponent>>;
+function get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveComponent>>;
 ```
 
 ## Parameters
@@ -541,37 +476,29 @@ public get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitiveComponent>>
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Device primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -594,7 +521,10 @@ Get all Device
 ## Signature
 
 ```typescript
-public getAll(layer?: TPCB_LayersOfComponent, primitiveLock?: boolean): Promise<Array<IPCB_PrimitiveComponent>>;
+function getAll(
+	layer?: TPCB_LayersOfComponent,
+	primitiveLock?: boolean,
+): Promise<Array<IPCB_PrimitiveComponent>>;
 ```
 
 ## Parameters
@@ -603,53 +533,42 @@ public getAll(layer?: TPCB_LayersOfComponent, primitiveLock?: boolean): Promise<
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfComponent](../types/TPCB_LayersOfComponent.md)
 
-
 </td><td>
 
 _(Optional)_ Layer
-
 
 </td></tr>
 <tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -659,10 +578,9 @@ Array of Device primitive objects
 
 ## Example
 
-
 ```javascript
 // 1. 放置一个测试器件作为过滤参照：
-//    按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
+// 按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
 const devices = await eda.lib_Device.searchByProperties({ supplierId: 'C1523' }, undefined, undefined, undefined, 5, 1);
 const sysLibUuid = await eda.lib_LibrariesList.getSystemLibraryUuid();
 const comp = await eda.pcb_PrimitiveComponent.create({ libraryUuid: sysLibUuid, uuid: devices[0].uuid }, 1, 5000, 5000);
@@ -694,7 +612,9 @@ Get all pads associated with the device
 ## Signature
 
 ```typescript
-public getAllPinsByPrimitiveId(primitiveId: string): Promise<Array<IPCB_PrimitiveComponentPad> | undefined>;
+function getAllPinsByPrimitiveId(
+	primitiveId: string,
+): Promise<Array<IPCB_PrimitiveComponentPad> | undefined>;
 ```
 
 ## Parameters
@@ -703,37 +623,29 @@ public getAllPinsByPrimitiveId(primitiveId: string): Promise<Array<IPCB_Primitiv
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Device primitive ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -743,10 +655,9 @@ Device pad primitive array
 
 ## Example
 
-
 ```javascript
 // 1. 放置一个测试器件：
-//    按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
+// 按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
 const devices = await eda.lib_Device.searchByProperties({ supplierId: 'C1523' }, undefined, undefined, undefined, 5, 1);
 const sysLibUuid = await eda.lib_LibrariesList.getSystemLibraryUuid();
 const comp = await eda.pcb_PrimitiveComponent.create({ libraryUuid: sysLibUuid, uuid: devices[0].uuid }, 1, 5000, 5000);
@@ -778,7 +689,10 @@ Get all Device primitive IDs
 ## Signature
 
 ```typescript
-public getAllPrimitiveId(layer?: TPCB_LayersOfComponent, primitiveLock?: boolean): Promise<Array<string>>;
+function getAllPrimitiveId(
+	layer?: TPCB_LayersOfComponent,
+	primitiveLock?: boolean,
+): Promise<Array<string>>;
 ```
 
 ## Parameters
@@ -787,53 +701,42 @@ public getAllPrimitiveId(layer?: TPCB_LayersOfComponent, primitiveLock?: boolean
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfComponent](../types/TPCB_LayersOfComponent.md)
 
-
 </td><td>
 
 _(Optional)_ Layer
-
 
 </td></tr>
 <tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -843,10 +746,9 @@ Array of Device primitive IDs
 
 ## Example
 
-
 ```javascript
 // 1. 放置一个测试器件作为过滤参照：
-//    按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
+// 按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
 const devices = await eda.lib_Device.searchByProperties({ supplierId: 'C1523' }, undefined, undefined, undefined, 5, 1);
 const sysLibUuid = await eda.lib_LibrariesList.getSystemLibraryUuid();
 const comp = await eda.pcb_PrimitiveComponent.create({ libraryUuid: sysLibUuid, uuid: devices[0].uuid }, 1, 5000, 5000);
@@ -878,9 +780,8 @@ Get The set of all property names of all devices
 ## Signature
 
 ```typescript
-public getAllPropertyNames(): Promise<Array<string>>;
+function getAllPropertyNames(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -890,10 +791,9 @@ The set of all property names of all devices
 
 ## Example
 
-
 ```javascript
 // 1. 放置一个测试器件：
-//    按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
+// 按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
 const devices = await eda.lib_Device.searchByProperties({ supplierId: 'C1523' }, undefined, undefined, undefined, 5, 1);
 const sysLibUuid = await eda.lib_LibrariesList.getSystemLibraryUuid();
 const comp = await eda.pcb_PrimitiveComponent.create({ libraryUuid: sysLibUuid, uuid: devices[0].uuid }, 1, 5000, 5000);
@@ -920,7 +820,25 @@ Modify Device
 ## Signature
 
 ```typescript
-public modify(primitiveId: string | IPCB_PrimitiveComponent, property: { layer?: undefined | EPCB_LayerId.TOP | EPCB_LayerId.BOTTOM; x?: undefined | number; y?: undefined | number; rotation?: undefined | number; primitiveLock?: undefined | false | true; addIntoBom?: undefined | false | true; designator?: undefined | null | string; name?: undefined | null | string; uniqueId?: undefined | null | string; manufacturer?: undefined | null | string; manufacturerId?: undefined | null | string; supplier?: undefined | null | string; supplierId?: undefined | null | string; otherProperty?: undefined | Record<string, any> }): Promise<IPCB_PrimitiveComponent | undefined>;
+function modify(
+	primitiveId: string | IPCB_PrimitiveComponent,
+	property: {
+		layer?: undefined | EPCB_LayerId.TOP | EPCB_LayerId.BOTTOM;
+		x?: undefined | number;
+		y?: undefined | number;
+		rotation?: undefined | number;
+		primitiveLock?: undefined | false | true;
+		addIntoBom?: undefined | false | true;
+		designator?: undefined | null | string;
+		name?: undefined | null | string;
+		uniqueId?: undefined | null | string;
+		manufacturer?: undefined | null | string;
+		manufacturerId?: undefined | null | string;
+		supplier?: undefined | null | string;
+		supplierId?: undefined | null | string;
+		otherProperty?: undefined | Record<string, any>;
+	},
+): Promise<IPCB_PrimitiveComponent | undefined>;
 ```
 
 ## Parameters
@@ -929,51 +847,40 @@ public modify(primitiveId: string | IPCB_PrimitiveComponent, property: { layer?:
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string \| [IPCB\_PrimitiveComponent](./IPCB_PrimitiveComponent.md)
 
-
 </td><td>
 
 Primitive ID
-
 
 </td></tr>
 <tr><td>
 
 property
 
-
 </td><td>
 
 { layer?: undefined \| [EPCB\_LayerId.TOP](../enums/EPCB_LayerId.md) \| [EPCB\_LayerId.BOTTOM](../enums/EPCB_LayerId.md)<!-- -->; x?: undefined \| number; y?: undefined \| number; rotation?: undefined \| number; primitiveLock?: undefined \| false \| true; addIntoBom?: undefined \| false \| true; designator?: undefined \| null \| string; name?: undefined \| null \| string; uniqueId?: undefined \| null \| string; manufacturer?: undefined \| null \| string; manufacturerId?: undefined \| null \| string; supplier?: undefined \| null \| string; supplierId?: undefined \| null \| string; otherProperty?: undefined \| Record&lt;string, any&gt; }
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -983,10 +890,9 @@ Device primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 放置待修改的测试器件（随机坐标避免与画布已有器件重合）：
-//    按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
+// 按立创编号从系统库精确反查器件，返回项不含 libraryUuid，需补上才能用于 create
 const x = 20000 + Math.floor(Math.random() * 80000);
 const y = 20000 + Math.floor(Math.random() * 80000);
 const devices = await eda.lib_Device.searchByProperties({ supplierId: 'C1523' }, undefined, undefined, undefined, 5, 1);
@@ -1023,7 +929,9 @@ Place with the mouse device
 ## Signature
 
 ```typescript
-public placeComponentWithMouse(component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem): Promise<boolean>;
+function placeComponentWithMouse(
+	component: { libraryUuid: string; uuid: string } | ILIB_DeviceItem | ILIB_DeviceSearchItem,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1032,37 +940,29 @@ public placeComponentWithMouse(component: { libraryUuid: string; uuid: string } 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 component
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_DeviceItem](../interfaces/ILIB_DeviceItem.md) \| [ILIB\_DeviceSearchItem](../interfaces/ILIB_DeviceSearchItem.md)
-
 
 </td><td>
 
 Associate library device
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1087,7 +987,11 @@ Place with the mouse footprint
 ## Signature
 
 ```typescript
-public placeFootprintWithMouse(footprint: { libraryUuid: string; uuid: string } | ILIB_FootprintItem | ILIB_FootprintSearchItem, properties?: Record<string, boolean | number | string | undefined>): Promise<boolean>;
+function placeFootprintWithMouse(
+	footprint:
+		{ libraryUuid: string; uuid: string } | ILIB_FootprintItem | ILIB_FootprintSearchItem,
+	properties?: Record<string, boolean | number | string | undefined>,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1096,53 +1000,42 @@ public placeFootprintWithMouse(footprint: { libraryUuid: string; uuid: string } 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 footprint
 
-
 </td><td>
 
 { libraryUuid: string; uuid: string } \| [ILIB\_FootprintItem](../interfaces/ILIB_FootprintItem.md) \| [ILIB\_FootprintSearchItem](../interfaces/ILIB_FootprintSearchItem.md)
 
-
 </td><td>
 
 Associate library footprint
-
 
 </td></tr>
 <tr><td>
 
 properties
 
-
 </td><td>
 
 Record&lt;string, boolean \| number \| string \| undefined&gt;
-
 
 </td><td>
 
 _(Optional)_ Device property
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 

@@ -5,7 +5,7 @@ Property primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveAttribute implements IPCB_Primitive 
+class IPCB_PrimitiveAttribute implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -15,30 +15,24 @@ export class IPCB_PrimitiveAttribute implements IPCB_Primitive
 
 Constructor
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [(constructor)(layer, x, y, key, value, keyVisible, valueVisible, fontFamily, fontSize, lineWidth, alignMode, rotation, reverse, expansion, mirror, primitiveLock, primitiveId, parentPrimitiveId)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Constructs a new instance of the `IPCB_PrimitiveAttribute` class
-
 
 </td></tr>
 </tbody></table>
@@ -49,576 +43,453 @@ Constructs a new instance of the `IPCB_PrimitiveAttribute` class
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_AlignMode()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: alignment mode
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Expansion()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: inverted expansion
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FontFamily()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: font
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FontSize()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: font size
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Key()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Key
-
 
 </td></tr>
 <tr><td>
 
 [getState\_KeyVisible()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Key whether it is visible
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Mirror()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is mirrored
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ParentPrimitiveId()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: associated parent primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Reverse()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is inverted
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Rotation()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Value()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Value
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ValueVisible()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Value whether it is visible
-
 
 </td></tr>
 <tr><td>
 
 [getState\_X()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Y()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_AlignMode(alignMode)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: alignment mode
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Expansion(expansion)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: inverted expansion
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FontFamily(fontFamily)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: font
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FontSize(fontSize)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: font size
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Key(key)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Key
-
 
 </td></tr>
 <tr><td>
 
 [setState\_KeyVisible(keyVisible)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Key whether it is visible
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Mirror(mirror)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is mirrored
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Reverse(reverse)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is inverted
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Rotation(rotation)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Value(value)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Value
-
 
 </td></tr>
 <tr><td>
 
 [setState\_ValueVisible(valueVisible)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Value whether it is visible
-
 
 </td></tr>
 <tr><td>
 
 [setState\_X(x)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Y(y)](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveAttribute.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -636,7 +507,26 @@ Constructs a new instance of the `IPCB_PrimitiveAttribute` class
 ## Signature
 
 ```typescript
-public constructor(layer: TPCB_LayersOfImage, x: number | null, y: number | null, key: string, value: string, keyVisible: boolean, valueVisible: boolean, fontFamily: string, fontSize: number, lineWidth: number, alignMode: EPCB_PrimitiveStringAlignMode, rotation: number, reverse: boolean, expansion: number, mirror: boolean, primitiveLock: boolean, primitiveId: string, parentPrimitiveId: string);
+function constructor(
+	layer: TPCB_LayersOfImage,
+	x: number | null,
+	y: number | null,
+	key: string,
+	value: string,
+	keyVisible: boolean,
+	valueVisible: boolean,
+	fontFamily: string,
+	fontSize: number,
+	lineWidth: number,
+	alignMode: EPCB_PrimitiveStringAlignMode,
+	rotation: number,
+	reverse: boolean,
+	expansion: number,
+	mirror: boolean,
+	primitiveLock: boolean,
+	primitiveId: string,
+	parentPrimitiveId: string,
+);
 ```
 
 ## Parameters
@@ -645,268 +535,211 @@ public constructor(layer: TPCB_LayersOfImage, x: number | null, y: number | null
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 x
 
-
 </td><td>
 
 number \| null
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number \| null
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 key
 
-
 </td><td>
 
 string
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 value
 
-
 </td><td>
 
 string
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 keyVisible
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 valueVisible
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 fontFamily
 
-
 </td><td>
 
 string
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 fontSize
 
-
 </td><td>
 
 number
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 alignMode
 
-
 </td><td>
 
 [EPCB\_PrimitiveStringAlignMode](../enums/EPCB_PrimitiveStringAlignMode.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 rotation
 
-
 </td><td>
 
 number
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 reverse
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 expansion
 
-
 </td><td>
 
 number
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 parentPrimitiveId
 
-
 </td><td>
 
 string
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
@@ -927,9 +760,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveAttribute>;
+function done(): Promise<IPCB_PrimitiveAttribute>;
 ```
-
 
 ## Returns
 
@@ -938,7 +770,6 @@ Promise&lt;[IPCB\_PrimitiveAttribute](./IPCB_PrimitiveAttribute.md)<!-- -->&gt;
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -978,9 +809,8 @@ Get the property state: alignment mode
 ## Signature
 
 ```typescript
-public getState_AlignMode(): EPCB_PrimitiveStringAlignMode;
+function getState_AlignMode(): EPCB_PrimitiveStringAlignMode;
 ```
-
 
 ## Returns
 
@@ -989,7 +819,6 @@ public getState_AlignMode(): EPCB_PrimitiveStringAlignMode;
 Alignment mode
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1020,9 +849,8 @@ Get the property state: inverted expansion
 ## Signature
 
 ```typescript
-public getState_Expansion(): number;
+function getState_Expansion(): number;
 ```
-
 
 ## Returns
 
@@ -1031,7 +859,6 @@ number
 Inverted expansion
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1062,9 +889,8 @@ Get the property state: font
 ## Signature
 
 ```typescript
-public getState_FontFamily(): string;
+function getState_FontFamily(): string;
 ```
-
 
 ## Returns
 
@@ -1073,7 +899,6 @@ string
 Font
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1104,9 +929,8 @@ Get the property state: font size
 ## Signature
 
 ```typescript
-public getState_FontSize(): number;
+function getState_FontSize(): number;
 ```
-
 
 ## Returns
 
@@ -1115,7 +939,6 @@ number
 Font size
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1146,9 +969,8 @@ Get the property state: Key
 ## Signature
 
 ```typescript
-public getState_Key(): string;
+function getState_Key(): string;
 ```
-
 
 ## Returns
 
@@ -1157,7 +979,6 @@ string
 Key
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1187,9 +1008,8 @@ Get the property state: Key whether it is visible
 ## Signature
 
 ```typescript
-public getState_KeyVisible(): boolean;
+function getState_KeyVisible(): boolean;
 ```
-
 
 ## Returns
 
@@ -1198,7 +1018,6 @@ boolean
 Key whether it is visible
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1229,9 +1048,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfImage;
+function getState_Layer(): TPCB_LayersOfImage;
 ```
-
 
 ## Returns
 
@@ -1240,7 +1058,6 @@ public getState_Layer(): TPCB_LayersOfImage;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1271,9 +1088,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number;
+function getState_LineWidth(): number;
 ```
-
 
 ## Returns
 
@@ -1282,7 +1098,6 @@ number
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1313,9 +1128,8 @@ Get the property state: whether it is mirrored
 ## Signature
 
 ```typescript
-public getState_Mirror(): boolean;
+function getState_Mirror(): boolean;
 ```
-
 
 ## Returns
 
@@ -1324,7 +1138,6 @@ boolean
 Whether it is mirrored
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1355,9 +1168,8 @@ Get the property state: associated parent primitive ID
 ## Signature
 
 ```typescript
-public getState_ParentPrimitiveId(): string;
+function getState_ParentPrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -1366,7 +1178,6 @@ string
 Associated parent primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1398,9 +1209,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -1409,7 +1219,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1440,9 +1249,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -1451,7 +1259,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1482,9 +1289,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -1493,7 +1299,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1524,9 +1329,8 @@ Get the property state: whether it is inverted
 ## Signature
 
 ```typescript
-public getState_Reverse(): boolean;
+function getState_Reverse(): boolean;
 ```
-
 
 ## Returns
 
@@ -1535,7 +1339,6 @@ boolean
 Whether it is inverted
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1566,9 +1369,8 @@ Get the property state: rotation angle
 ## Signature
 
 ```typescript
-public getState_Rotation(): number;
+function getState_Rotation(): number;
 ```
-
 
 ## Returns
 
@@ -1577,7 +1379,6 @@ number
 Rotation angle
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1608,9 +1409,8 @@ Get the property state: Value
 ## Signature
 
 ```typescript
-public getState_Value(): string;
+function getState_Value(): string;
 ```
-
 
 ## Returns
 
@@ -1619,7 +1419,6 @@ string
 Value
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1650,9 +1449,8 @@ Get the property state: Value whether it is visible
 ## Signature
 
 ```typescript
-public getState_ValueVisible(): boolean;
+function getState_ValueVisible(): boolean;
 ```
-
 
 ## Returns
 
@@ -1661,7 +1459,6 @@ boolean
 Value whether it is visible
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1692,9 +1489,8 @@ Get the property state: X coordinate
 ## Signature
 
 ```typescript
-public getState_X(): number | null;
+function getState_X(): number | null;
 ```
-
 
 ## Returns
 
@@ -1703,7 +1499,6 @@ number \| null
 X coordinate
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1734,9 +1529,8 @@ Get the property state: Y coordinate
 ## Signature
 
 ```typescript
-public getState_Y(): number | null;
+function getState_Y(): number | null;
 ```
-
 
 ## Returns
 
@@ -1745,7 +1539,6 @@ number \| null
 Y coordinate
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1776,9 +1569,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -1787,7 +1579,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（属性图元随器件生成，无法单独创建）
@@ -1820,9 +1611,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveAttribute>;
+function reset(): Promise<IPCB_PrimitiveAttribute>;
 ```
-
 
 ## Returns
 
@@ -1831,7 +1621,6 @@ Promise&lt;[IPCB\_PrimitiveAttribute](./IPCB_PrimitiveAttribute.md)<!-- -->&gt;
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1870,7 +1659,7 @@ Set the property state: alignment mode
 ## Signature
 
 ```typescript
-public setState_AlignMode(alignMode: EPCB_PrimitiveStringAlignMode): IPCB_PrimitiveAttribute;
+function setState_AlignMode(alignMode: EPCB_PrimitiveStringAlignMode): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -1879,37 +1668,29 @@ public setState_AlignMode(alignMode: EPCB_PrimitiveStringAlignMode): IPCB_Primit
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 alignMode
 
-
 </td><td>
 
 [EPCB\_PrimitiveStringAlignMode](../enums/EPCB_PrimitiveStringAlignMode.md)
-
 
 </td><td>
 
 Alignment mode
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1918,7 +1699,6 @@ Alignment mode
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1957,7 +1737,7 @@ Set the property state: inverted expansion
 ## Signature
 
 ```typescript
-public setState_Expansion(expansion: number): IPCB_PrimitiveAttribute;
+function setState_Expansion(expansion: number): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -1966,37 +1746,29 @@ public setState_Expansion(expansion: number): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 expansion
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Inverted expansion
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2005,7 +1777,6 @@ Inverted expansion
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2044,7 +1815,7 @@ Set the property state: font
 ## Signature
 
 ```typescript
-public setState_FontFamily(fontFamily: string): IPCB_PrimitiveAttribute;
+function setState_FontFamily(fontFamily: string): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2053,37 +1824,29 @@ public setState_FontFamily(fontFamily: string): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fontFamily
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Font
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2092,7 +1855,6 @@ Font
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2131,7 +1893,7 @@ Set the property state: font size
 ## Signature
 
 ```typescript
-public setState_FontSize(fontSize: number): IPCB_PrimitiveAttribute;
+function setState_FontSize(fontSize: number): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2140,37 +1902,29 @@ public setState_FontSize(fontSize: number): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fontSize
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Font size
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2179,7 +1933,6 @@ Font size
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2218,7 +1971,7 @@ Set the property state: Key
 ## Signature
 
 ```typescript
-public setState_Key(key: string): IPCB_PrimitiveAttribute;
+function setState_Key(key: string): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2227,37 +1980,29 @@ public setState_Key(key: string): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 key
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Key
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2266,7 +2011,6 @@ Key
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2305,7 +2049,7 @@ Set the property state: Key whether it is visible
 ## Signature
 
 ```typescript
-public setState_KeyVisible(keyVisible: boolean): IPCB_PrimitiveAttribute;
+function setState_KeyVisible(keyVisible: boolean): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2314,37 +2058,29 @@ public setState_KeyVisible(keyVisible: boolean): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 keyVisible
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Key whether it is visible
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2353,7 +2089,6 @@ Key whether it is visible
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2392,7 +2127,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfImage): IPCB_PrimitiveAttribute;
+function setState_Layer(layer: TPCB_LayersOfImage): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2401,37 +2136,29 @@ public setState_Layer(layer: TPCB_LayersOfImage): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfImage](../types/TPCB_LayersOfImage.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2440,7 +2167,6 @@ Layer
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2479,7 +2205,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number): IPCB_PrimitiveAttribute;
+function setState_LineWidth(lineWidth: number): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2488,37 +2214,29 @@ public setState_LineWidth(lineWidth: number): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2527,7 +2245,6 @@ Line width
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2566,7 +2283,7 @@ Set the property state: whether it is mirrored
 ## Signature
 
 ```typescript
-public setState_Mirror(mirror: boolean): IPCB_PrimitiveAttribute;
+function setState_Mirror(mirror: boolean): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2575,37 +2292,29 @@ public setState_Mirror(mirror: boolean): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2614,7 +2323,6 @@ Whether it is mirrored
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2653,7 +2361,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveAttribute;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2662,37 +2370,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2701,7 +2401,6 @@ Whether it is locked
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2740,7 +2439,7 @@ Set the property state: whether it is inverted
 ## Signature
 
 ```typescript
-public setState_Reverse(reverse: boolean): IPCB_PrimitiveAttribute;
+function setState_Reverse(reverse: boolean): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2749,37 +2448,29 @@ public setState_Reverse(reverse: boolean): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 reverse
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is inverted
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2792,7 +2483,6 @@ Attribute primitive object
 The default font does not support inversion
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2832,7 +2522,7 @@ Set the property state: rotation angle
 ## Signature
 
 ```typescript
-public setState_Rotation(rotation: number): IPCB_PrimitiveAttribute;
+function setState_Rotation(rotation: number): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2841,37 +2531,29 @@ public setState_Rotation(rotation: number): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 rotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2880,7 +2562,6 @@ Rotation angle
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2919,7 +2600,7 @@ Set the property state: Value
 ## Signature
 
 ```typescript
-public setState_Value(value: string): IPCB_PrimitiveAttribute;
+function setState_Value(value: string): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -2928,37 +2609,29 @@ public setState_Value(value: string): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 value
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Value
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2967,7 +2640,6 @@ Value
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2986,7 +2658,7 @@ const before = designator.getState_Value();
 
 // 4. 切换异步模式修改属性值并提交
 const asyncAttr = designator.toAsync();
-asyncAttr.setState_Value(before + '-MOD');
+asyncAttr.setState_Value(`${before}-MOD`);
 await asyncAttr.done();
 
 // 5. 从画布重新读取，确认修改已生效（保留现场供观察）
@@ -3006,7 +2678,7 @@ Set the property state: Value whether it is visible
 ## Signature
 
 ```typescript
-public setState_ValueVisible(valueVisible: boolean): IPCB_PrimitiveAttribute;
+function setState_ValueVisible(valueVisible: boolean): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -3015,37 +2687,29 @@ public setState_ValueVisible(valueVisible: boolean): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 valueVisible
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Value whether it is visible
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3054,7 +2718,6 @@ Value whether it is visible
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3093,7 +2756,7 @@ Set the property state: X coordinate
 ## Signature
 
 ```typescript
-public setState_X(x: number): IPCB_PrimitiveAttribute;
+function setState_X(x: number): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -3102,37 +2765,29 @@ public setState_X(x: number): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 X coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3141,7 +2796,6 @@ X coordinate
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3180,7 +2834,7 @@ Set the property state: Y coordinate
 ## Signature
 
 ```typescript
-public setState_Y(y: number): IPCB_PrimitiveAttribute;
+function setState_Y(y: number): IPCB_PrimitiveAttribute;
 ```
 
 ## Parameters
@@ -3189,37 +2843,29 @@ public setState_Y(y: number): IPCB_PrimitiveAttribute;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3228,7 +2874,6 @@ Y coordinate
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3265,9 +2910,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveAttribute;
+function toAsync(): IPCB_PrimitiveAttribute;
 ```
-
 
 ## Returns
 
@@ -3276,7 +2920,6 @@ public toAsync(): IPCB_PrimitiveAttribute;
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3313,9 +2956,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveAttribute;
+function toSync(): IPCB_PrimitiveAttribute;
 ```
-
 
 ## Returns
 
@@ -3324,7 +2966,6 @@ public toSync(): IPCB_PrimitiveAttribute;
 Attribute primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3343,7 +2984,7 @@ const before = designator.getState_Value();
 
 // 4. 转换为同步图元后直接修改，立即生效（无需 done()）
 const syncAttr = designator.toSync();
-syncAttr.setState_Value(before + '-SYNC');
+syncAttr.setState_Value(`${before}-SYNC`);
 
 // 5. 从画布重新读取，确认修改已生效（保留现场供观察）
 const refetched = await eda.pcb_PrimitiveAttribute.get(designator.getState_PrimitiveId());

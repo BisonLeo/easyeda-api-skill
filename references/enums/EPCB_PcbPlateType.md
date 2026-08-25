@@ -5,7 +5,7 @@ PCB plate type
 ## Signature
 
 ```typescript
-export enum EPCB_PcbPlateType 
+enum EPCB_PcbPlateType
 ```
 
 ## Enumeration Members
@@ -14,44 +14,35 @@ export enum EPCB_PcbPlateType
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 FPC
 
-
 </td><td>
 
 `2`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 NORMAL
 
-
 </td><td>
 
 `1`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

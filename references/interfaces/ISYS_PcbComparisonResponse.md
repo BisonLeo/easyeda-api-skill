@@ -5,7 +5,7 @@ PCB comparison response
 ## Signature
 
 ```typescript
-export interface ISYS_PcbComparisonResponse 
+interface ISYS_PcbComparisonResponse
 ```
 
 ## Properties
@@ -14,78 +14,62 @@ export interface ISYS_PcbComparisonResponse
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [data?](./ISYS_PcbComparisonResponse.md)
 
-
 </td><td>
-
 
 </td><td>
 
 any
 
-
 </td><td>
 
 _(Optional)_ Comparison result (present when `success = true`<!-- -->)
-
 
 </td></tr>
 <tr><td>
 
 [error?](./ISYS_PcbComparisonResponse.md)
 
-
 </td><td>
-
 
 </td><td>
 
 { code: [TSYS\_PcbComparisonErrorCode](../types/TSYS_PcbComparisonErrorCode.md)<!-- -->; message: string }
 
-
 </td><td>
 
 _(Optional)_ Error (present when `success = false`<!-- -->)
-
 
 </td></tr>
 <tr><td>
 
 [success](./ISYS_PcbComparisonResponse.md)
 
-
 </td><td>
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 Whether Successful
-
 
 </td></tr>
 </tbody></table>

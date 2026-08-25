@@ -5,7 +5,7 @@ Single polygon source array
 ## Signature
 
 ```typescript
-export type TPCB_PolygonSourceArray = Array<'L' | 'ARC' | 'CARC' | 'C' | 'R' | 'CIRCLE' | number>;
+type TPCB_PolygonSourceArray = Array<'L' | 'ARC' | 'CARC' | 'C' | 'R' | 'CIRCLE' | number>;
 ```
 
 ## Remarks

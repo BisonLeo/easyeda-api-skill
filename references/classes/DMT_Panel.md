@@ -5,7 +5,7 @@ Document tree / Panel management class
 ## Signature
 
 ```typescript
-export class DMT_Panel 
+class DMT_Panel
 ```
 
 ## Remarks
@@ -18,114 +18,90 @@ Operations related to panel management in the currently open project
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [copyPanel(panelUuid)](./DMT_Panel.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Copy Panel
-
 
 </td></tr>
 <tr><td>
 
 [createPanel()](./DMT_Panel.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Panel
-
 
 </td></tr>
 <tr><td>
 
 [deletePanel(panelUuid)](./DMT_Panel.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Delete Panel
-
 
 </td></tr>
 <tr><td>
 
 [getAllPanelsInfo()](./DMT_Panel.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get all in the project panel detailed properties of
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentPanelInfo()](./DMT_Panel.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get detailed properties of Current panel
-
 
 </td></tr>
 <tr><td>
 
 [getPanelInfo(panelUuid)](./DMT_Panel.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get detailed properties of Panel
-
 
 </td></tr>
 <tr><td>
 
 [modifyPanelName(panelUuid, panelName)](./DMT_Panel.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Modify Panel name
-
 
 </td></tr>
 </tbody></table>
@@ -143,7 +119,7 @@ Copy Panel
 ## Signature
 
 ```typescript
-public copyPanel(panelUuid: string): Promise<string | undefined>;
+function copyPanel(panelUuid: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -152,37 +128,29 @@ public copyPanel(panelUuid: string): Promise<string | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 panelUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Source panel UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -191,7 +159,6 @@ Promise&lt;string \| undefined&gt;
 New panel UUID. If it is `undefined`<!-- -->, the copy failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个专用源面板并等 1.5s 同步（复制前源面板必须已在工作区落地）
@@ -225,9 +192,8 @@ Create Panel
 ## Signature
 
 ```typescript
-public createPanel(): Promise<string | undefined>;
+function createPanel(): Promise<string | undefined>;
 ```
-
 
 ## Returns
 
@@ -236,7 +202,6 @@ Promise&lt;string \| undefined&gt;
 Panel UUID, if it is `undefined` creation fails
 
 ## Example
-
 
 ```javascript
 // 1. 创建面板，返回新面板 UUID
@@ -262,7 +227,7 @@ Delete Panel
 ## Signature
 
 ```typescript
-public deletePanel(panelUuid: string): Promise<boolean>;
+function deletePanel(panelUuid: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -271,37 +236,29 @@ public deletePanel(panelUuid: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 panelUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Panel UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -310,7 +267,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试面板（避免误删工程里的现有面板），等 1.5s 同步
@@ -335,9 +291,8 @@ Get all in the project panel detailed properties of
 ## Signature
 
 ```typescript
-public getAllPanelsInfo(): Promise<Array<IDMT_PanelItem>>;
+function getAllPanelsInfo(): Promise<Array<IDMT_PanelItem>>;
 ```
-
 
 ## Returns
 
@@ -346,7 +301,6 @@ Promise&lt;Array&lt;[IDMT\_PanelItem](../interfaces/IDMT_PanelItem.md)<!-- -->&g
 Array of detailed properties of all panels
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试面板并等 1.5s 同步，保证列表里有新近创建的对象
@@ -358,7 +312,7 @@ const panels = await eda.dmt_Panel.getAllPanelsInfo();
 
 // 3. 输出每个面板的名称与 UUID，确认测试面板在列
 panels.forEach((p, i) => {
-  console.log(`panel[${i}]:`, p.name, p.uuid);
+	console.log(`panel[${i}]:`, p.name, p.uuid);
 });
 console.log('total:', panels.length);
 console.log('test panel included:', panels.some(p => p.uuid === panelUuid));
@@ -376,9 +330,8 @@ Get detailed properties of Current panel
 ## Signature
 
 ```typescript
-public getCurrentPanelInfo(): Promise<IDMT_PanelItem | undefined>;
+function getCurrentPanelInfo(): Promise<IDMT_PanelItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -391,7 +344,6 @@ Panel detailed properties of; if it is `undefined`<!-- -->, the retrieval failed
 It will get the detailed properties of the currently open panel that has the last input focus
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试面板并打开它，让焦点落到面板文档上（原理图/PCB 焦点下返回 undefined）
@@ -421,7 +373,7 @@ Get detailed properties of Panel
 ## Signature
 
 ```typescript
-public getPanelInfo(panelUuid: string): Promise<IDMT_PanelItem | undefined>;
+function getPanelInfo(panelUuid: string): Promise<IDMT_PanelItem | undefined>;
 ```
 
 ## Parameters
@@ -430,37 +382,29 @@ public getPanelInfo(panelUuid: string): Promise<IDMT_PanelItem | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 panelUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Panel UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -469,7 +413,6 @@ Promise&lt;[IDMT\_PanelItem](../interfaces/IDMT_PanelItem.md) \| undefined&gt;
 Panel detailed properties of; if it is `undefined`<!-- -->, the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试面板并等 1.5s 同步
@@ -497,7 +440,7 @@ Modify Panel name
 ## Signature
 
 ```typescript
-public modifyPanelName(panelUuid: string, panelName: string): Promise<boolean>;
+function modifyPanelName(panelUuid: string, panelName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -506,53 +449,42 @@ public modifyPanelName(panelUuid: string, panelName: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 panelUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Panel UUID
-
 
 </td></tr>
 <tr><td>
 
 panelName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Panel name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -562,20 +494,19 @@ Whether Modify Successful
 
 ## Example
 
-
 ```javascript
 // 1. 改名目标优先用当前面板（它必然已打开），其次用列表里的现有面板，都没有时创建一个
 let target = await eda.dmt_Panel.getCurrentPanelInfo();
 if (!target) {
-  const panels = await eda.dmt_Panel.getAllPanelsInfo();
-  target = panels[0];
+	const panels = await eda.dmt_Panel.getAllPanelsInfo();
+	target = panels[0];
 }
 let createdHere = false;
 if (!target) {
-  createdHere = true;
-  const uuid = await eda.dmt_Panel.createPanel();
-  await new Promise(r => setTimeout(r, 1500));
-  target = await eda.dmt_Panel.getPanelInfo(uuid);
+	createdHere = true;
+	const uuid = await eda.dmt_Panel.createPanel();
+	await new Promise(r => setTimeout(r, 1500));
+	target = await eda.dmt_Panel.getPanelInfo(uuid);
 }
 
 // 2. 打开目标面板（改名只对已打开的面板生效）
@@ -595,6 +526,6 @@ console.log('renameVerified:', (info?.name ?? '').toLowerCase() === newName.toLo
 
 // 5. 本例创建的测试面板验证后删除清理；现有面板保留改名现场，人工验收后可改回原名
 if (createdHere) {
-  await eda.dmt_Panel.deletePanel(target.uuid);
+	await eda.dmt_Panel.deletePanel(target.uuid);
 }
 ```

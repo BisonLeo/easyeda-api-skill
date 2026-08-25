@@ -5,7 +5,7 @@ Arc line primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveArc implements IPCB_Primitive 
+class IPCB_PrimitiveArc implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -13,443 +13,349 @@ export class IPCB_PrimitiveArc implements IPCB_Primitive
 
 Both lines and arc lines are wires, corresponding to the line traces and arc traces on the canvas
 
-
 ## Methods
 
 <table><thead><tr><th>
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getAdjacentPrimitives()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Adjacent primitive objects
 
+</td></tr>
+<tr><td>
+
+[getEntireTrack(includeVias)](./IPCB_PrimitiveArc.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get the entire wire
 
 </td></tr>
 <tr><td>
 
 [getEntireTrack(includeVias)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get the entire wire
-
-
-</td></tr>
-<tr><td>
-
-[getEntireTrack(includeVias)](./IPCB_PrimitiveArc.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the entire wire
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ArcAngle()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: arc angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_EndX()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: end position X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_EndY()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: end position Y
-
 
 </td></tr>
 <tr><td>
 
 [getState\_InteractiveMode()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: interaction mode
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Net()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_StartX()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: start position X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_StartY()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: start position Y
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_ArcAngle(arcAngle)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: arc angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_EndX(endX)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: end position X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_EndY(endY)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: end position Y
-
 
 </td></tr>
 <tr><td>
 
 [setState\_InteractiveMode(interactiveMode)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: interaction mode
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Net(net)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_StartX(startX)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: start position X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_StartY(startY)](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: start position Y
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveArc.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -469,9 +375,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveArc>;
+function done(): Promise<IPCB_PrimitiveArc>;
 ```
-
 
 ## Returns
 
@@ -480,7 +385,6 @@ Promise&lt;[IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)<!-- -->&gt;
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -516,9 +420,10 @@ Get Adjacent primitive objects
 ## Signature
 
 ```typescript
-public getAdjacentPrimitives(): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveVia | IPCB_PrimitiveArc>>;
+function getAdjacentPrimitives(): Promise<
+	Array<IPCB_PrimitiveLine | IPCB_PrimitiveVia | IPCB_PrimitiveArc>
+>;
 ```
-
 
 ## Returns
 
@@ -531,7 +436,6 @@ Adjacent line, via, and arc-line primitive objects
 It will get the line, via, and arc-line primitive objects directly connected to the arc line
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条直线走线，终点落在 (7500, 7000)
@@ -549,7 +453,7 @@ await eda.pcb_PrimitiveArc.delete([arc]);
 
 console.log('adjacent count:', adjacent.length);
 adjacent.forEach((p, i) => {
-  console.log(`adjacent[${i}] type:`, p.getState_PrimitiveType());
+	console.log(`adjacent[${i}] type:`, p.getState_PrimitiveType());
 });
 ```
 
@@ -564,7 +468,7 @@ Get the entire wire
 ## Signature
 
 ```typescript
-public getEntireTrack(includeVias: false): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc>>;
+function getEntireTrack(includeVias: false): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc>>;
 ```
 
 ## Parameters
@@ -573,37 +477,29 @@ public getEntireTrack(includeVias: false): Promise<Array<IPCB_PrimitiveLine | IP
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 includeVias
 
-
 </td><td>
 
 false
-
 
 </td><td>
 
 Whether to include the vias at both ends of the wire
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -612,7 +508,6 @@ Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_Pri
 All lines and arc lines in the entire wire
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条直线走线，终点落在 (7500, 7000)
@@ -633,7 +528,7 @@ await eda.pcb_PrimitiveArc.delete([arc]);
 
 console.log('track(false) count:', trackOnly.length);
 trackOnly.forEach((p, i) => {
-  console.log(`track(false)[${i}] type:`, p.getState_PrimitiveType());
+	console.log(`track(false)[${i}] type:`, p.getState_PrimitiveType());
 });
 console.log('track(true) count:', trackWithVias.length);
 ```
@@ -649,7 +544,9 @@ Get the entire wire
 ## Signature
 
 ```typescript
-public getEntireTrack(includeVias: true): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc | IPCB_PrimitiveVia>>;
+function getEntireTrack(
+	includeVias: true,
+): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc | IPCB_PrimitiveVia>>;
 ```
 
 ## Parameters
@@ -658,37 +555,29 @@ public getEntireTrack(includeVias: true): Promise<Array<IPCB_PrimitiveLine | IPC
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 includeVias
 
-
 </td><td>
 
 true
-
 
 </td><td>
 
 Whether to include the vias at both ends of the wire
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -705,9 +594,8 @@ Get the property state: arc angle
 ## Signature
 
 ```typescript
-public getState_ArcAngle(): number;
+function getState_ArcAngle(): number;
 ```
-
 
 ## Returns
 
@@ -716,7 +604,6 @@ number
 Arc angle
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段 90° 测试圆弧（PCB 坐标单位 mil）
@@ -740,9 +627,8 @@ Get the property state: end position X
 ## Signature
 
 ```typescript
-public getState_EndX(): number;
+function getState_EndX(): number;
 ```
-
 
 ## Returns
 
@@ -751,7 +637,6 @@ number
 End position X
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段测试圆弧，终点 (1500, 1300)（PCB 坐标单位 mil）
@@ -775,9 +660,8 @@ Get the property state: end position Y
 ## Signature
 
 ```typescript
-public getState_EndY(): number;
+function getState_EndY(): number;
 ```
-
 
 ## Returns
 
@@ -786,7 +670,6 @@ number
 End position Y
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段测试圆弧，终点 (1500, 1300)（PCB 坐标单位 mil）
@@ -810,9 +693,8 @@ Get the property state: interaction mode
 ## Signature
 
 ```typescript
-public getState_InteractiveMode(): EPCB_PrimitiveArcInteractiveMode;
+function getState_InteractiveMode(): EPCB_PrimitiveArcInteractiveMode;
 ```
-
 
 ## Returns
 
@@ -821,7 +703,6 @@ public getState_InteractiveMode(): EPCB_PrimitiveArcInteractiveMode;
 Interaction mode
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段两点圆弧（交互模式 1）的测试圆弧
@@ -845,9 +726,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfLine;
+function getState_Layer(): TPCB_LayersOfLine;
 ```
-
 
 ## Returns
 
@@ -856,7 +736,6 @@ public getState_Layer(): TPCB_LayersOfLine;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段顶层（1）测试圆弧
@@ -880,9 +759,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number;
+function getState_LineWidth(): number;
 ```
-
 
 ## Returns
 
@@ -891,7 +769,6 @@ number
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段 10mil 线宽的测试圆弧
@@ -915,9 +792,8 @@ Get the property state: net name
 ## Signature
 
 ```typescript
-public getState_Net(): string;
+function getState_Net(): string;
 ```
-
 
 ## Returns
 
@@ -926,7 +802,6 @@ string
 Net name
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段指定网络的测试圆弧
@@ -950,9 +825,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -961,7 +835,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段测试圆弧
@@ -989,9 +862,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -1000,7 +872,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段测试圆弧（默认不锁定）
@@ -1024,9 +895,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -1035,7 +905,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段测试圆弧
@@ -1059,9 +928,8 @@ Get the property state: start position X
 ## Signature
 
 ```typescript
-public getState_StartX(): number;
+function getState_StartX(): number;
 ```
-
 
 ## Returns
 
@@ -1070,7 +938,6 @@ number
 Start position X
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段测试圆弧，起点 (1000, 1000)（PCB 坐标单位 mil）
@@ -1094,9 +961,8 @@ Get the property state: start position Y
 ## Signature
 
 ```typescript
-public getState_StartY(): number;
+function getState_StartY(): number;
 ```
-
 
 ## Returns
 
@@ -1105,7 +971,6 @@ number
 Start position Y
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段测试圆弧，起点 (1000, 1000)（PCB 坐标单位 mil）
@@ -1129,9 +994,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -1140,7 +1004,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一段测试圆弧，创建后默认处于异步模式
@@ -1169,9 +1032,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveArc>;
+function reset(): Promise<IPCB_PrimitiveArc>;
 ```
-
 
 ## Returns
 
@@ -1180,7 +1042,6 @@ Promise&lt;[IPCB\_PrimitiveArc](./IPCB_PrimitiveArc.md)<!-- -->&gt;
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1214,7 +1075,7 @@ Set the property state: arc angle
 ## Signature
 
 ```typescript
-public setState_ArcAngle(arcAngle: number): IPCB_PrimitiveArc;
+function setState_ArcAngle(arcAngle: number): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1223,37 +1084,29 @@ public setState_ArcAngle(arcAngle: number): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 arcAngle
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Arc angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1262,7 +1115,6 @@ Arc angle
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1298,7 +1150,7 @@ Set the property state: end position X
 ## Signature
 
 ```typescript
-public setState_EndX(endX: number): IPCB_PrimitiveArc;
+function setState_EndX(endX: number): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1307,37 +1159,29 @@ public setState_EndX(endX: number): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 endX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 End position X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1346,7 +1190,6 @@ End position X
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1382,7 +1225,7 @@ Set the property state: end position Y
 ## Signature
 
 ```typescript
-public setState_EndY(endY: number): IPCB_PrimitiveArc;
+function setState_EndY(endY: number): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1391,37 +1234,29 @@ public setState_EndY(endY: number): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 endY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 End position Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1430,7 +1265,6 @@ End position Y
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1466,7 +1300,9 @@ Set the property state: interaction mode
 ## Signature
 
 ```typescript
-public setState_InteractiveMode(interactiveMode: EPCB_PrimitiveArcInteractiveMode): IPCB_PrimitiveArc;
+function setState_InteractiveMode(
+	interactiveMode: EPCB_PrimitiveArcInteractiveMode,
+): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1475,37 +1311,29 @@ public setState_InteractiveMode(interactiveMode: EPCB_PrimitiveArcInteractiveMod
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 interactiveMode
 
-
 </td><td>
 
 [EPCB\_PrimitiveArcInteractiveMode](../enums/EPCB_PrimitiveArcInteractiveMode.md)
-
 
 </td><td>
 
 Interaction mode
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1514,7 +1342,6 @@ Interaction mode
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1550,7 +1377,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfLine): IPCB_PrimitiveArc;
+function setState_Layer(layer: TPCB_LayersOfLine): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1559,37 +1386,29 @@ public setState_Layer(layer: TPCB_LayersOfLine): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1598,7 +1417,6 @@ Layer
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1634,7 +1452,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number): IPCB_PrimitiveArc;
+function setState_LineWidth(lineWidth: number): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1643,37 +1461,29 @@ public setState_LineWidth(lineWidth: number): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1682,7 +1492,6 @@ Line width
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1718,7 +1527,7 @@ Set the property state: net name
 ## Signature
 
 ```typescript
-public setState_Net(net: string): IPCB_PrimitiveArc;
+function setState_Net(net: string): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1727,37 +1536,29 @@ public setState_Net(net: string): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1766,7 +1567,6 @@ Net name
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1802,7 +1602,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveArc;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1811,37 +1611,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1850,7 +1642,6 @@ Whether it is locked
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1886,7 +1677,7 @@ Set the property state: start position X
 ## Signature
 
 ```typescript
-public setState_StartX(startX: number): IPCB_PrimitiveArc;
+function setState_StartX(startX: number): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1895,37 +1686,29 @@ public setState_StartX(startX: number): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 startX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Start position X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1934,7 +1717,6 @@ Start position X
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -1970,7 +1752,7 @@ Set the property state: start position Y
 ## Signature
 
 ```typescript
-public setState_StartY(startY: number): IPCB_PrimitiveArc;
+function setState_StartY(startY: number): IPCB_PrimitiveArc;
 ```
 
 ## Parameters
@@ -1979,37 +1761,29 @@ public setState_StartY(startY: number): IPCB_PrimitiveArc;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 startY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Start position Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2018,7 +1792,6 @@ Start position Y
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -2052,9 +1825,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveArc;
+function toAsync(): IPCB_PrimitiveArc;
 ```
-
 
 ## Returns
 
@@ -2063,7 +1835,6 @@ public toAsync(): IPCB_PrimitiveArc;
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合
@@ -2097,9 +1868,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveArc;
+function toSync(): IPCB_PrimitiveArc;
 ```
-
 
 ## Returns
 
@@ -2108,7 +1878,6 @@ public toSync(): IPCB_PrimitiveArc;
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试圆弧重合

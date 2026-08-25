@@ -5,7 +5,7 @@ System / math class
 ## Signature
 
 ```typescript
-export class SYS_Math 
+class SYS_Math
 ```
 
 ## Remarks
@@ -18,240 +18,189 @@ Provides polygon geometry calculation methods, supporting discrete point coordin
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [bboxIntersects(bbox1, bbox2)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Quickly determine whether two BBoxes intersect
-
 
 </td></tr>
 <tr><td>
 
 [calculateArea(polygon)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Calculate the area of a polygon
-
 
 </td></tr>
 <tr><td>
 
 [calculatePerimeter(polygon)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Calculate the perimeter of a polygon
-
 
 </td></tr>
 <tr><td>
 
 [contains(polygon1, polygon2)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Determine whether polygon1 completely contains polygon2
-
 
 </td></tr>
 <tr><td>
 
 [containsPoint(polygon, point)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Determine whether the point is inside the polygon
-
 
 </td></tr>
 <tr><td>
 
 [distanceToPoint(polygon, point)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Calculate the shortest distance from a point to the polygon boundary
-
 
 </td></tr>
 <tr><td>
 
 [getBBox(polygon)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the minimum bounding rectangle (BBox) of the polygon
-
 
 </td></tr>
 <tr><td>
 
 [getCentroid(polygon)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Calculate the centroid of the polygon
-
 
 </td></tr>
 <tr><td>
 
 [intersection(polygon1, polygon2)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Calculate the intersection of two polygons
-
 
 </td></tr>
 <tr><td>
 
 [intersects(polygon1, polygon2)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Determine whether two polygons intersect
-
 
 </td></tr>
 <tr><td>
 
 [rotate(polygon, angle, centerX, centerY)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Rotate the polygon
-
 
 </td></tr>
 <tr><td>
 
 [scale(polygon, scaleX, scaleY, centerX, centerY)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Scale the polygon
-
 
 </td></tr>
 <tr><td>
 
 [subtract(polygon1, polygon2)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Calculate the difference of two polygons (polygon1 - polygon2)
-
 
 </td></tr>
 <tr><td>
 
 [translate(polygon, dx, dy)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Translate the polygon
-
 
 </td></tr>
 <tr><td>
 
 [union(polygon1, polygon2)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Calculate the union of two polygons
-
 
 </td></tr>
 <tr><td>
 
 [xor(polygon1, polygon2)](./SYS_Math.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Calculate the symmetric difference (XOR) of two polygons
-
 
 </td></tr>
 </tbody></table>
@@ -269,7 +218,7 @@ Quickly determine whether two BBoxes intersect
 ## Signature
 
 ```typescript
-public bboxIntersects(bbox1: ISYS_MathBBox, bbox2: ISYS_MathBBox): boolean;
+function bboxIntersects(bbox1: ISYS_MathBBox, bbox2: ISYS_MathBBox): boolean;
 ```
 
 ## Parameters
@@ -278,53 +227,42 @@ public bboxIntersects(bbox1: ISYS_MathBBox, bbox2: ISYS_MathBBox): boolean;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 bbox1
 
-
 </td><td>
 
 [ISYS\_MathBBox](../interfaces/ISYS_MathBBox.md)
 
-
 </td><td>
 
 BBox 1
-
 
 </td></tr>
 <tr><td>
 
 bbox2
 
-
 </td><td>
 
 [ISYS\_MathBBox](../interfaces/ISYS_MathBBox.md)
-
 
 </td><td>
 
 BBox 2
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -333,7 +271,6 @@ boolean
 Whether they intersect
 
 ## Example
-
 
 ```javascript
 // 1. 两块铺铜区域的外接矩形（部分重叠）
@@ -359,7 +296,7 @@ Calculate the area of a polygon
 ## Signature
 
 ```typescript
-public calculateArea(polygon: TSYS_MathPolygonInput): number;
+function calculateArea(polygon: TSYS_MathPolygonInput): number;
 ```
 
 ## Parameters
@@ -368,37 +305,29 @@ public calculateArea(polygon: TSYS_MathPolygonInput): number;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Polygon or polygon group
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -411,7 +340,6 @@ Area (absolute area for a single polygon, net area for a polygon group)
 Calculated using the Shoelace formula: - When a single polygon is passed in, the absolute area of the polygon is returned - When a polygon group ([TSYS\_MathPolygonGroup](../types/TSYS_MathPolygonGroup.md)<!-- -->, such as the return value of Boolean operations) is passed in, the net area is obtained by subtracting the sum of all hole areas from the sum of all outer ring areas
 
 ## Example
-
 
 ```javascript
 // 1. 单个矩形 100 x 80（单位随输入坐标系，PCB 场景下通常是 mil）
@@ -437,7 +365,7 @@ Calculate the perimeter of a polygon
 ## Signature
 
 ```typescript
-public calculatePerimeter(polygon: TSYS_MathPolygonInput): number;
+function calculatePerimeter(polygon: TSYS_MathPolygonInput): number;
 ```
 
 ## Parameters
@@ -446,37 +374,29 @@ public calculatePerimeter(polygon: TSYS_MathPolygonInput): number;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Polygon
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -486,7 +406,6 @@ Perimeter
 
 ## Example
 
-
 ```javascript
 // 1. 矩形 100 x 80，周长应为 360
 const rect = [{ x: 0, y: 0 }, { x: 100, y: 0 }, { x: 100, y: 80 }, { x: 0, y: 80 }];
@@ -494,8 +413,12 @@ console.log('矩形周长：', eda.sys_Math.calculatePerimeter(rect));
 
 // 2. L 形轮廓（缺口裁掉一个角，周长按实际边界累加）
 const lShape = [
-  { x: 0, y: 0 }, { x: 100, y: 0 }, { x: 100, y: 40 },
-  { x: 40, y: 40 }, { x: 40, y: 80 }, { x: 0, y: 80 },
+	{ x: 0, y: 0 },
+	{ x: 100, y: 0 },
+	{ x: 100, y: 40 },
+	{ x: 40, y: 40 },
+	{ x: 40, y: 80 },
+	{ x: 0, y: 80 },
 ];
 console.log('L 形轮廓周长：', eda.sys_Math.calculatePerimeter(lShape));
 
@@ -514,7 +437,7 @@ Determine whether polygon1 completely contains polygon2
 ## Signature
 
 ```typescript
-public contains(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): boolean;
+function contains(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): boolean;
 ```
 
 ## Parameters
@@ -523,53 +446,42 @@ public contains(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon1
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Outer polygon
-
 
 </td></tr>
 <tr><td>
 
 polygon2
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Internal polygon
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -578,7 +490,6 @@ boolean
 Whether polygon1 completely contains polygon2
 
 ## Example
-
 
 ```javascript
 // 1. 小矩形完全落在大矩形内部 → true
@@ -603,7 +514,7 @@ Determine whether the point is inside the polygon
 ## Signature
 
 ```typescript
-public containsPoint(polygon: TSYS_MathPolygonInput, point: ISYS_MathPoint): boolean;
+function containsPoint(polygon: TSYS_MathPolygonInput, point: ISYS_MathPoint): boolean;
 ```
 
 ## Parameters
@@ -612,53 +523,42 @@ public containsPoint(polygon: TSYS_MathPolygonInput, point: ISYS_MathPoint): boo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon
-
 
 </td></tr>
 <tr><td>
 
 point
 
-
 </td><td>
 
 [ISYS\_MathPoint](../interfaces/ISYS_MathPoint.md)
-
 
 </td><td>
 
 The point to determine
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -676,13 +576,12 @@ To strictly determine whether the point is on the boundary, combine [SYS\_Math.d
 
 ## Example
 
-
 ```javascript
 // 1. 定义一块禁布区，测试三个典型位置的点
 const keepout = [{ x: 0, y: 0 }, { x: 100, y: 0 }, { x: 100, y: 80 }, { x: 0, y: 80 }];
-const inside = { x: 50, y: 40 };    // 区域中心，明显在内部
-const outside = { x: 150, y: 40 };  // 区域右侧，明显在外部
-const corner = { x: 0, y: 0 };      // 顶点，落在边界上
+const inside = { x: 50, y: 40 }; // 区域中心，明显在内部
+const outside = { x: 150, y: 40 }; // 区域右侧，明显在外部
+const corner = { x: 0, y: 0 }; // 顶点，落在边界上
 
 console.log('中心点在禁布区内：', eda.sys_Math.containsPoint(keepout, inside));
 console.log('外部点在禁布区内：', eda.sys_Math.containsPoint(keepout, outside));
@@ -701,7 +600,7 @@ Calculate the shortest distance from a point to the polygon boundary
 ## Signature
 
 ```typescript
-public distanceToPoint(polygon: TSYS_MathPolygonInput, point: ISYS_MathPoint): number;
+function distanceToPoint(polygon: TSYS_MathPolygonInput, point: ISYS_MathPoint): number;
 ```
 
 ## Parameters
@@ -710,53 +609,42 @@ public distanceToPoint(polygon: TSYS_MathPolygonInput, point: ISYS_MathPoint): n
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon
-
 
 </td></tr>
 <tr><td>
 
 point
 
-
 </td><td>
 
 [ISYS\_MathPoint](../interfaces/ISYS_MathPoint.md)
-
 
 </td><td>
 
 The point to calculate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -765,7 +653,6 @@ number
 Shortest distance. If the point is inside the polygon, `0` is returned
 
 ## Example
-
 
 ```javascript
 // 1. 定义矩形区域（右边界在 x = 100）
@@ -793,7 +680,7 @@ Get the minimum bounding rectangle (BBox) of the polygon
 ## Signature
 
 ```typescript
-public getBBox(polygon: TSYS_MathPolygonInput): ISYS_MathBBox;
+function getBBox(polygon: TSYS_MathPolygonInput): ISYS_MathBBox;
 ```
 
 ## Parameters
@@ -802,37 +689,29 @@ public getBBox(polygon: TSYS_MathPolygonInput): ISYS_MathBBox;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Polygon
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -841,7 +720,6 @@ Polygon
 BBox
 
 ## Example
-
 
 ```javascript
 // 1. 斜置的三角形，外接矩形由三个顶点的极值决定
@@ -869,7 +747,7 @@ Calculate the centroid of the polygon
 ## Signature
 
 ```typescript
-public getCentroid(polygon: TSYS_MathPolygonInput): ISYS_MathPoint;
+function getCentroid(polygon: TSYS_MathPolygonInput): ISYS_MathPoint;
 ```
 
 ## Parameters
@@ -878,37 +756,29 @@ public getCentroid(polygon: TSYS_MathPolygonInput): ISYS_MathPoint;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Polygon
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -918,7 +788,6 @@ Centroid coordinate
 
 ## Example
 
-
 ```javascript
 // 1. 规则矩形：质心就是几何中心 (50, 40)
 const rect = [{ x: 0, y: 0 }, { x: 100, y: 0 }, { x: 100, y: 80 }, { x: 0, y: 80 }];
@@ -926,8 +795,12 @@ console.log('矩形质心：', JSON.stringify(eda.sys_Math.getCentroid(rect)));
 
 // 2. L 形轮廓：质心向材料厚的一侧偏移，不再等于外接矩形中心 (50, 40)
 const lShape = [
-  { x: 0, y: 0 }, { x: 100, y: 0 }, { x: 100, y: 40 },
-  { x: 40, y: 40 }, { x: 40, y: 80 }, { x: 0, y: 80 },
+	{ x: 0, y: 0 },
+	{ x: 100, y: 0 },
+	{ x: 100, y: 40 },
+	{ x: 40, y: 40 },
+	{ x: 40, y: 80 },
+	{ x: 0, y: 80 },
 ];
 const centroid = eda.sys_Math.getCentroid(lShape);
 console.log('L 形质心：', JSON.stringify(centroid));
@@ -946,7 +819,10 @@ Calculate the intersection of two polygons
 ## Signature
 
 ```typescript
-public intersection(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): TSYS_MathPolygonGroup;
+function intersection(
+	polygon1: TSYS_MathPolygonInput,
+	polygon2: TSYS_MathPolygonInput,
+): TSYS_MathPolygonGroup;
 ```
 
 ## Parameters
@@ -955,53 +831,42 @@ public intersection(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonI
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon1
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon 1
-
 
 </td></tr>
 <tr><td>
 
 polygon2
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Polygon 2
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1010,7 +875,6 @@ Polygon 2
 Polygon group of the intersection result. An empty array means no intersection
 
 ## Example
-
 
 ```javascript
 // 1. 两块部分重叠的矩形区域
@@ -1040,7 +904,7 @@ Determine whether two polygons intersect
 ## Signature
 
 ```typescript
-public intersects(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): boolean;
+function intersects(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): boolean;
 ```
 
 ## Parameters
@@ -1049,53 +913,42 @@ public intersects(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInp
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon1
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon 1
-
 
 </td></tr>
 <tr><td>
 
 polygon2
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Polygon 2
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1108,7 +961,6 @@ Whether they intersect
 Determine whether the regions of two polygons have any overlap (including containment, partial intersection, and boundary contact)
 
 ## Example
-
 
 ```javascript
 // 1. 部分重叠的两个矩形 → true
@@ -1138,7 +990,12 @@ Rotate the polygon
 ## Signature
 
 ```typescript
-public rotate(polygon: TSYS_MathPolygonInput, angle: number, centerX?: number, centerY?: number): Array<ISYS_MathPoint>;
+function rotate(
+	polygon: TSYS_MathPolygonInput,
+	angle: number,
+	centerX?: number,
+	centerY?: number,
+): Array<ISYS_MathPoint>;
 ```
 
 ## Parameters
@@ -1147,85 +1004,68 @@ public rotate(polygon: TSYS_MathPolygonInput, angle: number, centerX?: number, c
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon
-
 
 </td></tr>
 <tr><td>
 
 angle
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Rotation angle (in degrees, positive values are counterclockwise)
-
 
 </td></tr>
 <tr><td>
 
 centerX
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ X coordinate of the rotation center, defaulting to the centroid
-
 
 </td></tr>
 <tr><td>
 
 centerY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Y coordinate of the rotation center, defaulting to the centroid
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1234,7 +1074,6 @@ Array&lt;[ISYS\_MathPoint](../interfaces/ISYS_MathPoint.md)<!-- -->&gt;
 Array of discrete points after rotation
 
 ## Example
-
 
 ```javascript
 // 1. 定义一个矩形安装座
@@ -1245,7 +1084,7 @@ const selfRotated = eda.sys_Math.rotate(mount, 90);
 console.log('绕质心旋转后的顶点：', JSON.stringify(selfRotated));
 
 // 3. 传中心参数：绕坐标原点 (0, 0) 旋转 90 度，图形整体公转
-//    逆时针 90 度把 (x, y) 映射为 (-y, x)
+// 逆时针 90 度把 (x, y) 映射为 (-y, x)
 const originRotated = eda.sys_Math.rotate(mount, 90, 0, 0);
 console.log('绕原点旋转后的顶点：', JSON.stringify(originRotated));
 
@@ -1263,7 +1102,13 @@ Scale the polygon
 ## Signature
 
 ```typescript
-public scale(polygon: TSYS_MathPolygonInput, scaleX: number, scaleY?: number, centerX?: number, centerY?: number): Array<ISYS_MathPoint>;
+function scale(
+	polygon: TSYS_MathPolygonInput,
+	scaleX: number,
+	scaleY?: number,
+	centerX?: number,
+	centerY?: number,
+): Array<ISYS_MathPoint>;
 ```
 
 ## Parameters
@@ -1272,101 +1117,81 @@ public scale(polygon: TSYS_MathPolygonInput, scaleX: number, scaleY?: number, ce
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon
-
 
 </td></tr>
 <tr><td>
 
 scaleX
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X direction scale ratio
-
 
 </td></tr>
 <tr><td>
 
 scaleY
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Y direction scale ratio, defaulting to the same as scaleX
-
 
 </td></tr>
 <tr><td>
 
 centerX
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ X coordinate of the scaling center, defaulting to the centroid
-
 
 </td></tr>
 <tr><td>
 
 centerY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 _(Optional)_ Y coordinate of the scaling center, defaulting to the centroid
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1375,7 +1200,6 @@ Array&lt;[ISYS\_MathPoint](../interfaces/ISYS_MathPoint.md)<!-- -->&gt;
 Array of discrete points after scaling
 
 ## Example
-
 
 ```javascript
 // 1. 定义一个矩形焊区
@@ -1404,7 +1228,10 @@ Calculate the difference of two polygons (polygon1 - polygon2)
 ## Signature
 
 ```typescript
-public subtract(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): TSYS_MathPolygonGroup;
+function subtract(
+	polygon1: TSYS_MathPolygonInput,
+	polygon2: TSYS_MathPolygonInput,
+): TSYS_MathPolygonGroup;
 ```
 
 ## Parameters
@@ -1413,53 +1240,42 @@ public subtract(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon1
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Minuend polygon
-
 
 </td></tr>
 <tr><td>
 
 polygon2
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Subtrahend polygon
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1468,7 +1284,6 @@ Subtrahend polygon
 Polygon group of the difference result, preserving the association between outer rings and holes
 
 ## Example
-
 
 ```javascript
 // 1. 大矩形铺铜区域与一个完全落在其内部的矩形开孔区
@@ -1498,7 +1313,7 @@ Translate the polygon
 ## Signature
 
 ```typescript
-public translate(polygon: TSYS_MathPolygonInput, dx: number, dy: number): Array<ISYS_MathPoint>;
+function translate(polygon: TSYS_MathPolygonInput, dx: number, dy: number): Array<ISYS_MathPoint>;
 ```
 
 ## Parameters
@@ -1507,69 +1322,55 @@ public translate(polygon: TSYS_MathPolygonInput, dx: number, dy: number): Array<
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon
-
 
 </td></tr>
 <tr><td>
 
 dx
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X direction offset
-
 
 </td></tr>
 <tr><td>
 
 dy
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y direction offset
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1578,7 +1379,6 @@ Array&lt;[ISYS\_MathPoint](../interfaces/ISYS_MathPoint.md)<!-- -->&gt;
 Array of discrete points after translation
 
 ## Example
-
 
 ```javascript
 // 1. 定义一个器件占位轮廓
@@ -1605,7 +1405,10 @@ Calculate the union of two polygons
 ## Signature
 
 ```typescript
-public union(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): TSYS_MathPolygonGroup;
+function union(
+	polygon1: TSYS_MathPolygonInput,
+	polygon2: TSYS_MathPolygonInput,
+): TSYS_MathPolygonGroup;
 ```
 
 ## Parameters
@@ -1614,53 +1417,42 @@ public union(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon1
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon 1
-
 
 </td></tr>
 <tr><td>
 
 polygon2
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Polygon 2
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1669,7 +1461,6 @@ Polygon 2
 Polygon group of the union result, preserving the association between outer rings and holes
 
 ## Example
-
 
 ```javascript
 // 1. 两块部分重叠的铺铜区域
@@ -1699,7 +1490,10 @@ Calculate the symmetric difference (XOR) of two polygons
 ## Signature
 
 ```typescript
-public xor(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): TSYS_MathPolygonGroup;
+function xor(
+	polygon1: TSYS_MathPolygonInput,
+	polygon2: TSYS_MathPolygonInput,
+): TSYS_MathPolygonGroup;
 ```
 
 ## Parameters
@@ -1708,53 +1502,42 @@ public xor(polygon1: TSYS_MathPolygonInput, polygon2: TSYS_MathPolygonInput): TS
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 polygon1
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
 
-
 </td><td>
 
 Polygon 1
-
 
 </td></tr>
 <tr><td>
 
 polygon2
 
-
 </td><td>
 
 [TSYS\_MathPolygonInput](../types/TSYS_MathPolygonInput.md)
-
 
 </td><td>
 
 Polygon 2
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1763,7 +1546,6 @@ Polygon 2
 Polygon group of the symmetric difference result, preserving the association between outer rings and holes
 
 ## Example
-
 
 ```javascript
 // 1. 新旧两版部分重叠的板框轮廓
@@ -1778,6 +1560,6 @@ console.log('差异区域多边形个数：', diff.length);
 console.log('差异区域总面积：', eda.sys_Math.calculateArea(diff));
 
 // 4. 完全相同的两个多边形异或结果为空数组（无差异；空组不能再传给
-//    calculateArea，空输入会抛『无法识别的多边形输入格式』）
+// calculateArea，空输入会抛『无法识别的多边形输入格式』）
 console.log('自身与自身异或的差异区域个数：', eda.sys_Math.xor(oldOutline, oldOutline).length);
 ```

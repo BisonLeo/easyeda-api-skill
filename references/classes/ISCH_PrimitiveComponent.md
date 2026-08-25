@@ -5,12 +5,11 @@ Device primitive
 ## Signature
 
 ```typescript
-export class ISCH_PrimitiveComponent implements ISCH_Primitive 
+class ISCH_PrimitiveComponent implements ISCH_Primitive
 ```
 **Implements:** [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
 ## Remarks
-
 
 ## Properties
 
@@ -18,210 +17,170 @@ export class ISCH_PrimitiveComponent implements ISCH_Primitive
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [async](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 异步
-
 
 </td></tr>
 <tr><td>
 
 [designator?](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Component 属性：位号
-
 
 </td></tr>
 <tr><td>
 
 [mirror](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 是否镜像
-
 
 </td></tr>
 <tr><td>
 
 [name?](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Component 属性：名称
-
 
 </td></tr>
 <tr><td>
 
 [otherProperty?](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 Record&lt;string, string \| number \| boolean&gt;
 
-
 </td><td>
 
 _(Optional)_ 其它参数
-
 
 </td></tr>
 <tr><td>
 
 [primitiveId?](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ 图元 ID
-
 
 </td></tr>
 <tr><td>
 
 [rotation](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 旋转角度
-
 
 </td></tr>
 <tr><td>
 
 [x](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 坐标 X
-
 
 </td></tr>
 <tr><td>
 
 [y](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 坐标 Y
-
 
 </td></tr>
 </tbody></table>
@@ -232,618 +191,486 @@ number
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getAllPins()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all pins associated with the device
-
 
 </td></tr>
 <tr><td>
 
 [getState\_AddIntoBom()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether to add BOM
-
 
 </td></tr>
 <tr><td>
 
 [getState\_AddIntoPcb()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether to switch to PCB
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Component()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: associate library device
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ComponentType()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: device type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Designator()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: designator
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Footprint()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: associate library footprint
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Manufacturer()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: manufacturer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ManufacturerId()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: manufacturer ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Mirror()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is mirrored
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Name()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Net()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_OtherProperty()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: other parameters
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Rotation()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_SubPartName()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: sub-part name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Supplier()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: supplier
-
 
 </td></tr>
 <tr><td>
 
 [getState\_SupplierId()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: supplier ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Symbol()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: associate library symbol
-
 
 </td></tr>
 <tr><td>
 
 [getState\_UniqueId()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: unique ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_X()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Y()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_AddIntoBom(addIntoBom)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether to add BOM
-
 
 </td></tr>
 <tr><td>
 
 [setState\_AddIntoPcb(addIntoPcb)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether to switch to PCB
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Designator(designator)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: designator
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Manufacturer(manufacturer)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: manufacturer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_ManufacturerId(manufacturerId)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: manufacturer ID
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Mirror(mirror)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is mirrored
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Name(name)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Net(net)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_OtherProperty(otherProperty)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: other parameters
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Rotation(rotation)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Supplier(supplier)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: supplier
-
 
 </td></tr>
 <tr><td>
 
 [setState\_SupplierId(supplierId)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: supplier ID
-
 
 </td></tr>
 <tr><td>
 
 [setState\_UniqueId(uniqueId)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: unique ID
-
 
 </td></tr>
 <tr><td>
 
 [setState\_X(x)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Y(y)](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Y coordinate
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./ISCH_PrimitiveComponent.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -861,7 +688,7 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-protected async: boolean;
+function async: boolean;
 ```
 
 ### designator
@@ -873,7 +700,7 @@ Component 属性：位号
 ## Signature
 
 ```typescript
-protected designator?: string;
+function designator?: string;
 ```
 
 ### mirror
@@ -885,7 +712,7 @@ protected designator?: string;
 ## Signature
 
 ```typescript
-protected mirror: boolean;
+function mirror: boolean;
 ```
 
 ### name
@@ -897,7 +724,7 @@ Component 属性：名称
 ## Signature
 
 ```typescript
-protected name?: string;
+function name?: string;
 ```
 
 ### otherproperty
@@ -909,7 +736,7 @@ protected name?: string;
 ## Signature
 
 ```typescript
-protected otherProperty?: Record<string, string | number | boolean>;
+function otherProperty?: Record<string, string | number | boolean>;
 ```
 
 ### primitiveid
@@ -921,7 +748,7 @@ protected otherProperty?: Record<string, string | number | boolean>;
 ## Signature
 
 ```typescript
-protected primitiveId?: string;
+function primitiveId?: string;
 ```
 
 ### rotation
@@ -933,7 +760,7 @@ protected primitiveId?: string;
 ## Signature
 
 ```typescript
-protected rotation: number;
+function rotation: number;
 ```
 
 ### x
@@ -945,7 +772,7 @@ protected rotation: number;
 ## Signature
 
 ```typescript
-protected x: number;
+function x: number;
 ```
 
 ### y
@@ -957,7 +784,7 @@ protected x: number;
 ## Signature
 
 ```typescript
-protected y: number;
+function y: number;
 ```
 
 
@@ -976,9 +803,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<ISCH_PrimitiveComponent>;
+function done(): Promise<ISCH_PrimitiveComponent>;
 ```
-
 
 ## Returns
 
@@ -987,7 +813,6 @@ Promise&lt;[ISCH\_PrimitiveComponent](./ISCH_PrimitiveComponent.md)<!-- -->&gt;
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1024,9 +849,8 @@ Get all pins associated with the device
 ## Signature
 
 ```typescript
-public getAllPins(): Promise<Array<ISCH_PrimitiveComponentPin> | undefined>;
+function getAllPins(): Promise<Array<ISCH_PrimitiveComponentPin> | undefined>;
 ```
-
 
 ## Returns
 
@@ -1035,7 +859,6 @@ Promise&lt;Array&lt;[ISCH\_PrimitiveComponentPin](./ISCH_PrimitiveComponentPin.m
 Device pin primitive array
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（C0402 电容有两个引脚，SCH 坐标单位 10mil）
@@ -1061,9 +884,8 @@ Get the property state: whether to add BOM
 ## Signature
 
 ```typescript
-public getState_AddIntoBom(): boolean | undefined;
+function getState_AddIntoBom(): boolean | undefined;
 ```
-
 
 ## Returns
 
@@ -1072,7 +894,6 @@ boolean \| undefined
 Whether Add to BOM
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1098,9 +919,8 @@ Get the property state: whether to switch to PCB
 ## Signature
 
 ```typescript
-public getState_AddIntoPcb(): boolean | undefined;
+function getState_AddIntoPcb(): boolean | undefined;
 ```
-
 
 ## Returns
 
@@ -1109,7 +929,6 @@ boolean \| undefined
 Whether Transfer to PCB
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1135,9 +954,9 @@ Get the property state: associate library device
 ## Signature
 
 ```typescript
-public getState_Component(): { libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
+function getState_Component():
+	{ libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
 ```
-
 
 ## Returns
 
@@ -1146,7 +965,6 @@ public getState_Component(): { libraryUuid: string; uuid: string; name?: undefin
 Associate library device
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1172,9 +990,8 @@ Get the property state: device type
 ## Signature
 
 ```typescript
-public getState_ComponentType(): ESCH_PrimitiveComponentType;
+function getState_ComponentType(): ESCH_PrimitiveComponentType;
 ```
-
 
 ## Returns
 
@@ -1183,7 +1000,6 @@ public getState_ComponentType(): ESCH_PrimitiveComponentType;
 Device type
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（普通元件，SCH 坐标单位 10mil）
@@ -1209,9 +1025,8 @@ Get the property state: designator
 ## Signature
 
 ```typescript
-public getState_Designator(): string | undefined;
+function getState_Designator(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1220,7 +1035,6 @@ string \| undefined
 Designator
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1246,9 +1060,9 @@ Get the property state: associate library footprint
 ## Signature
 
 ```typescript
-public getState_Footprint(): { libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
+function getState_Footprint():
+	{ libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
 ```
-
 
 ## Returns
 
@@ -1257,7 +1071,6 @@ public getState_Footprint(): { libraryUuid: string; uuid: string; name?: undefin
 Associate library footprint
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1283,9 +1096,8 @@ Get the property state: manufacturer
 ## Signature
 
 ```typescript
-public getState_Manufacturer(): string | undefined;
+function getState_Manufacturer(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1294,7 +1106,6 @@ string \| undefined
 Manufacturer
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1320,9 +1131,8 @@ Get the property state: manufacturer ID
 ## Signature
 
 ```typescript
-public getState_ManufacturerId(): string | undefined;
+function getState_ManufacturerId(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1331,7 +1141,6 @@ string \| undefined
 Manufacturer ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1357,9 +1166,8 @@ Get the property state: whether it is mirrored
 ## Signature
 
 ```typescript
-public getState_Mirror(): boolean;
+function getState_Mirror(): boolean;
 ```
-
 
 ## Returns
 
@@ -1368,7 +1176,6 @@ boolean
 Whether it is mirrored
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1394,9 +1201,8 @@ Get the property state: name
 ## Signature
 
 ```typescript
-public getState_Name(): string | undefined;
+function getState_Name(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1405,7 +1211,6 @@ string \| undefined
 Name
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1431,9 +1236,8 @@ Get the property state: net name
 ## Signature
 
 ```typescript
-public getState_Net(): string | undefined;
+function getState_Net(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1442,7 +1246,6 @@ string \| undefined
 Net name
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1468,9 +1271,8 @@ Get the property state: other parameters
 ## Signature
 
 ```typescript
-public getState_OtherProperty(): Record<string, string | number | boolean> | undefined;
+function getState_OtherProperty(): Record<string, string | number | boolean> | undefined;
 ```
-
 
 ## Returns
 
@@ -1479,7 +1281,6 @@ Record&lt;string, string \| number \| boolean&gt; \| undefined
 Other parameters
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1505,9 +1306,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -1516,7 +1316,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1541,9 +1340,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): ESCH_PrimitiveType;
+function getState_PrimitiveType(): ESCH_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -1552,7 +1350,6 @@ public getState_PrimitiveType(): ESCH_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1578,9 +1375,8 @@ Get the property state: rotation angle
 ## Signature
 
 ```typescript
-public getState_Rotation(): number;
+function getState_Rotation(): number;
 ```
-
 
 ## Returns
 
@@ -1589,7 +1385,6 @@ number
 Rotation angle
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1615,9 +1410,8 @@ Get the property state: sub-part name
 ## Signature
 
 ```typescript
-public getState_SubPartName(): string | undefined;
+function getState_SubPartName(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1626,7 +1420,6 @@ string \| undefined
 Sub-part name
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1652,9 +1445,8 @@ Get the property state: supplier
 ## Signature
 
 ```typescript
-public getState_Supplier(): string | undefined;
+function getState_Supplier(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1663,7 +1455,6 @@ string \| undefined
 Supplier
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1689,9 +1480,8 @@ Get the property state: supplier ID
 ## Signature
 
 ```typescript
-public getState_SupplierId(): string | undefined;
+function getState_SupplierId(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1700,7 +1490,6 @@ string \| undefined
 Supplier ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1726,9 +1515,9 @@ Get the property state: associate library symbol
 ## Signature
 
 ```typescript
-public getState_Symbol(): { libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
+function getState_Symbol():
+	{ libraryUuid: string; uuid: string; name?: undefined | string } | undefined;
 ```
-
 
 ## Returns
 
@@ -1737,7 +1526,6 @@ public getState_Symbol(): { libraryUuid: string; uuid: string; name?: undefined 
 Associate library symbol
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1763,9 +1551,8 @@ Get the property state: unique ID
 ## Signature
 
 ```typescript
-public getState_UniqueId(): string | undefined;
+function getState_UniqueId(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1774,7 +1561,6 @@ string \| undefined
 Unique ID
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1800,9 +1586,8 @@ Get the property state: X coordinate
 ## Signature
 
 ```typescript
-public getState_X(): number;
+function getState_X(): number;
 ```
-
 
 ## Returns
 
@@ -1811,7 +1596,6 @@ number
 X coordinate
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil，100 ≈ 25.4mm）
@@ -1837,9 +1621,8 @@ Get the property state: Y coordinate
 ## Signature
 
 ```typescript
-public getState_Y(): number;
+function getState_Y(): number;
 ```
-
 
 ## Returns
 
@@ -1848,7 +1631,6 @@ number
 Y coordinate
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil，100 ≈ 25.4mm）
@@ -1874,9 +1656,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -1885,7 +1666,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 放置一个测试器件（SCH 坐标单位 10mil）
@@ -1918,9 +1698,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<ISCH_PrimitiveComponent>;
+function reset(): Promise<ISCH_PrimitiveComponent>;
 ```
-
 
 ## Returns
 
@@ -1929,7 +1708,6 @@ Promise&lt;[ISCH\_PrimitiveComponent](./ISCH_PrimitiveComponent.md)<!-- -->&gt;
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -1964,7 +1742,7 @@ Set the property state: whether to add BOM
 ## Signature
 
 ```typescript
-public setState_AddIntoBom(addIntoBom: boolean | undefined): ISCH_PrimitiveComponent;
+function setState_AddIntoBom(addIntoBom: boolean | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -1973,37 +1751,29 @@ public setState_AddIntoBom(addIntoBom: boolean | undefined): ISCH_PrimitiveCompo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 addIntoBom
 
-
 </td><td>
 
 boolean \| undefined
-
 
 </td><td>
 
 Whether Add to BOM
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2012,7 +1782,6 @@ Whether Add to BOM
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2046,7 +1815,7 @@ Set the property state: whether to switch to PCB
 ## Signature
 
 ```typescript
-public setState_AddIntoPcb(addIntoPcb: boolean | undefined): ISCH_PrimitiveComponent;
+function setState_AddIntoPcb(addIntoPcb: boolean | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2055,37 +1824,29 @@ public setState_AddIntoPcb(addIntoPcb: boolean | undefined): ISCH_PrimitiveCompo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 addIntoPcb
 
-
 </td><td>
 
 boolean \| undefined
-
 
 </td><td>
 
 Whether Transfer to PCB
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2094,7 +1855,6 @@ Whether Transfer to PCB
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2128,7 +1888,7 @@ Set the property state: designator
 ## Signature
 
 ```typescript
-public setState_Designator(designator: string | undefined): ISCH_PrimitiveComponent;
+function setState_Designator(designator: string | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2137,37 +1897,29 @@ public setState_Designator(designator: string | undefined): ISCH_PrimitiveCompon
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 designator
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Designator
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2176,7 +1928,6 @@ Designator
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2210,7 +1961,7 @@ Set the property state: manufacturer
 ## Signature
 
 ```typescript
-public setState_Manufacturer(manufacturer: string | undefined): ISCH_PrimitiveComponent;
+function setState_Manufacturer(manufacturer: string | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2219,37 +1970,29 @@ public setState_Manufacturer(manufacturer: string | undefined): ISCH_PrimitiveCo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 manufacturer
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Manufacturer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2258,7 +2001,6 @@ Manufacturer
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2292,7 +2034,7 @@ Set the property state: manufacturer ID
 ## Signature
 
 ```typescript
-public setState_ManufacturerId(manufacturerId: string | undefined): ISCH_PrimitiveComponent;
+function setState_ManufacturerId(manufacturerId: string | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2301,37 +2043,29 @@ public setState_ManufacturerId(manufacturerId: string | undefined): ISCH_Primiti
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 manufacturerId
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Manufacturer ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2340,7 +2074,6 @@ Manufacturer ID
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2374,7 +2107,7 @@ Set the property state: whether it is mirrored
 ## Signature
 
 ```typescript
-public setState_Mirror(mirror: boolean): ISCH_PrimitiveComponent;
+function setState_Mirror(mirror: boolean): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2383,37 +2116,29 @@ public setState_Mirror(mirror: boolean): ISCH_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 mirror
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is mirrored
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2422,7 +2147,6 @@ Whether it is mirrored
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2456,7 +2180,7 @@ Set the property state: name
 ## Signature
 
 ```typescript
-public setState_Name(name: string | undefined): ISCH_PrimitiveComponent;
+function setState_Name(name: string | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2465,37 +2189,29 @@ public setState_Name(name: string | undefined): ISCH_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 name
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2504,7 +2220,6 @@ Name
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2538,7 +2253,7 @@ Set the property state: net name
 ## Signature
 
 ```typescript
-public setState_Net(net: string | undefined): ISCH_PrimitiveComponent;
+function setState_Net(net: string | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2547,37 +2262,29 @@ public setState_Net(net: string | undefined): ISCH_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2586,7 +2293,6 @@ Net name
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2620,7 +2326,9 @@ Set the property state: other parameters
 ## Signature
 
 ```typescript
-public setState_OtherProperty(otherProperty: Record<string, string | number | boolean>): ISCH_PrimitiveComponent;
+function setState_OtherProperty(
+	otherProperty: Record<string, string | number | boolean>,
+): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2629,37 +2337,29 @@ public setState_OtherProperty(otherProperty: Record<string, string | number | bo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 otherProperty
 
-
 </td><td>
 
 Record&lt;string, string \| number \| boolean&gt;
-
 
 </td><td>
 
 Other parameters
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2668,7 +2368,6 @@ Other parameters
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2702,7 +2401,7 @@ Set the property state: rotation angle
 ## Signature
 
 ```typescript
-public setState_Rotation(rotation: number): ISCH_PrimitiveComponent;
+function setState_Rotation(rotation: number): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2711,37 +2410,29 @@ public setState_Rotation(rotation: number): ISCH_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 rotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2750,7 +2441,6 @@ Rotation angle
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2784,7 +2474,7 @@ Set the property state: supplier
 ## Signature
 
 ```typescript
-public setState_Supplier(supplier: string | undefined): ISCH_PrimitiveComponent;
+function setState_Supplier(supplier: string | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2793,37 +2483,29 @@ public setState_Supplier(supplier: string | undefined): ISCH_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 supplier
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Supplier
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2832,7 +2514,6 @@ Supplier
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2866,7 +2547,7 @@ Set the property state: supplier ID
 ## Signature
 
 ```typescript
-public setState_SupplierId(supplierId: string | undefined): ISCH_PrimitiveComponent;
+function setState_SupplierId(supplierId: string | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2875,37 +2556,29 @@ public setState_SupplierId(supplierId: string | undefined): ISCH_PrimitiveCompon
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 supplierId
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Supplier ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2914,7 +2587,6 @@ Supplier ID
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -2948,7 +2620,7 @@ Set the property state: unique ID
 ## Signature
 
 ```typescript
-public setState_UniqueId(uniqueId: string | undefined): ISCH_PrimitiveComponent;
+function setState_UniqueId(uniqueId: string | undefined): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -2957,37 +2629,29 @@ public setState_UniqueId(uniqueId: string | undefined): ISCH_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uniqueId
 
-
 </td><td>
 
 string \| undefined
-
 
 </td><td>
 
 Unique ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2996,7 +2660,6 @@ Unique ID
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3030,7 +2693,7 @@ Set the property state: X coordinate
 ## Signature
 
 ```typescript
-public setState_X(x: number): ISCH_PrimitiveComponent;
+function setState_X(x: number): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -3039,37 +2702,29 @@ public setState_X(x: number): ISCH_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 X coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3078,7 +2733,6 @@ X coordinate
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3111,7 +2765,7 @@ Set the property state: Y coordinate
 ## Signature
 
 ```typescript
-public setState_Y(y: number): ISCH_PrimitiveComponent;
+function setState_Y(y: number): ISCH_PrimitiveComponent;
 ```
 
 ## Parameters
@@ -3120,37 +2774,29 @@ public setState_Y(y: number): ISCH_PrimitiveComponent;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3159,7 +2805,6 @@ Y coordinate
 Device primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3190,9 +2835,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): ISCH_PrimitiveComponent;
+function toAsync(): ISCH_PrimitiveComponent;
 ```
-
 
 ## Returns
 
@@ -3201,7 +2845,6 @@ public toAsync(): ISCH_PrimitiveComponent;
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合
@@ -3235,9 +2878,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): ISCH_PrimitiveComponent;
+function toSync(): ISCH_PrimitiveComponent;
 ```
-
 
 ## Returns
 
@@ -3246,7 +2888,6 @@ public toSync(): ISCH_PrimitiveComponent;
 Arc line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试器件重合

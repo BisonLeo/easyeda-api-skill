@@ -5,7 +5,7 @@ Document tree / Editor control class
 ## Signature
 
 ```typescript
-export class DMT_EditorControl 
+class DMT_EditorControl
 ```
 
 ## Remarks
@@ -18,282 +18,222 @@ Here the editor control is based on the sheets under the currently open engineer
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [activateDocument(tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Activate a document
-
 
 </td></tr>
 <tr><td>
 
 [activateSplitScreen(splitScreenId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Activate a split screen
-
 
 </td></tr>
 <tr><td>
 
 [closeDocument(tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Close document
-
 
 </td></tr>
 <tr><td>
 
 [createSplitScreen(splitScreenType, tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Create Split screen
-
 
 </td></tr>
 <tr><td>
 
 [generateIndicatorMarkers(markers, color, lineWidth, zoom, tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Generate indicator markers
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentRenderedAreaImage(tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the canvas rendering region image
-
 
 </td></tr>
 <tr><td>
 
 [getSplitScreenIdByTabId(tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Use tab ID get split screen ID
-
 
 </td></tr>
 <tr><td>
 
 [getSplitScreenTree()](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the editor split screen property tree
-
 
 </td></tr>
 <tr><td>
 
 [getTabsBySplitScreenId(splitScreenId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get all tabs under the specified split screen ID
-
 
 </td></tr>
 <tr><td>
 
 [mergeAllDocumentFromSplitScreen()](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Merge all split screens
-
 
 </td></tr>
 <tr><td>
 
 [moveDocumentToSplitScreen(tabId, splitScreenId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Move a document to the specified split screen
-
 
 </td></tr>
 <tr><td>
 
 [openDocument(documentUuid, splitScreenId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Open document
-
 
 </td></tr>
 <tr><td>
 
 [openLibraryDocument(libraryUuid, libraryType, uuid, splitScreenId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Open library symbol, footprint document
-
 
 </td></tr>
 <tr><td>
 
 [removeIndicatorMarkers(tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Remove indicator markers
-
 
 </td></tr>
 <tr><td>
 
 [tileAllDocumentToSplitScreen()](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Tile all documents
-
 
 </td></tr>
 <tr><td>
 
 [zoomTo(x, y, scaleRatio, tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Zoom to coordinates
-
 
 </td></tr>
 <tr><td>
 
 [zoomToAllPrimitives(tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Zoom to all primitives (fit all)
-
 
 </td></tr>
 <tr><td>
 
 [zoomToRegion(left, right, top, bottom, tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Zoom to region
-
 
 </td></tr>
 <tr><td>
 
 [zoomToSelectedPrimitives(tabId)](./DMT_EditorControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Zoom to the selected primitives (fit selection)
-
 
 </td></tr>
 </tbody></table>
@@ -311,7 +251,7 @@ Activate a document
 ## Signature
 
 ```typescript
-public activateDocument(tabId: string): Promise<boolean>;
+function activateDocument(tabId: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -320,37 +260,29 @@ public activateDocument(tabId: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Tab ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -363,7 +295,6 @@ Whether the operation is successful
 Switch to the tab of the specified document and place the input focus in it
 
 ## Example
-
 
 ```javascript
 // 1. 先后打开原理图页与 PCB，此时焦点在最后打开的 PCB 上
@@ -386,7 +317,7 @@ Activate a split screen
 ## Signature
 
 ```typescript
-public activateSplitScreen(splitScreenId: string): Promise<boolean>;
+function activateSplitScreen(splitScreenId: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -395,37 +326,29 @@ public activateSplitScreen(splitScreenId: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 splitScreenId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Split screen ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -438,7 +361,6 @@ Whether the operation is successful
 Give input focus
 
 ## Example
-
 
 ```javascript
 // 1. 归一化布局后打开两个文档，并拆出一个新分屏
@@ -467,7 +389,7 @@ Close document
 ## Signature
 
 ```typescript
-public closeDocument(tabId: string): Promise<boolean>;
+function closeDocument(tabId: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -476,37 +398,29 @@ public closeDocument(tabId: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Tab ID. Here [IDMT\_SchematicPageItem.uuid](../interfaces/IDMT_SchematicPageItem.md)<!-- -->, [IDMT\_PcbItem.uuid](../interfaces/IDMT_PcbItem.md)<!-- -->, and [IDMT\_PanelItem.uuid](../interfaces/IDMT_PanelItem.md) are supported as input
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -519,7 +433,6 @@ Whether the operation is successful
 If the document has not been saved, executing this operation will directly lose all unsaved data. After completing modification operations, first execute [SCH\_Document.save()](./SCH_Document.md)<!-- -->, [PCB\_Document.save()](./PCB_Document.md)<!-- -->, and [PNL\_Document.save()](./PNL_Document.md) to save the data
 
 ## Example
-
 
 ```javascript
 // 1. 创建临时原理图并给它加一页（新建的原理图没有页面，需显式创建）
@@ -548,7 +461,10 @@ Create Split screen
 ## Signature
 
 ```typescript
-public createSplitScreen(splitScreenType: EDMT_EditorSplitScreenDirection, tabId: string): Promise<{ sourceSplitScreenId: string; newSplitScreenId: string } | undefined>;
+function createSplitScreen(
+	splitScreenType: EDMT_EditorSplitScreenDirection,
+	tabId: string,
+): Promise<{ sourceSplitScreenId: string; newSplitScreenId: string } | undefined>;
 ```
 
 ## Parameters
@@ -557,53 +473,42 @@ public createSplitScreen(splitScreenType: EDMT_EditorSplitScreenDirection, tabId
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 splitScreenType
 
-
 </td><td>
 
 [EDMT\_EditorSplitScreenDirection](../enums/EDMT_EditorSplitScreenDirection.md)
 
-
 </td><td>
 
 Split screen type, `horizontal` horizontal, `vertical` vertical
-
 
 </td></tr>
 <tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Tab ID. This tab will be moved into the new split screen
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -616,7 +521,6 @@ Split screen ID. `sourceSplitScreenId` represents the source split screen, and `
 Please make sure the split screen corresponding to [tabId](./DMT_EditorControl.md) has more than two tabs; otherwise the split screen will not be executed and `undefined` will be returned
 
 ## Example
-
 
 ```javascript
 // 1. 归一化布局：先合并既有分屏，保证两个标签页落在同一分屏
@@ -653,7 +557,13 @@ Generate indicator markers
 ## Signature
 
 ```typescript
-public generateIndicatorMarkers(markers: Array<IDMT_IndicatorMarkerShape>, color?: { r: number; g: number; b: number; alpha: number }, lineWidth?: number, zoom?: boolean, tabId?: string): Promise<boolean>;
+function generateIndicatorMarkers(
+	markers: Array<IDMT_IndicatorMarkerShape>,
+	color?: { r: number; g: number; b: number; alpha: number },
+	lineWidth?: number,
+	zoom?: boolean,
+	tabId?: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -662,101 +572,81 @@ public generateIndicatorMarkers(markers: Array<IDMT_IndicatorMarkerShape>, color
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 markers
 
-
 </td><td>
 
 Array&lt;[IDMT\_IndicatorMarkerShape](../interfaces/IDMT_IndicatorMarkerShape.md)<!-- -->&gt;
 
-
 </td><td>
 
 Array of indicator marker shape objects
-
 
 </td></tr>
 <tr><td>
 
 color
 
-
 </td><td>
 
 \{ r: number; g: number; b: number; alpha: number \}
 
-
 </td><td>
 
 _(Optional)_ Indicator marker color
-
 
 </td></tr>
 <tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Line width
-
 
 </td></tr>
 <tr><td>
 
 zoom
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
 
 _(Optional)_ Whether to locate and zoom
-
 
 </td></tr>
 <tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Tab ID. If not passed in, the canvas with the last input focus will be used
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -770,7 +660,6 @@ In the indicator marker shape data, the coordinate unit span of the schematic an
 
 ## Example
 
-
 ```javascript
 // 1. 打开一个原理图页，确定标记作用的画布
 const pages = await eda.dmt_Schematic.getAllSchematicPagesInfo();
@@ -778,15 +667,15 @@ const tabId = await eda.dmt_EditorControl.openDocument(pages[0].uuid);
 
 // 2. 生成一组标记：点 + 圆 + 矩形（原理图画布坐标单位 0.01inch）
 const generated = await eda.dmt_EditorControl.generateIndicatorMarkers(
-  [
-    { type: 'point', x: 100, y: 100 },
-    { type: 'circle', x: 250, y: 150, r: 50 },
-    { type: 'rectangle', left: 350, right: 550, top: 100, bottom: 250 },
-  ],
-  { r: 255, g: 60, b: 60, alpha: 1 }, // 标记颜色
-  2,     // 线宽
-  false, // 不自动缩放定位到标记
-  tabId,
+	[
+		{ type: 'point', x: 100, y: 100 },
+		{ type: 'circle', x: 250, y: 150, r: 50 },
+		{ type: 'rectangle', left: 350, right: 550, top: 100, bottom: 250 },
+	],
+	{ r: 255, g: 60, b: 60, alpha: 1 }, // 标记颜色
+	2, // 线宽
+	false, // 不自动缩放定位到标记
+	tabId,
 );
 console.log('generated:', generated);
 
@@ -806,7 +695,7 @@ Get the canvas rendering region image
 ## Signature
 
 ```typescript
-public getCurrentRenderedAreaImage(tabId?: string): Promise<Blob | undefined>;
+function getCurrentRenderedAreaImage(tabId?: string): Promise<Blob | undefined>;
 ```
 
 ## Parameters
@@ -815,37 +704,29 @@ public getCurrentRenderedAreaImage(tabId?: string): Promise<Blob | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Tab ID. If not passed in, the canvas with the last input focus will be obtained
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -854,7 +735,6 @@ Promise&lt;Blob \| undefined&gt;
 - Blob-format image data of the canvas rendering region
 
 ## Example
-
 
 ```javascript
 // 1. 打开一个原理图页，确定截图的画布
@@ -879,7 +759,7 @@ Use tab ID get split screen ID
 ## Signature
 
 ```typescript
-public getSplitScreenIdByTabId(tabId: string): Promise<string | undefined>;
+function getSplitScreenIdByTabId(tabId: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -888,37 +768,29 @@ public getSplitScreenIdByTabId(tabId: string): Promise<string | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Tab ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -927,7 +799,6 @@ Promise&lt;string \| undefined&gt;
 Split screen ID
 
 ## Example
-
 
 ```javascript
 // 1. 打开一个原理图页，拿到它的标签页 ID
@@ -949,9 +820,8 @@ Get the editor split screen property tree
 ## Signature
 
 ```typescript
-public getSplitScreenTree(): Promise<IDMT_EditorSplitScreenItem | undefined>;
+function getSplitScreenTree(): Promise<IDMT_EditorSplitScreenItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -960,7 +830,6 @@ Promise&lt;[IDMT\_EditorSplitScreenItem](../interfaces/IDMT_EditorSplitScreenIte
 The editor split screen property tree. If it is `undefined`<!-- -->, the data retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 打开一个原理图页，保证分屏树里有标签页可读
@@ -974,9 +843,10 @@ const tree = await eda.dmt_EditorControl.getSplitScreenTree();
 const splitIds = [];
 const tabTitles = [];
 (function walk(node) {
-  splitIds.push(node.id);
-  if (node.tabs) tabTitles.push(...node.tabs.map(t => t.title));
-  (node.children || []).forEach(walk);
+	splitIds.push(node.id);
+	if (node.tabs)
+		tabTitles.push(...node.tabs.map(t => t.title));
+	(node.children || []).forEach(walk);
 })(tree);
 console.log('split count:', splitIds.length);
 console.log('tab titles:', tabTitles);
@@ -991,7 +861,7 @@ Get all tabs under the specified split screen ID
 ## Signature
 
 ```typescript
-public getTabsBySplitScreenId(splitScreenId: string): Promise<Array<IDMT_EditorTabItem>>;
+function getTabsBySplitScreenId(splitScreenId: string): Promise<Array<IDMT_EditorTabItem>>;
 ```
 
 ## Parameters
@@ -1000,37 +870,29 @@ public getTabsBySplitScreenId(splitScreenId: string): Promise<Array<IDMT_EditorT
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 splitScreenId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Split screen ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1044,7 +906,6 @@ If there are no direct tabs under the specified split screen (that is, it still 
 
 ## Example
 
-
 ```javascript
 // 1. 打开一个原理图页并读取分屏树，定位一个直接持有标签页的分屏
 const pages = await eda.dmt_Schematic.getAllSchematicPagesInfo();
@@ -1052,8 +913,8 @@ await eda.dmt_EditorControl.openDocument(pages[0].uuid);
 const tree = await eda.dmt_EditorControl.getSplitScreenTree();
 let leaf = null;
 (function find(node) {
-  if (node.tabs?.length) { leaf = node; return; }
-  (node.children || []).forEach(find);
+	if (node.tabs?.length) { leaf = node; return; }
+	(node.children || []).forEach(find);
 })(tree);
 
 // 2. 查询该分屏下的所有标签页
@@ -1072,9 +933,8 @@ Merge all split screens
 ## Signature
 
 ```typescript
-public mergeAllDocumentFromSplitScreen(): Promise<boolean>;
+function mergeAllDocumentFromSplitScreen(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1087,7 +947,6 @@ Whether the operation is successful
 Only available when child split screens exist. It will cancel all child split screens and merge all document tabs into the initial split screen
 
 ## Example
-
 
 ```javascript
 // 1. 制造"存在子分屏"的前提：归一化布局后打开两个文档并拆出一个分屏
@@ -1116,7 +975,7 @@ Move a document to the specified split screen
 ## Signature
 
 ```typescript
-public moveDocumentToSplitScreen(tabId: string, splitScreenId: string): Promise<boolean>;
+function moveDocumentToSplitScreen(tabId: string, splitScreenId: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1125,53 +984,42 @@ public moveDocumentToSplitScreen(tabId: string, splitScreenId: string): Promise<
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tabId
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Tab ID
-
 
 </td></tr>
 <tr><td>
 
 splitScreenId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 [Split screen ID](../interfaces/IDMT_EditorSplitScreenItem.md)
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1184,7 +1032,6 @@ Whether the operation is successful
 After moving the document, the editor split screen property tree may change
 
 ## Example
-
 
 ```javascript
 // 1. 归一化布局后打开两个文档，把 PCB 拆到新分屏
@@ -1217,7 +1064,7 @@ Open document
 ## Signature
 
 ```typescript
-public openDocument(documentUuid: string, splitScreenId?: string): Promise<string | undefined>;
+function openDocument(documentUuid: string, splitScreenId?: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -1226,53 +1073,42 @@ public openDocument(documentUuid: string, splitScreenId?: string): Promise<strin
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 documentUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Document UUID. Here [IDMT\_SchematicItem.uuid](../interfaces/IDMT_SchematicItem.md)<!-- -->, [IDMT\_SchematicPageItem.uuid](../interfaces/IDMT_SchematicPageItem.md)<!-- -->, [IDMT\_PcbItem.uuid](../interfaces/IDMT_PcbItem.md)<!-- -->, and [IDMT\_PanelItem.uuid](../interfaces/IDMT_PanelItem.md) are supported as input
-
 
 </td></tr>
 <tr><td>
 
 splitScreenId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Split screen ID, which is the [IDMT\_EditorSplitScreenItem.id](../interfaces/IDMT_EditorSplitScreenItem.md) obtained by the [DMT\_EditorControl.getSplitScreenTree()](./DMT_EditorControl.md) method
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1281,7 +1117,6 @@ Promise&lt;string \| undefined&gt;
 Tab ID, if it is `undefined`<!-- -->, then open document failed
 
 ## Example
-
 
 ```javascript
 // 1. 取工程里第一个原理图页作为打开目标
@@ -1304,7 +1139,12 @@ Open library symbol, footprint document
 ## Signature
 
 ```typescript
-public openLibraryDocument(libraryUuid: string, libraryType: ELIB_LibraryType.SYMBOL | ELIB_LibraryType.FOOTPRINT, uuid: string, splitScreenId?: string): Promise<string | undefined>;
+function openLibraryDocument(
+	libraryUuid: string,
+	libraryType: ELIB_LibraryType.SYMBOL | ELIB_LibraryType.FOOTPRINT,
+	uuid: string,
+	splitScreenId?: string,
+): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -1313,85 +1153,68 @@ public openLibraryDocument(libraryUuid: string, libraryType: ELIB_LibraryType.SY
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 libraryUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Library UUID, you can use [LIB\_LibrariesList](./LIB_LibrariesList.md) APIs in
-
 
 </td></tr>
 <tr><td>
 
 libraryType
 
-
 </td><td>
 
 [ELIB\_LibraryType.SYMBOL](../enums/ELIB_LibraryType.md) \| [ELIB\_LibraryType.FOOTPRINT](../enums/ELIB_LibraryType.md)
 
-
 </td><td>
 
 Library type, support symbol and footprint
-
 
 </td></tr>
 <tr><td>
 
 uuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Symbol, footprint UUID
-
 
 </td></tr>
 <tr><td>
 
 splitScreenId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Split screen ID, which is the [IDMT\_EditorSplitScreenItem.id](../interfaces/IDMT_EditorSplitScreenItem.md) obtained by the [DMT\_EditorControl.getSplitScreenTree()](./DMT_EditorControl.md) method
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1400,7 +1223,6 @@ Promise&lt;string \| undefined&gt;
 Tab ID, if it is `undefined`<!-- -->, then open document failed
 
 ## Example
-
 
 ```javascript
 // 1. 搜索库符号，拿到其所在库 UUID 与符号 UUID
@@ -1427,7 +1249,7 @@ Remove indicator markers
 ## Signature
 
 ```typescript
-public removeIndicatorMarkers(tabId?: string): Promise<boolean>;
+function removeIndicatorMarkers(tabId?: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1436,37 +1258,29 @@ public removeIndicatorMarkers(tabId?: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Tab ID. If not passed in, the canvas with the last input focus will be used
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1480,17 +1294,16 @@ This API will remove all generated indicator markers
 
 ## Example
 
-
 ```javascript
 // 1. 打开一个原理图页，并先生成一个指示标记作为清理对象
 const pages = await eda.dmt_Schematic.getAllSchematicPagesInfo();
 const tabId = await eda.dmt_EditorControl.openDocument(pages[0].uuid);
 const generated = await eda.dmt_EditorControl.generateIndicatorMarkers(
-  [{ type: 'circle', x: 150, y: 150, r: 60 }],
-  { r: 0, g: 128, b: 255, alpha: 1 },
-  2,
-  false,
-  tabId,
+	[{ type: 'circle', x: 150, y: 150, r: 60 }],
+	{ r: 0, g: 128, b: 255, alpha: 1 },
+	2,
+	false,
+	tabId,
 );
 console.log('generated:', generated);
 
@@ -1508,9 +1321,8 @@ Tile all documents
 ## Signature
 
 ```typescript
-public tileAllDocumentToSplitScreen(): Promise<boolean>;
+function tileAllDocumentToSplitScreen(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1523,7 +1335,6 @@ Whether the operation is successful
 Only available when no child split screens exist. It will automatically create split screens for all opened document tabs
 
 ## Example
-
 
 ```javascript
 // 1. 归一化布局：先合并既有子分屏，满足"无子分屏"前提
@@ -1555,7 +1366,12 @@ Zoom to coordinates
 ## Signature
 
 ```typescript
-public zoomTo(x?: number, y?: number, scaleRatio?: number, tabId?: string): Promise<{ left: number; right: number; top: number; bottom: number } | false>;
+function zoomTo(
+	x?: number,
+	y?: number,
+	scaleRatio?: number,
+	tabId?: string,
+): Promise<{ left: number; right: number; top: number; bottom: number } | false>;
 ```
 
 ## Parameters
@@ -1564,85 +1380,68 @@ public zoomTo(x?: number, y?: number, scaleRatio?: number, tabId?: string): Prom
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Center X coordinate. If not passed in, the current X coordinate will not be changed
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Center Y coordinate. If not passed in, the current Y coordinate will not be changed
-
 
 </td></tr>
 <tr><td>
 
 scaleRatio
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Zoom ratio. If not passed in, the current zoom ratio will not be changed. The unit span is `1/100`<!-- -->. If `200` is passed in, it means a zoom ratio of `200%`
-
 
 </td></tr>
 <tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Tab ID. If not passed in, the canvas with the last input focus will be used
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1655,7 +1454,6 @@ Region data after zooming. `false` indicates that the canvas does not support th
 In the schematic and symbol canvases, the coordinate unit span is 0.01inch; in the PCB and footprint canvases, it is mil
 
 ## Example
-
 
 ```javascript
 // 1. 打开一个原理图页，确定缩放的画布
@@ -1678,7 +1476,9 @@ Zoom to all primitives (fit all)
 ## Signature
 
 ```typescript
-public zoomToAllPrimitives(tabId?: string): Promise<{ left: number; right: number; top: number; bottom: number } | false>;
+function zoomToAllPrimitives(
+	tabId?: string,
+): Promise<{ left: number; right: number; top: number; bottom: number } | false>;
 ```
 
 ## Parameters
@@ -1687,37 +1487,29 @@ public zoomToAllPrimitives(tabId?: string): Promise<{ left: number; right: numbe
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Tab ID. If not passed in, the canvas with the last input focus will be used
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1730,7 +1522,6 @@ Region data after zooming. `false` indicates that the canvas does not support th
 In the returned data, the coordinate unit span of the schematic and symbol canvases is 0.01inch, and that of the PCB and footprint canvases is mil
 
 ## Example
-
 
 ```javascript
 // 1. 打开一个原理图页，确定缩放的画布
@@ -1753,7 +1544,13 @@ Zoom to region
 ## Signature
 
 ```typescript
-public zoomToRegion(left: number, right: number, top: number, bottom: number, tabId?: string): Promise<boolean>;
+function zoomToRegion(
+	left: number,
+	right: number,
+	top: number,
+	bottom: number,
+	tabId?: string,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1762,101 +1559,81 @@ public zoomToRegion(left: number, right: number, top: number, bottom: number, ta
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 left
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 right
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Second X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 top
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First Y coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 bottom
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Second Y coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Tab ID. If not passed in, the canvas with the last input focus will be used
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1869,7 +1646,6 @@ Whether the operation is successful
 In the schematic and symbol canvases, the coordinate unit span is 0.01inch; in the PCB and footprint canvases, it is mil
 
 ## Example
-
 
 ```javascript
 // 1. 打开一个原理图页，确定缩放的画布
@@ -1892,7 +1668,9 @@ Zoom to the selected primitives (fit selection)
 ## Signature
 
 ```typescript
-public zoomToSelectedPrimitives(tabId?: string): Promise<{ left: number; right: number; top: number; bottom: number } | false>;
+function zoomToSelectedPrimitives(
+	tabId?: string,
+): Promise<{ left: number; right: number; top: number; bottom: number } | false>;
 ```
 
 ## Parameters
@@ -1901,37 +1679,29 @@ public zoomToSelectedPrimitives(tabId?: string): Promise<{ left: number; right: 
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tabId
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Tab ID. If not passed in, the canvas with the last input focus will be used
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1944,7 +1714,6 @@ Region data after zooming. `false` indicates that the canvas does not support th
 In the returned data, the coordinate unit span of the schematic and symbol canvases is 0.01inch, and that of the PCB and footprint canvases is mil
 
 ## Example
-
 
 ```javascript
 // 1. 打开原理图页，创建一个文本图元作为选中目标

@@ -5,10 +5,9 @@ Special pad shape
 ## Signature
 
 ```typescript
-export type TPCB_PrimitiveSpecialPadShape = Array<[number, number, TPCB_PrimitivePadShape]>;
+type TPCB_PrimitiveSpecialPadShape = Array<[number, number, TPCB_PrimitivePadShape]>;
 ```
 ## References
-
 
 [TPCB\_PrimitivePadShape](./TPCB_PrimitivePadShape.md)
 

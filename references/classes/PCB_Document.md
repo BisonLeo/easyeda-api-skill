@@ -5,7 +5,7 @@ PCB &amp; footprint / document operation class
 ## Signature
 
 ```typescript
-export class PCB_Document 
+class PCB_Document
 ```
 
 ## Remarks
@@ -18,366 +18,288 @@ Operations performed on the design document as a whole
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [autoLayout()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Auto layout
-
 
 </td></tr>
 <tr><td>
 
 [autoRouting(props)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Auto routing
-
 
 </td></tr>
 <tr><td>
 
 [clearRouting(type)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Clear routing
-
 
 </td></tr>
 <tr><td>
 
 [convertCanvasOriginToDataOrigin(x, y)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Input a canvas coordinate and return the data coordinate corresponding to that coordinate
-
 
 </td></tr>
 <tr><td>
 
 [convertDataOriginToCanvasOrigin(x, y)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Input a data coordinate and return the canvas coordinate corresponding to that coordinate
-
 
 </td></tr>
 <tr><td>
 
 [getCalculatingRatlineStatus()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the current ratline calculation function status
-
 
 </td></tr>
 <tr><td>
 
 [getCanvasOrigin()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the offset coordinate of the canvas origin relative to the data origin
-
 
 </td></tr>
 <tr><td>
 
 [getCanvasUpdateCalculationStatus()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Query the current canvas update calculation status
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentFilterConfiguration()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Current canvas filter configuration
-
 
 </td></tr>
 <tr><td>
 
 [getPrimitiveAtPoint(x, y)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get The primitive at the coordinate point
-
 
 </td></tr>
 <tr><td>
 
 [getPrimitivesInRegion(left, right, top, bottom, leftToRight)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get All primitives in the region
-
 
 </td></tr>
 <tr><td>
 
 [importAutoLayoutJsonFile(autoLayoutFile)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Import auto layout file (JSON)
-
 
 </td></tr>
 <tr><td>
 
 [importAutoRouteJsonFile(autoRouteFile)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Import auto routing file (JSON)
-
 
 </td></tr>
 <tr><td>
 
 [importAutoRouteSesFile(autoRouteFile)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Import auto routing file (SES)
-
 
 </td></tr>
 <tr><td>
 
 [importChanges(uuid)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Import changes from the schematic
-
 
 </td></tr>
 <tr><td>
 
 [navigateToCoordinates(x, y)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Locate to canvas coordinate
-
 
 </td></tr>
 <tr><td>
 
 [navigateToRegion(left, right, top, bottom)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Locate to canvas region
-
 
 </td></tr>
 <tr><td>
 
 [save()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Save Document
-
 
 </td></tr>
 <tr><td>
 
 [setCanvasOrigin(offsetX, offsetY)](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Set the offset coordinate of the canvas origin relative to the data origin
-
 
 </td></tr>
 <tr><td>
 
 [startCalculatingRatline()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Start the ratline calculation function
-
 
 </td></tr>
 <tr><td>
 
 [startCanvasUpdateCalculation()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Start canvas update calculation
-
 
 </td></tr>
 <tr><td>
 
 [stopCalculatingRatline()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Stop the ratline calculation function
-
 
 </td></tr>
 <tr><td>
 
 [stopCanvasUpdateCalculation()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Stop canvas update calculation
-
 
 </td></tr>
 <tr><td>
 
 [triggerCanvasUpdateCalculation()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Trigger a canvas update calculation
-
 
 </td></tr>
 <tr><td>
 
 [zoomToBoardOutline()](./PCB_Document.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Zoom to the board outline (fit the board outline)
-
 
 </td></tr>
 </tbody></table>
@@ -397,9 +319,8 @@ Auto layout
 ## Signature
 
 ```typescript
-public autoLayout(): Promise<IPCB_AutoLayoutResult>;
+function autoLayout(): Promise<IPCB_AutoLayoutResult>;
 ```
-
 
 ## Returns
 
@@ -422,7 +343,7 @@ Auto routing
 ## Signature
 
 ```typescript
-public autoRouting(props?: IPCB_AutoRoutingProps): Promise<IPCB_AutoRoutingResult>;
+function autoRouting(props?: IPCB_AutoRoutingProps): Promise<IPCB_AutoRoutingResult>;
 ```
 
 ## Parameters
@@ -431,37 +352,29 @@ public autoRouting(props?: IPCB_AutoRoutingProps): Promise<IPCB_AutoRoutingResul
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 props
 
-
 </td><td>
 
 [IPCB\_AutoRoutingProps](../interfaces/IPCB_AutoRoutingProps.md)
-
 
 </td><td>
 
 _(Optional)_ Auto routing parameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -474,7 +387,6 @@ Auto routing result
 If no parameters are passed in, auto routing will be performed for all unrouted nets ADD since EDA v3.2.162
 
 ## Example
-
 
 ```javascript
 // 对所有未布线的网络进行自动布线
@@ -501,7 +413,7 @@ Clear routing
 ## Signature
 
 ```typescript
-public clearRouting(type?: 'all' | 'net' | 'connection'): Promise<boolean>;
+function clearRouting(type?: 'all' | 'net' | 'connection'): Promise<boolean>;
 ```
 
 ## Parameters
@@ -510,37 +422,29 @@ public clearRouting(type?: 'all' | 'net' | 'connection'): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 type
 
-
 </td><td>
 
 'all' \| 'net' \| 'connection'
-
 
 </td><td>
 
 _(Optional)_ Clear type. If you need to specify a clear type, select the specified primitive in advance
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -555,7 +459,7 @@ Input a canvas coordinate and return the data coordinate corresponding to that c
 ## Signature
 
 ```typescript
-public convertCanvasOriginToDataOrigin(x: number, y: number): Promise<{ x: number; y: number }>;
+function convertCanvasOriginToDataOrigin(x: number, y: number): Promise<{ x: number; y: number }>;
 ```
 
 ## Parameters
@@ -564,49 +468,38 @@ public convertCanvasOriginToDataOrigin(x: number, y: number): Promise<{ x: numbe
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -619,7 +512,6 @@ Data origin coordinate
 The coordinates displayed on the EasyEDA front end are all relative to the canvas origin; the EasyEDA API uses the data origin; when creating a PCB, the default canvas origin equals the data origin
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（文档级 API 作用于当前激活的 PCB）
@@ -650,7 +542,7 @@ Input a data coordinate and return the canvas coordinate corresponding to that c
 ## Signature
 
 ```typescript
-public convertDataOriginToCanvasOrigin(x: number, y: number): Promise<{ x: number; y: number }>;
+function convertDataOriginToCanvasOrigin(x: number, y: number): Promise<{ x: number; y: number }>;
 ```
 
 ## Parameters
@@ -659,53 +551,42 @@ public convertDataOriginToCanvasOrigin(x: number, y: number): Promise<{ x: numbe
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Data origin X
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Data origin Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -718,7 +599,6 @@ Canvas origin coordinate
 The coordinates displayed on the EasyEDA front end are all relative to the canvas origin; the EasyEDA API uses the data origin; when creating a PCB, the default canvas origin equals the data origin
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（文档级 API 作用于当前激活的 PCB）
@@ -753,9 +633,10 @@ Get the current ratline calculation function status
 ## Signature
 
 ```typescript
-public getCalculatingRatlineStatus(): Promise<EPCB_DocumentRatlineCalculatingActiveStatus | undefined>;
+function getCalculatingRatlineStatus(): Promise<
+	EPCB_DocumentRatlineCalculatingActiveStatus | undefined
+>;
 ```
-
 
 ## Returns
 
@@ -772,9 +653,8 @@ Get the offset coordinate of the canvas origin relative to the data origin
 ## Signature
 
 ```typescript
-public getCanvasOrigin(): Promise<{ offsetX: number; offsetY: number }>;
+function getCanvasOrigin(): Promise<{ offsetX: number; offsetY: number }>;
 ```
-
 
 ## Returns
 
@@ -803,9 +683,10 @@ Query the current canvas update calculation status
 ## Signature
 
 ```typescript
-public getCanvasUpdateCalculationStatus(): Promise<EPCB_DocumentCanvasUpdateCalculationActiveStatus | undefined>;
+function getCanvasUpdateCalculationStatus(): Promise<
+	EPCB_DocumentCanvasUpdateCalculationActiveStatus | undefined
+>;
 ```
-
 
 ## Returns
 
@@ -828,9 +709,8 @@ Get Current canvas filter configuration
 ## Signature
 
 ```typescript
-public getCurrentFilterConfiguration(): Promise<Record<string, any> | undefined>;
+function getCurrentFilterConfiguration(): Promise<Record<string, any> | undefined>;
 ```
-
 
 ## Returns
 
@@ -849,7 +729,7 @@ Get The primitive at the coordinate point
 ## Signature
 
 ```typescript
-public getPrimitiveAtPoint(x: number, y: number): Promise<IPCB_Primitive | undefined>;
+function getPrimitiveAtPoint(x: number, y: number): Promise<IPCB_Primitive | undefined>;
 ```
 
 ## Parameters
@@ -858,53 +738,42 @@ public getPrimitiveAtPoint(x: number, y: number): Promise<IPCB_Primitive | undef
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Coordinate point X
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Coordinate point Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -917,7 +786,6 @@ The primitive at the coordinate point. If no primitive can be found at the coord
 This operation is similar to clicking with the mouse on the front end; it will get the primitive at the specified coordinate point
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开
@@ -954,7 +822,13 @@ Get All primitives in the region
 ## Signature
 
 ```typescript
-public getPrimitivesInRegion(left: number, right: number, top: number, bottom: number, leftToRight?: boolean): Promise<Array<IPCB_Primitive>>;
+function getPrimitivesInRegion(
+	left: number,
+	right: number,
+	top: number,
+	bottom: number,
+	leftToRight?: boolean,
+): Promise<Array<IPCB_Primitive>>;
 ```
 
 ## Parameters
@@ -963,101 +837,81 @@ public getPrimitivesInRegion(left: number, right: number, top: number, bottom: n
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 left
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 right
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Second X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 top
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First Y coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 bottom
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Second Y coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 leftToRight
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to only get primitives that are fully enclosed by the box selection. If `false`<!-- -->, primitives touched by the selection are also obtained
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1066,7 +920,6 @@ Promise&lt;Array&lt;[IPCB\_Primitive](../interfaces/IPCB_Primitive.md)<!-- -->&g
 All primitives in the region
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开
@@ -1103,7 +956,7 @@ Import auto layout file (JSON)
 ## Signature
 
 ```typescript
-public importAutoLayoutJsonFile(autoLayoutFile: File): Promise<boolean>;
+function importAutoLayoutJsonFile(autoLayoutFile: File): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1112,37 +965,29 @@ public importAutoLayoutJsonFile(autoLayoutFile: File): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 autoLayoutFile
 
-
 </td><td>
 
 File
-
 
 </td><td>
 
 The JSON file to import
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1155,7 +1000,6 @@ Whether the import operation is successful
 You can use  to read in a file
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（导入作用于当前激活的 PCB）
@@ -1186,7 +1030,7 @@ Import auto routing file (JSON)
 ## Signature
 
 ```typescript
-public importAutoRouteJsonFile(autoRouteFile: File): Promise<boolean>;
+function importAutoRouteJsonFile(autoRouteFile: File): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1195,37 +1039,29 @@ public importAutoRouteJsonFile(autoRouteFile: File): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 autoRouteFile
 
-
 </td><td>
 
 File
-
 
 </td><td>
 
 The JSON file to import
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1238,7 +1074,6 @@ Whether the import operation is successful
 You can use  to read in a file
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（导入作用于当前激活的 PCB）
@@ -1269,7 +1104,7 @@ Import auto routing file (SES)
 ## Signature
 
 ```typescript
-public importAutoRouteSesFile(autoRouteFile: File): Promise<boolean>;
+function importAutoRouteSesFile(autoRouteFile: File): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1278,37 +1113,29 @@ public importAutoRouteSesFile(autoRouteFile: File): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 autoRouteFile
 
-
 </td><td>
 
 File
-
 
 </td><td>
 
 The SES file to import
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1329,7 +1156,7 @@ Import changes from the schematic
 ## Signature
 
 ```typescript
-public importChanges(uuid?: string): Promise<boolean>;
+function importChanges(uuid?: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1338,37 +1165,29 @@ public importChanges(uuid?: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Schematic UUID. By default, the schematic associated with the same Board is used
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1377,7 +1196,6 @@ Promise&lt;boolean&gt;
 Whether the import operation was successful. If the import fails or the free PCB has no schematic UUID passed in, `false` is returned
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试原理图和测试 PCB
@@ -1413,7 +1231,7 @@ Locate to canvas coordinate
 ## Signature
 
 ```typescript
-public navigateToCoordinates(x: number, y: number): Promise<boolean>;
+function navigateToCoordinates(x: number, y: number): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1422,53 +1240,42 @@ public navigateToCoordinates(x: number, y: number): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y coordinate
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1485,7 +1292,6 @@ If you want the front-end canvas coordinate to be consistent with the passed-in 
 The units here are data-level units, which are equivalent to mil on the canvas level in span
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（视口操作作用于当前激活的 PCB）
@@ -1513,7 +1319,12 @@ Locate to canvas region
 ## Signature
 
 ```typescript
-public navigateToRegion(left: number, right: number, top: number, bottom: number): Promise<boolean>;
+function navigateToRegion(
+	left: number,
+	right: number,
+	top: number,
+	bottom: number,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1522,85 +1333,68 @@ public navigateToRegion(left: number, right: number, top: number, bottom: number
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 left
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 right
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 Second X coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 top
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 First Y coordinate of the rectangle
-
 
 </td></tr>
 <tr><td>
 
 bottom
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Second Y coordinate of the rectangle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1619,7 +1413,6 @@ This API does not perform zooming, but it will generate a rectangle frame indica
 The units here are data-level units, which are equivalent to mil on the canvas level in span
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（视口操作作用于当前激活的 PCB）
@@ -1645,9 +1438,8 @@ Save Document
 ## Signature
 
 ```typescript
-public save(): Promise<boolean>;
+function save(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1656,7 +1448,6 @@ Promise&lt;boolean&gt;
 Whether the save operation was successful. Errors such as save failure and upload failure all return `false`
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（保存作用于当前激活的 PCB）
@@ -1682,7 +1473,7 @@ Set the offset coordinate of the canvas origin relative to the data origin
 ## Signature
 
 ```typescript
-public setCanvasOrigin(offsetX: number, offsetY: number): Promise<boolean>;
+function setCanvasOrigin(offsetX: number, offsetY: number): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1691,53 +1482,42 @@ public setCanvasOrigin(offsetX: number, offsetY: number): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 offsetX
 
-
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate offset of the canvas origin relative to the data origin
-
 
 </td></tr>
 <tr><td>
 
 offsetY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y coordinate offset of the canvas origin relative to the data origin
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1756,7 +1536,6 @@ If you want the front-end canvas coordinate to be consistent with the data durin
 The units here are data-level units, which are equivalent to mil on the canvas level in span
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（原点设置作用于当前激活的 PCB）
@@ -1790,9 +1569,8 @@ Start the ratline calculation function
 ## Signature
 
 ```typescript
-public startCalculatingRatline(): Promise<boolean>;
+function startCalculatingRatline(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1805,7 +1583,6 @@ Whether the operation is successful
 A ratline calculation will be triggered when starting
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（飞线开关作用于当前激活的 PCB）
@@ -1833,9 +1610,8 @@ Start canvas update calculation
 ## Signature
 
 ```typescript
-public startCanvasUpdateCalculation(): Promise<boolean>;
+function startCanvasUpdateCalculation(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1862,9 +1638,8 @@ Stop the ratline calculation function
 ## Signature
 
 ```typescript
-public stopCalculatingRatline(): Promise<boolean>;
+function stopCalculatingRatline(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1873,7 +1648,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（飞线开关作用于当前激活的 PCB）
@@ -1901,9 +1675,8 @@ Stop canvas update calculation
 ## Signature
 
 ```typescript
-public stopCanvasUpdateCalculation(): Promise<boolean>;
+function stopCanvasUpdateCalculation(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1928,9 +1701,8 @@ Trigger a canvas update calculation
 ## Signature
 
 ```typescript
-public triggerCanvasUpdateCalculation(): Promise<boolean>;
+function triggerCanvasUpdateCalculation(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1955,9 +1727,8 @@ Zoom to the board outline (fit the board outline)
 ## Signature
 
 ```typescript
-public zoomToBoardOutline(): Promise<boolean>;
+function zoomToBoardOutline(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -1966,7 +1737,6 @@ Promise&lt;boolean&gt;
 Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建测试 PCB 并打开（视口操作作用于当前激活的 PCB）

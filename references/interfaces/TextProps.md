@@ -5,7 +5,7 @@
 ## Signature
 
 ```typescript
-export interface TextProps 
+interface TextProps
 ```
 
 ## Properties
@@ -14,116 +14,92 @@ export interface TextProps
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [color?](./TextProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Text color
-
 
 </td></tr>
 <tr><td>
 
 [fontFamily?](./TextProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Font family
-
 
 </td></tr>
 <tr><td>
 
 [fontSize?](./TextProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 _(Optional)_ Font size ( pixels)
-
 
 </td></tr>
 <tr><td>
 
 [textAlign?](./TextProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 'left' \| 'center' \| 'right'
 
-
 </td><td>
 
 _(Optional)_ Horizontal alignment
-
 
 </td></tr>
 <tr><td>
 
 [value](./TextProps.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Text content ( required)
-
 
 </td></tr>
 </tbody></table>

@@ -5,12 +5,11 @@ Polygon (polyline) primitive
 ## Signature
 
 ```typescript
-export class ISCH_PrimitivePolygon implements ISCH_Primitive 
+class ISCH_PrimitivePolygon implements ISCH_Primitive
 ```
 **Implements:** [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,254 +17,200 @@ export class ISCH_PrimitivePolygon implements ISCH_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Color()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: color
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FillColor()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: fill color
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Line()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: coordinate group
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineType()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: line type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Color(color)](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: color
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FillColor(fillColor)](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: fill color
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Line(line)](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: coordinate group
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineType(lineType)](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: line type
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -285,9 +230,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<ISCH_PrimitivePolygon>;
+function done(): Promise<ISCH_PrimitivePolygon>;
 ```
-
 
 ## Returns
 
@@ -296,7 +240,6 @@ Promise&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)<!-- -->&gt;
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合
@@ -331,9 +274,8 @@ Get the property state: color
 ## Signature
 
 ```typescript
-public getState_Color(): string | null;
+function getState_Color(): string | null;
 ```
-
 
 ## Returns
 
@@ -342,7 +284,6 @@ string \| null
 Color
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个红色轮廓的测试多边形（SCH 坐标单位 10mil）
@@ -367,9 +308,8 @@ Get the property state: fill color
 ## Signature
 
 ```typescript
-public getState_FillColor(): string | null;
+function getState_FillColor(): string | null;
 ```
-
 
 ## Returns
 
@@ -378,7 +318,6 @@ string \| null
 Fill color
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个黄色填充的测试多边形（SCH 坐标单位 10mil）
@@ -403,9 +342,8 @@ Get the property state: coordinate group
 ## Signature
 
 ```typescript
-public getState_Line(): Array<number>;
+function getState_Line(): Array<number>;
 ```
-
 
 ## Returns
 
@@ -414,7 +352,6 @@ Array&lt;number&gt;
 Coordinate group
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个 4 顶点矩形测试多边形（SCH 坐标单位 10mil）
@@ -439,9 +376,8 @@ Get the property state: line type
 ## Signature
 
 ```typescript
-public getState_LineType(): ESCH_PrimitiveLineType | null;
+function getState_LineType(): ESCH_PrimitiveLineType | null;
 ```
-
 
 ## Returns
 
@@ -450,7 +386,6 @@ public getState_LineType(): ESCH_PrimitiveLineType | null;
 Line type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个虚线边框的测试多边形（末参 1 = DASHED，SCH 坐标单位 10mil）
@@ -475,9 +410,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number | null;
+function getState_LineWidth(): number | null;
 ```
-
 
 ## Returns
 
@@ -486,7 +420,6 @@ number \| null
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个线宽 6 的测试多边形（SCH 坐标单位 10mil）
@@ -511,9 +444,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -522,7 +454,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试多边形：4 个顶点构成矩形（SCH 坐标单位 10mil，line 为 [x1,y1, x2,y2, x3,y3, x4,y4] 扁平数组）
@@ -547,9 +478,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): ESCH_PrimitiveType;
+function getState_PrimitiveType(): ESCH_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -558,7 +488,6 @@ public getState_PrimitiveType(): ESCH_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试多边形（SCH 坐标单位 10mil）
@@ -583,9 +512,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -594,7 +522,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试多边形，创建后默认处于异步模式（SCH 坐标单位 10mil）
@@ -624,9 +551,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<ISCH_PrimitivePolygon>;
+function reset(): Promise<ISCH_PrimitivePolygon>;
 ```
-
 
 ## Returns
 
@@ -635,7 +561,6 @@ Promise&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)<!-- -->&gt;
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合
@@ -670,7 +595,7 @@ Set the property state: color
 ## Signature
 
 ```typescript
-public setState_Color(color: string | null): ISCH_PrimitivePolygon;
+function setState_Color(color: string | null): ISCH_PrimitivePolygon;
 ```
 
 ## Parameters
@@ -679,37 +604,29 @@ public setState_Color(color: string | null): ISCH_PrimitivePolygon;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 color
 
-
 </td><td>
 
 string \| null
-
 
 </td><td>
 
 Color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -718,7 +635,6 @@ Color
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合
@@ -751,7 +667,7 @@ Set the property state: fill color
 ## Signature
 
 ```typescript
-public setState_FillColor(fillColor: string | null): ISCH_PrimitivePolygon;
+function setState_FillColor(fillColor: string | null): ISCH_PrimitivePolygon;
 ```
 
 ## Parameters
@@ -760,37 +676,29 @@ public setState_FillColor(fillColor: string | null): ISCH_PrimitivePolygon;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fillColor
 
-
 </td><td>
 
 string \| null
-
 
 </td><td>
 
 Fill color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -799,7 +707,6 @@ Fill color
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合
@@ -832,7 +739,7 @@ Set the property state: coordinate group
 ## Signature
 
 ```typescript
-public setState_Line(line: Array<number>): ISCH_PrimitivePolygon;
+function setState_Line(line: Array<number>): ISCH_PrimitivePolygon;
 ```
 
 ## Parameters
@@ -841,37 +748,29 @@ public setState_Line(line: Array<number>): ISCH_PrimitivePolygon;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 line
 
-
 </td><td>
 
 Array&lt;number&gt;
-
 
 </td><td>
 
 Coordinate group
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -880,7 +779,6 @@ Coordinate group
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合
@@ -913,7 +811,7 @@ Set the property state: line type
 ## Signature
 
 ```typescript
-public setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitivePolygon;
+function setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitivePolygon;
 ```
 
 ## Parameters
@@ -922,37 +820,29 @@ public setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_Primitiv
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineType
 
-
 </td><td>
 
 [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
 
 </td><td>
 
 Line type
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -961,7 +851,6 @@ Line type
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合
@@ -994,7 +883,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number | null): ISCH_PrimitivePolygon;
+function setState_LineWidth(lineWidth: number | null): ISCH_PrimitivePolygon;
 ```
 
 ## Parameters
@@ -1003,37 +892,29 @@ public setState_LineWidth(lineWidth: number | null): ISCH_PrimitivePolygon;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number \| null
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1042,7 +923,6 @@ Line width
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合
@@ -1073,9 +953,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): ISCH_PrimitivePolygon;
+function toAsync(): ISCH_PrimitivePolygon;
 ```
-
 
 ## Returns
 
@@ -1084,7 +963,6 @@ public toAsync(): ISCH_PrimitivePolygon;
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合
@@ -1116,9 +994,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): ISCH_PrimitivePolygon;
+function toSync(): ISCH_PrimitivePolygon;
 ```
-
 
 ## Returns
 
@@ -1127,7 +1004,6 @@ public toSync(): ISCH_PrimitivePolygon;
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试多边形重合

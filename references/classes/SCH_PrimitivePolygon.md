@@ -5,7 +5,7 @@ Schematic &amp; symbol / polygon (polyline) primitive class
 ## Signature
 
 ```typescript
-export class SCH_PrimitivePolygon implements ISCH_PrimitiveAPI 
+class SCH_PrimitivePolygon implements ISCH_PrimitiveAPI
 ```
 **Implements:** [ISCH\_PrimitiveAPI](../interfaces/ISCH_PrimitiveAPI.md)
 
@@ -15,114 +15,90 @@ export class SCH_PrimitivePolygon implements ISCH_PrimitiveAPI
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [create(line, color, fillColor, lineWidth, lineType)](./SCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Polygon
-
 
 </td></tr>
 <tr><td>
 
 [delete(primitiveIds)](./SCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Polygon
 
+</td></tr>
+<tr><td>
+
+[get(primitiveIds)](./SCH_PrimitivePolygon.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get Polygon
 
 </td></tr>
 <tr><td>
 
 [get(primitiveIds)](./SCH_PrimitivePolygon.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get Polygon
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./SCH_PrimitivePolygon.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Polygon
-
 
 </td></tr>
 <tr><td>
 
 [getAll()](./SCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Polygon
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitiveId()](./SCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Polygon primitive IDs
-
 
 </td></tr>
 <tr><td>
 
 [modify(primitiveId, property)](./SCH_PrimitivePolygon.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Modify Polygon
-
 
 </td></tr>
 </tbody></table>
@@ -142,7 +118,13 @@ Create Polygon
 ## Signature
 
 ```typescript
-public create(line: Array<number>, color?: string | null, fillColor?: string | null, lineWidth?: number | null, lineType?: ESCH_PrimitiveLineType | null): Promise<ISCH_PrimitivePolygon | undefined>;
+function create(
+	line: Array<number>,
+	color?: string | null,
+	fillColor?: string | null,
+	lineWidth?: number | null,
+	lineType?: ESCH_PrimitiveLineType | null,
+): Promise<ISCH_PrimitivePolygon | undefined>;
 ```
 
 ## Parameters
@@ -151,101 +133,81 @@ public create(line: Array<number>, color?: string | null, fillColor?: string | n
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 line
 
-
 </td><td>
 
 Array&lt;number&gt;
 
-
 </td><td>
 
 Coordinate group, a continuous set of lines described by `[x1, y1, x2, y2, x3, y3]`
-
 
 </td></tr>
 <tr><td>
 
 color
 
-
 </td><td>
 
 string \| null
 
-
 </td><td>
 
 _(Optional)_ Color, `null` indicates the default
-
 
 </td></tr>
 <tr><td>
 
 fillColor
 
-
 </td><td>
 
 string \| null
 
-
 </td><td>
 
 _(Optional)_ Fill color. `none` indicates no fill, `null` indicates the default
-
 
 </td></tr>
 <tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number \| null
 
-
 </td><td>
 
 _(Optional)_ Line width, range `1-10`<!-- -->. `null` indicates the default
-
 
 </td></tr>
 <tr><td>
 
 lineType
 
-
 </td><td>
 
 [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
 
 </td><td>
 
 _(Optional)_ Line type. `null` indicates the default
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -254,7 +216,6 @@ Promise&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md) \| undefined&gt;
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成随机起点坐标，避免与画布上已有的多边形重合（SCH 坐标单位 10mil）
@@ -285,7 +246,7 @@ Delete Polygon
 ## Signature
 
 ```typescript
-public delete(primitiveIds: string | ISCH_PrimitivePolygon | Array<string> | Array<ISCH_PrimitivePolygon>): Promise<boolean>;
+function delete(primitiveIds: string | ISCH_PrimitivePolygon | Array<string> | Array<ISCH_PrimitivePolygon>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -294,37 +255,29 @@ public delete(primitiveIds: string | ISCH_PrimitivePolygon | Array<string> | Arr
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string \| [ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md) \| Array&lt;string&gt; \| Array&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)<!-- -->&gt;
-
 
 </td><td>
 
 Polygon primitive ID or Polygon primitive object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -333,7 +286,6 @@ Promise&lt;boolean&gt;
 Delete Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 创建两个待删除的测试多边形（随机坐标避免重合）
@@ -368,7 +320,7 @@ Get Polygon
 ## Signature
 
 ```typescript
-public get(primitiveIds: string): Promise<ISCH_PrimitivePolygon | undefined>;
+function get(primitiveIds: string): Promise<ISCH_PrimitivePolygon | undefined>;
 ```
 
 ## Parameters
@@ -377,37 +329,29 @@ public get(primitiveIds: string): Promise<ISCH_PrimitivePolygon | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Polygon primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -416,7 +360,6 @@ Promise&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md) \| undefined&gt;
 Polygon primitive object, `undefined` indicates that the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 在画布空白处创建两个测试多边形（随机坐标避免重合）
@@ -453,7 +396,7 @@ Get Polygon
 ## Signature
 
 ```typescript
-public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitivePolygon>>;
+function get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitivePolygon>>;
 ```
 
 ## Parameters
@@ -462,37 +405,29 @@ public get(primitiveIds: Array<string>): Promise<Array<ISCH_PrimitivePolygon>>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Polygon primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -515,9 +450,8 @@ Get all Polygon
 ## Signature
 
 ```typescript
-public getAll(): Promise<Array<ISCH_PrimitivePolygon>>;
+function getAll(): Promise<Array<ISCH_PrimitivePolygon>>;
 ```
-
 
 ## Returns
 
@@ -526,7 +460,6 @@ Promise&lt;Array&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)<!-- -->
 Array of Polygon primitive objects
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试多边形作为查找目标（随机坐标避免重合）
@@ -557,9 +490,8 @@ Get all Polygon primitive IDs
 ## Signature
 
 ```typescript
-public getAllPrimitiveId(): Promise<Array<string>>;
+function getAllPrimitiveId(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -568,7 +500,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 Array of Polygon primitive IDs
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试多边形作为查找目标（随机坐标避免重合）
@@ -598,7 +529,22 @@ Modify Polygon
 ## Signature
 
 ```typescript
-public modify(primitiveId: string | ISCH_PrimitivePolygon, property: { line?: undefined | number[]; color?: undefined | null | string; fillColor?: undefined | null | string; lineWidth?: undefined | null | number; lineType?: undefined | null | ESCH_PrimitiveLineType.SOLID | ESCH_PrimitiveLineType.DASHED | ESCH_PrimitiveLineType.DOTTED | ESCH_PrimitiveLineType.DOT_DASHED }): Promise<ISCH_PrimitivePolygon | undefined>;
+function modify(
+	primitiveId: string | ISCH_PrimitivePolygon,
+	property: {
+		line?: undefined | number[];
+		color?: undefined | null | string;
+		fillColor?: undefined | null | string;
+		lineWidth?: undefined | null | number;
+		lineType?:
+			| undefined
+			| null
+			| ESCH_PrimitiveLineType.SOLID
+			| ESCH_PrimitiveLineType.DASHED
+			| ESCH_PrimitiveLineType.DOTTED
+			| ESCH_PrimitiveLineType.DOT_DASHED;
+	},
+): Promise<ISCH_PrimitivePolygon | undefined>;
 ```
 
 ## Parameters
@@ -607,53 +553,42 @@ public modify(primitiveId: string | ISCH_PrimitivePolygon, property: { line?: un
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveId
 
-
 </td><td>
 
 string \| [ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md)
 
-
 </td><td>
 
 Primitive ID
-
 
 </td></tr>
 <tr><td>
 
 property
 
-
 </td><td>
 
 { line?: undefined \| number\[\]; color?: undefined \| null \| string; fillColor?: undefined \| null \| string; lineWidth?: undefined \| null \| number; lineType?: undefined \| null \| [ESCH\_PrimitiveLineType.SOLID](../enums/ESCH_PrimitiveLineType.md) \| [ESCH\_PrimitiveLineType.DASHED](../enums/ESCH_PrimitiveLineType.md) \| [ESCH\_PrimitiveLineType.DOTTED](../enums/ESCH_PrimitiveLineType.md) \| [ESCH\_PrimitiveLineType.DOT\_DASHED](../enums/ESCH_PrimitiveLineType.md) }
-
 
 </td><td>
 
 Modify Parameter
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -662,7 +597,6 @@ Promise&lt;[ISCH\_PrimitivePolygon](./ISCH_PrimitivePolygon.md) \| undefined&gt;
 Polygon primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 创建待修改的测试多边形：4 顶点矩形、红色边线、黄色填充（随机坐标避免重合）

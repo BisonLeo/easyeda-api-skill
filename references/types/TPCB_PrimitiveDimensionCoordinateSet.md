@@ -5,7 +5,9 @@ Dimension coordinate set
 ## Signature
 
 ```typescript
-export type TPCB_PrimitiveDimensionCoordinateSet = [number, number, number, number, number, number] | [number, number, number, number, number, number, number, number];
+type TPCB_PrimitiveDimensionCoordinateSet
+	= | [number, number, number, number, number, number]
+		| [number, number, number, number, number, number, number, number];
 ```
 
 ## Remarks

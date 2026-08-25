@@ -5,13 +5,12 @@ System / multilingual class
 ## Signature
 
 ```typescript
-export class SYS_I18n 
+class SYS_I18n
 ```
 
 ## Remarks
 
 Use the multilingual system to display multilingual text
-
 
 ## Methods
 
@@ -19,156 +18,123 @@ Use the multilingual system to display multilingual text
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [addLanguageChangedEventListener(id, callFn, onlyOnce)](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Add a language change event listener
-
 
 </td></tr>
 <tr><td>
 
 [getAllSupportedLanguages()](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query all supported languages
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentLanguage()](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get Current language environment
-
 
 </td></tr>
 <tr><td>
 
 [importMultilingual(language, source)](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Import multilingual
-
 
 </td></tr>
 <tr><td>
 
 [importMultilingualLanguage(namespace, language, source)](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Import multilingual: specify namespace and language
-
 
 </td></tr>
 <tr><td>
 
 [importMultilingualNamespace(namespace, source)](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Import multilingual: specify namespace
-
 
 </td></tr>
 <tr><td>
 
 [isEventListenerAlreadyExist(id)](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the event listener exists
-
 
 </td></tr>
 <tr><td>
 
 [isLanguageSupported(language)](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Check whether the language is supported
-
 
 </td></tr>
 <tr><td>
 
 [removeEventListener(id)](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Remove Event listener
-
 
 </td></tr>
 <tr><td>
 
 [text(tag, namespace, language, args)](./SYS_I18n.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Output language text
-
 
 </td></tr>
 </tbody></table>
@@ -186,7 +152,11 @@ Add a language change event listener
 ## Signature
 
 ```typescript
-public addLanguageChangedEventListener(id: string, callFn: (newLanguage: string, lastLanguage: string) => void | Promise<void>, onlyOnce: boolean): void;
+function addLanguageChangedEventListener(
+	id: string,
+	callFn: (newLanguage: string, lastLanguage: string) => void | Promise<void>,
+	onlyOnce: boolean,
+): void;
 ```
 
 ## Parameters
@@ -195,67 +165,53 @@ public addLanguageChangedEventListener(id: string, callFn: (newLanguage: string,
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Event ID, used to prevent duplicate event registration
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (newLanguage: string, lastLanguage: string) =&gt; void \| Promise&lt;void&gt;
 
-
 </td><td>
 
 The callback function triggered when the event fires
-
 
 </td></tr>
 <tr><td>
 
 onlyOnce
 
-
 </td><td>
 
 boolean
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -263,15 +219,14 @@ void
 
 ## Example
 
-
 ```javascript
 // 1. 注册语言切换监听（回调要等用户真实切换语言时才会触发）
 eda.sys_I18n.addLanguageChangedEventListener(
-  '嘉立创示例_语言监听',
-  (newLanguage, lastLanguage) => {
-    console.log('语言已切换：', lastLanguage, '→', newLanguage);
-  },
-  false,
+	'嘉立创示例_语言监听',
+	(newLanguage, lastLanguage) => {
+		console.log('语言已切换：', lastLanguage, '→', newLanguage);
+	},
+	false,
 );
 
 // 2. 确认监听已注册
@@ -290,9 +245,8 @@ Query all supported languages
 ## Signature
 
 ```typescript
-public getAllSupportedLanguages(): Array<string>;
+function getAllSupportedLanguages(): Array<string>;
 ```
-
 
 ## Returns
 
@@ -302,7 +256,6 @@ List of all supported languages
 
 ## Example
 
-
 ```javascript
 // 1. 获取所有支持的语言代码
 const languages = eda.sys_I18n.getAllSupportedLanguages();
@@ -310,8 +263,8 @@ const languages = eda.sys_I18n.getAllSupportedLanguages();
 // 2. 输出语言总数，并确认常用语言在列表中
 console.log('支持的语言数量：', languages.length);
 console.log(
-  '常用语言受支持：',
-  ['zh-Hans', 'zh-Hant', 'en', 'ja'].every((lang) => languages.includes(lang)),
+	'常用语言受支持：',
+	['zh-Hans', 'zh-Hant', 'en', 'ja'].every(lang => languages.includes(lang)),
 );
 ```
 
@@ -324,9 +277,8 @@ Get Current language environment
 ## Signature
 
 ```typescript
-public getCurrentLanguage(): Promise<string>;
+function getCurrentLanguage(): Promise<string>;
 ```
-
 
 ## Returns
 
@@ -339,7 +291,6 @@ Language
 The languages that can be obtained are limited by the languages currently supported by EDA. Languages supported by other APIs need to explicitly specify the `language` parameter to be used
 
 ## Example
-
 
 ```javascript
 // 1. 获取当前显示语言
@@ -359,7 +310,7 @@ Import multilingual
 ## Signature
 
 ```typescript
-public importMultilingual(language: string, source: ISYS_LanguageKeyValuePairs): boolean;
+function importMultilingual(language: string, source: ISYS_LanguageKeyValuePairs): boolean;
 ```
 
 ## Parameters
@@ -368,53 +319,42 @@ public importMultilingual(language: string, source: ISYS_LanguageKeyValuePairs):
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 language
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Language
-
 
 </td></tr>
 <tr><td>
 
 source
 
-
 </td><td>
 
 [ISYS\_LanguageKeyValuePairs](../types/ISYS_LanguageKeyValuePairs.md)
-
 
 </td><td>
 
 The multilingual data object to import
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -428,11 +368,10 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 // 1. 向默认命名空间导入简体中文文案（${1} 是占位符，取文案时传实际参数）
 const imported = eda.sys_I18n.importMultilingual('zh-Hans', {
-  '嘉立创示例_问候': '你好，${1}！欢迎回来',
+	嘉立创示例_问候: '你好，${1}！欢迎回来',
 });
 
 // 2. 用 text() 按标签取回文案，占位符由参数替换
@@ -451,7 +390,11 @@ Import multilingual: specify namespace and language
 ## Signature
 
 ```typescript
-public importMultilingualLanguage(namespace: string, language: string, source: ISYS_LanguageKeyValuePairs): boolean;
+function importMultilingualLanguage(
+	namespace: string,
+	language: string,
+	source: ISYS_LanguageKeyValuePairs,
+): boolean;
 ```
 
 ## Parameters
@@ -460,69 +403,55 @@ public importMultilingualLanguage(namespace: string, language: string, source: I
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 namespace
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Namespace
-
 
 </td></tr>
 <tr><td>
 
 language
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Language
-
 
 </td></tr>
 <tr><td>
 
 source
 
-
 </td><td>
 
 [ISYS\_LanguageKeyValuePairs](../types/ISYS_LanguageKeyValuePairs.md)
-
 
 </td><td>
 
 The multilingual data object to import
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -532,11 +461,10 @@ Import whether it is successful
 
 ## Example
 
-
 ```javascript
 // 1. 向命名空间导入繁体中文文案
 const imported = eda.sys_I18n.importMultilingualLanguage('嘉立创示例_语言包', 'zh-Hant', {
-  '示例_问候': '妳好，${1}',
+	示例_问候: '妳好，${1}',
 });
 
 // 2. 用 text() 指定命名空间和语言取回文案
@@ -555,7 +483,10 @@ Import multilingual: specify namespace
 ## Signature
 
 ```typescript
-public importMultilingualNamespace(namespace: string, source: ISYS_MultilingualLanguagesData): boolean;
+function importMultilingualNamespace(
+	namespace: string,
+	source: ISYS_MultilingualLanguagesData,
+): boolean;
 ```
 
 ## Parameters
@@ -564,53 +495,42 @@ public importMultilingualNamespace(namespace: string, source: ISYS_MultilingualL
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 namespace
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Namespace
-
 
 </td></tr>
 <tr><td>
 
 source
 
-
 </td><td>
 
 [ISYS\_MultilingualLanguagesData](../interfaces/ISYS_MultilingualLanguagesData.md)
-
 
 </td><td>
 
 The multilingual data object to import
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -620,12 +540,11 @@ Import whether it is successful
 
 ## Example
 
-
 ```javascript
 // 1. 组装多语言数据：语言代码 → 键值对
 const languagesData = {
-  'zh-Hans': { '示例_问候': '你好，${1}' },
-  en: { '示例_问候': 'Hello, ${1}' },
+	'zh-Hans': { 示例_问候: '你好，${1}' },
+	'en': { 示例_问候: 'Hello, ${1}' },
 };
 
 // 2. 一次性导入整个命名空间
@@ -649,7 +568,7 @@ Query whether the event listener exists
 ## Signature
 
 ```typescript
-public isEventListenerAlreadyExist(id: string): boolean;
+function isEventListenerAlreadyExist(id: string): boolean;
 ```
 
 ## Parameters
@@ -658,37 +577,29 @@ public isEventListenerAlreadyExist(id: string): boolean;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Event ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -697,7 +608,6 @@ boolean
 Whether the event listener exists
 
 ## Example
-
 
 ```javascript
 // 1. 注册一个测试监听作为查询对象
@@ -721,7 +631,7 @@ Check whether the language is supported
 ## Signature
 
 ```typescript
-public isLanguageSupported(language: string): boolean;
+function isLanguageSupported(language: string): boolean;
 ```
 
 ## Parameters
@@ -730,37 +640,29 @@ public isLanguageSupported(language: string): boolean;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 language
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Language
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -769,7 +671,6 @@ boolean
 Whether it is supported
 
 ## Example
-
 
 ```javascript
 // 1. 检查受支持的语言代码
@@ -789,7 +690,7 @@ Remove Event listener
 ## Signature
 
 ```typescript
-public removeEventListener(id: string): boolean;
+function removeEventListener(id: string): boolean;
 ```
 
 ## Parameters
@@ -798,37 +699,29 @@ public removeEventListener(id: string): boolean;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Event ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -837,7 +730,6 @@ boolean
 Whether Remove Specify event listener
 
 ## Example
-
 
 ```javascript
 // 1. 先注册一个测试监听作为移除对象
@@ -859,7 +751,7 @@ Output language text
 ## Signature
 
 ```typescript
-public text(tag: string, namespace?: string, language?: string, ...args: Array<any>): string;
+function text(tag: string, namespace?: string, language?: string, ...args: Array<any>): string;
 ```
 
 ## Parameters
@@ -868,85 +760,68 @@ public text(tag: string, namespace?: string, language?: string, ...args: Array<a
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tag
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Text tag, corresponding to the key in the multilingual file key-value pairs
-
 
 </td></tr>
 <tr><td>
 
 namespace
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Text namespace. In the extension runtime environment, it defaults to the extension UUID; otherwise, it is the system default namespace
-
 
 </td></tr>
 <tr><td>
 
 language
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Language. `undefined` is the current display language of EDA
-
 
 </td></tr>
 <tr><td>
 
 args
 
-
 </td><td>
 
 Array&lt;any&gt;
-
 
 </td><td>
 
 Arguments for replacing placeholders in the language text
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -962,12 +837,11 @@ Language priority: current display language &gt; system default language &gt; th
 
 ## Example
 
-
 ```javascript
 // 1. 先导入一份多语言数据作为取文本的数据源
 eda.sys_I18n.importMultilingualNamespace('嘉立创示例_取文本', {
-  'zh-Hans': { '示例_问候': '你好，${1}！今天是${2}' },
-  en: { '示例_问候': 'Hello, ${1}! Today is ${2}' },
+	'zh-Hans': { 示例_问候: '你好，${1}！今天是${2}' },
+	'en': { 示例_问候: 'Hello, ${1}! Today is ${2}' },
 });
 
 // 2. 指定语言取文案，占位符按参数顺序替换

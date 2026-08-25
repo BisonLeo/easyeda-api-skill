@@ -5,7 +5,7 @@ External library item index
 ## Signature
 
 ```typescript
-export interface ILIB_ExtendLibraryItemIndex 
+interface ILIB_ExtendLibraryItemIndex
 ```
 
 ## Remarks
@@ -24,59 +24,47 @@ If both the `uuid` and `name` fields are passed, only `uuid` cannot be duplicate
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [name](./ILIB_ExtendLibraryItemIndex.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Library name
-
 
 </td></tr>
 <tr><td>
 
 [uuid?](./ILIB_ExtendLibraryItemIndex.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Library UUID
-
 
 </td></tr>
 </tbody></table>

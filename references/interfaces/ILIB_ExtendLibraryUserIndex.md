@@ -5,7 +5,7 @@ External library user index
 ## Signature
 
 ```typescript
-export interface ILIB_ExtendLibraryUserIndex 
+interface ILIB_ExtendLibraryUserIndex
 ```
 
 ## Remarks
@@ -22,59 +22,47 @@ If you only want to display the user name, you can pass in the `name` field
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [name?](./ILIB_ExtendLibraryUserIndex.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ User name
-
 
 </td></tr>
 <tr><td>
 
 [uuid?](./ILIB_ExtendLibraryUserIndex.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ User UUID within the EasyEDA system
-
 
 </td></tr>
 </tbody></table>

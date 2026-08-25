@@ -5,7 +5,7 @@ System / settings class
 ## Signature
 
 ```typescript
-export class SYS_Setting 
+class SYS_Setting
 ```
 
 ## Methods
@@ -14,30 +14,24 @@ export class SYS_Setting
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [restoreDefault()](./SYS_Setting.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Restore all default settings
-
 
 </td></tr>
 </tbody></table>
@@ -57,9 +51,8 @@ Restore all default settings
 ## Signature
 
 ```typescript
-public restoreDefault(): Promise<boolean>;
+function restoreDefault(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -72,7 +65,6 @@ Whether the operation is successful
 Restores all EDA settings to their default state. This operation will lose all settings. Please pay special attention when calling it
 
 ## Example
-
 
 ```javascript
 // 1. 先制造一个可观察的自定义设置：向字体白名单加入演示字体

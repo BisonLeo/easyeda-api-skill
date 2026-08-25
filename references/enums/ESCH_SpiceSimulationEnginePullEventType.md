@@ -5,7 +5,7 @@ Spice simulation engine pull event type
 ## Signature
 
 ```typescript
-export enum ESCH_SpiceSimulationEnginePullEventType 
+enum ESCH_SpiceSimulationEnginePullEventType
 ```
 
 ## Enumeration Members
@@ -14,44 +14,35 @@ export enum ESCH_SpiceSimulationEnginePullEventType
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 SIMULATE\_NETLIST
 
-
 </td><td>
 
 `'SIMULATE_NETLIST'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 VALIDATE\_NETLIST
 
-
 </td><td>
 
 `'VALIDATE_NETLIST'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

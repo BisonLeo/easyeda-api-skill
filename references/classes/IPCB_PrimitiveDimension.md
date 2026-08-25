@@ -5,12 +5,11 @@ Dimension primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveDimension implements IPCB_Primitive 
+class IPCB_PrimitiveDimension implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,324 +17,255 @@ export class IPCB_PrimitiveDimension implements IPCB_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_CoordinateSet()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: coordinate set
-
 
 </td></tr>
 <tr><td>
 
 [getState\_DimensionType()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: dimension type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Precision()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: precision
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_TextFollow()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: text follows
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Unit()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: unit
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_CoordinateSet(coordinateSet)](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: coordinate set
-
 
 </td></tr>
 <tr><td>
 
 [setState\_DimensionType(dimensionType)](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: dimension type
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Precision(precision)](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: precision
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Unit(unit)](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: unit
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveDimension.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -355,9 +285,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveDimension>;
+function done(): Promise<IPCB_PrimitiveDimension>;
 ```
-
 
 ## Returns
 
@@ -367,18 +296,17 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3,
-  undefined,
-  10
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3,
+	undefined,
+	10
 );
 
 // 3. 切换异步模式，连续累计两处修改（线宽 + 换层）
@@ -405,9 +333,8 @@ Get the property state: coordinate set
 ## Signature
 
 ```typescript
-public getState_CoordinateSet(): TPCB_PrimitiveDimensionCoordinateSet;
+function getState_CoordinateSet(): TPCB_PrimitiveDimensionCoordinateSet;
 ```
-
 
 ## Returns
 
@@ -417,13 +344,12 @@ Coordinate set
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个长度标注（8 元素坐标集：测量端点、箭头端点各两组）
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 
 // 2. 读取坐标集
@@ -444,9 +370,8 @@ Get the property state: dimension type
 ## Signature
 
 ```typescript
-public getState_DimensionType(): EPCB_PrimitiveDimensionType;
+function getState_DimensionType(): EPCB_PrimitiveDimensionType;
 ```
-
 
 ## Returns
 
@@ -456,13 +381,12 @@ Dimension type
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个长度标注（"Length Dimension"）
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 
 // 2. 读取标注类型
@@ -483,9 +407,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfDimension;
+function getState_Layer(): TPCB_LayersOfDimension;
 ```
-
 
 ## Returns
 
@@ -495,13 +418,12 @@ Layer
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个顶层丝印层（3）的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 
 // 2. 读取所在层
@@ -522,9 +444,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number;
+function getState_LineWidth(): number;
 ```
-
 
 ## Returns
 
@@ -534,15 +455,14 @@ Line width
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个 10mil 线宽的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3,
-  undefined,
-  10
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3,
+	undefined,
+	10
 );
 
 // 2. 读取线宽
@@ -563,9 +483,8 @@ Get the property state: precision
 ## Signature
 
 ```typescript
-public getState_Precision(): number;
+function getState_Precision(): number;
 ```
-
 
 ## Returns
 
@@ -575,16 +494,15 @@ Precision
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个精度为 2 位的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3,
-  undefined,
-  undefined,
-  2
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3,
+	undefined,
+	undefined,
+	2
 );
 
 // 2. 读取精度
@@ -605,9 +523,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -617,13 +534,12 @@ Primitive ID
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 
 // 2. 读取图元 ID
@@ -644,9 +560,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -656,13 +571,12 @@ Whether it is locked
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个未锁定的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 
 // 2. 读取锁定状态
@@ -683,9 +597,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -695,13 +608,12 @@ Primitive type
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 
 // 2. 读取图元类型
@@ -722,9 +634,8 @@ Get the property state: text follows
 ## Signature
 
 ```typescript
-public getState_TextFollow(): 0 | 1;
+function getState_TextFollow(): 0 | 1;
 ```
-
 
 ## Returns
 
@@ -734,13 +645,12 @@ Text follows
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 
 // 2. 读取文字跟随状态（0 或 1）
@@ -761,9 +671,9 @@ Get the property state: unit
 ## Signature
 
 ```typescript
-public getState_Unit(): ESYS_Unit.MILLIMETER | ESYS_Unit.CENTIMETER | ESYS_Unit.INCH | ESYS_Unit.MIL;
+function getState_Unit():
+	ESYS_Unit.MILLIMETER | ESYS_Unit.CENTIMETER | ESYS_Unit.INCH | ESYS_Unit.MIL;
 ```
-
 
 ## Returns
 
@@ -773,13 +683,12 @@ Unit
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个默认单位（毫米）的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 
 // 2. 读取显示单位（'mm' / 'cm' / 'inch' / 'mil'）
@@ -800,9 +709,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -812,13 +720,12 @@ Whether Is async primitive
 
 ## Example
 
-
 ```javascript
 // 1. 创建一个长度标注，创建后默认处于异步模式
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
-  3
+	'Length Dimension',
+	[1000, 1000, 1000, 800, 3000, 800, 3000, 1000],
+	3
 );
 const asyncOnCreate = dim.isAsync();
 
@@ -844,9 +751,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveDimension>;
+function reset(): Promise<IPCB_PrimitiveDimension>;
 ```
-
 
 ## Returns
 
@@ -856,18 +762,17 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个 10mil 线宽的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3,
-  undefined,
-  10
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3,
+	undefined,
+	10
 );
 
 // 3. 切换异步模式，累计一处未提交的线宽修改（10 → 99）
@@ -894,7 +799,9 @@ Set the property state: coordinate set
 ## Signature
 
 ```typescript
-public setState_CoordinateSet(coordinateSet: TPCB_PrimitiveDimensionCoordinateSet): IPCB_PrimitiveDimension;
+function setState_CoordinateSet(
+	coordinateSet: TPCB_PrimitiveDimensionCoordinateSet,
+): IPCB_PrimitiveDimension;
 ```
 
 ## Parameters
@@ -903,37 +810,29 @@ public setState_CoordinateSet(coordinateSet: TPCB_PrimitiveDimensionCoordinateSe
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 coordinateSet
 
-
 </td><td>
 
 [TPCB\_PrimitiveDimensionCoordinateSet](../types/TPCB_PrimitiveDimensionCoordinateSet.md)
-
 
 </td><td>
 
 Coordinate set
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -943,16 +842,15 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个长度标注（测量 x 到 x+2000 的水平距离）
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3
 );
 const before = dim.getState_CoordinateSet();
 
@@ -978,7 +876,9 @@ Set the property state: dimension type
 ## Signature
 
 ```typescript
-public setState_DimensionType(dimensionType: EPCB_PrimitiveDimensionType): IPCB_PrimitiveDimension;
+function setState_DimensionType(
+	dimensionType: EPCB_PrimitiveDimensionType,
+): IPCB_PrimitiveDimension;
 ```
 
 ## Parameters
@@ -987,37 +887,29 @@ public setState_DimensionType(dimensionType: EPCB_PrimitiveDimensionType): IPCB_
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 dimensionType
 
-
 </td><td>
 
 [EPCB\_PrimitiveDimensionType](../enums/EPCB_PrimitiveDimensionType.md)
-
 
 </td><td>
 
 Dimension type
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1027,16 +919,15 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个长度标注（8 元素坐标集）
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3
 );
 const before = dim.getState_DimensionType();
 
@@ -1063,7 +954,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfDimension): IPCB_PrimitiveDimension;
+function setState_Layer(layer: TPCB_LayersOfDimension): IPCB_PrimitiveDimension;
 ```
 
 ## Parameters
@@ -1072,37 +963,29 @@ public setState_Layer(layer: TPCB_LayersOfDimension): IPCB_PrimitiveDimension;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfDimension](../types/TPCB_LayersOfDimension.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1112,16 +995,15 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个顶层丝印层（3）的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3
 );
 const before = dim.getState_Layer();
 
@@ -1147,7 +1029,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number): IPCB_PrimitiveDimension;
+function setState_LineWidth(lineWidth: number): IPCB_PrimitiveDimension;
 ```
 
 ## Parameters
@@ -1156,37 +1038,29 @@ public setState_LineWidth(lineWidth: number): IPCB_PrimitiveDimension;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1196,18 +1070,17 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个 10mil 线宽的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3,
-  undefined,
-  10
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3,
+	undefined,
+	10
 );
 const before = dim.getState_LineWidth();
 
@@ -1233,7 +1106,7 @@ Set the property state: precision
 ## Signature
 
 ```typescript
-public setState_Precision(precision: number): IPCB_PrimitiveDimension;
+function setState_Precision(precision: number): IPCB_PrimitiveDimension;
 ```
 
 ## Parameters
@@ -1242,37 +1115,29 @@ public setState_Precision(precision: number): IPCB_PrimitiveDimension;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 precision
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Precision
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1282,19 +1147,18 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个精度为 2 位的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3,
-  undefined,
-  undefined,
-  2
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3,
+	undefined,
+	undefined,
+	2
 );
 const before = dim.getState_Precision();
 
@@ -1320,7 +1184,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveDimension;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveDimension;
 ```
 
 ## Parameters
@@ -1329,37 +1193,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveDimension;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1369,16 +1225,15 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个未锁定的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3
 );
 const before = dim.getState_PrimitiveLock();
 
@@ -1404,7 +1259,9 @@ Set the property state: unit
 ## Signature
 
 ```typescript
-public setState_Unit(unit: ESYS_Unit.MILLIMETER | ESYS_Unit.CENTIMETER | ESYS_Unit.INCH | ESYS_Unit.MIL): IPCB_PrimitiveDimension;
+function setState_Unit(
+	unit: ESYS_Unit.MILLIMETER | ESYS_Unit.CENTIMETER | ESYS_Unit.INCH | ESYS_Unit.MIL,
+): IPCB_PrimitiveDimension;
 ```
 
 ## Parameters
@@ -1413,37 +1270,29 @@ public setState_Unit(unit: ESYS_Unit.MILLIMETER | ESYS_Unit.CENTIMETER | ESYS_Un
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 unit
 
-
 </td><td>
 
 [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md)
-
 
 </td><td>
 
 Unit
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1453,16 +1302,15 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个默认毫米单位的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3
 );
 const before = dim.getState_Unit();
 
@@ -1486,9 +1334,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveDimension;
+function toAsync(): IPCB_PrimitiveDimension;
 ```
-
 
 ## Returns
 
@@ -1498,18 +1345,17 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个长度标注（创建后处于同步模式）
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3,
-  undefined,
-  10
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3,
+	undefined,
+	10
 );
 
 // 3. 转换为异步图元
@@ -1535,9 +1381,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveDimension;
+function toSync(): IPCB_PrimitiveDimension;
 ```
-
 
 ## Returns
 
@@ -1547,18 +1392,17 @@ Dimension primitive object
 
 ## Example
 
-
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试标注重合
 const x = 2000 + Math.floor(Math.random() * 100000);
 
 // 2. 创建一个 10mil 线宽的长度标注
 const dim = await eda.pcb_PrimitiveDimension.create(
-  'Length Dimension',
-  [x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
-  3,
-  undefined,
-  10
+	'Length Dimension',
+	[x, 2000, x, 1800, x + 2000, 1800, x + 2000, 2000],
+	3,
+	undefined,
+	10
 );
 
 // 3. 转换为同步图元

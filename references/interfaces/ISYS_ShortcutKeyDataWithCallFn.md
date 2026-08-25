@@ -5,7 +5,7 @@ Shortcut key data with CallFn
 ## Signature
 
 ```typescript
-export interface ISYS_ShortcutKeyDataWithCallFn extends ISYS_ShortcutKeyData 
+interface ISYS_ShortcutKeyDataWithCallFn extends ISYS_ShortcutKeyData
 ```
 **Extends:** [ISYS\_ShortcutKeyData](./ISYS_ShortcutKeyData.md)
 
@@ -15,40 +15,32 @@ export interface ISYS_ShortcutKeyDataWithCallFn extends ISYS_ShortcutKeyData
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [callFn](./ISYS_ShortcutKeyDataWithCallFn.md)
 
-
 </td><td>
-
 
 </td><td>
 
 () =&gt; void \| Promise&lt;void&gt;
 
-
 </td><td>
 
 快捷键方法
-
 
 </td></tr>
 </tbody></table>

@@ -5,7 +5,7 @@ Theme
 ## Signature
 
 ```typescript
-export enum ESYS_Theme 
+enum ESYS_Theme
 ```
 
 ## Enumeration Members
@@ -14,44 +14,35 @@ export enum ESYS_Theme
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 DARK
 
-
 </td><td>
 
 `'dark'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 LIGHT
 
-
 </td><td>
 
 `'light'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

@@ -5,10 +5,9 @@ Polygon group
 ## Signature
 
 ```typescript
-export type TSYS_MathPolygonGroup = Array<ISYS_MathPolygonWithHoles>;
+type TSYS_MathPolygonGroup = Array<ISYS_MathPolygonWithHoles>;
 ```
 ## References
-
 
 [ISYS\_MathPolygonWithHoles](../interfaces/ISYS_MathPolygonWithHoles.md)
 

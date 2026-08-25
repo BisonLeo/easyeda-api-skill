@@ -5,7 +5,7 @@ Mouse event type
 ## Signature
 
 ```typescript
-export enum ESCH_MouseEventType 
+enum ESCH_MouseEventType
 ```
 
 ## Enumeration Members
@@ -14,44 +14,35 @@ export enum ESCH_MouseEventType
 
 Member
 
-
 </th><th>
 
 Value
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 CLEAR\_SELECTED
 
-
 </td><td>
 
 `'clearSelected'`
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 SELECTED
 
-
 </td><td>
 
 `'selected'`
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

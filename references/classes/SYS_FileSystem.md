@@ -5,11 +5,10 @@ System / file system interaction class
 ## Signature
 
 ```typescript
-export class SYS_FileSystem 
+class SYS_FileSystem
 ```
 
 ## Remarks
-
 
 ## Methods
 
@@ -17,254 +16,200 @@ export class SYS_FileSystem
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [createDirectoryInFileSystem(folderPath)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** In file system in create folder
-
 
 </td></tr>
 <tr><td>
 
 [createObjectURL(blob)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Create ObjectURL
-
 
 </td></tr>
 <tr><td>
 
 [deleteFileInFileSystem(uri, force)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete a file in the file system
-
 
 </td></tr>
 <tr><td>
 
 [existsPathInFileSystem(uri)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Check whether a file or directory exists in the file system
-
 
 </td></tr>
 <tr><td>
 
 [getDocumentsPath()](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the document directory path
-
 
 </td></tr>
 <tr><td>
 
 [getEdaPath()](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the EDA document directory path
-
 
 </td></tr>
 <tr><td>
 
 [getExtensionFile(uri)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get a file from the extension
-
 
 </td></tr>
 <tr><td>
 
 [getLibrariesPaths()](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the library directory paths
-
 
 </td></tr>
 <tr><td>
 
 [getProjectsPaths()](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the project directory paths
-
 
 </td></tr>
 <tr><td>
 
 [listFilesOfFileSystem(folderPath, recursive)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** View the file list under a file system path
 
+</td></tr>
+<tr><td>
+
+[openReadFileDialog(filenameExtensions, multiFiles)](./SYS_FileSystem.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Open the read-file dialog
 
 </td></tr>
 <tr><td>
 
 [openReadFileDialog(filenameExtensions, multiFiles)](./SYS_FileSystem.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Open the read-file dialog
-
-
-</td></tr>
-<tr><td>
-
-[openReadFileDialog(filenameExtensions, multiFiles)](./SYS_FileSystem.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Open the read-file dialog
-
 
 </td></tr>
 <tr><td>
 
 [openReadFolderDialog()](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Open the read-folder dialog
-
 
 </td></tr>
 <tr><td>
 
 [readFileFromFileSystem(uri)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Read a file from the file system
-
 
 </td></tr>
 <tr><td>
 
 [revokeObjectURL(url)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Revoke the ObjectURL
-
 
 </td></tr>
 <tr><td>
 
 [saveFile(fileData, fileName)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Save File
-
 
 </td></tr>
 <tr><td>
 
 [saveFileToFileSystem(uri, fileData, fileName, force)](./SYS_FileSystem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Write a file to the file system
-
 
 </td></tr>
 </tbody></table>
@@ -284,7 +229,7 @@ In file system in create folder
 ## Signature
 
 ```typescript
-public createDirectoryInFileSystem(folderPath: string): Promise<boolean>;
+function createDirectoryInFileSystem(folderPath: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -293,37 +238,29 @@ public createDirectoryInFileSystem(folderPath: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 folderPath
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Folder path
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -348,7 +285,7 @@ Create ObjectURL
 ## Signature
 
 ```typescript
-public createObjectURL(blob: Blob | File): string;
+function createObjectURL(blob: Blob | File): string;
 ```
 
 ## Parameters
@@ -357,37 +294,29 @@ public createObjectURL(blob: Blob | File): string;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 blob
 
-
 </td><td>
 
 Blob \| File
-
 
 </td><td>
 
 Blob or File object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -400,7 +329,6 @@ ObjectURL string
 Create an ObjectURL pointing to the passed-in Blob / File object ADD since EDA v3.2.162
 
 ## Example
-
 
 ```javascript
 // 1. 构造一段文本数据
@@ -423,7 +351,7 @@ Delete a file in the file system
 ## Signature
 
 ```typescript
-public deleteFileInFileSystem(uri: string, force?: boolean): Promise<boolean>;
+function deleteFileInFileSystem(uri: string, force?: boolean): Promise<boolean>;
 ```
 
 ## Parameters
@@ -432,53 +360,42 @@ public deleteFileInFileSystem(uri: string, force?: boolean): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uri
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 File resource locator. If it ends with a slash `/` (a backslash `\` on Windows), it is recognized as a folder; if it does not end with a slash, it is recognized as a complete file name, in which case the `fileName` parameter is ignored
-
 
 </td></tr>
 <tr><td>
 
 force
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Force delete the folder (whether to force delete the folder when the target is a folder containing files)
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -503,7 +420,7 @@ Check whether a file or directory exists in the file system
 ## Signature
 
 ```typescript
-public existsPathInFileSystem(uri: string): Promise<boolean>;
+function existsPathInFileSystem(uri: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -512,37 +429,29 @@ public existsPathInFileSystem(uri: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uri
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 File resource locator. An absolute path containing the complete file name is required
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -567,9 +476,8 @@ Get the document directory path
 ## Signature
 
 ```typescript
-public getDocumentsPath(): Promise<string>;
+function getDocumentsPath(): Promise<string>;
 ```
-
 
 ## Returns
 
@@ -596,9 +504,8 @@ Get the EDA document directory path
 ## Signature
 
 ```typescript
-public getEdaPath(): Promise<string>;
+function getEdaPath(): Promise<string>;
 ```
-
 
 ## Returns
 
@@ -623,7 +530,7 @@ Get a file from the extension
 ## Signature
 
 ```typescript
-public getExtensionFile(uri: string): Promise<File | undefined>;
+function getExtensionFile(uri: string): Promise<File | undefined>;
 ```
 
 ## Parameters
@@ -632,37 +539,29 @@ public getExtensionFile(uri: string): Promise<File | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uri
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 File path
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -671,7 +570,6 @@ Promise&lt;File \| undefined&gt;
 File format file
 
 ## Example
-
 
 ```javascript
 // 1. 读取扩展安装目录下的 extension.json
@@ -693,9 +591,8 @@ Get the library directory paths
 ## Signature
 
 ```typescript
-public getLibrariesPaths(): Promise<Array<string>>;
+function getLibrariesPaths(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -720,9 +617,8 @@ Get the project directory paths
 ## Signature
 
 ```typescript
-public getProjectsPaths(): Promise<Array<string>>;
+function getProjectsPaths(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -747,7 +643,10 @@ View the file list under a file system path
 ## Signature
 
 ```typescript
-public listFilesOfFileSystem(folderPath: string, recursive?: boolean): Promise<Array<ISYS_FileSystemFileList>>;
+function listFilesOfFileSystem(
+	folderPath: string,
+	recursive?: boolean,
+): Promise<Array<ISYS_FileSystemFileList>>;
 ```
 
 ## Parameters
@@ -756,53 +655,42 @@ public listFilesOfFileSystem(folderPath: string, recursive?: boolean): Promise<A
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 folderPath
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Directory path
-
 
 </td></tr>
 <tr><td>
 
 recursive
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to recursively get all sub-files
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -827,7 +715,10 @@ Open the read-file dialog
 ## Signature
 
 ```typescript
-public openReadFileDialog(filenameExtensions?: string | Array<string>, multiFiles?: true): Promise<Array<File> | undefined>;
+function openReadFileDialog(
+	filenameExtensions?: string | Array<string>,
+	multiFiles?: true,
+): Promise<Array<File> | undefined>;
 ```
 
 ## Parameters
@@ -836,53 +727,42 @@ public openReadFileDialog(filenameExtensions?: string | Array<string>, multiFile
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 filenameExtensions
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ File extension
-
 
 </td></tr>
 <tr><td>
 
 multiFiles
 
-
 </td><td>
 
 true
-
 
 </td><td>
 
 _(Optional)_ Whether multiple files are allowed to be read
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -892,14 +772,13 @@ File format file array
 
 ## Example
 
-
 ```javascript
 // 1. 打开选择窗口（限定 .json 文件，单选；用户选择前 Promise 一直挂起）
-eda.sys_FileSystem.openReadFileDialog('.json').then(file => {
-  // 用户完成选择后触发；直接关闭窗口时 file 为 undefined
-  if (file) {
-    console.log('已选择文件：', file.name);
-  }
+eda.sys_FileSystem.openReadFileDialog('.json').then((file) => {
+	// 用户完成选择后触发；直接关闭窗口时 file 为 undefined
+	if (file) {
+		console.log('已选择文件：', file.name);
+	}
 });
 
 // 2. 窗口已弹出，主流程不等待用户操作
@@ -917,7 +796,10 @@ Open the read-file dialog
 ## Signature
 
 ```typescript
-public openReadFileDialog(filenameExtensions?: string | Array<string>, multiFiles?: false): Promise<File | undefined>;
+function openReadFileDialog(
+	filenameExtensions?: string | Array<string>,
+	multiFiles?: false,
+): Promise<File | undefined>;
 ```
 
 ## Parameters
@@ -926,53 +808,42 @@ public openReadFileDialog(filenameExtensions?: string | Array<string>, multiFile
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 filenameExtensions
 
-
 </td><td>
 
 string \| Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_ File extension
-
 
 </td></tr>
 <tr><td>
 
 multiFiles
 
-
 </td><td>
 
 false
-
 
 </td><td>
 
 _(Optional)_ Whether multiple files are allowed to be read
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -991,9 +862,8 @@ Open the read-folder dialog
 ## Signature
 
 ```typescript
-public openReadFolderDialog(): Promise<Array<{ relativePath: string; file: File }>>;
+function openReadFolderDialog(): Promise<Array<{ relativePath: string; file: File }>>;
 ```
-
 
 ## Returns
 
@@ -1016,7 +886,7 @@ Read a file from the file system
 ## Signature
 
 ```typescript
-public readFileFromFileSystem(uri: string): Promise<File | undefined>;
+function readFileFromFileSystem(uri: string): Promise<File | undefined>;
 ```
 
 ## Parameters
@@ -1025,37 +895,29 @@ public readFileFromFileSystem(uri: string): Promise<File | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uri
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 File resource locator. An absolute path containing the complete file name is required
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1078,7 +940,7 @@ Revoke the ObjectURL
 ## Signature
 
 ```typescript
-public revokeObjectURL(url: string): void;
+function revokeObjectURL(url: string): void;
 ```
 
 ## Parameters
@@ -1087,37 +949,29 @@ public revokeObjectURL(url: string): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 url
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 ObjectURL string
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1128,7 +982,6 @@ void
 Revoke the specified ObjectURL ADD since EDA v3.2.162
 
 ## Example
-
 
 ```javascript
 // 1. 先创建一个 ObjectURL
@@ -1150,7 +1003,7 @@ Save File
 ## Signature
 
 ```typescript
-public saveFile(fileData: File | Blob, fileName?: string): Promise<void>;
+function saveFile(fileData: File | Blob, fileName?: string): Promise<void>;
 ```
 
 ## Parameters
@@ -1159,53 +1012,42 @@ public saveFile(fileData: File | Blob, fileName?: string): Promise<void>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fileData
 
-
 </td><td>
 
 File \| Blob
 
-
 </td><td>
 
 File data
-
 
 </td></tr>
 <tr><td>
 
 fileName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ File name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1216,7 +1058,6 @@ Promise&lt;void&gt;
 Calls the browser download API or the Electron save-file API to save the passed-in file stream locally
 
 ## Example
-
 
 ```javascript
 // 1. 构造要保存的 CSV 内容
@@ -1240,7 +1081,12 @@ Write a file to the file system
 ## Signature
 
 ```typescript
-public saveFileToFileSystem(uri: string, fileData: File | Blob, fileName?: string, force?: boolean): Promise<boolean>;
+function saveFileToFileSystem(
+	uri: string,
+	fileData: File | Blob,
+	fileName?: string,
+	force?: boolean,
+): Promise<boolean>;
 ```
 
 ## Parameters
@@ -1249,85 +1095,68 @@ public saveFileToFileSystem(uri: string, fileData: File | Blob, fileName?: strin
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 uri
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 File resource locator. If it ends with a slash `/` (a backslash `\` on Windows), it is recognized as a folder; if it does not end with a slash, it is recognized as a complete file name, in which case the `fileName` parameter is ignored
-
 
 </td></tr>
 <tr><td>
 
 fileData
 
-
 </td><td>
 
 File \| Blob
 
-
 </td><td>
 
 File data
-
 
 </td></tr>
 <tr><td>
 
 fileName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ File name
-
 
 </td></tr>
 <tr><td>
 
 force
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Force write (overwrite the file if it exists)
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 

@@ -5,7 +5,7 @@ Substrate physical properties
 ## Signature
 
 ```typescript
-export interface IPCB_SubstratePhysicalProperties 
+interface IPCB_SubstratePhysicalProperties
 ```
 
 ## Properties
@@ -14,59 +14,47 @@ export interface IPCB_SubstratePhysicalProperties
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [numberOfLayers](./IPCB_SubstratePhysicalProperties.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [TPCB\_NumberOfCopperLayers](../types/TPCB_NumberOfCopperLayers.md)
 
-
 </td><td>
 
 Number of copper layers
-
 
 </td></tr>
 <tr><td>
 
 [substrateMaterial](./IPCB_SubstratePhysicalProperties.md)
 
-
 </td><td>
-
 
 </td><td>
 
 'Common' \| 'FPC Flexible'
 
-
 </td><td>
 
 Substrate material
-
 
 </td></tr>
 </tbody></table>

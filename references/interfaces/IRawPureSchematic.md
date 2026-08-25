@@ -5,7 +5,7 @@ Raw data - pureSchematic
 ## Signature
 
 ```typescript
-export interface IRawPureSchematic 
+interface IRawPureSchematic
 ```
 
 ## Properties
@@ -14,55 +14,43 @@ export interface IRawPureSchematic
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [nlNetWires](./IRawPureSchematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;[IRawNet](./IRawNet.md)<!-- -->&gt;
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [sheets](./IRawPureSchematic.md)
 
-
 </td><td>
-
 
 </td><td>
 
 \{ \[key: string\]: \{ uuid: string; title: string; displayTitle: string; zIndex: number \} \}
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

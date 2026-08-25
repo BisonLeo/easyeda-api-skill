@@ -5,13 +5,12 @@ PCB &amp; footprint / event class
 ## Signature
 
 ```typescript
-export class PCB_Event 
+class PCB_Event
 ```
 
 ## Remarks
 
 Register an event callback
-
 
 ## Methods
 
@@ -19,142 +18,112 @@ Register an event callback
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [addCrossProbeSelectEventListener(id, callFn)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a cross-probe selection event listener
-
 
 </td></tr>
 <tr><td>
 
 [addMouseEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a mouse event listener
-
 
 </td></tr>
 <tr><td>
 
 [addNetEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a net event listener
-
 
 </td></tr>
 <tr><td>
 
 [addPrimitiveEventListener(id, eventType, callFn, onlyOnce)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a primitive event listener
-
 
 </td></tr>
 <tr><td>
 
 [addRayTracerEngine3DViewCameraChangeEventListener(id, callFn, onlyOnce)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a ray tracer engine 3D preview camera change (dragging the 3D model) event listener
-
 
 </td></tr>
 <tr><td>
 
 [addRayTracerEngine3DViewClickMaterialEventListener(id, callFn, onlyOnce)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a ray tracer engine 3D preview material click event listener
-
 
 </td></tr>
 <tr><td>
 
 [addRealTimeDrcResultEventListener(id, eventType, callFn)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Add a real-time DRC result event listener
-
 
 </td></tr>
 <tr><td>
 
 [isEventListenerAlreadyExist(id)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the event listener exists
-
 
 </td></tr>
 <tr><td>
 
 [removeEventListener(id)](./PCB_Event.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Remove Event listener
-
 
 </td></tr>
 </tbody></table>
@@ -174,7 +143,10 @@ Add a cross-probe selection event listener
 ## Signature
 
 ```typescript
-public addCrossProbeSelectEventListener(id: string, callFn: (props: any) => void | Promise<void>): void;
+function addCrossProbeSelectEventListener(
+	id: string,
+	callFn: (props: any) => void | Promise<void>,
+): void;
 ```
 
 ## Parameters
@@ -183,53 +155,42 @@ public addCrossProbeSelectEventListener(id: string, callFn: (props: any) => void
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Event ID, used to prevent duplicate event registration
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (props: any) =&gt; void \| Promise&lt;void&gt;
-
 
 </td><td>
 
 The callback function triggered when the event fires
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -241,13 +202,12 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 const listenerId = '嘉立创示例_cross_probe';
 
 // 1. 注册交叉选择事件监听（回调在用户执行交叉选中时触发，本例不依赖实际触发）
 eda.pcb_Event.addCrossProbeSelectEventListener(listenerId, (props) => {
-  console.log('crossProbeSelect:', JSON.stringify(props));
+	console.log('crossProbeSelect:', JSON.stringify(props));
 });
 
 // 2. 回读确认注册成功（同 id 重复注册会被防重机制忽略）
@@ -270,7 +230,24 @@ Add a mouse event listener
 ## Signature
 
 ```typescript
-public addMouseEventListener(id: string, eventType: 'all' | EPCB_MouseEventType, callFn: (eventType: EPCB_MouseEventType, props: [{ primitiveId: string; primitiveType: EPCB_PrimitiveType; net?: undefined | string; designator?: undefined | string; parentComponentPrimitiveId?: undefined | string; parentComponentDesignator?: undefined | string }]) => void | Promise<void>, onlyOnce?: boolean): void;
+function addMouseEventListener(
+	id: string,
+	eventType: 'all' | EPCB_MouseEventType,
+	callFn: (
+		eventType: EPCB_MouseEventType,
+		props: [
+			{
+				primitiveId: string;
+				primitiveType: EPCB_PrimitiveType;
+				net?: undefined | string;
+				designator?: undefined | string;
+				parentComponentPrimitiveId?: undefined | string;
+				parentComponentDesignator?: undefined | string;
+			},
+		],
+	) => void | Promise<void>,
+	onlyOnce?: boolean,
+): void;
 ```
 
 ## Parameters
@@ -279,85 +256,68 @@ public addMouseEventListener(id: string, eventType: 'all' | EPCB_MouseEventType,
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Event ID, used to prevent duplicate event registration
-
 
 </td></tr>
 <tr><td>
 
 eventType
 
-
 </td><td>
 
 'all' \| [EPCB\_MouseEventType](../enums/EPCB_MouseEventType.md)
 
-
 </td><td>
 
 Event type
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (eventType: [EPCB\_MouseEventType](../enums/EPCB_MouseEventType.md)<!-- -->, props: \[{ primitiveId: string; primitiveType: [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)<!-- -->; net?: undefined \| string; designator?: undefined \| string; parentComponentPrimitiveId?: undefined \| string; parentComponentDesignator?: undefined \| string }\]) =&gt; void \| Promise&lt;void&gt;
 
-
 </td><td>
 
 The callback function triggered when the event fires
-
 
 </td></tr>
 <tr><td>
 
 onlyOnce
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to listen only once
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -369,19 +329,18 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 const listenerId = '嘉立创示例_mouse_event';
 
 // 1. 注册鼠标事件监听，eventType 用 'all' 接收全部鼠标事件，onlyOnce 为 false 持续监听
 eda.pcb_Event.addMouseEventListener(
-  listenerId,
-  'all',
-  (eventType, props) => {
-    // 回调在用户画布操作时触发；props 是命中图元的信息数组
-    console.log('mouseEvent:', eventType, JSON.stringify(props));
-  },
-  false
+	listenerId,
+	'all',
+	(eventType, props) => {
+		// 回调在用户画布操作时触发；props 是命中图元的信息数组
+		console.log('mouseEvent:', eventType, JSON.stringify(props));
+	},
+	false
 );
 
 // 2. 回读确认注册成功
@@ -404,7 +363,12 @@ Add a net event listener
 ## Signature
 
 ```typescript
-public addNetEventListener(id: string, eventType: 'all' | EPCB_NetEventType, callFn: (eventType: EPCB_NetEventType, props: [{ net: string }]) => void | Promise<void>, onlyOnce?: boolean): void;
+function addNetEventListener(
+	id: string,
+	eventType: 'all' | EPCB_NetEventType,
+	callFn: (eventType: EPCB_NetEventType, props: [{ net: string }]) => void | Promise<void>,
+	onlyOnce?: boolean,
+): void;
 ```
 
 ## Parameters
@@ -413,85 +377,68 @@ public addNetEventListener(id: string, eventType: 'all' | EPCB_NetEventType, cal
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Event ID, used to prevent duplicate event registration
-
 
 </td></tr>
 <tr><td>
 
 eventType
 
-
 </td><td>
 
 'all' \| [EPCB\_NetEventType](../enums/EPCB_NetEventType.md)
 
-
 </td><td>
 
 Event type
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (eventType: [EPCB\_NetEventType](../enums/EPCB_NetEventType.md)<!-- -->, props: \[{ net: string }\]) =&gt; void \| Promise&lt;void&gt;
 
-
 </td><td>
 
 The callback function triggered when the event fires
-
 
 </td></tr>
 <tr><td>
 
 onlyOnce
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to listen only once
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -511,19 +458,18 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 const listenerId = '嘉立创示例_net_event';
 
 // 1. 注册网络事件监听，eventType 用 'all' 接收全部网络事件
 eda.pcb_Event.addNetEventListener(
-  listenerId,
-  'all',
-  (eventType, props) => {
-    // 回调在网络选中变化时触发；props 是网络信息数组
-    console.log('netEvent:', eventType, JSON.stringify(props));
-  },
-  false
+	listenerId,
+	'all',
+	(eventType, props) => {
+		// 回调在网络选中变化时触发；props 是网络信息数组
+		console.log('netEvent:', eventType, JSON.stringify(props));
+	},
+	false
 );
 
 // 2. 回读确认注册成功
@@ -546,7 +492,24 @@ Add a primitive event listener
 ## Signature
 
 ```typescript
-public addPrimitiveEventListener(id: string, eventType: 'all' | EPCB_PrimitiveEventType, callFn: (eventType: EPCB_PrimitiveEventType, props: [{ primitiveId: string; primitiveType: EPCB_PrimitiveType; net?: undefined | string; designator?: undefined | string; parentComponentPrimitiveId?: undefined | string; parentComponentDesignator?: undefined | string }]) => void | Promise<void>, onlyOnce?: boolean): void;
+function addPrimitiveEventListener(
+	id: string,
+	eventType: 'all' | EPCB_PrimitiveEventType,
+	callFn: (
+		eventType: EPCB_PrimitiveEventType,
+		props: [
+			{
+				primitiveId: string;
+				primitiveType: EPCB_PrimitiveType;
+				net?: undefined | string;
+				designator?: undefined | string;
+				parentComponentPrimitiveId?: undefined | string;
+				parentComponentDesignator?: undefined | string;
+			},
+		],
+	) => void | Promise<void>,
+	onlyOnce?: boolean,
+): void;
 ```
 
 ## Parameters
@@ -555,85 +518,68 @@ public addPrimitiveEventListener(id: string, eventType: 'all' | EPCB_PrimitiveEv
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Event ID, used to prevent duplicate event registration
-
 
 </td></tr>
 <tr><td>
 
 eventType
 
-
 </td><td>
 
 'all' \| [EPCB\_PrimitiveEventType](../enums/EPCB_PrimitiveEventType.md)
 
-
 </td><td>
 
 Event type
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (eventType: [EPCB\_PrimitiveEventType](../enums/EPCB_PrimitiveEventType.md)<!-- -->, props: \[{ primitiveId: string; primitiveType: [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)<!-- -->; net?: undefined \| string; designator?: undefined \| string; parentComponentPrimitiveId?: undefined \| string; parentComponentDesignator?: undefined \| string }\]) =&gt; void \| Promise&lt;void&gt;
 
-
 </td><td>
 
 The callback function triggered when the event fires
-
 
 </td></tr>
 <tr><td>
 
 onlyOnce
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to listen only once
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -645,19 +591,18 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 const listenerId = '嘉立创示例_primitive_event';
 const events = [];
 
 // 1. 注册图元事件监听，eventType 用 'all' 接收全部图元事件
 eda.pcb_Event.addPrimitiveEventListener(
-  listenerId,
-  'all',
-  (eventType, props) => {
-    events.push({ eventType, primitiveType: props?.[0]?.primitiveType });
-  },
-  false
+	listenerId,
+	'all',
+	(eventType, props) => {
+		events.push({ eventType, primitiveType: props?.[0]?.primitiveType });
+	},
+	false
 );
 
 // 2. 创建一个测试焊盘，触发图元 add 事件
@@ -687,7 +632,15 @@ Add a ray tracer engine 3D preview camera change (dragging the 3D model) event l
 ## Signature
 
 ```typescript
-public addRayTracerEngine3DViewCameraChangeEventListener(id: string, callFn: (props: { position: { x: number; y: number; z: number }; rotation: { x: number; y: number; z: number }; focalLength: number }) => void | Promise<void>, onlyOnce?: boolean): void;
+function addRayTracerEngine3DViewCameraChangeEventListener(
+	id: string,
+	callFn: (props: {
+		position: { x: number; y: number; z: number };
+		rotation: { x: number; y: number; z: number };
+		focalLength: number;
+	}) => void | Promise<void>,
+	onlyOnce?: boolean,
+): void;
 ```
 
 ## Parameters
@@ -696,69 +649,55 @@ public addRayTracerEngine3DViewCameraChangeEventListener(id: string, callFn: (pr
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Event ID, used to prevent duplicate event registration
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (props: { position: { x: number; y: number; z: number }; rotation: { x: number; y: number; z: number }; focalLength: number }) =&gt; void \| Promise&lt;void&gt;
 
-
 </td><td>
 
 The callback function triggered when the event fires
-
 
 </td></tr>
 <tr><td>
 
 onlyOnce
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to listen only once
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -770,16 +709,15 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 const listenerId = '嘉立创示例_3d_camera';
 
 // 1. 注册相机变动监听（回调在 3D 预览拖动时触发，本例不依赖实际触发）
 eda.pcb_Event.addRayTracerEngine3DViewCameraChangeEventListener(
-  listenerId,
-  (props) => {
-    console.log('cameraChange:', JSON.stringify(props));
-  }
+	listenerId,
+	(props) => {
+		console.log('cameraChange:', JSON.stringify(props));
+	}
 );
 
 // 2. 回读确认注册成功
@@ -802,7 +740,11 @@ Add a ray tracer engine 3D preview material click event listener
 ## Signature
 
 ```typescript
-public addRayTracerEngine3DViewClickMaterialEventListener(id: string, callFn: (props: { materialId: number; material: any }) => void | Promise<void>, onlyOnce?: boolean): void;
+function addRayTracerEngine3DViewClickMaterialEventListener(
+	id: string,
+	callFn: (props: { materialId: number; material: any }) => void | Promise<void>,
+	onlyOnce?: boolean,
+): void;
 ```
 
 ## Parameters
@@ -811,69 +753,55 @@ public addRayTracerEngine3DViewClickMaterialEventListener(id: string, callFn: (p
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Event ID, used to prevent duplicate event registration
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (props: { materialId: number; material: any }) =&gt; void \| Promise&lt;void&gt;
 
-
 </td><td>
 
 The callback function triggered when the event fires
-
 
 </td></tr>
 <tr><td>
 
 onlyOnce
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to listen only once
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -885,16 +813,15 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 const listenerId = '嘉立创示例_3d_material';
 
 // 1. 注册点击材质监听（回调在 3D 预览点击材质时触发，本例不依赖实际触发）
 eda.pcb_Event.addRayTracerEngine3DViewClickMaterialEventListener(
-  listenerId,
-  (props) => {
-    console.log('clickMaterial:', JSON.stringify(props));
-  }
+	listenerId,
+	(props) => {
+		console.log('clickMaterial:', JSON.stringify(props));
+	}
 );
 
 // 2. 回读确认注册成功
@@ -917,7 +844,11 @@ Add a real-time DRC result event listener
 ## Signature
 
 ```typescript
-public addRealTimeDrcResultEventListener(id: string, eventType: 'all', callFn: (eventType: undefined, props: [{ drcResult: any }]) => void | Promise<void>): void;
+function addRealTimeDrcResultEventListener(
+	id: string,
+	eventType: 'all',
+	callFn: (eventType: undefined, props: [{ drcResult: any }]) => void | Promise<void>,
+): void;
 ```
 
 ## Parameters
@@ -926,69 +857,55 @@ public addRealTimeDrcResultEventListener(id: string, eventType: 'all', callFn: (
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Event ID, used to prevent duplicate event registration
-
 
 </td></tr>
 <tr><td>
 
 eventType
 
-
 </td><td>
 
 'all'
 
-
 </td><td>
 
 Event type
-
 
 </td></tr>
 <tr><td>
 
 callFn
 
-
 </td><td>
 
 (eventType: undefined, props: \[{ drcResult: any }\]) =&gt; void \| Promise&lt;void&gt;
-
 
 </td><td>
 
 The callback function triggered when the event fires
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1000,18 +917,17 @@ Note: This API is only valid for extensions. Calling it in a standalone script e
 
 ## Example
 
-
 ```javascript
 const listenerId = '嘉立创示例_drc_result';
 
 // 1. 注册实时 DRC 结果监听，eventType 固定为 'all'
 eda.pcb_Event.addRealTimeDrcResultEventListener(
-  listenerId,
-  'all',
-  (eventType, props) => {
-    // 回调在实时 DRC 检出违规时触发；props 是 DRC 结果数组
-    console.log('drcResult:', JSON.stringify(props));
-  }
+	listenerId,
+	'all',
+	(eventType, props) => {
+		// 回调在实时 DRC 检出违规时触发；props 是 DRC 结果数组
+		console.log('drcResult:', JSON.stringify(props));
+	}
 );
 
 // 2. 回读确认注册成功
@@ -1032,7 +948,7 @@ Query whether the event listener exists
 ## Signature
 
 ```typescript
-public isEventListenerAlreadyExist(id: string): boolean;
+function isEventListenerAlreadyExist(id: string): boolean;
 ```
 
 ## Parameters
@@ -1041,37 +957,29 @@ public isEventListenerAlreadyExist(id: string): boolean;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Event ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1080,7 +988,6 @@ boolean
 Whether the event listener exists
 
 ## Example
-
 
 ```javascript
 const listenerId = '嘉立创示例_event_exist';
@@ -1111,7 +1018,7 @@ Remove Event listener
 ## Signature
 
 ```typescript
-public removeEventListener(id: string): boolean;
+function removeEventListener(id: string): boolean;
 ```
 
 ## Parameters
@@ -1120,37 +1027,29 @@ public removeEventListener(id: string): boolean;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Event ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1159,7 +1058,6 @@ boolean
 Whether Remove Specify event listener
 
 ## Example
-
 
 ```javascript
 const listenerId = '嘉立创示例_event_remove';

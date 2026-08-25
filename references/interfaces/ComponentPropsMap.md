@@ -5,7 +5,7 @@ Component name → Props type mapping, serving as the sole source of the `create
 ## Signature
 
 ```typescript
-export interface ComponentPropsMap 
+interface ComponentPropsMap
 ```
 
 ## Properties
@@ -14,327 +14,251 @@ export interface ComponentPropsMap
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [Board](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [BoardProps](./BoardProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Button](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ButtonProps](./ButtonProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [CheckBox](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [CheckBoxProps](./CheckBoxProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Dialog](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [DialogProps](./DialogProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Flex](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [FlexProps](./FlexProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [FlexItem](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [FlexItemProps](./FlexItemProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Grid](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [GridProps](./GridProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [GridItem](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [GridItemProps](./GridItemProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Image](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ImageProps](./ImageProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Input](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [InputProps](./InputProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [List](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ListProps](./ListProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Modal](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ModalProps](./ModalProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [RadioGroup](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [RadioGroupProps](./RadioGroupProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Scroller](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ScrollerProps](./ScrollerProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Select](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [SelectProps](./SelectProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Slot](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [SlotProps](./SlotProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [Text](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [TextProps](./TextProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 <tr><td>
 
 [TextArea](./ComponentPropsMap.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [TextAreaProps](./TextAreaProps.md)
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>

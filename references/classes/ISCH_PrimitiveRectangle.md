@@ -5,12 +5,11 @@ Rectangle primitive
 ## Signature
 
 ```typescript
-export class ISCH_PrimitiveRectangle implements ISCH_Primitive 
+class ISCH_PrimitiveRectangle implements ISCH_Primitive
 ```
 **Implements:** [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,422 +17,332 @@ export class ISCH_PrimitiveRectangle implements ISCH_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Color()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: border color
-
 
 </td></tr>
 <tr><td>
 
 [getState\_CornerRadius()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: corner radius
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FillColor()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: fill color
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FillStyle()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: fill style
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Height()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: height
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineType()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: line type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Rotation()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_TopLeftX()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: top-left point X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_TopLeftY()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: top-left point Y
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Width()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: width
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Color(color)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: border color
-
 
 </td></tr>
 <tr><td>
 
 [setState\_CornerRadius(cornerRadius)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: corner radius
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FillColor(fillColor)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: fill color
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FillStyle(fillStyle)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: fill style
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Height(height)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: height
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineType(lineType)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: line type
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Rotation(rotation)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_TopLeftX(topLeftX)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: top-left point X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_TopLeftY(topLeftY)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: top-left point Y
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Width(width)](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: width
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./ISCH_PrimitiveRectangle.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -453,9 +362,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<ISCH_PrimitiveRectangle>;
+function done(): Promise<ISCH_PrimitiveRectangle>;
 ```
-
 
 ## Returns
 
@@ -464,7 +372,6 @@ Promise&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)<!-- -->&gt;
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -498,9 +405,8 @@ Get the property state: border color
 ## Signature
 
 ```typescript
-public getState_Color(): string | null;
+function getState_Color(): string | null;
 ```
-
 
 ## Returns
 
@@ -509,7 +415,6 @@ string \| null
 Border color
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个红色边框的测试矩形（SCH 坐标单位 10mil）
@@ -533,9 +438,8 @@ Get the property state: corner radius
 ## Signature
 
 ```typescript
-public getState_CornerRadius(): number;
+function getState_CornerRadius(): number;
 ```
-
 
 ## Returns
 
@@ -544,7 +448,6 @@ number
 Corner radius
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个圆角半径 10 的测试矩形（SCH 坐标单位 10mil）
@@ -568,9 +471,8 @@ Get the property state: fill color
 ## Signature
 
 ```typescript
-public getState_FillColor(): string | null;
+function getState_FillColor(): string | null;
 ```
-
 
 ## Returns
 
@@ -579,7 +481,6 @@ string \| null
 Fill color
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个黄色填充的测试矩形（SCH 坐标单位 10mil）
@@ -603,9 +504,8 @@ Get the property state: fill style
 ## Signature
 
 ```typescript
-public getState_FillStyle(): ESCH_PrimitiveFillStyle | null;
+function getState_FillStyle(): ESCH_PrimitiveFillStyle | null;
 ```
-
 
 ## Returns
 
@@ -614,7 +514,6 @@ public getState_FillStyle(): ESCH_PrimitiveFillStyle | null;
 Fill style
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个网格填充的测试矩形（SCH 坐标单位 10mil）
@@ -638,9 +537,8 @@ Get the property state: height
 ## Signature
 
 ```typescript
-public getState_Height(): number;
+function getState_Height(): number;
 ```
-
 
 ## Returns
 
@@ -649,7 +547,6 @@ number
 Height
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个 200×100 的测试矩形（SCH 坐标单位 10mil）
@@ -673,9 +570,8 @@ Get the property state: line type
 ## Signature
 
 ```typescript
-public getState_LineType(): ESCH_PrimitiveLineType | null;
+function getState_LineType(): ESCH_PrimitiveLineType | null;
 ```
-
 
 ## Returns
 
@@ -684,7 +580,6 @@ public getState_LineType(): ESCH_PrimitiveLineType | null;
 Line type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个虚线边框的测试矩形（末参 1 = 虚线，SCH 坐标单位 10mil）
@@ -708,9 +603,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number | null;
+function getState_LineWidth(): number | null;
 ```
-
 
 ## Returns
 
@@ -719,7 +613,6 @@ number \| null
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个线宽 6 的测试矩形（SCH 坐标单位 10mil）
@@ -743,9 +636,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -754,7 +646,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试矩形（SCH 坐标单位 10mil）
@@ -782,9 +673,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): ESCH_PrimitiveType;
+function getState_PrimitiveType(): ESCH_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -793,7 +683,6 @@ public getState_PrimitiveType(): ESCH_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试矩形（SCH 坐标单位 10mil）
@@ -817,9 +706,8 @@ Get the property state: rotation angle
 ## Signature
 
 ```typescript
-public getState_Rotation(): number;
+function getState_Rotation(): number;
 ```
-
 
 ## Returns
 
@@ -828,7 +716,6 @@ number
 Rotation angle
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个旋转 45° 的测试矩形（第 6 参是旋转角，SCH 坐标单位 10mil）
@@ -852,9 +739,8 @@ Get the property state: top-left point X
 ## Signature
 
 ```typescript
-public getState_TopLeftX(): number;
+function getState_TopLeftX(): number;
 ```
-
 
 ## Returns
 
@@ -863,7 +749,6 @@ number
 Top-left point X
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个左上角在 (400, 300) 的测试矩形（SCH 坐标单位 10mil）
@@ -887,9 +772,8 @@ Get the property state: top-left point Y
 ## Signature
 
 ```typescript
-public getState_TopLeftY(): number;
+function getState_TopLeftY(): number;
 ```
-
 
 ## Returns
 
@@ -898,7 +782,6 @@ number
 Top-left point Y
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个左上角在 (400, 300) 的测试矩形（SCH 坐标单位 10mil）
@@ -922,9 +805,8 @@ Get the property state: width
 ## Signature
 
 ```typescript
-public getState_Width(): number;
+function getState_Width(): number;
 ```
-
 
 ## Returns
 
@@ -933,7 +815,6 @@ number
 Width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个 200×100 的测试矩形（SCH 坐标单位 10mil）
@@ -957,9 +838,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -968,7 +848,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试矩形，创建后默认处于异步模式
@@ -997,9 +876,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<ISCH_PrimitiveRectangle>;
+function reset(): Promise<ISCH_PrimitiveRectangle>;
 ```
-
 
 ## Returns
 
@@ -1008,7 +886,6 @@ Promise&lt;[ISCH\_PrimitiveRectangle](./ISCH_PrimitiveRectangle.md)<!-- -->&gt;
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1042,7 +919,7 @@ Set the property state: border color
 ## Signature
 
 ```typescript
-public setState_Color(color: string | null): ISCH_PrimitiveRectangle;
+function setState_Color(color: string | null): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1051,37 +928,29 @@ public setState_Color(color: string | null): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 color
 
-
 </td><td>
 
 string \| null
-
 
 </td><td>
 
 Border color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1090,7 +959,6 @@ Border color
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1122,7 +990,7 @@ Set the property state: corner radius
 ## Signature
 
 ```typescript
-public setState_CornerRadius(cornerRadius: number): ISCH_PrimitiveRectangle;
+function setState_CornerRadius(cornerRadius: number): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1131,37 +999,29 @@ public setState_CornerRadius(cornerRadius: number): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 cornerRadius
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Corner radius
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1170,7 +1030,6 @@ Corner radius
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1202,7 +1061,7 @@ Set the property state: fill color
 ## Signature
 
 ```typescript
-public setState_FillColor(fillColor: string | null): ISCH_PrimitiveRectangle;
+function setState_FillColor(fillColor: string | null): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1211,37 +1070,29 @@ public setState_FillColor(fillColor: string | null): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fillColor
 
-
 </td><td>
 
 string \| null
-
 
 </td><td>
 
 Fill color
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1250,7 +1101,6 @@ Fill color
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1282,7 +1132,7 @@ Set the property state: fill style
 ## Signature
 
 ```typescript
-public setState_FillStyle(fillStyle: ESCH_PrimitiveFillStyle | null): ISCH_PrimitiveRectangle;
+function setState_FillStyle(fillStyle: ESCH_PrimitiveFillStyle | null): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1291,37 +1141,29 @@ public setState_FillStyle(fillStyle: ESCH_PrimitiveFillStyle | null): ISCH_Primi
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fillStyle
 
-
 </td><td>
 
 [ESCH\_PrimitiveFillStyle](../enums/ESCH_PrimitiveFillStyle.md) \| null
-
 
 </td><td>
 
 Fill style
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1330,7 +1172,6 @@ Fill style
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1362,7 +1203,7 @@ Set the property state: height
 ## Signature
 
 ```typescript
-public setState_Height(height: number): ISCH_PrimitiveRectangle;
+function setState_Height(height: number): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1371,37 +1212,29 @@ public setState_Height(height: number): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 height
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Height
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1410,7 +1243,6 @@ Height
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1442,7 +1274,7 @@ Set the property state: line type
 ## Signature
 
 ```typescript
-public setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveRectangle;
+function setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1451,37 +1283,29 @@ public setState_LineType(lineType: ESCH_PrimitiveLineType | null): ISCH_Primitiv
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineType
 
-
 </td><td>
 
 [ESCH\_PrimitiveLineType](../enums/ESCH_PrimitiveLineType.md) \| null
-
 
 </td><td>
 
 Line type
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1490,7 +1314,6 @@ Line type
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1522,7 +1345,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveRectangle;
+function setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1531,37 +1354,29 @@ public setState_LineWidth(lineWidth: number | null): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number \| null
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1570,7 +1385,6 @@ Line width
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1602,7 +1416,7 @@ Set the property state: rotation angle
 ## Signature
 
 ```typescript
-public setState_Rotation(rotation: number): ISCH_PrimitiveRectangle;
+function setState_Rotation(rotation: number): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1611,37 +1425,29 @@ public setState_Rotation(rotation: number): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 rotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1650,7 +1456,6 @@ Rotation angle
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1683,7 +1488,7 @@ Set the property state: top-left point X
 ## Signature
 
 ```typescript
-public setState_TopLeftX(topLeftX: number): ISCH_PrimitiveRectangle;
+function setState_TopLeftX(topLeftX: number): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1692,37 +1497,29 @@ public setState_TopLeftX(topLeftX: number): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topLeftX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Top-left point X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1731,7 +1528,6 @@ Top-left point X
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1763,7 +1559,7 @@ Set the property state: top-left point Y
 ## Signature
 
 ```typescript
-public setState_TopLeftY(topLeftY: number): ISCH_PrimitiveRectangle;
+function setState_TopLeftY(topLeftY: number): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1772,37 +1568,29 @@ public setState_TopLeftY(topLeftY: number): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 topLeftY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Top-left point Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1811,7 +1599,6 @@ Top-left point Y
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1843,7 +1630,7 @@ Set the property state: width
 ## Signature
 
 ```typescript
-public setState_Width(width: number): ISCH_PrimitiveRectangle;
+function setState_Width(width: number): ISCH_PrimitiveRectangle;
 ```
 
 ## Parameters
@@ -1852,37 +1639,29 @@ public setState_Width(width: number): ISCH_PrimitiveRectangle;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 width
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1891,7 +1670,6 @@ Width
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1921,9 +1699,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): ISCH_PrimitiveRectangle;
+function toAsync(): ISCH_PrimitiveRectangle;
 ```
-
 
 ## Returns
 
@@ -1932,7 +1709,6 @@ public toAsync(): ISCH_PrimitiveRectangle;
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合
@@ -1968,9 +1744,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): ISCH_PrimitiveRectangle;
+function toSync(): ISCH_PrimitiveRectangle;
 ```
-
 
 ## Returns
 
@@ -1979,7 +1754,6 @@ public toSync(): ISCH_PrimitiveRectangle;
 Rectangle primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试矩形重合

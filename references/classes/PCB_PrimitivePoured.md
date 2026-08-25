@@ -5,7 +5,7 @@ PCB &amp; footprint / copper fill primitive class
 ## Signature
 
 ```typescript
-export class PCB_PrimitivePoured implements IPCB_PrimitiveAPI 
+class PCB_PrimitivePoured implements IPCB_PrimitiveAPI
 ```
 **Implements:** [IPCB\_PrimitiveAPI](../interfaces/IPCB_PrimitiveAPI.md)
 
@@ -15,86 +15,68 @@ export class PCB_PrimitivePoured implements IPCB_PrimitiveAPI
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [delete(primitiveIds)](./PCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Delete Copper fill
 
+</td></tr>
+<tr><td>
+
+[get(primitiveIds)](./PCB_PrimitivePoured.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get Copper fill
 
 </td></tr>
 <tr><td>
 
 [get(primitiveIds)](./PCB_PrimitivePoured.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get Copper fill
-
-
-</td></tr>
-<tr><td>
-
-[get(primitiveIds)](./PCB_PrimitivePoured.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Copper fill
-
 
 </td></tr>
 <tr><td>
 
 [getAll()](./PCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Copper fill primitive
-
 
 </td></tr>
 <tr><td>
 
 [getAllPrimitiveId()](./PCB_PrimitivePoured.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all Copper fill primitive IDs
-
 
 </td></tr>
 </tbody></table>
@@ -114,7 +96,7 @@ Delete Copper fill
 ## Signature
 
 ```typescript
-public delete(primitiveIds: string | IPCB_PrimitivePoured | Array<string> | Array<IPCB_PrimitivePoured>): Promise<boolean>;
+function delete(primitiveIds: string | IPCB_PrimitivePoured | Array<string> | Array<IPCB_PrimitivePoured>): Promise<boolean>;
 ```
 
 ## Parameters
@@ -123,37 +105,29 @@ public delete(primitiveIds: string | IPCB_PrimitivePoured | Array<string> | Arra
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string \| [IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md) \| Array&lt;string&gt; \| Array&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)<!-- -->&gt;
-
 
 </td><td>
 
 Copper fill primitive ID or Copper fill primitive object
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -162,7 +136,6 @@ Promise&lt;boolean&gt;
 Delete Whether the operation is successful
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -196,7 +169,7 @@ Get Copper fill
 ## Signature
 
 ```typescript
-public get(primitiveIds: string): Promise<IPCB_PrimitivePoured | undefined>;
+function get(primitiveIds: string): Promise<IPCB_PrimitivePoured | undefined>;
 ```
 
 ## Parameters
@@ -205,37 +178,29 @@ public get(primitiveIds: string): Promise<IPCB_PrimitivePoured | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Copper fill primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -244,7 +209,6 @@ Promise&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md) \| undefined&gt;
 Copper fill primitive object, `undefined` indicates that the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上已有的覆铜填充图元
@@ -279,7 +243,7 @@ Get Copper fill
 ## Signature
 
 ```typescript
-public get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitivePoured>>;
+function get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitivePoured>>;
 ```
 
 ## Parameters
@@ -288,37 +252,29 @@ public get(primitiveIds: Array<string>): Promise<Array<IPCB_PrimitivePoured>>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Copper fill primitive ID, which can be a string or an array of strings. If it is an array, an array is also returned
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -341,9 +297,8 @@ Get all Copper fill primitive
 ## Signature
 
 ```typescript
-public getAll(): Promise<Array<IPCB_PrimitivePoured>>;
+function getAll(): Promise<Array<IPCB_PrimitivePoured>>;
 ```
-
 
 ## Returns
 
@@ -352,7 +307,6 @@ Promise&lt;Array&lt;[IPCB\_PrimitivePoured](./IPCB_PrimitivePoured.md)<!-- -->&g
 Array of Copper fill primitive objects
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上全部覆铜填充图元
@@ -382,9 +336,8 @@ Get all Copper fill primitive IDs
 ## Signature
 
 ```typescript
-public getAllPrimitiveId(): Promise<Array<string>>;
+function getAllPrimitiveId(): Promise<Array<string>>;
 ```
-
 
 ## Returns
 
@@ -393,7 +346,6 @@ Promise&lt;Array&lt;string&gt;&gt;
 Array of Copper fill primitive IDs
 
 ## Example
-
 
 ```javascript
 // 1. 获取画布上全部覆铜填充的图元 ID

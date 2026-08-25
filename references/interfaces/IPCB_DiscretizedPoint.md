@@ -5,7 +5,7 @@ Discretized point
 ## Signature
 
 ```typescript
-export interface IPCB_DiscretizedPoint 
+interface IPCB_DiscretizedPoint
 ```
 
 ## Properties
@@ -14,59 +14,47 @@ export interface IPCB_DiscretizedPoint
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [x](./IPCB_DiscretizedPoint.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 X coordinate
-
 
 </td></tr>
 <tr><td>
 
 [y](./IPCB_DiscretizedPoint.md)
 
-
 </td><td>
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 Y coordinate
-
 
 </td></tr>
 </tbody></table>

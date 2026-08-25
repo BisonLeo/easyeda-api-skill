@@ -9,7 +9,7 @@ Classification index
 ## Signature
 
 ```typescript
-export interface ILIB_ClassificationIndex 
+interface ILIB_ClassificationIndex
 ```
 
 ## Remarks
@@ -22,97 +22,77 @@ This classification index is used to index the classifications in the specified 
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [libraryType](./ILIB_ClassificationIndex.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ELIB\_LibraryType](../enums/ELIB_LibraryType.md)
 
-
 </td><td>
 
 Library type
-
 
 </td></tr>
 <tr><td>
 
 [libraryUuid](./ILIB_ClassificationIndex.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Library UUID
-
 
 </td></tr>
 <tr><td>
 
 [primaryClassificationUuid](./ILIB_ClassificationIndex.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Primary classification UUID
-
 
 </td></tr>
 <tr><td>
 
 [secondaryClassificationUuid?](./ILIB_ClassificationIndex.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Secondary classification UUID
-
 
 </td></tr>
 </tbody></table>

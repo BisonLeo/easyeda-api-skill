@@ -5,7 +5,7 @@ Language data key value for
 ## Signature
 
 ```typescript
-export type ISYS_LanguageKeyValuePairs = Record<string, string>;
+type ISYS_LanguageKeyValuePairs = Record<string, string>;
 ```
 
 ## Remarks

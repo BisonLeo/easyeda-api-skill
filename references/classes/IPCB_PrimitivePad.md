@@ -5,12 +5,11 @@ Pad primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitivePad implements IPCB_Primitive 
+class IPCB_PrimitivePad implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Properties
 
@@ -18,321 +17,260 @@ export class IPCB_PrimitivePad implements IPCB_Primitive
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [async](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 异步
-
 
 </td></tr>
 <tr><td>
 
 [heatWelding](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 [IPCB\_PrimitivePadHeatWelding](../interfaces/IPCB_PrimitivePadHeatWelding.md) \| null
 
-
 </td><td>
 
 热焊优化参数
-
 
 </td></tr>
 <tr><td>
 
 [hole](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 [TPCB\_PrimitivePadHole](../types/TPCB_PrimitivePadHole.md) \| null
 
-
 </td><td>
 
 孔
-
 
 </td></tr>
 <tr><td>
 
 [holeOffsetX](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 孔偏移 X
-
 
 </td></tr>
 <tr><td>
 
 [holeOffsetY](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 孔偏移 Y
-
 
 </td></tr>
 <tr><td>
 
 [holeRotation](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 孔相对于焊盘的旋转角度
-
 
 </td></tr>
 <tr><td>
 
 [layer](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 [TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)
 
-
 </td><td>
 
 层
-
 
 </td></tr>
 <tr><td>
 
 [metallization](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 是否金属化孔壁
-
 
 </td></tr>
 <tr><td>
 
 [net?](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ 网络名称
-
 
 </td></tr>
 <tr><td>
 
 [pad?](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 [TPCB\_PrimitivePadShape](../types/TPCB_PrimitivePadShape.md)
 
-
 </td><td>
 
 _(Optional)_ 焊盘外形
-
 
 </td></tr>
 <tr><td>
 
 [padNumber](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 焊盘编号
-
 
 </td></tr>
 <tr><td>
 
 [padType](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 [EPCB\_PrimitivePadType](../enums/EPCB_PrimitivePadType.md)
 
-
 </td><td>
 
 焊盘类型
-
 
 </td></tr>
 <tr><td>
 
 [primitiveId?](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ 图元 ID
-
 
 </td></tr>
 <tr><td>
 
 [primitiveLock](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 boolean
 
-
 </td><td>
 
 是否锁定
-
 
 </td></tr>
 <tr><td>
 
 [primitiveType](./IPCB_PrimitivePad.md)
-
 
 </td><td>
 
@@ -340,121 +278,98 @@ boolean
 
 `readonly`
 
-
 </td><td>
 
 [EPCB\_PrimitiveType](../enums/EPCB_PrimitiveType.md)
 
-
 </td><td>
 
 图元类型
-
 
 </td></tr>
 <tr><td>
 
 [rotation](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 旋转角度
-
 
 </td></tr>
 <tr><td>
 
 [solderMaskAndPasteMaskExpansion](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null
 
-
 </td><td>
 
 阻焊/助焊扩展
-
 
 </td></tr>
 <tr><td>
 
 [specialPad?](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 [TPCB\_PrimitiveSpecialPadShape](../types/TPCB_PrimitiveSpecialPadShape.md)
 
-
 </td><td>
 
 _(Optional)_ 特殊焊盘外形
-
 
 </td></tr>
 <tr><td>
 
 [x](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 位置 X
-
 
 </td></tr>
 <tr><td>
 
 [y](./IPCB_PrimitivePad.md)
 
-
 </td><td>
 
 `protected`
-
 
 </td><td>
 
 number
 
-
 </td><td>
 
 位置 Y
-
 
 </td></tr>
 </tbody></table>
@@ -465,590 +380,464 @@ number
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [create()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** In PCB canvas in create primitive
-
 
 </td></tr>
 <tr><td>
 
 [done()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_HeatWelding()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: thermal relief optimization parameters
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Hole()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: hole
-
 
 </td></tr>
 <tr><td>
 
 [getState\_HoleOffsetX()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: hole offset X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_HoleOffsetY()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: hole offset Y
-
 
 </td></tr>
 <tr><td>
 
 [getState\_HoleRotation()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Rotation angle of the hole relative to the pad
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Metallization()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Whether the hole wall is plated
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Net()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Pad()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: pad shape
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PadNumber()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: pad number
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PadType()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: pad type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Rotation()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [getState\_SolderMaskAndPasteMaskExpansion()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: solder mask / paste mask expansion
-
 
 </td></tr>
 <tr><td>
 
 [getState\_SpecialPad()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: special pad shape
-
 
 </td></tr>
 <tr><td>
 
 [getState\_X()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: X position
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Y()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Y position
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_HeatWelding(heatWelding)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: thermal relief optimization parameters
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Hole(hole)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: hole
-
 
 </td></tr>
 <tr><td>
 
 [setState\_HoleOffsetX(holeOffsetX)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: hole offset X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_HoleOffsetY(holeOffsetY)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: hole offset Y
-
 
 </td></tr>
 <tr><td>
 
 [setState\_HoleRotation(holeRotation)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Rotation angle of the hole relative to the pad
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Metallization(metallization)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Whether the hole wall is plated
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Net(net)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: net
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Pad(pad)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: pad shape
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PadNumber(padNumber)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: pad number
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Rotation(rotation)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: rotation angle
-
 
 </td></tr>
 <tr><td>
 
 [setState\_SolderMaskAndPasteMaskExpansion(solderMaskAndPasteMaskExpansion)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: solder mask / paste mask expansion
-
 
 </td></tr>
 <tr><td>
 
 [setState\_SpecialPad(specialPad)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: special pad shape
-
 
 </td></tr>
 <tr><td>
 
 [setState\_X(x)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: X position
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Y(y)](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Y position
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitivePad.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -1066,7 +855,7 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-protected async: boolean;
+function async: boolean;
 ```
 
 ### heatwelding
@@ -1078,7 +867,7 @@ protected async: boolean;
 ## Signature
 
 ```typescript
-protected heatWelding: IPCB_PrimitivePadHeatWelding | null;
+function heatWelding: IPCB_PrimitivePadHeatWelding | null;
 ```
 
 ### hole
@@ -1090,7 +879,7 @@ protected heatWelding: IPCB_PrimitivePadHeatWelding | null;
 ## Signature
 
 ```typescript
-protected hole: TPCB_PrimitivePadHole | null;
+function hole: TPCB_PrimitivePadHole | null;
 ```
 
 ### holeoffsetx
@@ -1102,7 +891,7 @@ protected hole: TPCB_PrimitivePadHole | null;
 ## Signature
 
 ```typescript
-protected holeOffsetX: number;
+function holeOffsetX: number;
 ```
 
 ### holeoffsety
@@ -1114,7 +903,7 @@ protected holeOffsetX: number;
 ## Signature
 
 ```typescript
-protected holeOffsetY: number;
+function holeOffsetY: number;
 ```
 
 ### holerotation
@@ -1126,7 +915,7 @@ protected holeOffsetY: number;
 ## Signature
 
 ```typescript
-protected holeRotation: number;
+function holeRotation: number;
 ```
 
 ### layer
@@ -1138,7 +927,7 @@ protected holeRotation: number;
 ## Signature
 
 ```typescript
-protected layer: TPCB_LayersOfPad;
+function layer: TPCB_LayersOfPad;
 ```
 
 ### metallization
@@ -1150,7 +939,7 @@ protected layer: TPCB_LayersOfPad;
 ## Signature
 
 ```typescript
-protected metallization: boolean;
+function metallization: boolean;
 ```
 
 ### net
@@ -1162,7 +951,7 @@ protected metallization: boolean;
 ## Signature
 
 ```typescript
-protected net?: string;
+function net?: string;
 ```
 
 ### pad
@@ -1174,7 +963,7 @@ protected net?: string;
 ## Signature
 
 ```typescript
-protected pad?: TPCB_PrimitivePadShape;
+function pad?: TPCB_PrimitivePadShape;
 ```
 
 ### padnumber
@@ -1186,7 +975,7 @@ protected pad?: TPCB_PrimitivePadShape;
 ## Signature
 
 ```typescript
-protected padNumber: string;
+function padNumber: string;
 ```
 
 ### padtype
@@ -1198,7 +987,7 @@ protected padNumber: string;
 ## Signature
 
 ```typescript
-protected padType: EPCB_PrimitivePadType;
+function padType: EPCB_PrimitivePadType;
 ```
 
 ### primitiveid
@@ -1210,7 +999,7 @@ protected padType: EPCB_PrimitivePadType;
 ## Signature
 
 ```typescript
-protected primitiveId?: string;
+function primitiveId?: string;
 ```
 
 ### primitivelock
@@ -1222,7 +1011,7 @@ protected primitiveId?: string;
 ## Signature
 
 ```typescript
-protected primitiveLock: boolean;
+function primitiveLock: boolean;
 ```
 
 ### primitivetype
@@ -1234,7 +1023,7 @@ protected primitiveLock: boolean;
 ## Signature
 
 ```typescript
-protected readonly primitiveType: EPCB_PrimitiveType;
+function readonly primitiveType: EPCB_PrimitiveType;
 ```
 
 ### rotation
@@ -1246,7 +1035,7 @@ protected readonly primitiveType: EPCB_PrimitiveType;
 ## Signature
 
 ```typescript
-protected rotation: number;
+function rotation: number;
 ```
 
 ### soldermaskandpastemaskexpansion
@@ -1258,7 +1047,7 @@ protected rotation: number;
 ## Signature
 
 ```typescript
-protected solderMaskAndPasteMaskExpansion: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null;
+function solderMaskAndPasteMaskExpansion: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null;
 ```
 
 ### specialpad
@@ -1270,7 +1059,7 @@ protected solderMaskAndPasteMaskExpansion: IPCB_PrimitiveSolderMaskAndPasteMaskE
 ## Signature
 
 ```typescript
-protected specialPad?: TPCB_PrimitiveSpecialPadShape;
+function specialPad?: TPCB_PrimitiveSpecialPadShape;
 ```
 
 ### x
@@ -1282,7 +1071,7 @@ protected specialPad?: TPCB_PrimitiveSpecialPadShape;
 ## Signature
 
 ```typescript
-protected x: number;
+function x: number;
 ```
 
 ### y
@@ -1294,7 +1083,7 @@ protected x: number;
 ## Signature
 
 ```typescript
-protected y: number;
+function y: number;
 ```
 
 
@@ -1313,9 +1102,8 @@ In PCB canvas in create primitive
 ## Signature
 
 ```typescript
-public create(): Promise<IPCB_PrimitivePad>;
+function create(): Promise<IPCB_PrimitivePad>;
 ```
-
 
 ## Returns
 
@@ -1324,7 +1112,6 @@ Promise&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)<!-- -->&gt;
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层放置一个圆形贴片焊盘（直径 60mil）
@@ -1349,9 +1136,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitivePad>;
+function done(): Promise<IPCB_PrimitivePad>;
 ```
-
 
 ## Returns
 
@@ -1360,7 +1146,6 @@ Promise&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)<!-- -->&gt;
 Dimension primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层放置一个圆形贴片焊盘
@@ -1391,9 +1176,8 @@ Get the property state: thermal relief optimization parameters
 ## Signature
 
 ```typescript
-public getState_HeatWelding(): IPCB_PrimitivePadHeatWelding | null;
+function getState_HeatWelding(): IPCB_PrimitivePadHeatWelding | null;
 ```
-
 
 ## Returns
 
@@ -1402,7 +1186,6 @@ public getState_HeatWelding(): IPCB_PrimitivePadHeatWelding | null;
 Thermal relief optimization parameters
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个带热焊参数的焊盘和一个普通焊盘
@@ -1430,9 +1213,8 @@ Get the property state: hole
 ## Signature
 
 ```typescript
-public getState_Hole(): TPCB_PrimitivePadHole | null;
+function getState_Hole(): TPCB_PrimitivePadHole | null;
 ```
-
 
 ## Returns
 
@@ -1441,7 +1223,6 @@ public getState_Hole(): TPCB_PrimitivePadHole | null;
 Hole
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个带圆孔的通孔焊盘和一个贴片焊盘
@@ -1469,9 +1250,8 @@ Get the property state: hole offset X
 ## Signature
 
 ```typescript
-public getState_HoleOffsetX(): number;
+function getState_HoleOffsetX(): number;
 ```
-
 
 ## Returns
 
@@ -1480,7 +1260,6 @@ number
 Hole offset X
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个孔心向右偏 10mil 的通孔焊盘
@@ -1505,9 +1284,8 @@ Get the property state: hole offset Y
 ## Signature
 
 ```typescript
-public getState_HoleOffsetY(): number;
+function getState_HoleOffsetY(): number;
 ```
-
 
 ## Returns
 
@@ -1516,7 +1294,6 @@ number
 Hole offset Y
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个孔心向上偏 20mil 的通孔焊盘
@@ -1541,9 +1318,8 @@ Get the property state: Rotation angle of the hole relative to the pad
 ## Signature
 
 ```typescript
-public getState_HoleRotation(): number;
+function getState_HoleRotation(): number;
 ```
-
 
 ## Returns
 
@@ -1552,7 +1328,6 @@ number
 Rotation angle of the hole relative to the pad
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个孔旋转 45 度的通孔焊盘
@@ -1577,9 +1352,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfPad;
+function getState_Layer(): TPCB_LayersOfPad;
 ```
-
 
 ## Returns
 
@@ -1588,7 +1362,6 @@ public getState_Layer(): TPCB_LayersOfPad;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，分别在顶层和多层创建焊盘
@@ -1616,9 +1389,8 @@ Get the property state: Whether the hole wall is plated
 ## Signature
 
 ```typescript
-public getState_Metallization(): boolean;
+function getState_Metallization(): boolean;
 ```
-
 
 ## Returns
 
@@ -1627,7 +1399,6 @@ boolean
 Whether the hole wall is plated
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个金属化孔焊盘和一个非金属化孔焊盘
@@ -1655,9 +1426,8 @@ Get the property state: net name
 ## Signature
 
 ```typescript
-public getState_Net(): string | undefined;
+function getState_Net(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -1666,7 +1436,6 @@ string \| undefined
 Net name
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个挂网络的焊盘和一个无网络焊盘
@@ -1694,9 +1463,8 @@ Get the property state: pad shape
 ## Signature
 
 ```typescript
-public getState_Pad(): TPCB_PrimitivePadShape | undefined;
+function getState_Pad(): TPCB_PrimitivePadShape | undefined;
 ```
-
 
 ## Returns
 
@@ -1705,7 +1473,6 @@ public getState_Pad(): TPCB_PrimitivePadShape | undefined;
 Pad shape
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个圆形贴片焊盘
@@ -1730,9 +1497,8 @@ Get the property state: pad number
 ## Signature
 
 ```typescript
-public getState_PadNumber(): string;
+function getState_PadNumber(): string;
 ```
-
 
 ## Returns
 
@@ -1741,7 +1507,6 @@ string
 Pad number
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个编号为 '1' 的贴片焊盘
@@ -1766,9 +1531,8 @@ Get the property state: pad type
 ## Signature
 
 ```typescript
-public getState_PadType(): EPCB_PrimitivePadType;
+function getState_PadType(): EPCB_PrimitivePadType;
 ```
-
 
 ## Returns
 
@@ -1777,7 +1541,6 @@ public getState_PadType(): EPCB_PrimitivePadType;
 Pad type
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个普通焊盘和一个标识点
@@ -1805,9 +1568,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -1816,7 +1578,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个贴片焊盘
@@ -1845,9 +1606,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -1856,7 +1616,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个锁定的焊盘（最后一个参数 primitiveLock=true）
@@ -1881,9 +1640,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -1892,7 +1650,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个贴片焊盘
@@ -1917,9 +1674,8 @@ Get the property state: rotation angle
 ## Signature
 
 ```typescript
-public getState_Rotation(): number;
+function getState_Rotation(): number;
 ```
-
 
 ## Returns
 
@@ -1928,7 +1684,6 @@ number
 Rotation angle
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个旋转 90 度的长圆形焊盘
@@ -1953,9 +1708,8 @@ Get the property state: solder mask / paste mask expansion
 ## Signature
 
 ```typescript
-public getState_SolderMaskAndPasteMaskExpansion(): IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null;
+function getState_SolderMaskAndPasteMaskExpansion(): IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null;
 ```
-
 
 ## Returns
 
@@ -1964,7 +1718,6 @@ public getState_SolderMaskAndPasteMaskExpansion(): IPCB_PrimitiveSolderMaskAndPa
 Solder mask / paste mask expansion
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个自定义扩展的贴片焊盘和一个默认焊盘
@@ -1992,9 +1745,8 @@ Get the property state: special pad shape
 ## Signature
 
 ```typescript
-public getState_SpecialPad(): TPCB_PrimitiveSpecialPadShape | undefined;
+function getState_SpecialPad(): TPCB_PrimitiveSpecialPadShape | undefined;
 ```
-
 
 ## Returns
 
@@ -2003,7 +1755,6 @@ public getState_SpecialPad(): TPCB_PrimitiveSpecialPadShape | undefined;
 Special pad shape
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建普通焊盘与创建时尝试带特殊外形的焊盘
@@ -2032,9 +1783,8 @@ Get the property state: X position
 ## Signature
 
 ```typescript
-public getState_X(): number;
+function getState_X(): number;
 ```
-
 
 ## Returns
 
@@ -2043,7 +1793,6 @@ number
 X position
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个贴片焊盘
@@ -2068,9 +1817,8 @@ Get the property state: Y position
 ## Signature
 
 ```typescript
-public getState_Y(): number;
+function getState_Y(): number;
 ```
-
 
 ## Returns
 
@@ -2079,7 +1827,6 @@ number
 Y position
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个贴片焊盘
@@ -2104,9 +1851,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -2115,7 +1861,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 在顶层放置一个圆形贴片焊盘
@@ -2148,9 +1893,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitivePad>;
+function reset(): Promise<IPCB_PrimitivePad>;
 ```
-
 
 ## Returns
 
@@ -2159,7 +1903,6 @@ Promise&lt;[IPCB\_PrimitivePad](./IPCB_PrimitivePad.md)<!-- -->&gt;
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 在顶层放置一个未旋转的圆形贴片焊盘
@@ -2193,7 +1936,7 @@ Set the property state: thermal relief optimization parameters
 ## Signature
 
 ```typescript
-public setState_HeatWelding(heatWelding: IPCB_PrimitivePadHeatWelding | null): IPCB_PrimitivePad;
+function setState_HeatWelding(heatWelding: IPCB_PrimitivePadHeatWelding | null): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2202,37 +1945,29 @@ public setState_HeatWelding(heatWelding: IPCB_PrimitivePadHeatWelding | null): I
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 heatWelding
 
-
 </td><td>
 
 [IPCB\_PrimitivePadHeatWelding](../interfaces/IPCB_PrimitivePadHeatWelding.md) \| null
-
 
 </td><td>
 
 Thermal relief optimization parameters
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2241,7 +1976,6 @@ Thermal relief optimization parameters
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个无热焊参数的贴片焊盘
@@ -2271,7 +2005,7 @@ Set the property state: hole
 ## Signature
 
 ```typescript
-public setState_Hole(hole: TPCB_PrimitivePadHole): IPCB_PrimitivePad;
+function setState_Hole(hole: TPCB_PrimitivePadHole): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2280,37 +2014,29 @@ public setState_Hole(hole: TPCB_PrimitivePadHole): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 hole
 
-
 </td><td>
 
 [TPCB\_PrimitivePadHole](../types/TPCB_PrimitivePadHole.md)
-
 
 </td><td>
 
 Pad drilling
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2327,7 +2053,6 @@ When setting the hole, some other property states will be set in conjunction:
 This API cannot set the hole to `null`<!-- -->. If you want to remove the hole property, use the [setState\_Layer](./IPCB_PrimitivePad.md) method to switch the layer to the top or bottom layer
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个无孔的贴片焊盘
@@ -2358,7 +2083,7 @@ Set the property state: hole offset X
 ## Signature
 
 ```typescript
-public setState_HoleOffsetX(holeOffsetX: number): IPCB_PrimitivePad;
+function setState_HoleOffsetX(holeOffsetX: number): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2367,37 +2092,29 @@ public setState_HoleOffsetX(holeOffsetX: number): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 holeOffsetX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Hole offset X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2410,7 +2127,6 @@ Pad primitive object
 If the hole does not exist, the property will not be modified
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个中心孔的通孔焊盘
@@ -2440,7 +2156,7 @@ Set the property state: hole offset Y
 ## Signature
 
 ```typescript
-public setState_HoleOffsetY(holeOffsetY: number): IPCB_PrimitivePad;
+function setState_HoleOffsetY(holeOffsetY: number): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2449,37 +2165,29 @@ public setState_HoleOffsetY(holeOffsetY: number): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 holeOffsetY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Hole offset Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2492,7 +2200,6 @@ Pad primitive object
 If the hole does not exist, the property will not be modified
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个中心孔的通孔焊盘
@@ -2522,7 +2229,7 @@ Set the property state: Rotation angle of the hole relative to the pad
 ## Signature
 
 ```typescript
-public setState_HoleRotation(holeRotation: number): IPCB_PrimitivePad;
+function setState_HoleRotation(holeRotation: number): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2531,37 +2238,29 @@ public setState_HoleRotation(holeRotation: number): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 holeRotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle of the hole relative to the pad
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2574,7 +2273,6 @@ Pad primitive object
 If the hole does not exist, the property will not be modified
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个插槽通孔焊盘（槽未旋转）
@@ -2604,7 +2302,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfPad): IPCB_PrimitivePad;
+function setState_Layer(layer: TPCB_LayersOfPad): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2613,37 +2311,29 @@ public setState_Layer(layer: TPCB_LayersOfPad): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2662,7 +2352,6 @@ When setting the layer, some other property states will be set in conjunction:
 3. When switching from single layer to multi-layer: the solder mask/paste mask expansion properties will only keep the solder mask expansion, and the original data will be copied and applied to the top and bottom layers. The pad drilling property will be assigned a specified value: a rounded rectangle whose length and width are 60% of the pad diameter (for rounded or regular polygon pads) or the pad width (for rectangular pads). Data-wise it is a rounded rectangle, but actually it is a circle. If the pad is a polyline complex polygon, the data is calculated through a dedicated algorithm (usually abstract; it is recommended to modify it later)
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，在顶层创建一个贴片焊盘
@@ -2692,7 +2381,7 @@ Set the property state: Whether the hole wall is plated
 ## Signature
 
 ```typescript
-public setState_Metallization(metallization: boolean): IPCB_PrimitivePad;
+function setState_Metallization(metallization: boolean): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2701,37 +2390,29 @@ public setState_Metallization(metallization: boolean): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 metallization
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether the hole wall is plated
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2744,7 +2425,6 @@ Pad primitive object
 If the hole does not exist, the property will not be modified
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个非金属化的通孔焊盘
@@ -2774,7 +2454,7 @@ Set the property state: net
 ## Signature
 
 ```typescript
-public setState_Net(net?: string): IPCB_PrimitivePad;
+function setState_Net(net?: string): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2783,37 +2463,29 @@ public setState_Net(net?: string): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2826,7 +2498,6 @@ Pad primitive object
 This API is only available in the PCB editor. Both an empty string and `undefined` are treated as an empty net
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个无网络的贴片焊盘
@@ -2856,7 +2527,7 @@ Set the property state: pad shape
 ## Signature
 
 ```typescript
-public setState_Pad(pad: TPCB_PrimitivePadShape): IPCB_PrimitivePad;
+function setState_Pad(pad: TPCB_PrimitivePadShape): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2865,37 +2536,29 @@ public setState_Pad(pad: TPCB_PrimitivePadShape): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 pad
 
-
 </td><td>
 
 [TPCB\_PrimitivePadShape](../types/TPCB_PrimitivePadShape.md)
-
 
 </td><td>
 
 Pad shape
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2910,7 +2573,6 @@ When setting the pad shape, some other property states will be set in conjunctio
 1. The special pad shape property will be cleared
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个圆形贴片焊盘
@@ -2940,7 +2602,7 @@ Set the property state: pad number
 ## Signature
 
 ```typescript
-public setState_PadNumber(padNumber: string): IPCB_PrimitivePad;
+function setState_PadNumber(padNumber: string): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -2949,37 +2611,29 @@ public setState_PadNumber(padNumber: string): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 padNumber
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Pad number
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -2988,7 +2642,6 @@ Pad number
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个编号为 '1' 的贴片焊盘
@@ -3018,7 +2671,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitivePad;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -3027,37 +2680,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3066,7 +2711,6 @@ Whether it is locked
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未锁定的贴片焊盘
@@ -3096,7 +2740,7 @@ Set the property state: rotation angle
 ## Signature
 
 ```typescript
-public setState_Rotation(rotation: number): IPCB_PrimitivePad;
+function setState_Rotation(rotation: number): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -3105,37 +2749,29 @@ public setState_Rotation(rotation: number): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 rotation
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Rotation angle
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3144,7 +2780,6 @@ Rotation angle
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个未旋转的长圆形焊盘
@@ -3174,7 +2809,9 @@ Set the property state: solder mask / paste mask expansion
 ## Signature
 
 ```typescript
-public setState_SolderMaskAndPasteMaskExpansion(solderMaskAndPasteMaskExpansion: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null): IPCB_PrimitivePad;
+function setState_SolderMaskAndPasteMaskExpansion(
+	solderMaskAndPasteMaskExpansion: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null,
+): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -3183,37 +2820,29 @@ public setState_SolderMaskAndPasteMaskExpansion(solderMaskAndPasteMaskExpansion:
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 solderMaskAndPasteMaskExpansion
 
-
 </td><td>
 
 [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null
-
 
 </td><td>
 
 Solder mask / paste mask expansion
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3222,7 +2851,6 @@ Solder mask / paste mask expansion
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个默认扩展（遵循规则）的贴片焊盘
@@ -3252,7 +2880,7 @@ Set the property state: special pad shape
 ## Signature
 
 ```typescript
-public setState_SpecialPad(specialPad: TPCB_PrimitiveSpecialPadShape): IPCB_PrimitivePad;
+function setState_SpecialPad(specialPad: TPCB_PrimitiveSpecialPadShape): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -3261,35 +2889,27 @@ public setState_SpecialPad(specialPad: TPCB_PrimitiveSpecialPadShape): IPCB_Prim
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 specialPad
 
-
 </td><td>
 
 [TPCB\_PrimitiveSpecialPadShape](../types/TPCB_PrimitiveSpecialPadShape.md)
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3304,7 +2924,6 @@ When setting the special pad shape, some other property states will be set in co
 1. The pad shape property will be cleared
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个普通贴片焊盘
@@ -3333,7 +2952,7 @@ Set the property state: X position
 ## Signature
 
 ```typescript
-public setState_X(x: number): IPCB_PrimitivePad;
+function setState_X(x: number): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -3342,37 +2961,29 @@ public setState_X(x: number): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 x
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 X position
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3381,7 +2992,6 @@ X position
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个贴片焊盘
@@ -3410,7 +3020,7 @@ Set the property state: Y position
 ## Signature
 
 ```typescript
-public setState_Y(y: number): IPCB_PrimitivePad;
+function setState_Y(y: number): IPCB_PrimitivePad;
 ```
 
 ## Parameters
@@ -3419,37 +3029,29 @@ public setState_Y(y: number): IPCB_PrimitivePad;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 y
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Y position
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -3458,7 +3060,6 @@ Y position
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，创建一个贴片焊盘
@@ -3485,9 +3086,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitivePad;
+function toAsync(): IPCB_PrimitivePad;
 ```
-
 
 ## Returns
 
@@ -3496,7 +3096,6 @@ public toAsync(): IPCB_PrimitivePad;
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 在顶层放置一个圆形贴片焊盘
@@ -3526,9 +3125,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitivePad;
+function toSync(): IPCB_PrimitivePad;
 ```
-
 
 ## Returns
 
@@ -3537,7 +3135,6 @@ public toSync(): IPCB_PrimitivePad;
 Pad primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 在顶层放置一个圆形贴片焊盘

@@ -5,7 +5,7 @@ System / panel control class
 ## Signature
 
 ```typescript
-export class SYS_PanelControl 
+class SYS_PanelControl
 ```
 
 ## Methods
@@ -14,184 +14,145 @@ export class SYS_PanelControl
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [closeBottomPanel()](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Close the bottom panel
-
 
 </td></tr>
 <tr><td>
 
 [closeLeftPanel()](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Close the left panel
-
 
 </td></tr>
 <tr><td>
 
 [closeRightPanel()](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Close the right panel
-
 
 </td></tr>
 <tr><td>
 
 [isBottomPanelLocked()](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the bottom panel is locked
-
 
 </td></tr>
 <tr><td>
 
 [isLeftPanelLocked()](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the left panel is locked
-
 
 </td></tr>
 <tr><td>
 
 [isRightPanelLocked()](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the right panel is locked
-
 
 </td></tr>
 <tr><td>
 
 [openBottomPanel(tab)](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Open the bottom panel
-
 
 </td></tr>
 <tr><td>
 
 [openLeftPanel(tab)](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Open the left panel
-
 
 </td></tr>
 <tr><td>
 
 [openRightPanel(tab)](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Open the right panel
-
 
 </td></tr>
 <tr><td>
 
 [toggleBottomPanelLockState(state)](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Toggle the lock state of the bottom panel
-
 
 </td></tr>
 <tr><td>
 
 [toggleLeftPanelLockState(state)](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Toggle the lock state of the left panel
-
 
 </td></tr>
 <tr><td>
 
 [toggleRightPanelLockState(state)](./SYS_PanelControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Toggle the lock state of the right panel
-
 
 </td></tr>
 </tbody></table>
@@ -209,16 +170,14 @@ Close the bottom panel
 ## Signature
 
 ```typescript
-public closeBottomPanel(): void;
+function closeBottomPanel(): void;
 ```
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 先展开底部面板制造“已打开”状态，便于观察关闭效果
@@ -239,16 +198,14 @@ Close the left panel
 ## Signature
 
 ```typescript
-public closeLeftPanel(): void;
+function closeLeftPanel(): void;
 ```
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 先展开左侧面板制造“已打开”状态（不传 tab 则保持当前标签页）
@@ -269,16 +226,14 @@ Close the right panel
 ## Signature
 
 ```typescript
-public closeRightPanel(): void;
+function closeRightPanel(): void;
 ```
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 先展开右侧面板制造“已打开”状态（不传 tab 则保持当前标签页）
@@ -299,9 +254,8 @@ Query whether the bottom panel is locked
 ## Signature
 
 ```typescript
-public isBottomPanelLocked(): Promise<boolean>;
+function isBottomPanelLocked(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -310,7 +264,6 @@ Promise&lt;boolean&gt;
 Whether Already lock
 
 ## Example
-
 
 ```javascript
 // 1. 查询底部面板当前锁定状态（异步方法，需要 await）
@@ -329,9 +282,8 @@ Query whether the left panel is locked
 ## Signature
 
 ```typescript
-public isLeftPanelLocked(): Promise<boolean>;
+function isLeftPanelLocked(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -340,7 +292,6 @@ Promise&lt;boolean&gt;
 Whether Already lock
 
 ## Example
-
 
 ```javascript
 // 1. 查询左侧面板当前锁定状态（异步方法，需要 await）
@@ -359,9 +310,8 @@ Query whether the right panel is locked
 ## Signature
 
 ```typescript
-public isRightPanelLocked(): Promise<boolean>;
+function isRightPanelLocked(): Promise<boolean>;
 ```
-
 
 ## Returns
 
@@ -370,7 +320,6 @@ Promise&lt;boolean&gt;
 Whether Already lock
 
 ## Example
-
 
 ```javascript
 // 1. 查询右侧面板当前锁定状态（异步方法，需要 await）
@@ -389,7 +338,7 @@ Open the bottom panel
 ## Signature
 
 ```typescript
-public openBottomPanel(tab?: ESYS_BottomPanelTab): void;
+function openBottomPanel(tab?: ESYS_BottomPanelTab): void;
 ```
 
 ## Parameters
@@ -398,44 +347,35 @@ public openBottomPanel(tab?: ESYS_BottomPanelTab): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tab
 
-
 </td><td>
 
 [ESYS\_BottomPanelTab](../enums/ESYS_BottomPanelTab.md)
-
 
 </td><td>
 
 _(Optional)_ Tab. If not specified, the tab will not be switched
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 打开底部面板并切换到日志标签页（'log' 不依赖文档类型，最通用）
@@ -456,7 +396,7 @@ Open the left panel
 ## Signature
 
 ```typescript
-public openLeftPanel(tab?: ESYS_LeftPanelTab): void;
+function openLeftPanel(tab?: ESYS_LeftPanelTab): void;
 ```
 
 ## Parameters
@@ -465,44 +405,35 @@ public openLeftPanel(tab?: ESYS_LeftPanelTab): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tab
 
-
 </td><td>
 
 [ESYS\_LeftPanelTab](../enums/ESYS_LeftPanelTab.md)
-
 
 </td><td>
 
 _(Optional)_ Tab. If not specified, the tab will not be switched
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 打开左侧面板并切换到工程设计标签页
@@ -523,7 +454,7 @@ Open the right panel
 ## Signature
 
 ```typescript
-public openRightPanel(tab?: ESYS_RightPanelTab): void;
+function openRightPanel(tab?: ESYS_RightPanelTab): void;
 ```
 
 ## Parameters
@@ -532,44 +463,35 @@ public openRightPanel(tab?: ESYS_RightPanelTab): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 tab
 
-
 </td><td>
 
 [ESYS\_RightPanelTab](../enums/ESYS_RightPanelTab.md)
-
 
 </td><td>
 
 _(Optional)_ Tab. If not specified, the tab will not be switched
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 打开右侧面板并切换到批注标签页（'annotation' 不依赖文档类型）
@@ -590,7 +512,7 @@ Toggle the lock state of the bottom panel
 ## Signature
 
 ```typescript
-public toggleBottomPanelLockState(state?: boolean): void;
+function toggleBottomPanelLockState(state?: boolean): void;
 ```
 
 ## Parameters
@@ -599,44 +521,35 @@ public toggleBottomPanelLockState(state?: boolean): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 state
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to lock. If not specified, the current state is inverted
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 记录当前锁定状态（异步查询，需要 await）
@@ -663,7 +576,7 @@ Toggle the lock state of the left panel
 ## Signature
 
 ```typescript
-public toggleLeftPanelLockState(state?: boolean): void;
+function toggleLeftPanelLockState(state?: boolean): void;
 ```
 
 ## Parameters
@@ -672,44 +585,35 @@ public toggleLeftPanelLockState(state?: boolean): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 state
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to lock. If not specified, the current state is inverted
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 记录当前锁定状态（异步查询，需要 await）
@@ -736,7 +640,7 @@ Toggle the lock state of the right panel
 ## Signature
 
 ```typescript
-public toggleRightPanelLockState(state?: boolean): void;
+function toggleRightPanelLockState(state?: boolean): void;
 ```
 
 ## Parameters
@@ -745,44 +649,35 @@ public toggleRightPanelLockState(state?: boolean): void;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 state
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 _(Optional)_ Whether to lock. If not specified, the current state is inverted
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
 void
 
 ## Example
-
 
 ```javascript
 // 1. 记录当前锁定状态（异步查询，需要 await）

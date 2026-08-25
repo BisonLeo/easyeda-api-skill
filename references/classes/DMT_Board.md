@@ -5,7 +5,7 @@ Document tree / Board management class
 ## Signature
 
 ```typescript
-export class DMT_Board 
+class DMT_Board
 ```
 
 ## Remarks
@@ -18,114 +18,90 @@ Operations related to board management in the currently open project
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [copyBoard(sourceBoardName)](./DMT_Board.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Copy Board
-
 
 </td></tr>
 <tr><td>
 
 [createBoard(schematicUuid, pcbUuid)](./DMT_Board.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Create Board
-
 
 </td></tr>
 <tr><td>
 
 [deleteBoard(boardName)](./DMT_Board.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Delete Board
-
 
 </td></tr>
 <tr><td>
 
 [getAllBoardsInfo()](./DMT_Board.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get all in the project board detailed properties of
-
 
 </td></tr>
 <tr><td>
 
 [getBoardInfo(boardName)](./DMT_Board.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get detailed properties of Board
-
 
 </td></tr>
 <tr><td>
 
 [getCurrentBoardInfo()](./DMT_Board.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get detailed properties of Current board
-
 
 </td></tr>
 <tr><td>
 
 [modifyBoardName(originalBoardName, boardName)](./DMT_Board.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Modify Board name
-
 
 </td></tr>
 </tbody></table>
@@ -143,7 +119,7 @@ Copy Board
 ## Signature
 
 ```typescript
-public copyBoard(sourceBoardName: string): Promise<string | undefined>;
+function copyBoard(sourceBoardName: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -152,37 +128,29 @@ public copyBoard(sourceBoardName: string): Promise<string | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 sourceBoardName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Source board name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -192,7 +160,6 @@ New board name, if it is `undefined` the copy fails
 
 ## Example
 
-
 ```javascript
 // 1. 取第一块板子的名称作为复制源
 const boards = await eda.dmt_Board.getAllBoardsInfo();
@@ -200,12 +167,12 @@ const sourceName = boards[0].name;
 
 // 2. 复制板子，返回新板子名称
 const newBoardName = await eda.dmt_Board.copyBoard(sourceName);
-console.log("source:", sourceName);
-console.log("copy:", newBoardName);
+console.log('source:', sourceName);
+console.log('copy:', newBoardName);
 
 // 3. 删除复制的板子，保持工程整洁
 const deleted = await eda.dmt_Board.deleteBoard(newBoardName);
-console.log("deleted:", deleted);
+console.log('deleted:', deleted);
 ```
 
 ### createboard
@@ -219,7 +186,7 @@ Create Board
 ## Signature
 
 ```typescript
-public createBoard(schematicUuid?: string, pcbUuid?: string): Promise<string | undefined>;
+function createBoard(schematicUuid?: string, pcbUuid?: string): Promise<string | undefined>;
 ```
 
 ## Parameters
@@ -228,53 +195,42 @@ public createBoard(schematicUuid?: string, pcbUuid?: string): Promise<string | u
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 schematicUuid
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 _(Optional)_ Associated schematic UUID
-
 
 </td></tr>
 <tr><td>
 
 pcbUuid
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 _(Optional)_ Associated PCB UUID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -283,7 +239,6 @@ Promise&lt;string \| undefined&gt;
 Board name, if it is `undefined` creation fails
 
 ## Example
-
 
 ```javascript
 // 1. 无参调用，由系统自动创建一对原理图/PCB 文档并关联
@@ -304,7 +259,7 @@ Delete Board
 ## Signature
 
 ```typescript
-public deleteBoard(boardName: string): Promise<boolean>;
+function deleteBoard(boardName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -313,37 +268,29 @@ public deleteBoard(boardName: string): Promise<boolean>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 boardName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Board name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -356,7 +303,6 @@ Whether the operation is successful
 If the specified board does not exist, the API will return `false`<!-- -->, indicating that the operation failed
 
 ## Example
-
 
 ```javascript
 // 1. 复制一块板子作为删除目标，避免误删工程里有用的板子
@@ -378,9 +324,8 @@ Get all in the project board detailed properties of
 ## Signature
 
 ```typescript
-public getAllBoardsInfo(): Promise<Array<IDMT_BoardItem>>;
+function getAllBoardsInfo(): Promise<Array<IDMT_BoardItem>>;
 ```
-
 
 ## Returns
 
@@ -390,14 +335,13 @@ Array of detailed properties of all Board
 
 ## Example
 
-
 ```javascript
 // 1. 获取工程内所有板子
 const boards = await eda.dmt_Board.getAllBoardsInfo();
 
 // 2. 输出每块板子的名称与下属文档
 boards.forEach((board, i) => {
-  console.log(`board[${i}]:`, board.name, 'schematic:', board.schematic?.uuid, 'pcb:', board.pcb?.uuid);
+	console.log(`board[${i}]:`, board.name, 'schematic:', board.schematic?.uuid, 'pcb:', board.pcb?.uuid);
 });
 
 console.log('total:', boards.length);
@@ -412,7 +356,7 @@ Get detailed properties of Board
 ## Signature
 
 ```typescript
-public getBoardInfo(boardName: string): Promise<IDMT_BoardItem | undefined>;
+function getBoardInfo(boardName: string): Promise<IDMT_BoardItem | undefined>;
 ```
 
 ## Parameters
@@ -421,37 +365,29 @@ public getBoardInfo(boardName: string): Promise<IDMT_BoardItem | undefined>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 boardName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Board name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -460,7 +396,6 @@ Promise&lt;[IDMT\_BoardItem](../interfaces/IDMT_BoardItem.md) \| undefined&gt;
 Board detailed properties of; if it is `undefined`<!-- -->, the retrieval failed
 
 ## Example
-
 
 ```javascript
 // 1. 先盘点所有板子，取第一块的名称作为查询目标
@@ -486,9 +421,8 @@ Get detailed properties of Current board
 ## Signature
 
 ```typescript
-public getCurrentBoardInfo(): Promise<IDMT_BoardItem | undefined>;
+function getCurrentBoardInfo(): Promise<IDMT_BoardItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -501,7 +435,6 @@ Board detailed properties of; if it is `undefined`<!-- -->, the retrieval failed
 It will get the detailed properties of the board associated with the currently open schematic or PCB that has the last input focus
 
 ## Example
-
 
 ```javascript
 // 1. 切换到第一块板子下属的 PCB 文档（工程里可能存在不属于任何板子的 PCB，不能直接取 getAllPcbsInfo()[0]）
@@ -527,7 +460,7 @@ Modify Board name
 ## Signature
 
 ```typescript
-public modifyBoardName(originalBoardName: string, boardName: string): Promise<boolean>;
+function modifyBoardName(originalBoardName: string, boardName: string): Promise<boolean>;
 ```
 
 ## Parameters
@@ -536,53 +469,42 @@ public modifyBoardName(originalBoardName: string, boardName: string): Promise<bo
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 originalBoardName
 
-
 </td><td>
 
 string
 
-
 </td><td>
 
 Original board name
-
 
 </td></tr>
 <tr><td>
 
 boardName
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 New board name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -592,12 +514,11 @@ Whether Modify Successful
 
 ## Example
 
-
 ```javascript
 // 1. 取第一块板子，记录原名称
 const boards = await eda.dmt_Board.getAllBoardsInfo();
 const originalName = boards[0].name;
-const newName = originalName + '_tmp';
+const newName = `${originalName}_tmp`;
 
 // 2. 改名并输出结果
 const modified = await eda.dmt_Board.modifyBoardName(originalName, newName);

@@ -5,7 +5,7 @@ Schematic &amp; symbol / utility class
 ## Signature
 
 ```typescript
-export class SCH_Utils 
+class SCH_Utils
 ```
 
 ## Methods
@@ -14,30 +14,24 @@ export class SCH_Utils
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [splitLines(lines)](./SCH_Utils.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Split polyline
-
 
 </td></tr>
 </tbody></table>
@@ -57,7 +51,9 @@ Split polyline
 ## Signature
 
 ```typescript
-public splitLines(lines: Array<number | Array<number>>): Array<Array<number | Array<number>>> | undefined;
+function splitLines(
+	lines: Array<number | Array<number>>,
+): Array<Array<number | Array<number>>> | undefined;
 ```
 
 ## Parameters
@@ -66,37 +62,29 @@ public splitLines(lines: Array<number | Array<number>>): Array<Array<number | Ar
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lines
 
-
 </td><td>
 
 Array&lt;number \| Array&lt;number&gt;&gt;
-
 
 </td><td>
 
 Polyline coordinate group. Each segment is a continuous line described by `[x1, y1, x2, y2, x3, y3]`
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -108,7 +96,6 @@ Splits polyline coordinate groups that have no connections to each other into mu
 
 ## Example
 
-
 ```javascript
 // 1. 一条连续线的扁平坐标（SCH 坐标单位是 10mil，100 ≈ 25.4mm）
 const flatLine = [100, 100, 400, 100, 400, 300];
@@ -117,8 +104,8 @@ console.log('单条连续线：', JSON.stringify(single), '，多段线条数：
 
 // 2. 相互断开的两条线——各自保留为列表中的独立条目
 const separated = eda.sch_Utils.splitLines([
-  [100, 100, 300, 100],
-  [500, 100, 700, 100, 700, 300],
+	[100, 100, 300, 100],
+	[500, 100, 700, 100, 700, 300],
 ]);
 console.log('断开的两条线：', JSON.stringify(separated), '，多段线条数：', separated.length);
 

@@ -5,7 +5,7 @@ Line primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveLine implements IPCB_Primitive 
+class IPCB_PrimitiveLine implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
@@ -13,387 +13,305 @@ export class IPCB_PrimitiveLine implements IPCB_Primitive
 
 Both lines and arc lines are wires, corresponding to the line traces and arc traces on the canvas
 
-
 ## Methods
 
 <table><thead><tr><th>
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [done()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getAdjacentPrimitives()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get Adjacent primitive objects
 
+</td></tr>
+<tr><td>
+
+[getEntireTrack(includeVias)](./IPCB_PrimitiveLine.md)
+
+</td><td>
+
+</td><td>
+
+**_(BETA)_** Get the entire wire
 
 </td></tr>
 <tr><td>
 
 [getEntireTrack(includeVias)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
-
-</td><td>
-
-**_(BETA)_** Get the entire wire
-
-
-</td></tr>
-<tr><td>
-
-[getEntireTrack(includeVias)](./IPCB_PrimitiveLine.md)
-
-
-</td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the entire wire
-
 
 </td></tr>
 <tr><td>
 
 [getState\_EndX()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: end position X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_EndY()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: end position Y
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Net()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [getState\_StartX()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: start position X
-
 
 </td></tr>
 <tr><td>
 
 [getState\_StartY()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: start position Y
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_EndX(endX)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: end position X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_EndY(endY)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: end position Y
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Net(net)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [setState\_StartX(startX)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: start position X
-
 
 </td></tr>
 <tr><td>
 
 [setState\_StartY(startY)](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: start position Y
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveLine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -413,9 +331,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveLine>;
+function done(): Promise<IPCB_PrimitiveLine>;
 ```
-
 
 ## Returns
 
@@ -424,7 +341,6 @@ Promise&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md)<!-- -->&gt;
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -460,9 +376,10 @@ Get Adjacent primitive objects
 ## Signature
 
 ```typescript
-public getAdjacentPrimitives(): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveVia | IPCB_PrimitiveArc>>;
+function getAdjacentPrimitives(): Promise<
+	Array<IPCB_PrimitiveLine | IPCB_PrimitiveVia | IPCB_PrimitiveArc>
+>;
 ```
-
 
 ## Returns
 
@@ -475,7 +392,6 @@ Adjacent line, via, and arc-line primitive objects
 It will get the line, via, and arc-line primitive objects directly connected to both ends of the line
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条直线走线，终点落在 (7500, 7000)
@@ -493,7 +409,7 @@ await eda.pcb_PrimitiveArc.delete([arc.getState_PrimitiveId()]);
 
 console.log('adjacent count:', adjacent.length);
 adjacent.forEach((p, i) => {
-  console.log(`adjacent[${i}] type:`, p.getState_PrimitiveType());
+	console.log(`adjacent[${i}] type:`, p.getState_PrimitiveType());
 });
 ```
 
@@ -508,7 +424,7 @@ Get the entire wire
 ## Signature
 
 ```typescript
-public getEntireTrack(includeVias: false): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc>>;
+function getEntireTrack(includeVias: false): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc>>;
 ```
 
 ## Parameters
@@ -517,37 +433,29 @@ public getEntireTrack(includeVias: false): Promise<Array<IPCB_PrimitiveLine | IP
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 includeVias
 
-
 </td><td>
 
 false
-
 
 </td><td>
 
 Whether to include the vias at both ends of the wire
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -556,7 +464,6 @@ Promise&lt;Array&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md) \| [IPCB\_Pri
 All lines and arc lines in the entire wire
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条直线走线，终点落在 (7500, 7000)
@@ -577,7 +484,7 @@ await eda.pcb_PrimitiveArc.delete([arc.getState_PrimitiveId()]);
 
 console.log('track(false) count:', trackOnly.length);
 trackOnly.forEach((p, i) => {
-  console.log(`track(false)[${i}] type:`, p.getState_PrimitiveType());
+	console.log(`track(false)[${i}] type:`, p.getState_PrimitiveType());
 });
 console.log('track(true) count:', trackWithVias.length);
 ```
@@ -593,7 +500,9 @@ Get the entire wire
 ## Signature
 
 ```typescript
-public getEntireTrack(includeVias: true): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc | IPCB_PrimitiveVia>>;
+function getEntireTrack(
+	includeVias: true,
+): Promise<Array<IPCB_PrimitiveLine | IPCB_PrimitiveArc | IPCB_PrimitiveVia>>;
 ```
 
 ## Parameters
@@ -602,37 +511,29 @@ public getEntireTrack(includeVias: true): Promise<Array<IPCB_PrimitiveLine | IPC
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 includeVias
 
-
 </td><td>
 
 true
-
 
 </td><td>
 
 Whether to include the vias at both ends of the wire
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -649,9 +550,8 @@ Get the property state: end position X
 ## Signature
 
 ```typescript
-public getState_EndX(): number;
+function getState_EndX(): number;
 ```
-
 
 ## Returns
 
@@ -660,7 +560,6 @@ number
 End position X
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试直线，终点 (1600, 1000)
@@ -684,9 +583,8 @@ Get the property state: end position Y
 ## Signature
 
 ```typescript
-public getState_EndY(): number;
+function getState_EndY(): number;
 ```
-
 
 ## Returns
 
@@ -695,7 +593,6 @@ number
 End position Y
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试直线，终点 (1600, 1000)
@@ -719,9 +616,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfLine;
+function getState_Layer(): TPCB_LayersOfLine;
 ```
-
 
 ## Returns
 
@@ -730,7 +626,6 @@ public getState_Layer(): TPCB_LayersOfLine;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条顶层（1）测试直线
@@ -754,9 +649,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number;
+function getState_LineWidth(): number;
 ```
-
 
 ## Returns
 
@@ -765,7 +659,6 @@ number
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条 10mil 线宽的测试直线
@@ -789,9 +682,8 @@ Get the property state: net name
 ## Signature
 
 ```typescript
-public getState_Net(): string;
+function getState_Net(): string;
 ```
-
 
 ## Returns
 
@@ -800,7 +692,6 @@ string
 Net name
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条指定网络的测试直线
@@ -824,9 +715,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -835,7 +725,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试直线
@@ -863,9 +752,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -874,7 +762,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试直线（默认不锁定）
@@ -898,9 +785,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -909,7 +795,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试直线
@@ -933,9 +818,8 @@ Get the property state: start position X
 ## Signature
 
 ```typescript
-public getState_StartX(): number;
+function getState_StartX(): number;
 ```
-
 
 ## Returns
 
@@ -944,7 +828,6 @@ number
 Start position X
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试直线，起点 (1000, 1000)
@@ -968,9 +851,8 @@ Get the property state: start position Y
 ## Signature
 
 ```typescript
-public getState_StartY(): number;
+function getState_StartY(): number;
 ```
-
 
 ## Returns
 
@@ -979,7 +861,6 @@ number
 Start position Y
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试直线，起点 (1000, 1000)
@@ -1003,9 +884,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -1014,7 +894,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试直线，读出创建后的默认模式
@@ -1043,9 +922,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveLine>;
+function reset(): Promise<IPCB_PrimitiveLine>;
 ```
-
 
 ## Returns
 
@@ -1054,7 +932,6 @@ Promise&lt;[IPCB\_PrimitiveLine](./IPCB_PrimitiveLine.md)<!-- -->&gt;
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1088,7 +965,7 @@ Set the property state: end position X
 ## Signature
 
 ```typescript
-public setState_EndX(endX: number): IPCB_PrimitiveLine;
+function setState_EndX(endX: number): IPCB_PrimitiveLine;
 ```
 
 ## Parameters
@@ -1097,37 +974,29 @@ public setState_EndX(endX: number): IPCB_PrimitiveLine;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 endX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 End position X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1136,7 +1005,6 @@ End position X
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1172,7 +1040,7 @@ Set the property state: end position Y
 ## Signature
 
 ```typescript
-public setState_EndY(endY: number): IPCB_PrimitiveLine;
+function setState_EndY(endY: number): IPCB_PrimitiveLine;
 ```
 
 ## Parameters
@@ -1181,37 +1049,29 @@ public setState_EndY(endY: number): IPCB_PrimitiveLine;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 endY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 End position Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1220,7 +1080,6 @@ End position Y
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1256,7 +1115,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfLine): IPCB_PrimitiveLine;
+function setState_Layer(layer: TPCB_LayersOfLine): IPCB_PrimitiveLine;
 ```
 
 ## Parameters
@@ -1265,37 +1124,29 @@ public setState_Layer(layer: TPCB_LayersOfLine): IPCB_PrimitiveLine;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfLine](../types/TPCB_LayersOfLine.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1304,7 +1155,6 @@ Layer
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1340,7 +1190,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number): IPCB_PrimitiveLine;
+function setState_LineWidth(lineWidth: number): IPCB_PrimitiveLine;
 ```
 
 ## Parameters
@@ -1349,37 +1199,29 @@ public setState_LineWidth(lineWidth: number): IPCB_PrimitiveLine;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1388,7 +1230,6 @@ Line width
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1424,7 +1265,7 @@ Set the property state: net name
 ## Signature
 
 ```typescript
-public setState_Net(net: string): IPCB_PrimitiveLine;
+function setState_Net(net: string): IPCB_PrimitiveLine;
 ```
 
 ## Parameters
@@ -1433,37 +1274,29 @@ public setState_Net(net: string): IPCB_PrimitiveLine;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1472,7 +1305,6 @@ Net name
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1508,7 +1340,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveLine;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveLine;
 ```
 
 ## Parameters
@@ -1517,37 +1349,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveLine;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1556,7 +1380,6 @@ Whether it is locked
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1592,7 +1415,7 @@ Set the property state: start position X
 ## Signature
 
 ```typescript
-public setState_StartX(startX: number): IPCB_PrimitiveLine;
+function setState_StartX(startX: number): IPCB_PrimitiveLine;
 ```
 
 ## Parameters
@@ -1601,37 +1424,29 @@ public setState_StartX(startX: number): IPCB_PrimitiveLine;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 startX
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Start position X
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1640,7 +1455,6 @@ Start position X
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1676,7 +1490,7 @@ Set the property state: start position Y
 ## Signature
 
 ```typescript
-public setState_StartY(startY: number): IPCB_PrimitiveLine;
+function setState_StartY(startY: number): IPCB_PrimitiveLine;
 ```
 
 ## Parameters
@@ -1685,37 +1499,29 @@ public setState_StartY(startY: number): IPCB_PrimitiveLine;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 startY
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Start position Y
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1724,7 +1530,6 @@ Start position Y
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1758,9 +1563,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveLine;
+function toAsync(): IPCB_PrimitiveLine;
 ```
-
 
 ## Returns
 
@@ -1769,7 +1573,6 @@ public toAsync(): IPCB_PrimitiveLine;
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合
@@ -1803,9 +1606,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveLine;
+function toSync(): IPCB_PrimitiveLine;
 ```
-
 
 ## Returns
 
@@ -1814,7 +1616,6 @@ public toSync(): IPCB_PrimitiveLine;
 Line primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试走线重合

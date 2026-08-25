@@ -5,13 +5,12 @@ PCB &amp; footprint / ray tracer engine class
 ## Signature
 
 ```typescript
-export class PCB_RayTracerEngine 
+class PCB_RayTracerEngine
 ```
 
 ## Remarks
 
 Controls the docking and interaction of the ray tracer engine
-
 
 ## Methods
 
@@ -19,86 +18,68 @@ Controls the docking and interaction of the ray tracer engine
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [dispose()](./PCB_RayTracerEngine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Stop the ray tracer engine
-
 
 </td></tr>
 <tr><td>
 
 [getLightConfigurations(lightName)](./PCB_RayTracerEngine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the ray tracer light configurations
-
 
 </td></tr>
 <tr><td>
 
 [getRenderConfigurations()](./PCB_RayTracerEngine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the ray tracer render configurations
-
 
 </td></tr>
 <tr><td>
 
 [init()](./PCB_RayTracerEngine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Initialize the ray tracer engine
-
 
 </td></tr>
 <tr><td>
 
 [setRenderConfigurations(configurations)](./PCB_RayTracerEngine.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the ray tracer render configurations
-
 
 </td></tr>
 </tbody></table>
@@ -118,9 +99,8 @@ Stop the ray tracer engine
 ## Signature
 
 ```typescript
-public dispose(): Promise<void>;
+function dispose(): Promise<void>;
 ```
-
 
 ## Returns
 
@@ -141,7 +121,7 @@ Get the ray tracer light configurations
 ## Signature
 
 ```typescript
-public getLightConfigurations(lightName: string): Promise<any>;
+function getLightConfigurations(lightName: string): Promise<any>;
 ```
 
 ## Parameters
@@ -150,35 +130,27 @@ public getLightConfigurations(lightName: string): Promise<any>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lightName
 
-
 </td><td>
 
 string
 
-
 </td><td>
-
 
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -203,9 +175,8 @@ Get the ray tracer render configurations
 ## Signature
 
 ```typescript
-public getRenderConfigurations(): Promise<any>;
+function getRenderConfigurations(): Promise<any>;
 ```
-
 
 ## Returns
 
@@ -228,9 +199,8 @@ Initialize the ray tracer engine
 ## Signature
 
 ```typescript
-public init(): Promise<void>;
+function init(): Promise<void>;
 ```
-
 
 ## Returns
 
@@ -251,7 +221,7 @@ Set the ray tracer render configurations
 ## Signature
 
 ```typescript
-public setRenderConfigurations(configurations: any): Promise<void>;
+function setRenderConfigurations(configurations: any): Promise<void>;
 ```
 
 ## Parameters
@@ -260,37 +230,29 @@ public setRenderConfigurations(configurations: any): Promise<void>;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 configurations
 
-
 </td><td>
 
 any
-
 
 </td><td>
 
 Render configuration
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 

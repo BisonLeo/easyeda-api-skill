@@ -5,7 +5,7 @@ Polygon with holes
 ## Signature
 
 ```typescript
-export interface ISYS_MathPolygonWithHoles 
+interface ISYS_MathPolygonWithHoles
 ```
 
 ## Remarks
@@ -18,59 +18,47 @@ Contains one outer ring and zero to multiple holes (inner rings), preserving the
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [holes](./ISYS_MathPolygonWithHoles.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;Array&lt;[ISYS\_MathPoint](./ISYS_MathPoint.md)<!-- -->&gt;&gt;
 
-
 </td><td>
 
 Array of holes (inner rings)
-
 
 </td></tr>
 <tr><td>
 
 [outer](./ISYS_MathPolygonWithHoles.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;[ISYS\_MathPoint](./ISYS_MathPoint.md)<!-- -->&gt;
 
-
 </td><td>
 
 Outer ring
-
 
 </td></tr>
 </tbody></table>

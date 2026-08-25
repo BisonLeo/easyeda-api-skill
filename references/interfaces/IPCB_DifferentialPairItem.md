@@ -5,7 +5,7 @@ Differential pair properties
 ## Signature
 
 ```typescript
-export interface IPCB_DifferentialPairItem 
+interface IPCB_DifferentialPairItem
 ```
 
 ## Properties
@@ -14,78 +14,62 @@ export interface IPCB_DifferentialPairItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [name](./IPCB_DifferentialPairItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Differential pair name
-
 
 </td></tr>
 <tr><td>
 
 [negativeNet](./IPCB_DifferentialPairItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Negative net
-
 
 </td></tr>
 <tr><td>
 
 [positiveNet](./IPCB_DifferentialPairItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 Positive net
-
 
 </td></tr>
 </tbody></table>

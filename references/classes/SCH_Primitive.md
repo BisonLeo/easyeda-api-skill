@@ -5,7 +5,7 @@ Schematic &amp; symbol / primitive class
 ## Signature
 
 ```typescript
-export class SCH_Primitive 
+class SCH_Primitive
 ```
 
 ## Remarks
@@ -18,72 +18,57 @@ Unified operations on primitives
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getPrimitiveByPrimitiveId(id)](./SCH_Primitive.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get all properties of the primitive with the specified ID
-
 
 </td></tr>
 <tr><td>
 
 [getPrimitivesBBox(primitiveIds)](./SCH_Primitive.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get The BBox of the primitive
-
 
 </td></tr>
 <tr><td>
 
 [getPrimitivesByPrimitiveId(ids)](./SCH_Primitive.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get all properties of the primitives with the specified IDs
-
 
 </td></tr>
 <tr><td>
 
 [getPrimitiveTypeByPrimitiveId(id)](./SCH_Primitive.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the primitive type of the primitive with the specified ID
-
 
 </td></tr>
 </tbody></table>
@@ -101,7 +86,7 @@ Get all properties of the primitive with the specified ID
 ## Signature
 
 ```typescript
-public getPrimitiveByPrimitiveId(id: string): Promise<ISCH_Primitive | undefined>;
+function getPrimitiveByPrimitiveId(id: string): Promise<ISCH_Primitive | undefined>;
 ```
 
 ## Parameters
@@ -110,37 +95,29 @@ public getPrimitiveByPrimitiveId(id: string): Promise<ISCH_Primitive | undefined
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Primitive ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -149,7 +126,6 @@ Promise&lt;[ISCH\_Primitive](../interfaces/ISCH_Primitive.md) \| undefined&gt;
 All properties of the primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个测试矩形作为查询目标（SCH 坐标单位 10mil）
@@ -179,7 +155,9 @@ Get The BBox of the primitive
 ## Signature
 
 ```typescript
-public getPrimitivesBBox(primitiveIds: Array<string | ISCH_Primitive>): Promise<{ minX: number; minY: number; maxX: number; maxY: number } | undefined>;
+function getPrimitivesBBox(
+	primitiveIds: Array<string | ISCH_Primitive>,
+): Promise<{ minX: number; minY: number; maxX: number; maxY: number } | undefined>;
 ```
 
 ## Parameters
@@ -188,37 +166,29 @@ public getPrimitivesBBox(primitiveIds: Array<string | ISCH_Primitive>): Promise<
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveIds
 
-
 </td><td>
 
 Array&lt;string \| [ISCH\_Primitive](../interfaces/ISCH_Primitive.md)<!-- -->&gt;
-
 
 </td><td>
 
 Array of Primitive ID array or primitive objects
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -228,7 +198,6 @@ The BBox of the primitive. If the primitive does not exist or has no BBox, `unde
 
 ## Example
 
-
 ```javascript
 // 1. 创建两个测试矩形：左上角（1000,1000）尺寸 200x100，左上角（1600,1400）尺寸 150x80
 const rect1 = await eda.sch_PrimitiveRectangle.create(1000, 1000, 200, 100);
@@ -236,14 +205,14 @@ const rect2 = await eda.sch_PrimitiveRectangle.create(1600, 1400, 150, 80);
 
 // 2. 计算两个矩形整体的 BBox（传图元 ID 数组，也支持直接传图元对象数组）
 const bbox = await eda.sch_Primitive.getPrimitivesBBox([
-  rect1.getState_PrimitiveId(),
-  rect2.getState_PrimitiveId(),
+	rect1.getState_PrimitiveId(),
+	rect2.getState_PrimitiveId(),
 ]);
 
 // 3. 清理测试图元（查询类需要清理）
 await eda.sch_PrimitiveRectangle.delete([
-  rect1.getState_PrimitiveId(),
-  rect2.getState_PrimitiveId(),
+	rect1.getState_PrimitiveId(),
+	rect2.getState_PrimitiveId(),
 ]);
 
 console.log('minX:', bbox.minX);
@@ -263,7 +232,7 @@ Get all properties of the primitives with the specified IDs
 ## Signature
 
 ```typescript
-public getPrimitivesByPrimitiveId(ids: Array<string>): Promise<Array<ISCH_Primitive>>;
+function getPrimitivesByPrimitiveId(ids: Array<string>): Promise<Array<ISCH_Primitive>>;
 ```
 
 ## Parameters
@@ -272,37 +241,29 @@ public getPrimitivesByPrimitiveId(ids: Array<string>): Promise<Array<ISCH_Primit
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 ids
 
-
 </td><td>
 
 Array&lt;string&gt;
-
 
 </td><td>
 
 Primitive ID array
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -321,7 +282,7 @@ Get the primitive type of the primitive with the specified ID
 ## Signature
 
 ```typescript
-public getPrimitiveTypeByPrimitiveId(id: string): Promise<ESCH_PrimitiveType | undefined>;
+function getPrimitiveTypeByPrimitiveId(id: string): Promise<ESCH_PrimitiveType | undefined>;
 ```
 
 ## Parameters
@@ -330,37 +291,29 @@ public getPrimitiveTypeByPrimitiveId(id: string): Promise<ESCH_PrimitiveType | u
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 id
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Primitive ID
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -369,7 +322,6 @@ Promise&lt;[ESCH\_PrimitiveType](../enums/ESCH_PrimitiveType.md) \| undefined&gt
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一条测试导线作为查询目标（SCH 坐标单位 10mil）

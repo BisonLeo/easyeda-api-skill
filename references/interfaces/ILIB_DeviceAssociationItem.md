@@ -5,7 +5,7 @@ Device associated symbol, footprint property
 ## Signature
 
 ```typescript
-export interface ILIB_DeviceAssociationItem 
+interface ILIB_DeviceAssociationItem
 ```
 
 ## Properties
@@ -14,135 +14,107 @@ export interface ILIB_DeviceAssociationItem
 
 Property
 
-
 </th><th>
 
 Modifiers
-
 
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [footprint?](./ILIB_DeviceAssociationItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 \{ uuid: string; libraryUuid: string \}
 
-
 </td><td>
 
 _(Optional)_ Footprint
-
 
 </td></tr>
 <tr><td>
 
 [footprintUuid](./ILIB_DeviceAssociationItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 封装 UUID
-
 
 </td></tr>
 <tr><td>
 
 [images?](./ILIB_DeviceAssociationItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Array&lt;string&gt;
 
-
 </td><td>
 
 _(Optional)_
-
 
 </td></tr>
 <tr><td>
 
 [symbol](./ILIB_DeviceAssociationItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 { type: [ELIB\_SymbolType](../enums/ELIB_SymbolType.md)<!-- -->; uuid: string; libraryUuid: string }
 
-
 </td><td>
 
 Symbol
-
 
 </td></tr>
 <tr><td>
 
 [symbolType](./ILIB_DeviceAssociationItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 [ELIB\_SymbolType](../enums/ELIB_SymbolType.md)
 
-
 </td><td>
 
 符号类型
-
 
 </td></tr>
 <tr><td>
 
 [symbolUuid](./ILIB_DeviceAssociationItem.md)
 
-
 </td><td>
-
 
 </td><td>
 
 string
 
-
 </td><td>
 
 符号 UUID
-
 
 </td></tr>
 </tbody></table>
@@ -198,7 +170,11 @@ Symbol
 ## Signature
 
 ```typescript
-symbol: { type: ELIB_SymbolType; uuid: string; libraryUuid: string };
+symbol: {
+	type: ELIB_SymbolType;
+	uuid: string;
+	libraryUuid: string;
+}
 ```
 
 ### symboltype

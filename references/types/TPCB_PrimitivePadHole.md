@@ -5,10 +5,10 @@ Pad drilling
 ## Signature
 
 ```typescript
-export type TPCB_PrimitivePadHole = [EPCB_PrimitivePadHoleType.ROUND, number] | [EPCB_PrimitivePadHoleType.SLOT, number, number];
+type TPCB_PrimitivePadHole
+	= [EPCB_PrimitivePadHoleType.ROUND, number] | [EPCB_PrimitivePadHoleType.SLOT, number, number];
 ```
 ## References
-
 
 [EPCB\_PrimitivePadHoleType.ROUND](../enums/EPCB_PrimitivePadHoleType.md)<!-- -->, [EPCB\_PrimitivePadHoleType.SLOT](../enums/EPCB_PrimitivePadHoleType.md)
 

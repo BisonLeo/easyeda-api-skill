@@ -5,7 +5,7 @@ Document tree / selection control class
 ## Signature
 
 ```typescript
-export class DMT_SelectControl 
+class DMT_SelectControl
 ```
 
 ## Remarks
@@ -18,30 +18,24 @@ Query and control of the selection focus in the document tree
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [getCurrentDocumentInfo()](./DMT_SelectControl.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Get the properties of the current document
-
 
 </td></tr>
 </tbody></table>
@@ -61,9 +55,8 @@ Get the properties of the current document
 ## Signature
 
 ```typescript
-public getCurrentDocumentInfo(): Promise<IDMT_EditorDocumentItem | undefined>;
+function getCurrentDocumentInfo(): Promise<IDMT_EditorDocumentItem | undefined>;
 ```
-
 
 ## Returns
 
@@ -76,7 +69,6 @@ An object composed of the document type, UUID, the UUID of the project it belong
 It will get the document type, UUID, and the UUID of the project or library it belongs to for the currently open document that has the last input focus
 
 ## Example
-
 
 ```javascript
 // 1. 创建专用测试原理图（自带图页 p1），打开该页让焦点落到测试文档上

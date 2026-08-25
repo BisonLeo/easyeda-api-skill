@@ -5,12 +5,11 @@ Fill primitive
 ## Signature
 
 ```typescript
-export class IPCB_PrimitiveFill implements IPCB_Primitive 
+class IPCB_PrimitiveFill implements IPCB_Primitive
 ```
 **Implements:** [IPCB\_Primitive](../interfaces/IPCB_Primitive.md)
 
 ## Remarks
-
 
 ## Methods
 
@@ -18,324 +17,255 @@ export class IPCB_PrimitiveFill implements IPCB_Primitive
 
 Method
 
-
 </th><th>
 
 Modifiers
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 [convertToPolyline()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert to: polyline primitive
-
 
 </td></tr>
 <tr><td>
 
 [convertToPour()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert to: Copper border primitive
-
 
 </td></tr>
 <tr><td>
 
 [convertToRegion()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Convert to: region primitive (default is the forbidden region)
-
 
 </td></tr>
 <tr><td>
 
 [done()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Apply the changes to the primitives to the canvas
-
 
 </td></tr>
 <tr><td>
 
 [getState\_ComplexPolygon()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: complex polygon
-
 
 </td></tr>
 <tr><td>
 
 [getState\_FillMode()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: fill mode
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Layer()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [getState\_LineWidth()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [getState\_Net()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveId()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive ID
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveLock()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [getState\_PrimitiveType()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Get the property state: primitive type
-
 
 </td></tr>
 <tr><td>
 
 [isAsync()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Query whether the primitive is an async primitive
-
 
 </td></tr>
 <tr><td>
 
 [reset()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Reset the async primitive to the current canvas state
-
 
 </td></tr>
 <tr><td>
 
 [setState\_ComplexPolygon(complexPolygon)](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: complex polygon
-
 
 </td></tr>
 <tr><td>
 
 [setState\_FillMode(fillMode)](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: fill mode
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Layer(layer)](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Layer
-
 
 </td></tr>
 <tr><td>
 
 [setState\_LineWidth(lineWidth)](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: Line width
-
 
 </td></tr>
 <tr><td>
 
 [setState\_Net(net)](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: net name
-
 
 </td></tr>
 <tr><td>
 
 [setState\_PrimitiveLock(primitiveLock)](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 **_(BETA)_** Set the property state: whether it is locked
-
 
 </td></tr>
 <tr><td>
 
 [toAsync()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Async primitive
-
 
 </td></tr>
 <tr><td>
 
 [toSync()](./IPCB_PrimitiveFill.md)
 
-
 </td><td>
-
 
 </td><td>
 
 Convert Primitive to Sync primitive
-
 
 </td></tr>
 </tbody></table>
@@ -355,9 +285,8 @@ Convert to: polyline primitive
 ## Signature
 
 ```typescript
-public convertToPolyline(): Promise<IPCB_PrimitivePolyline>;
+function convertToPolyline(): Promise<IPCB_PrimitivePolyline>;
 ```
-
 
 ## Returns
 
@@ -366,7 +295,6 @@ Promise&lt;[IPCB\_PrimitivePolyline](./IPCB_PrimitivePolyline.md)<!-- -->&gt;
 Polyline primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -380,7 +308,7 @@ const fill = await eda.pcb_PrimitiveFill.create(1, polygon, '', 0, 10, false);
 // 3. 转换为折线图元（保留现场供观察）
 const polyline = await fill.convertToPolyline();
 
-console.log('primitiveType:', 'Fill → ' + polyline.getState_PrimitiveType());
+console.log('primitiveType:', `Fill → ${polyline.getState_PrimitiveType()}`);
 console.log('primitiveId:', polyline.getState_PrimitiveId());
 ```
 
@@ -395,9 +323,8 @@ Convert to: Copper border primitive
 ## Signature
 
 ```typescript
-public convertToPour(): Promise<IPCB_PrimitivePour>;
+function convertToPour(): Promise<IPCB_PrimitivePour>;
 ```
-
 
 ## Returns
 
@@ -406,7 +333,6 @@ Promise&lt;[IPCB\_PrimitivePour](./IPCB_PrimitivePour.md)<!-- -->&gt;
 Copper border primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -420,7 +346,7 @@ const fill = await eda.pcb_PrimitiveFill.create(1, polygon, '', 0, 10, false);
 // 3. 转换为覆铜边框图元（保留现场供观察）
 const pour = await fill.convertToPour();
 
-console.log('primitiveType:', 'Fill → ' + pour.getState_PrimitiveType());
+console.log('primitiveType:', `Fill → ${pour.getState_PrimitiveType()}`);
 console.log('primitiveId:', pour.getState_PrimitiveId());
 ```
 
@@ -435,9 +361,8 @@ Convert to: region primitive (default is the forbidden region)
 ## Signature
 
 ```typescript
-public convertToRegion(): Promise<IPCB_PrimitiveRegion>;
+function convertToRegion(): Promise<IPCB_PrimitiveRegion>;
 ```
-
 
 ## Returns
 
@@ -446,7 +371,6 @@ Promise&lt;[IPCB\_PrimitiveRegion](./IPCB_PrimitiveRegion.md)<!-- -->&gt;
 Region primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -460,7 +384,7 @@ const fill = await eda.pcb_PrimitiveFill.create(1, polygon, '', 0, 10, false);
 // 3. 转换为区域图元（默认是禁止区域，保留现场供观察）
 const region = await fill.convertToRegion();
 
-console.log('primitiveType:', 'Fill → ' + region.getState_PrimitiveType());
+console.log('primitiveType:', `Fill → ${region.getState_PrimitiveType()}`);
 console.log('primitiveId:', region.getState_PrimitiveId());
 ```
 
@@ -475,9 +399,8 @@ Apply the changes to the primitives to the canvas
 ## Signature
 
 ```typescript
-public done(): Promise<IPCB_PrimitiveFill>;
+function done(): Promise<IPCB_PrimitiveFill>;
 ```
-
 
 ## Returns
 
@@ -486,7 +409,6 @@ Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -518,9 +440,8 @@ Get the property state: complex polygon
 ## Signature
 
 ```typescript
-public getState_ComplexPolygon(): IPCB_Polygon;
+function getState_ComplexPolygon(): IPCB_Polygon;
 ```
-
 
 ## Returns
 
@@ -529,7 +450,6 @@ public getState_ComplexPolygon(): IPCB_Polygon;
 Complex polygon
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个已知轮廓的矩形填充（500 x 300 mil）
@@ -557,9 +477,8 @@ Get the property state: fill mode
 ## Signature
 
 ```typescript
-public getState_FillMode(): EPCB_PrimitiveFillMode | undefined;
+function getState_FillMode(): EPCB_PrimitiveFillMode | undefined;
 ```
-
 
 ## Returns
 
@@ -568,7 +487,6 @@ public getState_FillMode(): EPCB_PrimitiveFillMode | undefined;
 Fill mode
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个实心填充的矩形
@@ -595,9 +513,8 @@ Get the property state: Layer
 ## Signature
 
 ```typescript
-public getState_Layer(): TPCB_LayersOfFill;
+function getState_Layer(): TPCB_LayersOfFill;
 ```
-
 
 ## Returns
 
@@ -606,7 +523,6 @@ public getState_Layer(): TPCB_LayersOfFill;
 Layer
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个顶层铜层（1）的矩形填充
@@ -633,9 +549,8 @@ Get the property state: Line width
 ## Signature
 
 ```typescript
-public getState_LineWidth(): number;
+function getState_LineWidth(): number;
 ```
-
 
 ## Returns
 
@@ -644,7 +559,6 @@ number
 Line width
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个 10mil 线宽的矩形填充
@@ -671,9 +585,8 @@ Get the property state: net name
 ## Signature
 
 ```typescript
-public getState_Net(): string | undefined;
+function getState_Net(): string | undefined;
 ```
-
 
 ## Returns
 
@@ -682,7 +595,6 @@ string \| undefined
 Net name
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个无网络的矩形填充
@@ -709,9 +621,8 @@ Get the property state: primitive ID
 ## Signature
 
 ```typescript
-public getState_PrimitiveId(): string;
+function getState_PrimitiveId(): string;
 ```
-
 
 ## Returns
 
@@ -720,7 +631,6 @@ string
 Primitive ID
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个矩形填充
@@ -747,9 +657,8 @@ Get the property state: whether it is locked
 ## Signature
 
 ```typescript
-public getState_PrimitiveLock(): boolean;
+function getState_PrimitiveLock(): boolean;
 ```
-
 
 ## Returns
 
@@ -758,7 +667,6 @@ boolean
 Whether it is locked
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个未锁定的矩形填充
@@ -785,9 +693,8 @@ Get the property state: primitive type
 ## Signature
 
 ```typescript
-public getState_PrimitiveType(): EPCB_PrimitiveType;
+function getState_PrimitiveType(): EPCB_PrimitiveType;
 ```
-
 
 ## Returns
 
@@ -796,7 +703,6 @@ public getState_PrimitiveType(): EPCB_PrimitiveType;
 Primitive type
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个矩形填充
@@ -823,9 +729,8 @@ Query whether the primitive is an async primitive
 ## Signature
 
 ```typescript
-public isAsync(): boolean;
+function isAsync(): boolean;
 ```
-
 
 ## Returns
 
@@ -834,7 +739,6 @@ boolean
 Whether Is async primitive
 
 ## Example
-
 
 ```javascript
 // 1. 创建一个矩形填充
@@ -863,9 +767,8 @@ Reset the async primitive to the current canvas state
 ## Signature
 
 ```typescript
-public reset(): Promise<IPCB_PrimitiveFill>;
+function reset(): Promise<IPCB_PrimitiveFill>;
 ```
-
 
 ## Returns
 
@@ -874,7 +777,6 @@ Promise&lt;[IPCB\_PrimitiveFill](./IPCB_PrimitiveFill.md)<!-- -->&gt;
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -910,7 +812,7 @@ Set the property state: complex polygon
 ## Signature
 
 ```typescript
-public setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitiveFill;
+function setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitiveFill;
 ```
 
 ## Parameters
@@ -919,37 +821,29 @@ public setState_ComplexPolygon(complexPolygon: IPCB_Polygon): IPCB_PrimitiveFill
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 complexPolygon
 
-
 </td><td>
 
 [IPCB\_Polygon](./IPCB_Polygon.md)
-
 
 </td><td>
 
 Complex polygon
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -958,7 +852,6 @@ Complex polygon
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -994,7 +887,7 @@ Set the property state: fill mode
 ## Signature
 
 ```typescript
-public setState_FillMode(fillMode: EPCB_PrimitiveFillMode): IPCB_PrimitiveFill;
+function setState_FillMode(fillMode: EPCB_PrimitiveFillMode): IPCB_PrimitiveFill;
 ```
 
 ## Parameters
@@ -1003,37 +896,29 @@ public setState_FillMode(fillMode: EPCB_PrimitiveFillMode): IPCB_PrimitiveFill;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 fillMode
 
-
 </td><td>
 
 [EPCB\_PrimitiveFillMode](../enums/EPCB_PrimitiveFillMode.md)
-
 
 </td><td>
 
 Fill mode
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1042,7 +927,6 @@ Fill mode
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1076,7 +960,7 @@ Set the property state: Layer
 ## Signature
 
 ```typescript
-public setState_Layer(layer: TPCB_LayersOfFill): IPCB_PrimitiveFill;
+function setState_Layer(layer: TPCB_LayersOfFill): IPCB_PrimitiveFill;
 ```
 
 ## Parameters
@@ -1085,37 +969,29 @@ public setState_Layer(layer: TPCB_LayersOfFill): IPCB_PrimitiveFill;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 layer
 
-
 </td><td>
 
 [TPCB\_LayersOfFill](../types/TPCB_LayersOfFill.md)
-
 
 </td><td>
 
 Layer
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1124,7 +1000,6 @@ Layer
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1158,7 +1033,7 @@ Set the property state: Line width
 ## Signature
 
 ```typescript
-public setState_LineWidth(lineWidth: number): IPCB_PrimitiveFill;
+function setState_LineWidth(lineWidth: number): IPCB_PrimitiveFill;
 ```
 
 ## Parameters
@@ -1167,37 +1042,29 @@ public setState_LineWidth(lineWidth: number): IPCB_PrimitiveFill;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 lineWidth
 
-
 </td><td>
 
 number
-
 
 </td><td>
 
 Line width
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1206,7 +1073,6 @@ Line width
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1241,7 +1107,7 @@ Set the property state: net name
 ## Signature
 
 ```typescript
-public setState_Net(net: string): IPCB_PrimitiveFill;
+function setState_Net(net: string): IPCB_PrimitiveFill;
 ```
 
 ## Parameters
@@ -1250,37 +1116,29 @@ public setState_Net(net: string): IPCB_PrimitiveFill;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 net
 
-
 </td><td>
 
 string
-
 
 </td><td>
 
 Net name
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1289,7 +1147,6 @@ Net name
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1323,7 +1180,7 @@ Set the property state: whether it is locked
 ## Signature
 
 ```typescript
-public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveFill;
+function setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveFill;
 ```
 
 ## Parameters
@@ -1332,37 +1189,29 @@ public setState_PrimitiveLock(primitiveLock: boolean): IPCB_PrimitiveFill;
 
 Parameter
 
-
 </th><th>
 
 Type
 
-
 </th><th>
 
 Description
-
 
 </th></tr></thead>
 <tbody><tr><td>
 
 primitiveLock
 
-
 </td><td>
 
 boolean
-
 
 </td><td>
 
 Whether it is locked
 
-
 </td></tr>
 </tbody></table>
-
-
 
 ## Returns
 
@@ -1371,7 +1220,6 @@ Whether it is locked
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1403,9 +1251,8 @@ Convert Primitive to Async primitive
 ## Signature
 
 ```typescript
-public toAsync(): IPCB_PrimitiveFill;
+function toAsync(): IPCB_PrimitiveFill;
 ```
-
 
 ## Returns
 
@@ -1414,7 +1261,6 @@ public toAsync(): IPCB_PrimitiveFill;
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
@@ -1447,9 +1293,8 @@ Convert Primitive to Sync primitive
 ## Signature
 
 ```typescript
-public toSync(): IPCB_PrimitiveFill;
+function toSync(): IPCB_PrimitiveFill;
 ```
-
 
 ## Returns
 
@@ -1458,7 +1303,6 @@ public toSync(): IPCB_PrimitiveFill;
 Fill primitive object
 
 ## Example
-
 
 ```javascript
 // 1. 生成本次运行专用的坐标，避免与之前保留的测试图元重合
