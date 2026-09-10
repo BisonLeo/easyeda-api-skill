@@ -144,38 +144,29 @@ Auto layout
 
 ```typescript
 function autoLayout(props?: {
-	uuids?: undefined | string[];
-	netlist?:
-		| undefined
-		| {
-			component: Record<
-				string,
-				{
-					pinInfoMap: Record<
-						string,
-						{
-							name: string;
-							number: string;
-							net: string;
-							props: { 'Pin Number': string };
-						}
-					>;
-				}
-			>;
-		};
-	designatorDeviceTypeMap?:
-		| undefined
-		| Record<
+	uuids?: Array<string>;
+	netlist?: {
+		component: Record<
 			string,
-			| 'resistor'
-			| 'capacitor'
-			| 'inductive'
-			| 'diode'
-			| 'triode'
-			| 'oscillator'
-			| 'chip'
-			| 'otherDevice'
+			{
+				pinInfoMap: Record<
+					string,
+					{ name: string; number: string; net: string; props: { 'Pin Number': string } }
+				>;
+			}
 		>;
+	};
+	designatorDeviceTypeMap?: Record<
+		string,
+		| 'resistor'
+		| 'capacitor'
+		| 'inductive'
+		| 'diode'
+		| 'triode'
+		| 'oscillator'
+		| 'chip'
+		| 'otherDevice'
+	>;
 }): Promise<any>;
 ```
 
@@ -200,7 +191,7 @@ props
 
 </td><td>
 
-{ uuids?: undefined \| string\[\]; netlist?: undefined \| { component: Record&lt;string, { pinInfoMap: Record&lt;string, { name: string; number: string; net: string; props: { 'Pin Number': string } }&gt; }&gt; }; designatorDeviceTypeMap?: undefined \| Record&lt;string, 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'&gt; }
+{ uuids?: Array&lt;string&gt;; netlist?: { component: Record&lt;string, { pinInfoMap: Record&lt;string, { name: string; number: string; net: string; props: { 'Pin Number': string } }&gt; }&gt; }; designatorDeviceTypeMap?: Record&lt;string, 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'&gt; }
 
 </td><td>
 
@@ -250,38 +241,29 @@ Auto routing
 
 ```typescript
 function autoRouting(props?: {
-	uuids?: undefined | string[];
-	netlist?:
-		| undefined
-		| {
-			component: Record<
-				string,
-				{
-					pinInfoMap: Record<
-						string,
-						{
-							name: string;
-							number: string;
-							net: string;
-							props: { 'Pin Number': string };
-						}
-					>;
-				}
-			>;
-		};
-	designatorDeviceTypeMap?:
-		| undefined
-		| Record<
+	uuids?: Array<string>;
+	netlist?: {
+		component: Record<
 			string,
-			| 'resistor'
-			| 'capacitor'
-			| 'inductive'
-			| 'diode'
-			| 'triode'
-			| 'oscillator'
-			| 'chip'
-			| 'otherDevice'
+			{
+				pinInfoMap: Record<
+					string,
+					{ name: string; number: string; net: string; props: { 'Pin Number': string } }
+				>;
+			}
 		>;
+	};
+	designatorDeviceTypeMap?: Record<
+		string,
+		| 'resistor'
+		| 'capacitor'
+		| 'inductive'
+		| 'diode'
+		| 'triode'
+		| 'oscillator'
+		| 'chip'
+		| 'otherDevice'
+	>;
 }): Promise<any>;
 ```
 
@@ -306,7 +288,7 @@ props
 
 </td><td>
 
-{ uuids?: undefined \| string\[\]; netlist?: undefined \| { component: Record&lt;string, { pinInfoMap: Record&lt;string, { name: string; number: string; net: string; props: { 'Pin Number': string } }&gt; }&gt; }; designatorDeviceTypeMap?: undefined \| Record&lt;string, 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'&gt; }
+{ uuids?: Array&lt;string&gt;; netlist?: { component: Record&lt;string, { pinInfoMap: Record&lt;string, { name: string; number: string; net: string; props: { 'Pin Number': string } }&gt; }&gt; }; designatorDeviceTypeMap?: Record&lt;string, 'resistor' \| 'capacitor' \| 'inductive' \| 'diode' \| 'triode' \| 'oscillator' \| 'chip' \| 'otherDevice'&gt; }
 
 </td><td>
 

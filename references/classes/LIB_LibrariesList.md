@@ -232,11 +232,11 @@ Register an external library
 function registerExtendLibrary(
 	title: string,
 	libraryFunctions: {
-		device?: undefined | ILIB_ExtendLibraryDeviceFunctions;
-		symbol?: undefined | ILIB_ExtendLibrarySymbolFunctions;
-		footprint?: undefined | ILIB_ExtendLibraryFootprintFunctions;
-		cbb?: undefined | ILIB_ExtendLibraryCbbFunctions;
-		model3d?: undefined | ILIB_ExtendLibrary3DModelFunctions;
+		device?: ILIB_ExtendLibraryDeviceFunctions;
+		symbol?: ILIB_ExtendLibrarySymbolFunctions;
+		footprint?: ILIB_ExtendLibraryFootprintFunctions;
+		cbb?: ILIB_ExtendLibraryCbbFunctions;
+		model3d?: ILIB_ExtendLibrary3DModelFunctions;
 	},
 ): Promise<string | undefined>;
 ```
@@ -275,7 +275,7 @@ libraryFunctions
 
 </td><td>
 
-{ device?: undefined \| [ILIB\_ExtendLibraryDeviceFunctions](../interfaces/ILIB_ExtendLibraryDeviceFunctions.md)<!-- -->; symbol?: undefined \| [ILIB\_ExtendLibrarySymbolFunctions](../interfaces/ILIB_ExtendLibrarySymbolFunctions.md)<!-- -->; footprint?: undefined \| [ILIB\_ExtendLibraryFootprintFunctions](../interfaces/ILIB_ExtendLibraryFootprintFunctions.md)<!-- -->; cbb?: undefined \| [ILIB\_ExtendLibraryCbbFunctions](../interfaces/ILIB_ExtendLibraryCbbFunctions.md)<!-- -->; model3d?: undefined \| [ILIB\_ExtendLibrary3DModelFunctions](../interfaces/ILIB_ExtendLibrary3DModelFunctions.md) }
+{ device?: [ILIB\_ExtendLibraryDeviceFunctions](../interfaces/ILIB_ExtendLibraryDeviceFunctions.md)<!-- -->; symbol?: [ILIB\_ExtendLibrarySymbolFunctions](../interfaces/ILIB_ExtendLibrarySymbolFunctions.md)<!-- -->; footprint?: [ILIB\_ExtendLibraryFootprintFunctions](../interfaces/ILIB_ExtendLibraryFootprintFunctions.md)<!-- -->; cbb?: [ILIB\_ExtendLibraryCbbFunctions](../interfaces/ILIB_ExtendLibraryCbbFunctions.md)<!-- -->; model3d?: [ILIB\_ExtendLibrary3DModelFunctions](../interfaces/ILIB_ExtendLibrary3DModelFunctions.md) }
 
 </td><td>
 

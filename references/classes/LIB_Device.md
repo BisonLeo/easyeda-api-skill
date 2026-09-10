@@ -273,23 +273,13 @@ function create(
 	deviceName: string,
 	classification?: ILIB_ClassificationIndex | Array<string>,
 	association?: {
-		symbolType?:
-			| undefined
-			| ELIB_SymbolType.COMPONENT
-			| ELIB_SymbolType.NET_FLAG
-			| ELIB_SymbolType.NET_PORT
-			| ELIB_SymbolType.DRAWING
-			| ELIB_SymbolType.NON_ELECTRICAL
-			| ELIB_SymbolType.SHORT_CIRCUIT_FLAG
-			| ELIB_SymbolType.OFF_PAGE_CONNECTOR
-			| ELIB_SymbolType.DIFFERENTIAL_PAIRS_FLAG
-			| ELIB_SymbolType.CBB_SYMBOL;
-		symbolUuid?: undefined | string;
-		symbol?: undefined | { uuid: string; libraryUuid: string };
-		footprintUuid?: undefined | string;
-		footprint?: undefined | { uuid: string; libraryUuid: string };
-		model3D?: undefined | { uuid: string; libraryUuid: string };
-		imageData?: undefined | File | Blob;
+		symbolType?: ELIB_SymbolType;
+		symbolUuid?: string;
+		symbol?: { uuid: string; libraryUuid: string };
+		footprintUuid?: string;
+		footprint?: { uuid: string; libraryUuid: string };
+		model3D?: { uuid: string; libraryUuid: string };
+		imageData?: File | Blob;
 	},
 	description?: string,
 	property?: ILIB_DeviceExtendPropertyItem,
@@ -356,7 +346,7 @@ association
 
 </td><td>
 
-{ symbolType?: undefined \| [ELIB\_SymbolType.COMPONENT](../enums/ELIB_SymbolType.md) \| [ELIB\_SymbolType.NET\_FLAG](../enums/ELIB_SymbolType.md) \| [ELIB\_SymbolType.NET\_PORT](../enums/ELIB_SymbolType.md) \| [ELIB\_SymbolType.DRAWING](../enums/ELIB_SymbolType.md) \| [ELIB\_SymbolType.NON\_ELECTRICAL](../enums/ELIB_SymbolType.md) \| [ELIB\_SymbolType.SHORT\_CIRCUIT\_FLAG](../enums/ELIB_SymbolType.md) \| [ELIB\_SymbolType.OFF\_PAGE\_CONNECTOR](../enums/ELIB_SymbolType.md) \| [ELIB\_SymbolType.DIFFERENTIAL\_PAIRS\_FLAG](../enums/ELIB_SymbolType.md) \| [ELIB\_SymbolType.CBB\_SYMBOL](../enums/ELIB_SymbolType.md)<!-- -->; symbolUuid?: undefined \| string; symbol?: undefined \| { uuid: string; libraryUuid: string }; footprintUuid?: undefined \| string; footprint?: undefined \| { uuid: string; libraryUuid: string }; model3D?: undefined \| { uuid: string; libraryUuid: string }; imageData?: undefined \| File \| Blob }
+{ symbolType?: [ELIB\_SymbolType](../enums/ELIB_SymbolType.md)<!-- -->; symbolUuid?: string; symbol?: { uuid: string; libraryUuid: string }; footprintUuid?: string; footprint?: { uuid: string; libraryUuid: string }; model3D?: { uuid: string; libraryUuid: string }; imageData?: File \| Blob }
 
 </td><td>
 
@@ -774,26 +764,25 @@ function modify(
 	deviceName?: string,
 	classification?: ILIB_ClassificationIndex | Array<string> | null,
 	association?: {
-		symbolUuid?: undefined | string;
-		symbol?: undefined | { uuid: string; libraryUuid: string };
-		footprintUuid?: undefined | null | string;
-		footprint?: undefined | null | { uuid: string; libraryUuid: string };
-		model3D?: undefined | null | { uuid: string; libraryUuid: string };
-		imageData?: undefined | null | File | Blob;
+		symbolUuid?: string;
+		symbol?: { uuid: string; libraryUuid: string };
+		footprintUuid?: string | null;
+		footprint?: { uuid: string; libraryUuid: string } | null;
+		model3D?: { uuid: string; libraryUuid: string } | null;
+		imageData?: File | Blob | null;
 	},
 	description?: string | null,
 	property?: {
-		name?: undefined | null | string;
-		designator?: undefined | string;
-		addIntoBom?: undefined | false | true;
-		addIntoPcb?: undefined | false | true;
-		net?: undefined | string;
-		manufacturer?: undefined | null | string;
-		manufacturerId?: undefined | null | string;
-		supplier?: undefined | null | string;
-		supplierId?: undefined | null | string;
-		otherProperty?:
-			undefined | Record<string, undefined | null | string | number | false | true>;
+		name?: string | null;
+		designator?: string;
+		addIntoBom?: boolean;
+		addIntoPcb?: boolean;
+		net?: string;
+		manufacturer?: string | null;
+		manufacturerId?: string | null;
+		supplier?: string | null;
+		supplierId?: string | null;
+		otherProperty?: Record<string, boolean | number | string | undefined | null>;
 	},
 ): Promise<boolean>;
 ```
@@ -871,7 +860,7 @@ association
 
 </td><td>
 
-\{ symbolUuid?: undefined \| string; symbol?: undefined \| \{ uuid: string; libraryUuid: string \}; footprintUuid?: undefined \| null \| string; footprint?: undefined \| null \| \{ uuid: string; libraryUuid: string \}; model3D?: undefined \| null \| \{ uuid: string; libraryUuid: string \}; imageData?: undefined \| null \| File \| Blob \}
+\{ symbolUuid?: string; symbol?: \{ uuid: string; libraryUuid: string \}; footprintUuid?: string \| null; footprint?: \{ uuid: string; libraryUuid: string \} \| null; model3D?: \{ uuid: string; libraryUuid: string \} \| null; imageData?: File \| Blob \| null \}
 
 </td><td>
 
@@ -897,7 +886,7 @@ property
 
 </td><td>
 
-{ name?: undefined \| null \| string; designator?: undefined \| string; addIntoBom?: undefined \| false \| true; addIntoPcb?: undefined \| false \| true; net?: undefined \| string; manufacturer?: undefined \| null \| string; manufacturerId?: undefined \| null \| string; supplier?: undefined \| null \| string; supplierId?: undefined \| null \| string; otherProperty?: undefined \| Record&lt;string, undefined \| null \| string \| number \| false \| true&gt; }
+{ name?: string \| null; designator?: string; addIntoBom?: boolean; addIntoPcb?: boolean; net?: string; manufacturer?: string \| null; manufacturerId?: string \| null; supplier?: string \| null; supplierId?: string \| null; otherProperty?: Record&lt;string, boolean \| number \| string \| undefined \| null&gt; }
 
 </td><td>
 

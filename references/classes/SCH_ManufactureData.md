@@ -284,7 +284,7 @@ function getBomFile(
 	fileName?: string,
 	fileType?: 'xlsx' | 'csv',
 	template?: string,
-	filterOptions?: Array<{ property: string; includeValue: string | false | true }>,
+	filterOptions?: Array<{ property: string; includeValue: boolean | string }>,
 	statistics?: Array<string>,
 	property?: Array<string>,
 	columns?: Array<IPCB_BomPropertiesTableColumns>,
@@ -352,7 +352,7 @@ filterOptions
 
 </td><td>
 
-Array&lt;{ property: string; includeValue: string \| false \| true }&gt;
+Array&lt;{ property: string; includeValue: boolean \| string }&gt;
 
 </td><td>
 
@@ -553,18 +553,18 @@ function getExportDocumentFile(
 	fileName?: string,
 	fileType?: ESCH_ExportDocumentFileType,
 	typeSpecificParams?: {
-		theme?: undefined | 'Default' | 'White on Black' | 'Black on White';
-		lineWidth?: undefined | 'Default' | 'Always 1px' | 'Follow the Zoom Change';
-		displayAttributesAsMenu?: undefined | false | true;
+		theme?: 'Default' | 'White on Black' | 'Black on White';
+		lineWidth?: 'Default' | 'Always 1px' | 'Follow the Zoom Change';
+		displayAttributesAsMenu?: boolean;
 		size?:
-			| undefined
+			| 'Original Size'
 			| string
-			| { width: number; height: number; unit: ESYS_Unit.MILLIMETER | ESYS_Unit.INCH };
+			| { width: number; height: number; unit: ESYS_Unit.INCH | ESYS_Unit.MILLIMETER };
 	},
 	object?: 'All Schematic' | 'Current Schematic' | 'Current Schematic Page' | string,
 	objectSpecificParams?: {
-		range?: undefined | 'All' | any;
-		outputMethod?: undefined | 'Merged sheet' | 'Separated sheet';
+		range?: 'All' | [number, number];
+		outputMethod?: 'Merged sheet' | 'Separated sheet';
 	},
 ): Promise<File | undefined>;
 ```
@@ -616,7 +616,7 @@ typeSpecificParams
 
 </td><td>
 
-{ theme?: undefined \| 'Default' \| 'White on Black' \| 'Black on White'; lineWidth?: undefined \| 'Default' \| 'Always 1px' \| 'Follow the Zoom Change'; displayAttributesAsMenu?: undefined \| false \| true; size?: undefined \| string \| { width: number; height: number; unit: [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) } }
+{ theme?: 'Default' \| 'White on Black' \| 'Black on White'; lineWidth?: 'Default' \| 'Always 1px' \| 'Follow the Zoom Change'; displayAttributesAsMenu?: boolean; size?: 'Original Size' \| string \| { width: number; height: number; unit: [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) } }
 
 </td><td>
 
@@ -642,7 +642,7 @@ objectSpecificParams
 
 </td><td>
 
-{ range?: undefined \| 'All' \| any; outputMethod?: undefined \| 'Merged sheet' \| 'Separated sheet' }
+{ range?: 'All' \| \[number, number\]; outputMethod?: 'Merged sheet' \| 'Separated sheet' }
 
 </td><td>
 

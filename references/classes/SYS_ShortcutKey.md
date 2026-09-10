@@ -217,8 +217,8 @@ function getShortcutKeys(
 	Array<{
 		shortcutKey: TSYS_ShortcutKeys;
 		title: string;
-		documentType: ESYS_ShortcutKeyEffectiveEditorRange[];
-		scene: ESYS_ShortcutKeyEffectiveEditorScene[];
+		documentType: Array<ESYS_ShortcutKeyEffectiveEditorRange>;
+		scene: Array<ESYS_ShortcutKeyEffectiveEditorScene>;
 	}>
 >;
 ```
@@ -255,7 +255,7 @@ _(Optional)_ Whether Contain system shortcut key
 
 ## Returns
 
-Promise&lt;Array&lt;{ shortcutKey: [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md)<!-- -->; title: string; documentType: [ESYS\_ShortcutKeyEffectiveEditorRange](../enums/ESYS_ShortcutKeyEffectiveEditorRange.md)<!-- -->\[\]; scene: [ESYS\_ShortcutKeyEffectiveEditorScene](../enums/ESYS_ShortcutKeyEffectiveEditorScene.md)<!-- -->\[\] }&gt;&gt;
+Promise&lt;Array&lt;{ shortcutKey: [TSYS\_ShortcutKeys](../types/TSYS_ShortcutKeys.md)<!-- -->; title: string; documentType: Array&lt;[ESYS\_ShortcutKeyEffectiveEditorRange](../enums/ESYS_ShortcutKeyEffectiveEditorRange.md)<!-- -->&gt;; scene: Array&lt;[ESYS\_ShortcutKeyEffectiveEditorScene](../enums/ESYS_ShortcutKeyEffectiveEditorScene.md)<!-- -->&gt; }&gt;&gt;
 
 Shortcut key list
 

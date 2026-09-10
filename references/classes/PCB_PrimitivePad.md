@@ -848,23 +848,22 @@ Modify Pad
 function modify(
 	primitiveId: string | IPCB_PrimitivePad,
 	property: {
-		layer?: undefined | EPCB_LayerId.TOP | EPCB_LayerId.BOTTOM | EPCB_LayerId.MULTI;
-		padNumber?: undefined | string;
-		x?: undefined | number;
-		y?: undefined | number;
-		rotation?: undefined | number;
-		pad?: undefined | any | any | any;
-		net?: undefined | string;
-		hole?: undefined | null | any | any;
-		holeOffsetX?: undefined | number;
-		holeOffsetY?: undefined | number;
-		holeRotation?: undefined | number;
-		metallization?: undefined | false | true;
-		specialPad?: undefined | TPCB_PrimitiveSpecialPadShape;
-		solderMaskAndPasteMaskExpansion?:
-			undefined | null | IPCB_PrimitiveSolderMaskAndPasteMaskExpansion;
-		heatWelding?: undefined | null | IPCB_PrimitivePadHeatWelding;
-		primitiveLock?: undefined | false | true;
+		layer?: TPCB_LayersOfPad;
+		padNumber?: string;
+		x?: number;
+		y?: number;
+		rotation?: number;
+		pad?: TPCB_PrimitivePadShape;
+		net?: string;
+		hole?: TPCB_PrimitivePadHole | null;
+		holeOffsetX?: number;
+		holeOffsetY?: number;
+		holeRotation?: number;
+		metallization?: boolean;
+		specialPad?: TPCB_PrimitiveSpecialPadShape;
+		solderMaskAndPasteMaskExpansion?: IPCB_PrimitiveSolderMaskAndPasteMaskExpansion | null;
+		heatWelding?: IPCB_PrimitivePadHeatWelding | null;
+		primitiveLock?: boolean;
 	},
 ): Promise<IPCB_PrimitivePad | undefined>;
 ```
@@ -903,7 +902,7 @@ property
 
 </td><td>
 
-{ layer?: undefined \| [EPCB\_LayerId.TOP](../enums/EPCB_LayerId.md) \| [EPCB\_LayerId.BOTTOM](../enums/EPCB_LayerId.md) \| [EPCB\_LayerId.MULTI](../enums/EPCB_LayerId.md)<!-- -->; padNumber?: undefined \| string; x?: undefined \| number; y?: undefined \| number; rotation?: undefined \| number; pad?: undefined \| any \| any \| any; net?: undefined \| string; hole?: undefined \| null \| any \| any; holeOffsetX?: undefined \| number; holeOffsetY?: undefined \| number; holeRotation?: undefined \| number; metallization?: undefined \| false \| true; specialPad?: undefined \| [TPCB\_PrimitiveSpecialPadShape](../types/TPCB_PrimitiveSpecialPadShape.md)<!-- -->; solderMaskAndPasteMaskExpansion?: undefined \| null \| [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md)<!-- -->; heatWelding?: undefined \| null \| [IPCB\_PrimitivePadHeatWelding](../interfaces/IPCB_PrimitivePadHeatWelding.md)<!-- -->; primitiveLock?: undefined \| false \| true }
+{ layer?: [TPCB\_LayersOfPad](../types/TPCB_LayersOfPad.md)<!-- -->; padNumber?: string; x?: number; y?: number; rotation?: number; pad?: [TPCB\_PrimitivePadShape](../types/TPCB_PrimitivePadShape.md)<!-- -->; net?: string; hole?: [TPCB\_PrimitivePadHole](../types/TPCB_PrimitivePadHole.md) \| null; holeOffsetX?: number; holeOffsetY?: number; holeRotation?: number; metallization?: boolean; specialPad?: [TPCB\_PrimitiveSpecialPadShape](../types/TPCB_PrimitiveSpecialPadShape.md)<!-- -->; solderMaskAndPasteMaskExpansion?: [IPCB\_PrimitiveSolderMaskAndPasteMaskExpansion](../interfaces/IPCB_PrimitiveSolderMaskAndPasteMaskExpansion.md) \| null; heatWelding?: [IPCB\_PrimitivePadHeatWelding](../interfaces/IPCB_PrimitivePadHeatWelding.md) \| null; primitiveLock?: boolean }
 
 </td><td>
 

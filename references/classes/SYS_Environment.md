@@ -250,17 +250,17 @@ Get user information
 
 ```typescript
 function getUserInfo(): {
-	username?: undefined | string;
-	nickname?: undefined | string;
-	avatar?: undefined | string;
-	uuid?: undefined | string;
-	customerCode?: undefined | string;
+	username?: string;
+	nickname?: string;
+	avatar?: string;
+	uuid?: string;
+	customerCode?: string;
 };
 ```
 
 ## Returns
 
-\{ username?: undefined \| string; nickname?: undefined \| string; avatar?: undefined \| string; uuid?: undefined \| string; customerCode?: undefined \| string \}
+\{ username?: string; nickname?: string; avatar?: string; uuid?: string; customerCode?: string \}
 
 User information
 

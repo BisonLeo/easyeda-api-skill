@@ -1284,10 +1284,7 @@ Modify the title block of a schematic sheet
 ```typescript
 function modifySchematicPageTitleBlock(
 	showTitleBlock?: boolean,
-	titleBlockData?: Record<
-		string,
-		{ showTitle?: undefined | false | true; showValue?: undefined | false | true; value?: any }
-	>,
+	titleBlockData?: Record<string, { showTitle?: boolean; showValue?: boolean; value?: any }>,
 ): Promise<boolean>;
 ```
 
@@ -1325,7 +1322,7 @@ titleBlockData
 
 </td><td>
 
-Record&lt;string, { showTitle?: undefined \| false \| true; showValue?: undefined \| false \| true; value?: any }&gt;
+Record&lt;string, { showTitle?: boolean; showValue?: boolean; value?: any }&gt;
 
 </td><td>
 

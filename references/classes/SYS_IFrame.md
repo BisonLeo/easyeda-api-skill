@@ -316,17 +316,15 @@ function openIFrame(
 	height?: number,
 	id?: string,
 	props?: {
-		maximizeButton?: undefined | false | true;
-		minimizeButton?: undefined | false | true;
-		minimizeStyle?: undefined | 'collapsed' | 'constricted';
-		buttonCallbackFn?:
-			undefined | ((button: 'close' | 'minimize' | 'maximize') => void | Promise<void>);
-		onBeforeCloseCallFn?:
-			undefined | (() => boolean | undefined | Promise<boolean | undefined>);
-		grayscaleMask?: undefined | false | true;
-		title?: undefined | string;
-		x?: undefined | number;
-		y?: undefined | number;
+		maximizeButton?: boolean;
+		minimizeButton?: boolean;
+		minimizeStyle?: 'collapsed' | 'constricted';
+		buttonCallbackFn?: (button: 'close' | 'minimize' | 'maximize') => void | Promise<void>;
+		onBeforeCloseCallFn?: () => boolean | undefined | Promise<boolean | undefined>;
+		grayscaleMask?: boolean;
+		title?: string;
+		x?: number;
+		y?: number;
 	},
 ): Promise<boolean>;
 ```
@@ -404,7 +402,7 @@ props
 
 </td><td>
 
-{ maximizeButton?: undefined \| false \| true; minimizeButton?: undefined \| false \| true; minimizeStyle?: undefined \| 'collapsed' \| 'constricted'; buttonCallbackFn?: undefined \| ((button: 'close' \| 'minimize' \| 'maximize') =&gt; void \| Promise&lt;void&gt;); onBeforeCloseCallFn?: undefined \| (() =&gt; boolean \| undefined \| Promise&lt;boolean \| undefined&gt;); grayscaleMask?: undefined \| false \| true; title?: undefined \| string; x?: undefined \| number; y?: undefined \| number }
+{ maximizeButton?: boolean; minimizeButton?: boolean; minimizeStyle?: 'collapsed' \| 'constricted'; buttonCallbackFn?: (button: 'close' \| 'minimize' \| 'maximize') =&gt; void \| Promise&lt;void&gt;; onBeforeCloseCallFn?: () =&gt; boolean \| undefined \| Promise&lt;boolean \| undefined&gt;; grayscaleMask?: boolean; title?: string; x?: number; y?: number }
 
 </td><td>
 

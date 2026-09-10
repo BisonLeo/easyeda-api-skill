@@ -36,7 +36,7 @@ Description
 </td></tr>
 <tr><td>
 
-[create(libraryUuid, footprintName, classification, description)](./LIB_Footprint.md)
+[create(libraryUuid, footprintName, classification, description, otherProperty)](./LIB_Footprint.md)
 
 </td><td>
 
@@ -80,7 +80,7 @@ Description
 </td></tr>
 <tr><td>
 
-[modify(footprintUuid, libraryUuid, footprintName, classification, description)](./LIB_Footprint.md)
+[modify(footprintUuid, libraryUuid, footprintName, classification, description, otherProperty)](./LIB_Footprint.md)
 
 </td><td>
 
@@ -289,6 +289,7 @@ function create(
 	footprintName: string,
 	classification?: ILIB_ClassificationIndex | Array<string>,
 	description?: string,
+	otherProperty?: Record<string, boolean | number | string | undefined>,
 ): Promise<string | undefined>;
 ```
 
@@ -357,6 +358,19 @@ string
 </td><td>
 
 _(Optional)_ Description
+
+</td></tr>
+<tr><td>
+
+otherProperty
+
+</td><td>
+
+Record&lt;string, boolean \| number \| string \| undefined&gt;
+
+</td><td>
+
+_(Optional)_ 其它属性
 
 </td></tr>
 </tbody></table>
@@ -613,6 +627,7 @@ function modify(
 	footprintName?: string,
 	classification?: ILIB_ClassificationIndex | Array<string> | null,
 	description?: string | null,
+	otherProperty?: Record<string, boolean | number | string | undefined | null>,
 ): Promise<boolean>;
 ```
 
@@ -694,6 +709,19 @@ string \| null
 </td><td>
 
 _(Optional)_ Description
+
+</td></tr>
+<tr><td>
+
+otherProperty
+
+</td><td>
+
+Record&lt;string, boolean \| number \| string \| undefined \| null&gt;
+
+</td><td>
+
+_(Optional)_ 其它属性，如希望清除某些属性，则将其的值设置为 `null`
 
 </td></tr>
 </tbody></table>

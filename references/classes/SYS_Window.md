@@ -177,12 +177,7 @@ Add an event listener
 function addEventListener(
 	type: ESYS_WindowEventType,
 	listener: (ev: any) => any,
-	options?: {
-		capture?: undefined | false | true;
-		once?: undefined | false | true;
-		passive?: undefined | false | true;
-		signal?: undefined | AbortSignal;
-	},
+	options?: { capture?: boolean; once?: boolean; passive?: boolean; signal?: AbortSignal },
 ): ISYS_WindowEventListenerRemovableObject | undefined;
 ```
 
@@ -233,7 +228,7 @@ options
 
 </td><td>
 
-\{ capture?: undefined \| false \| true; once?: undefined \| false \| true; passive?: undefined \| false \| true; signal?: undefined \| AbortSignal \}
+\{ capture?: boolean; once?: boolean; passive?: boolean; signal?: AbortSignal \}
 
 </td><td>
 
@@ -251,18 +246,18 @@ Event listener method, used to remove the event listener. If it is `undefined`<!
 ## Example
 
 ```javascript
-// 1. 注册 focus 监听（真实场景由用户切换窗口焦点触发，这里用合成事件模拟）
+// 示例 1：注册 focus 监听（真实场景由用户切换窗口焦点触发，这里用合成事件模拟）
 const removable = eda.sys_Window.addEventListener('focus', () => {
 	console.log('窗口获得焦点');
 });
 
-// 2. 检查返回的可移除对象，其中的 type 字段记录了监听的事件类型
+// 检查返回的可移除对象，其中的 type 字段记录了监听的事件类型
 console.log('监听注册成功：', removable !== undefined, '，事件类型：', removable.type);
 
-// 3. 模拟一次获得焦点事件，回调同步触发
+// 模拟一次获得焦点事件，回调同步触发
 window.dispatchEvent(new Event('focus'));
 
-// 4. 注销监听，恢复原状
+// 注销监听，恢复原状
 eda.sys_Window.removeEventListener(removable);
 console.log('监听已注销');
 ```

@@ -111,6 +111,17 @@ Create Single polygon
 Split single polygon
 
 </td></tr>
+<tr><td>
+
+[traceImage(options)](./PCB_MathPolygon.md)
+
+</td><td>
+
+</td><td>
+
+将图片描摹为矢量路径（SVG path），并导出预览图
+
+</td></tr>
 </tbody></table>
 
 ---
@@ -782,4 +793,86 @@ polygons.forEach((polygon, index) => {
 	console.log(`polygon${index + 1}:`, JSON.stringify(polygon.getSource()));
 });
 console.log('count:', polygons.length);
+```
+
+### traceimage
+
+# PCB\_MathPolygon.traceImage() method
+
+将图片描摹为矢量路径（SVG path），并导出预览图
+
+## Signature
+
+```typescript
+function traceImage(options: {
+	imageBlob?: Blob;
+	imageWidth?: number;
+	imageHeight?: number;
+	quality?: 'low' | 'high';
+	tolerance?: number;
+	simplify?: number;
+	smoothness?: number;
+	despeckle?: number;
+	whiteAsTransparent?: boolean;
+	antiphase?: boolean;
+}): Promise<
+	| { path: string; sourcePreviewUrl: string; previewUrl: string; width: number; height: number }
+	| undefined
+>;
+```
+
+## Parameters
+
+<table><thead><tr><th>
+
+Parameter
+
+</th><th>
+
+Type
+
+</th><th>
+
+Description
+
+</th></tr></thead>
+<tbody><tr><td>
+
+options
+
+</td><td>
+
+{ imageBlob?: Blob; imageWidth?: number; imageHeight?: number; quality?: 'low' \| 'high'; tolerance?: number; simplify?: number; smoothness?: number; despeckle?: number; whiteAsTransparent?: boolean; antiphase?: boolean }
+
+</td><td>
+
+.antiphase - 反相，默认 `false`
+
+</td></tr>
+</tbody></table>
+
+## Returns
+
+Promise&lt;{ path: string; sourcePreviewUrl: string; previewUrl: string; width: number; height: number } \| undefined&gt;
+
+描摹结果：`path` = SVG D 字符串（放置时回传给临时接口）；`sourcePreviewUrl` = 原图预览 dataURL（缩放居中 300×300，对应旧世界 SourceCanvasPreview）；`previewUrl` = 描摹结果预览图 dataURL（尺寸 ≤300×300）；`width`<!-- -->/`height` = 描摹 bbox 归一最长边 300 基准的尺寸（pixel 语义，与原图分辨率/缩放无关，作为放置尺寸默认值的换算基准）；空描摹（没有可描摹的轮廓）返回 `undefined`
+
+## Remarks
+
+纯预览接口，\*\*不触发任何放置工具\*\*（放置由临时接口 `eda.pcb_ImageTool.startPlaceVectorImage` 单独承担）。服务端内置读原始图片尺寸（扩展沙盒无 `new Image()`<!-- -->/canvas，无法提供原始尺寸），返回的 `width`<!-- -->/`height` 为原始自然尺寸（非描摹 bbox 尺寸）。首次调用需传 `imageBlob`<!-- -->（服务端缓存像素），之后拖动只传参数 ADD since EDA v5
+
+## Example
+
+```javascript
+// 1. 首次调用：传 imageBlob（服务端缓存像素并读原始尺寸）
+const traced = await eda.pcb_MathPolygon.traceImage({ imageBlob, quality: 'low' });
+
+// 2. 拖动滑块：只传参数，不传 imageBlob
+const traced2 = await eda.pcb_MathPolygon.traceImage({ quality: 'high', tolerance: 0.5, simplify: 0.2 });
+if (traced2) {
+	console.log('描摹成功：', traced2.path.slice(0, 80), '尺寸', traced2.width, traced2.height);
+}
+else {
+	console.log('空描摹：无图可放置');
+}
 ```

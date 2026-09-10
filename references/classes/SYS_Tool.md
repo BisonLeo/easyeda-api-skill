@@ -69,8 +69,8 @@ function netlistComparison(
 	Array<{
 		type: 'Net' | 'Component';
 		object: string;
-		netlist1Name: string[];
-		netlist2Name: string[];
+		netlist1Name: Array<string>;
+		netlist2Name: Array<string>;
 	}>
 >;
 ```
@@ -120,7 +120,7 @@ Netlist 2, which can be: 1. The UUID of a schematic or PCB in the current projec
 
 ## Returns
 
-Promise&lt;Array&lt;{ type: 'Net' \| 'Component'; object: string; netlist1Name: string\[\]; netlist2Name: string\[\] }&gt;&gt;
+Promise&lt;Array&lt;{ type: 'Net' \| 'Component'; object: string; netlist1Name: Array&lt;string&gt;; netlist2Name: Array&lt;string&gt; }&gt;&gt;
 
 Netlist comparison result
 
@@ -162,14 +162,9 @@ function pcbComparison(
 	pcb1: string | { projectUuid: string; pcbUuid: string } | File,
 	pcb2: string | { projectUuid: string; pcbUuid: string } | File,
 	options?: {
-		valUnit?:
-			| undefined
-			| ESYS_Unit.MILLIMETER
-			| ESYS_Unit.CENTIMETER
-			| ESYS_Unit.INCH
-			| ESYS_Unit.MIL;
-		deviation?: undefined | number;
-		comparisonSize?: undefined | number;
+		valUnit?: ESYS_Unit.MIL | ESYS_Unit.MILLIMETER | ESYS_Unit.INCH | ESYS_Unit.CENTIMETER;
+		deviation?: number;
+		comparisonSize?: number;
 	},
 ): Promise<ISYS_PcbComparisonResponse>;
 ```
@@ -221,7 +216,7 @@ options
 
 </td><td>
 
-{ valUnit?: undefined \| [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MIL](../enums/ESYS_Unit.md)<!-- -->; deviation?: undefined \| number; comparisonSize?: undefined \| number }
+{ valUnit?: [ESYS\_Unit.MIL](../enums/ESYS_Unit.md) \| [ESYS\_Unit.MILLIMETER](../enums/ESYS_Unit.md) \| [ESYS\_Unit.INCH](../enums/ESYS_Unit.md) \| [ESYS\_Unit.CENTIMETER](../enums/ESYS_Unit.md)<!-- -->; deviation?: number; comparisonSize?: number }
 
 </td><td>
 

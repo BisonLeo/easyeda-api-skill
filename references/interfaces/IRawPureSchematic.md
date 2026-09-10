@@ -48,7 +48,7 @@ Array&lt;[IRawNet](./IRawNet.md)<!-- -->&gt;
 
 </td><td>
 
-\{ \[key: string\]: \{ uuid: string; title: string; displayTitle: string; zIndex: number \} \}
+\{ \[uuid: string\]: \{ uuid: string; title: string; displayTitle: string; zIndex: number \} \}
 
 </td><td>
 
@@ -76,5 +76,5 @@ nlNetWires: Array<IRawNet>;
 ## Signature
 
 ```typescript
-sheets: { [key: string]: { uuid: string; title: string; displayTitle: string; zIndex: number } };
+sheets: { [uuid: string]: { uuid: string; title: string; displayTitle: string; zIndex: number } };
 ```

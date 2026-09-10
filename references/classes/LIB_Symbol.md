@@ -36,7 +36,7 @@ Description
 </td></tr>
 <tr><td>
 
-[create(libraryUuid, symbolName, classification, symbolType, description)](./LIB_Symbol.md)
+[create(libraryUuid, symbolName, classification, symbolType, description, otherProperty)](./LIB_Symbol.md)
 
 </td><td>
 
@@ -80,7 +80,7 @@ Description
 </td></tr>
 <tr><td>
 
-[modify(symbolUuid, libraryUuid, symbolName, classification, description)](./LIB_Symbol.md)
+[modify(symbolUuid, libraryUuid, symbolName, classification, description, otherProperty)](./LIB_Symbol.md)
 
 </td><td>
 
@@ -290,6 +290,7 @@ function create(
 	classification?: ILIB_ClassificationIndex | Array<string>,
 	symbolType?: ELIB_SymbolType,
 	description?: string,
+	otherProperty?: Record<string, boolean | number | string | undefined>,
 ): Promise<string | undefined>;
 ```
 
@@ -371,6 +372,19 @@ string
 </td><td>
 
 _(Optional)_ Description
+
+</td></tr>
+<tr><td>
+
+otherProperty
+
+</td><td>
+
+Record&lt;string, boolean \| number \| string \| undefined&gt;
+
+</td><td>
+
+_(Optional)_ 其它属性
 
 </td></tr>
 </tbody></table>
@@ -551,7 +565,7 @@ Get the symbol render image
 function getRenderImage(source: {
 	symbolUuid: string;
 	libraryUuid: string;
-	subPartName?: undefined | string;
+	subPartName?: string;
 }): Promise<Blob | undefined>;
 ```
 
@@ -576,7 +590,7 @@ source
 
 </td><td>
 
-\{ symbolUuid: string; libraryUuid: string; subPartName?: undefined \| string \}
+\{ symbolUuid: string; libraryUuid: string; subPartName?: string \}
 
 </td><td>
 
@@ -624,6 +638,7 @@ function modify(
 	symbolName?: string,
 	classification?: ILIB_ClassificationIndex | Array<string> | null,
 	description?: string | null,
+	otherProperty?: Record<string, boolean | number | string | undefined | null>,
 ): Promise<boolean>;
 ```
 
@@ -705,6 +720,19 @@ string \| null
 </td><td>
 
 _(Optional)_ Description
+
+</td></tr>
+<tr><td>
+
+otherProperty
+
+</td><td>
+
+Record&lt;string, boolean \| number \| string \| undefined \| null&gt;
+
+</td><td>
+
+_(Optional)_ 其它属性，如希望清除某些属性，则将其的值设置为 `null`
 
 </td></tr>
 </tbody></table>

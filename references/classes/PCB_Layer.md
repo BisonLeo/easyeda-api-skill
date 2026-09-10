@@ -794,10 +794,10 @@ Modify Layer properties
 function modifyLayer(
 	layer: TPCB_LayersInTheSelectable,
 	property: {
-		name?: undefined | string;
-		type?: undefined | EPCB_LayerType.SIGNAL | EPCB_LayerType.INTERNAL_ELECTRICAL;
-		color?: undefined | string;
-		transparency?: undefined | number;
+		name?: string;
+		type?: TPCB_LayerTypesOfInnerLayer;
+		color?: string;
+		transparency?: number;
 	},
 ): Promise<boolean>;
 ```
@@ -836,7 +836,7 @@ property
 
 </td><td>
 
-{ name?: undefined \| string; type?: undefined \| [EPCB\_LayerType.SIGNAL](../enums/EPCB_LayerType.md) \| [EPCB\_LayerType.INTERNAL\_ELECTRICAL](../enums/EPCB_LayerType.md)<!-- -->; color?: undefined \| string; transparency?: undefined \| number }
+{ name?: string; type?: [TPCB\_LayerTypesOfInnerLayer](../types/TPCB_LayerTypesOfInnerLayer.md)<!-- -->; color?: string; transparency?: number }
 
 </td><td>
 
