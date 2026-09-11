@@ -36,17 +36,6 @@ BLUR
 </td></tr>
 <tr><td>
 
-DROP
-
-</td><td>
-
-`'drop'`
-
-</td><td>
-
-</td></tr>
-<tr><td>
-
 FOCUS
 
 </td><td>

@@ -1,11 +1,11 @@
-# ESYS\_ShortcutKeyEffectiveEditorRange enum
+# ESYS\_ShortcutKeyEffectiveEditorDocumentType enum
 
-Effective page range of the shortcut key
+快捷键生效页面范围
 
 ## Signature
 
 ```typescript
-enum ESYS_ShortcutKeyEffectiveEditorRange
+enum ESYS_ShortcutKeyEffectiveEditorDocumentType
 ```
 
 ## Enumeration Members
@@ -24,17 +24,6 @@ Description
 
 </th></tr></thead>
 <tbody><tr><td>
-
-ASSEMBLY\_VARIANT
-
-</td><td>
-
-`11`
-
-</td><td>
-
-</td></tr>
-<tr><td>
 
 BLANK
 
@@ -140,39 +129,6 @@ SCHEMATIC\_PAGE
 </td><td>
 
 `2`
-
-</td><td>
-
-</td></tr>
-<tr><td>
-
-SIMULATION\_SCHEMATIC\_PAGE\_NGSPICE
-
-</td><td>
-
-`12`
-
-</td><td>
-
-</td></tr>
-<tr><td>
-
-SIMULATION\_SCHEMATIC\_PAGE\_SIMULIDE
-
-</td><td>
-
-`13`
-
-</td><td>
-
-</td></tr>
-<tr><td>
-
-SIMULATION\_WAVEFORM
-
-</td><td>
-
-`14`
 
 </td><td>
 

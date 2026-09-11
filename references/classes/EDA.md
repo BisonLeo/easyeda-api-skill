@@ -250,16 +250,6 @@ function pcb_Drc: PCB_Drc;
 function pcb_Event: PCB_Event;
 ```
 
-### pcb_imagetool
-
-# EDA.pcb\_ImageTool property
-
-## Signature
-
-```typescript
-function pcb_ImageTool: PCB_ImageTool;
-```
-
 ### pcb_layer
 
 # EDA.pcb\_Layer property
@@ -730,16 +720,6 @@ function sys_Dialog: SYS_Dialog;
 function sys_Environment: SYS_Environment;
 ```
 
-### sys_externalapi
-
-# EDA.sys\_ExternalApi property
-
-## Signature
-
-```typescript
-function sys_ExternalApi: SYS_ExternalApi;
-```
-
 ### sys_filemanager
 
 # EDA.sys\_FileManager property
@@ -788,16 +768,6 @@ function sys_FormatConversion: SYS_FormatConversion;
 
 ```typescript
 function sys_HeaderMenu: SYS_HeaderMenu;
-```
-
-### sys_help
-
-# EDA.sys\_Help property
-
-## Signature
-
-```typescript
-function sys_Help: SYS_Help;
 ```
 
 ### sys_i18n
