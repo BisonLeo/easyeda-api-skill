@@ -15,7 +15,7 @@ license: MIT
 compatibility: Requires Node.js 18+, EasyEDA Pro desktop client with extension support
 metadata:
   author: JLCEDA
-  version: "1.1.33"
+  version: "1.1.34"
   openclaw:
     requires:
       bins:
